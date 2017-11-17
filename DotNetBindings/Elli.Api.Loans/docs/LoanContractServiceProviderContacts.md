@@ -1,0 +1,47 @@
+# Elli.Api.Loans.Model.LoanContractServiceProviderContacts
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**Address** | **string** |  | [optional] 
+**City** | **string** |  | [optional] 
+**Cost** | **double?** |  | [optional] 
+**LineItemNumber** | **string** |  | [optional] 
+**Phone** | **string** |  | [optional] 
+**PostalCode** | **string** |  | [optional] 
+**ProviderIndex** | **int?** |  | [optional] 
+**ProviderName** | **string** |  | [optional] 
+**Relationship** | **string** |  | [optional] 
+**ServiceProvided** | **string** |  | [optional] 
+**ServiceProviderId** | **string** |  | [optional] 
+**ServiceType** | **string** |  | [optional] 
+**State** | **string** |  | [optional] 
+**WebUrl** | **string** |  | [optional] 
+**ShopFor** | **bool?** |  | [optional] 
+**ContactName** | **string** |  | [optional] 
+**Email** | **string** |  | [optional] 
+**Fax** | **string** |  | [optional] 
+**FeeDesc1** | **string** |  | [optional] 
+**FeeAmt1** | **double?** |  | [optional] 
+**FeeDesc2** | **string** |  | [optional] 
+**FeeAmt2** | **double?** |  | [optional] 
+**FeeDesc3** | **string** |  | [optional] 
+**FeeAmt3** | **double?** |  | [optional] 
+**FeeDesc4** | **string** |  | [optional] 
+**FeeAmt4** | **double?** |  | [optional] 
+**FeeDesc5** | **string** |  | [optional] 
+**FeeAmt5** | **double?** |  | [optional] 
+**FeeDesc6** | **string** |  | [optional] 
+**FeeAmt6** | **double?** |  | [optional] 
+**FeeDesc7** | **string** |  | [optional] 
+**FeeAmt7** | **double?** |  | [optional] 
+**FeeDesc8** | **string** |  | [optional] 
+**FeeAmt8** | **double?** |  | [optional] 
+**FeeDesc9** | **string** |  | [optional] 
+**FeeAmt9** | **double?** |  | [optional] 
+**FeeDesc10** | **string** |  | [optional] 
+**FeeAmt10** | **double?** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

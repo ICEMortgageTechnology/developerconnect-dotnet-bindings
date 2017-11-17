@@ -1,0 +1,48 @@
+# Elli.Api.Loans.Model.LoanContractEmployment
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**EntityDeleted** | **bool?** |  | [optional] 
+**AddressCity** | **string** |  | [optional] 
+**AddressPostalCode** | **string** |  | [optional] 
+**AddressState** | **string** |  | [optional] 
+**AddressStreetLine1** | **string** |  | [optional] 
+**AltId** | **string** |  | [optional] 
+**Attention** | **string** |  | [optional] 
+**BasePayAmount** | **double?** |  | [optional] 
+**BonusAmount** | **double?** |  | [optional] 
+**BusinessName** | **string** |  | [optional] 
+**BusinessOwnedPercent** | **double?** |  | [optional] 
+**BusinessPhone** | **string** |  | [optional] 
+**CommissionsAmount** | **double?** |  | [optional] 
+**CurrentEmploymentIndicator** | **bool?** |  | [optional] 
+**BadgeOrEmployeeID** | **string** |  | [optional] 
+**Email** | **string** |  | [optional] 
+**EmployerComments** | **string** |  | [optional] 
+**EmployerName** | **string** |  | [optional] 
+**EndDate** | **DateTime?** |  | [optional] 
+**Fax** | **string** |  | [optional] 
+**MonthlyIncomeAmount** | **int?** |  | [optional] 
+**NoLinkToDocTrackIndicator** | **bool?** |  | [optional] 
+**OtherAmount** | **double?** |  | [optional] 
+**OvertimeAmount** | **double?** |  | [optional] 
+**Owner** | **string** |  | [optional] 
+**PhoneNumber** | **string** |  | [optional] 
+**PositionDescription** | **string** |  | [optional] 
+**PrintAttachmentIndicator** | **bool?** |  | [optional] 
+**PrintUserNameIndicator** | **bool?** |  | [optional] 
+**SelfEmployedIndicator** | **bool?** |  | [optional] 
+**StartDate** | **DateTime?** |  | [optional] 
+**TimeInLineOfWorkMonths** | **byte[]** |  | [optional] 
+**TimeInLineOfWorkYears** | **byte[]** |  | [optional] 
+**TimeOnJobTermMonths** | **byte[]** |  | [optional] 
+**TimeOnJobTermYears** | **byte[]** |  | [optional] 
+**Title** | **string** |  | [optional] 
+**TitleFax** | **string** |  | [optional] 
+**TitlePhone** | **string** |  | [optional] 
+**VerificationRequestDate** | **DateTime?** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

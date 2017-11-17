@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OAuth", "OAuth", "{50140227-4439-4641-A7E2-13A8FE5C3435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.Examples.Token.ResourceOwner", "OAuth\Elli.Api.Examples.Token.ResourceOwner\Elli.Api.Examples.Token.ResourceOwner.csproj", "{18F7EF97-7AEE-4FC1-9738-C610A8F2766D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.Examples.Token.AuthCode", "OAuth\Ellie.Api.Examples.Token.AuthCode\Elli.Api.Examples.Token.AuthCode.csproj", "{46821433-90D8-457A-B702-E8FCC88B8D29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loans", "Loans", "{6E371D29-1713-448E-B19B-08AA9567B2BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.Examples.Loans", "Loans\Ellie.Api.Examples.Loans\Elli.Api.Examples.Loans.csproj", "{B19E6D72-34DC-46F0-A486-5FA5FC2764CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18F7EF97-7AEE-4FC1-9738-C610A8F2766D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F7EF97-7AEE-4FC1-9738-C610A8F2766D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F7EF97-7AEE-4FC1-9738-C610A8F2766D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F7EF97-7AEE-4FC1-9738-C610A8F2766D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46821433-90D8-457A-B702-E8FCC88B8D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46821433-90D8-457A-B702-E8FCC88B8D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46821433-90D8-457A-B702-E8FCC88B8D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46821433-90D8-457A-B702-E8FCC88B8D29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19E6D72-34DC-46F0-A486-5FA5FC2764CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19E6D72-34DC-46F0-A486-5FA5FC2764CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19E6D72-34DC-46F0-A486-5FA5FC2764CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19E6D72-34DC-46F0-A486-5FA5FC2764CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18F7EF97-7AEE-4FC1-9738-C610A8F2766D} = {50140227-4439-4641-A7E2-13A8FE5C3435}
+		{46821433-90D8-457A-B702-E8FCC88B8D29} = {50140227-4439-4641-A7E2-13A8FE5C3435}
+		{B19E6D72-34DC-46F0-A486-5FA5FC2764CC} = {6E371D29-1713-448E-B19B-08AA9567B2BC}
+	EndGlobalSection
+EndGlobal

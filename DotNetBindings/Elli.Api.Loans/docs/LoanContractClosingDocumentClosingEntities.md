@@ -1,0 +1,44 @@
+# Elli.Api.Loans.Model.LoanContractClosingDocumentClosingEntities
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**Alias** | **string** |  | [optional] 
+**Assignee** | **string** |  | [optional] 
+**AuthorizedToSignIndicator** | **bool?** |  | [optional] 
+**BorrowerPair** | **string** |  | [optional] 
+**City** | **string** |  | [optional] 
+**ClosingEntityType** | **string** |  | [optional] 
+**Comments** | **string** |  | [optional] 
+**Fax** | **string** |  | [optional] 
+**OrganizationType** | **string** |  | [optional] 
+**OrganizedUnderTheLawsOfJurisdictionName** | **string** |  | [optional] 
+**Phone** | **string** |  | [optional] 
+**Phone1** | **string** |  | [optional] 
+**Phone2** | **string** |  | [optional] 
+**PoaSignatureText** | **string** |  | [optional] 
+**OccupancyIntent** | **string** |  | [optional] 
+**OccupancyStatus** | **string** |  | [optional] 
+**PostalCode** | **string** |  | [optional] 
+**PowerOfAttorney** | **string** |  | [optional] 
+**RecordableDocumentTrustDate** | **DateTime?** |  | [optional] 
+**RecordCity** | **string** |  | [optional] 
+**Ssn** | **string** |  | [optional] 
+**DateOfBirth** | **DateTime?** |  | [optional] 
+**State** | **string** |  | [optional] 
+**StreetAddress** | **string** |  | [optional] 
+**County** | **string** |  | [optional] 
+**TaxIdentificationNumberIdentifier** | **string** |  | [optional] 
+**TrustOfficerName1** | **string** |  | [optional] 
+**TrustOfficerName2** | **string** |  | [optional] 
+**TrustOfficerTitle1** | **string** |  | [optional] 
+**TrustOfficerTitle2** | **string** |  | [optional] 
+**UnparsedName** | **string** |  | [optional] 
+**Vesting** | **string** |  | [optional] 
+**VestingGuid** | **string** |  | [optional] 
+**VestingTrusteeOfType** | **string** |  | [optional] 
+**VestingType** | **string** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
