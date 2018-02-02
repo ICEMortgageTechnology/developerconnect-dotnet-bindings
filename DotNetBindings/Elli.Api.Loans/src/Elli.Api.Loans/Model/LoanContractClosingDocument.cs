@@ -1108,6 +1108,84 @@ namespace Elli.Api.Loans.Model
         public string MfgHomeManufacturerPhoneNumber { get; set; }
 
         /// <summary>
+        /// Gets or Sets CLTitleOrderSentDateTime
+        /// </summary>
+        [DataMember(Name="cLTitleOrderSentDateTime", EmitDefaultValue=false)]
+        public DateTime? CLTitleOrderSentDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLClosingEscrowOrderSentDateTime
+        /// </summary>
+        [DataMember(Name="cLClosingEscrowOrderSentDateTime", EmitDefaultValue=false)]
+        public DateTime? CLClosingEscrowOrderSentDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLTitleOrderAcceptedDateTime
+        /// </summary>
+        [DataMember(Name="cLTitleOrderAcceptedDateTime", EmitDefaultValue=false)]
+        public DateTime? CLTitleOrderAcceptedDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLClosingEscrowOrderAcceptedDateTime
+        /// </summary>
+        [DataMember(Name="cLClosingEscrowOrderAcceptedDateTime", EmitDefaultValue=false)]
+        public DateTime? CLClosingEscrowOrderAcceptedDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLPayoffsRequestedDateTime
+        /// </summary>
+        [DataMember(Name="cLPayoffsRequestedDateTime", EmitDefaultValue=false)]
+        public DateTime? CLPayoffsRequestedDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLLastFeeQuoteRequestedDateTime
+        /// </summary>
+        [DataMember(Name="cLLastFeeQuoteRequestedDateTime", EmitDefaultValue=false)]
+        public DateTime? CLLastFeeQuoteRequestedDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLLastFeeQuoteReceivedDateTime
+        /// </summary>
+        [DataMember(Name="cLLastFeeQuoteReceivedDateTime", EmitDefaultValue=false)]
+        public DateTime? CLLastFeeQuoteReceivedDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLPrelimCommitmentReceivedByLenderDateTime
+        /// </summary>
+        [DataMember(Name="cLPrelimCommitmentReceivedByLenderDateTime", EmitDefaultValue=false)]
+        public DateTime? CLPrelimCommitmentReceivedByLenderDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLDraftClosingDisclosureReceivedByLenderDateTime
+        /// </summary>
+        [DataMember(Name="cLDraftClosingDisclosureReceivedByLenderDateTime", EmitDefaultValue=false)]
+        public DateTime? CLDraftClosingDisclosureReceivedByLenderDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLClearCloseStatusReceivedByLenderDateTime
+        /// </summary>
+        [DataMember(Name="cLClearCloseStatusReceivedByLenderDateTime", EmitDefaultValue=false)]
+        public DateTime? CLClearCloseStatusReceivedByLenderDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLFinalCDSentDateTime
+        /// </summary>
+        [DataMember(Name="cLFinalCDSentDateTime", EmitDefaultValue=false)]
+        public DateTime? CLFinalCDSentDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLProviderDisburseFundsDateTime
+        /// </summary>
+        [DataMember(Name="cLProviderDisburseFundsDateTime", EmitDefaultValue=false)]
+        public DateTime? CLProviderDisburseFundsDateTime { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CLFinalTitlePolicyDateTime
+        /// </summary>
+        [DataMember(Name="cLFinalTitlePolicyDateTime", EmitDefaultValue=false)]
+        public DateTime? CLFinalTitlePolicyDateTime { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -1289,6 +1367,19 @@ namespace Elli.Api.Loans.Model
             sb.Append("  MfgHomeManufacturerState: ").Append(MfgHomeManufacturerState).Append("\n");
             sb.Append("  MfgHomeManufacturerPostalCode: ").Append(MfgHomeManufacturerPostalCode).Append("\n");
             sb.Append("  MfgHomeManufacturerPhoneNumber: ").Append(MfgHomeManufacturerPhoneNumber).Append("\n");
+            sb.Append("  CLTitleOrderSentDateTime: ").Append(CLTitleOrderSentDateTime).Append("\n");
+            sb.Append("  CLClosingEscrowOrderSentDateTime: ").Append(CLClosingEscrowOrderSentDateTime).Append("\n");
+            sb.Append("  CLTitleOrderAcceptedDateTime: ").Append(CLTitleOrderAcceptedDateTime).Append("\n");
+            sb.Append("  CLClosingEscrowOrderAcceptedDateTime: ").Append(CLClosingEscrowOrderAcceptedDateTime).Append("\n");
+            sb.Append("  CLPayoffsRequestedDateTime: ").Append(CLPayoffsRequestedDateTime).Append("\n");
+            sb.Append("  CLLastFeeQuoteRequestedDateTime: ").Append(CLLastFeeQuoteRequestedDateTime).Append("\n");
+            sb.Append("  CLLastFeeQuoteReceivedDateTime: ").Append(CLLastFeeQuoteReceivedDateTime).Append("\n");
+            sb.Append("  CLPrelimCommitmentReceivedByLenderDateTime: ").Append(CLPrelimCommitmentReceivedByLenderDateTime).Append("\n");
+            sb.Append("  CLDraftClosingDisclosureReceivedByLenderDateTime: ").Append(CLDraftClosingDisclosureReceivedByLenderDateTime).Append("\n");
+            sb.Append("  CLClearCloseStatusReceivedByLenderDateTime: ").Append(CLClearCloseStatusReceivedByLenderDateTime).Append("\n");
+            sb.Append("  CLFinalCDSentDateTime: ").Append(CLFinalCDSentDateTime).Append("\n");
+            sb.Append("  CLProviderDisburseFundsDateTime: ").Append(CLProviderDisburseFundsDateTime).Append("\n");
+            sb.Append("  CLFinalTitlePolicyDateTime: ").Append(CLFinalTitlePolicyDateTime).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -2192,6 +2283,71 @@ namespace Elli.Api.Loans.Model
                     this.MfgHomeManufacturerPhoneNumber == input.MfgHomeManufacturerPhoneNumber ||
                     (this.MfgHomeManufacturerPhoneNumber != null &&
                     this.MfgHomeManufacturerPhoneNumber.Equals(input.MfgHomeManufacturerPhoneNumber))
+                ) && 
+                (
+                    this.CLTitleOrderSentDateTime == input.CLTitleOrderSentDateTime ||
+                    (this.CLTitleOrderSentDateTime != null &&
+                    this.CLTitleOrderSentDateTime.Equals(input.CLTitleOrderSentDateTime))
+                ) && 
+                (
+                    this.CLClosingEscrowOrderSentDateTime == input.CLClosingEscrowOrderSentDateTime ||
+                    (this.CLClosingEscrowOrderSentDateTime != null &&
+                    this.CLClosingEscrowOrderSentDateTime.Equals(input.CLClosingEscrowOrderSentDateTime))
+                ) && 
+                (
+                    this.CLTitleOrderAcceptedDateTime == input.CLTitleOrderAcceptedDateTime ||
+                    (this.CLTitleOrderAcceptedDateTime != null &&
+                    this.CLTitleOrderAcceptedDateTime.Equals(input.CLTitleOrderAcceptedDateTime))
+                ) && 
+                (
+                    this.CLClosingEscrowOrderAcceptedDateTime == input.CLClosingEscrowOrderAcceptedDateTime ||
+                    (this.CLClosingEscrowOrderAcceptedDateTime != null &&
+                    this.CLClosingEscrowOrderAcceptedDateTime.Equals(input.CLClosingEscrowOrderAcceptedDateTime))
+                ) && 
+                (
+                    this.CLPayoffsRequestedDateTime == input.CLPayoffsRequestedDateTime ||
+                    (this.CLPayoffsRequestedDateTime != null &&
+                    this.CLPayoffsRequestedDateTime.Equals(input.CLPayoffsRequestedDateTime))
+                ) && 
+                (
+                    this.CLLastFeeQuoteRequestedDateTime == input.CLLastFeeQuoteRequestedDateTime ||
+                    (this.CLLastFeeQuoteRequestedDateTime != null &&
+                    this.CLLastFeeQuoteRequestedDateTime.Equals(input.CLLastFeeQuoteRequestedDateTime))
+                ) && 
+                (
+                    this.CLLastFeeQuoteReceivedDateTime == input.CLLastFeeQuoteReceivedDateTime ||
+                    (this.CLLastFeeQuoteReceivedDateTime != null &&
+                    this.CLLastFeeQuoteReceivedDateTime.Equals(input.CLLastFeeQuoteReceivedDateTime))
+                ) && 
+                (
+                    this.CLPrelimCommitmentReceivedByLenderDateTime == input.CLPrelimCommitmentReceivedByLenderDateTime ||
+                    (this.CLPrelimCommitmentReceivedByLenderDateTime != null &&
+                    this.CLPrelimCommitmentReceivedByLenderDateTime.Equals(input.CLPrelimCommitmentReceivedByLenderDateTime))
+                ) && 
+                (
+                    this.CLDraftClosingDisclosureReceivedByLenderDateTime == input.CLDraftClosingDisclosureReceivedByLenderDateTime ||
+                    (this.CLDraftClosingDisclosureReceivedByLenderDateTime != null &&
+                    this.CLDraftClosingDisclosureReceivedByLenderDateTime.Equals(input.CLDraftClosingDisclosureReceivedByLenderDateTime))
+                ) && 
+                (
+                    this.CLClearCloseStatusReceivedByLenderDateTime == input.CLClearCloseStatusReceivedByLenderDateTime ||
+                    (this.CLClearCloseStatusReceivedByLenderDateTime != null &&
+                    this.CLClearCloseStatusReceivedByLenderDateTime.Equals(input.CLClearCloseStatusReceivedByLenderDateTime))
+                ) && 
+                (
+                    this.CLFinalCDSentDateTime == input.CLFinalCDSentDateTime ||
+                    (this.CLFinalCDSentDateTime != null &&
+                    this.CLFinalCDSentDateTime.Equals(input.CLFinalCDSentDateTime))
+                ) && 
+                (
+                    this.CLProviderDisburseFundsDateTime == input.CLProviderDisburseFundsDateTime ||
+                    (this.CLProviderDisburseFundsDateTime != null &&
+                    this.CLProviderDisburseFundsDateTime.Equals(input.CLProviderDisburseFundsDateTime))
+                ) && 
+                (
+                    this.CLFinalTitlePolicyDateTime == input.CLFinalTitlePolicyDateTime ||
+                    (this.CLFinalTitlePolicyDateTime != null &&
+                    this.CLFinalTitlePolicyDateTime.Equals(input.CLFinalTitlePolicyDateTime))
                 );
         }
 
@@ -2552,6 +2708,32 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.MfgHomeManufacturerPostalCode.GetHashCode();
                 if (this.MfgHomeManufacturerPhoneNumber != null)
                     hashCode = hashCode * 59 + this.MfgHomeManufacturerPhoneNumber.GetHashCode();
+                if (this.CLTitleOrderSentDateTime != null)
+                    hashCode = hashCode * 59 + this.CLTitleOrderSentDateTime.GetHashCode();
+                if (this.CLClosingEscrowOrderSentDateTime != null)
+                    hashCode = hashCode * 59 + this.CLClosingEscrowOrderSentDateTime.GetHashCode();
+                if (this.CLTitleOrderAcceptedDateTime != null)
+                    hashCode = hashCode * 59 + this.CLTitleOrderAcceptedDateTime.GetHashCode();
+                if (this.CLClosingEscrowOrderAcceptedDateTime != null)
+                    hashCode = hashCode * 59 + this.CLClosingEscrowOrderAcceptedDateTime.GetHashCode();
+                if (this.CLPayoffsRequestedDateTime != null)
+                    hashCode = hashCode * 59 + this.CLPayoffsRequestedDateTime.GetHashCode();
+                if (this.CLLastFeeQuoteRequestedDateTime != null)
+                    hashCode = hashCode * 59 + this.CLLastFeeQuoteRequestedDateTime.GetHashCode();
+                if (this.CLLastFeeQuoteReceivedDateTime != null)
+                    hashCode = hashCode * 59 + this.CLLastFeeQuoteReceivedDateTime.GetHashCode();
+                if (this.CLPrelimCommitmentReceivedByLenderDateTime != null)
+                    hashCode = hashCode * 59 + this.CLPrelimCommitmentReceivedByLenderDateTime.GetHashCode();
+                if (this.CLDraftClosingDisclosureReceivedByLenderDateTime != null)
+                    hashCode = hashCode * 59 + this.CLDraftClosingDisclosureReceivedByLenderDateTime.GetHashCode();
+                if (this.CLClearCloseStatusReceivedByLenderDateTime != null)
+                    hashCode = hashCode * 59 + this.CLClearCloseStatusReceivedByLenderDateTime.GetHashCode();
+                if (this.CLFinalCDSentDateTime != null)
+                    hashCode = hashCode * 59 + this.CLFinalCDSentDateTime.GetHashCode();
+                if (this.CLProviderDisburseFundsDateTime != null)
+                    hashCode = hashCode * 59 + this.CLProviderDisburseFundsDateTime.GetHashCode();
+                if (this.CLFinalTitlePolicyDateTime != null)
+                    hashCode = hashCode * 59 + this.CLFinalTitlePolicyDateTime.GetHashCode();
                 return hashCode;
             }
         }

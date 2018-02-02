@@ -40,6 +40,11 @@ namespace Elli.Api.Base
             var accessToken = new AccessToken();
             if (credentials == null)
                 throw new ArgumentNullException();
+            //EST-2795 Allowing Username, password and instance id to read through config if not passed by caller
+            credentials.UserName = credentials.UserName ?? Config.Username;
+            credentials.Password = credentials.Password ?? Config.Password;
+            credentials.InstanceId = credentials.InstanceId ?? Config.InstanceId;
+
             accessToken.ApiClientId = apiClientId ?? Config.ApiClientId;
             accessToken.ClientSecret = clientSecret ?? Config.ClientSecret;
             var tokenClient = ApiClientProvider.GetApiClient<TokenApi>();

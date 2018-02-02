@@ -1054,6 +1054,12 @@ namespace Elli.Api.Loans.Model
         public string RegulatorAddress { get; set; }
 
         /// <summary>
+        /// Gets or Sets RegulatorWebAddress
+        /// </summary>
+        [DataMember(Name="regulatorWebAddress", EmitDefaultValue=false)]
+        public string RegulatorWebAddress { get; set; }
+
+        /// <summary>
         /// Gets or Sets RegulatorCity
         /// </summary>
         [DataMember(Name="regulatorCity", EmitDefaultValue=false)]
@@ -1544,6 +1550,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  ScheduleOfChargesEstimatedFinalIndicator: ").Append(ScheduleOfChargesEstimatedFinalIndicator).Append("\n");
             sb.Append("  ScRegulatoryAgencyType: ").Append(ScRegulatoryAgencyType).Append("\n");
             sb.Append("  RegulatorAddress: ").Append(RegulatorAddress).Append("\n");
+            sb.Append("  RegulatorWebAddress: ").Append(RegulatorWebAddress).Append("\n");
             sb.Append("  RegulatorCity: ").Append(RegulatorCity).Append("\n");
             sb.Append("  RegulatorState: ").Append(RegulatorState).Append("\n");
             sb.Append("  RegulatorZipCode: ").Append(RegulatorZipCode).Append("\n");
@@ -2457,6 +2464,11 @@ namespace Elli.Api.Loans.Model
                     this.RegulatorAddress.Equals(input.RegulatorAddress))
                 ) && 
                 (
+                    this.RegulatorWebAddress == input.RegulatorWebAddress ||
+                    (this.RegulatorWebAddress != null &&
+                    this.RegulatorWebAddress.Equals(input.RegulatorWebAddress))
+                ) && 
+                (
                     this.RegulatorCity == input.RegulatorCity ||
                     (this.RegulatorCity != null &&
                     this.RegulatorCity.Equals(input.RegulatorCity))
@@ -3062,6 +3074,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.ScRegulatoryAgencyType.GetHashCode();
                 if (this.RegulatorAddress != null)
                     hashCode = hashCode * 59 + this.RegulatorAddress.GetHashCode();
+                if (this.RegulatorWebAddress != null)
+                    hashCode = hashCode * 59 + this.RegulatorWebAddress.GetHashCode();
                 if (this.RegulatorCity != null)
                     hashCode = hashCode * 59 + this.RegulatorCity.GetHashCode();
                 if (this.RegulatorState != null)

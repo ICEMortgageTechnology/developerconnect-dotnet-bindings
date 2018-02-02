@@ -136,6 +136,42 @@ namespace Elli.Api.Loans.Model
         public string CollateralUnderwriterScore { get; set; }
 
         /// <summary>
+        /// Gets or Sets UCDPStatus
+        /// </summary>
+        [DataMember(Name="uCDPStatus", EmitDefaultValue=false)]
+        public string UCDPStatus { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ECStatus1003
+        /// </summary>
+        [DataMember(Name="eCStatus1003", EmitDefaultValue=false)]
+        public string ECStatus1003 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ULDDECStatus
+        /// </summary>
+        [DataMember(Name="uLDDECStatus", EmitDefaultValue=false)]
+        public string ULDDECStatus { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UCDCollectionStatus
+        /// </summary>
+        [DataMember(Name="uCDCollectionStatus", EmitDefaultValue=false)]
+        public string UCDCollectionStatus { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CaseIDAssignedByUCDIndicator
+        /// </summary>
+        [DataMember(Name="caseIDAssignedByUCDIndicator", EmitDefaultValue=false)]
+        public bool? CaseIDAssignedByUCDIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAssignmentID
+        /// </summary>
+        [DataMember(Name="correspondentAssignmentID", EmitDefaultValue=false)]
+        public string CorrespondentAssignmentID { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -155,6 +191,12 @@ namespace Elli.Api.Loans.Model
             sb.Append("  StartUpMortgage: ").Append(StartUpMortgage).Append("\n");
             sb.Append("  PropertyInspectionWaiverMessage: ").Append(PropertyInspectionWaiverMessage).Append("\n");
             sb.Append("  CollateralUnderwriterScore: ").Append(CollateralUnderwriterScore).Append("\n");
+            sb.Append("  UCDPStatus: ").Append(UCDPStatus).Append("\n");
+            sb.Append("  ECStatus1003: ").Append(ECStatus1003).Append("\n");
+            sb.Append("  ULDDECStatus: ").Append(ULDDECStatus).Append("\n");
+            sb.Append("  UCDCollectionStatus: ").Append(UCDCollectionStatus).Append("\n");
+            sb.Append("  CaseIDAssignedByUCDIndicator: ").Append(CaseIDAssignedByUCDIndicator).Append("\n");
+            sb.Append("  CorrespondentAssignmentID: ").Append(CorrespondentAssignmentID).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -248,6 +290,36 @@ namespace Elli.Api.Loans.Model
                     this.CollateralUnderwriterScore == input.CollateralUnderwriterScore ||
                     (this.CollateralUnderwriterScore != null &&
                     this.CollateralUnderwriterScore.Equals(input.CollateralUnderwriterScore))
+                ) && 
+                (
+                    this.UCDPStatus == input.UCDPStatus ||
+                    (this.UCDPStatus != null &&
+                    this.UCDPStatus.Equals(input.UCDPStatus))
+                ) && 
+                (
+                    this.ECStatus1003 == input.ECStatus1003 ||
+                    (this.ECStatus1003 != null &&
+                    this.ECStatus1003.Equals(input.ECStatus1003))
+                ) && 
+                (
+                    this.ULDDECStatus == input.ULDDECStatus ||
+                    (this.ULDDECStatus != null &&
+                    this.ULDDECStatus.Equals(input.ULDDECStatus))
+                ) && 
+                (
+                    this.UCDCollectionStatus == input.UCDCollectionStatus ||
+                    (this.UCDCollectionStatus != null &&
+                    this.UCDCollectionStatus.Equals(input.UCDCollectionStatus))
+                ) && 
+                (
+                    this.CaseIDAssignedByUCDIndicator == input.CaseIDAssignedByUCDIndicator ||
+                    (this.CaseIDAssignedByUCDIndicator != null &&
+                    this.CaseIDAssignedByUCDIndicator.Equals(input.CaseIDAssignedByUCDIndicator))
+                ) && 
+                (
+                    this.CorrespondentAssignmentID == input.CorrespondentAssignmentID ||
+                    (this.CorrespondentAssignmentID != null &&
+                    this.CorrespondentAssignmentID.Equals(input.CorrespondentAssignmentID))
                 );
         }
 
@@ -284,6 +356,18 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.PropertyInspectionWaiverMessage.GetHashCode();
                 if (this.CollateralUnderwriterScore != null)
                     hashCode = hashCode * 59 + this.CollateralUnderwriterScore.GetHashCode();
+                if (this.UCDPStatus != null)
+                    hashCode = hashCode * 59 + this.UCDPStatus.GetHashCode();
+                if (this.ECStatus1003 != null)
+                    hashCode = hashCode * 59 + this.ECStatus1003.GetHashCode();
+                if (this.ULDDECStatus != null)
+                    hashCode = hashCode * 59 + this.ULDDECStatus.GetHashCode();
+                if (this.UCDCollectionStatus != null)
+                    hashCode = hashCode * 59 + this.UCDCollectionStatus.GetHashCode();
+                if (this.CaseIDAssignedByUCDIndicator != null)
+                    hashCode = hashCode * 59 + this.CaseIDAssignedByUCDIndicator.GetHashCode();
+                if (this.CorrespondentAssignmentID != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAssignmentID.GetHashCode();
                 return hashCode;
             }
         }

@@ -114,6 +114,7 @@ Name | Type | Description | Notes
 **UnpaidMiscrFee** | **double?** |  | [optional] 
 **UnpaidPrincipal** | **double?** |  | [optional] 
 **Comments** | **string** |  | [optional] 
+**BeginningBalance** | **double?** |  | [optional] 
 **LastPaymentEscrowTax** | **double?** |  | [optional] 
 **LastPaymentEscrowHazardInsurance** | **double?** |  | [optional] 
 **LastPaymentEscrowMortgageInsurance** | **double?** |  | [optional] 

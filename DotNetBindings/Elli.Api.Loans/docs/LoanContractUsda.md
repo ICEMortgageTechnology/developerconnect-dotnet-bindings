@@ -44,6 +44,7 @@ Name | Type | Description | Notes
 **ElderlyHouseholdDeduction** | **double?** |  | [optional] 
 **FeeRate** | **double?** |  | [optional] 
 **FinancedLoanClosingCostDescription** | **string** |  | [optional] 
+**FinancedLoanClosingCosts** | **double?** |  | [optional] 
 **GuaranteeFeeCollected** | **double?** |  | [optional] 
 **GuaranteeFeeOnCommitment** | **double?** |  | [optional] 
 **GuaranteeFeePurposeCodeType** | **string** |  | [optional] 

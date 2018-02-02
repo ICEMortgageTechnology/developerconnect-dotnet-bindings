@@ -92,6 +92,14 @@ Name | Type | Description | Notes
 **DesigneeAcceptedDate** | **DateTime?** |  | [optional] 
 **AppraisalMade** | **string** |  | [optional] 
 **NotNaturalPersonFlag** | **bool?** |  | [optional] 
+**MortgageLenderCompanyWebURL** | **string** |  | [optional] 
+**MortgageLenderLoanOfficerWebURL** | **string** |  | [optional] 
+**MortgageBrokerCompanyWebURL** | **string** |  | [optional] 
+**MortgageBrokerLoanOfficerWebURL** | **string** |  | [optional] 
+**RealEstateAgencyWebURL** | **string** |  | [optional] 
+**RealEstateAgentWebURL** | **string** |  | [optional] 
+**ClosingCompanyWebURL** | **string** |  | [optional] 
+**ClosingAgentWebURL** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

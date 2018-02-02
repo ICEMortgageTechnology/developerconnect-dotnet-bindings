@@ -598,6 +598,54 @@ namespace Elli.Api.Loans.Model
         public bool? NotNaturalPersonFlag { get; set; }
 
         /// <summary>
+        /// Gets or Sets MortgageLenderCompanyWebURL
+        /// </summary>
+        [DataMember(Name="mortgageLenderCompanyWebURL", EmitDefaultValue=false)]
+        public string MortgageLenderCompanyWebURL { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MortgageLenderLoanOfficerWebURL
+        /// </summary>
+        [DataMember(Name="mortgageLenderLoanOfficerWebURL", EmitDefaultValue=false)]
+        public string MortgageLenderLoanOfficerWebURL { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MortgageBrokerCompanyWebURL
+        /// </summary>
+        [DataMember(Name="mortgageBrokerCompanyWebURL", EmitDefaultValue=false)]
+        public string MortgageBrokerCompanyWebURL { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MortgageBrokerLoanOfficerWebURL
+        /// </summary>
+        [DataMember(Name="mortgageBrokerLoanOfficerWebURL", EmitDefaultValue=false)]
+        public string MortgageBrokerLoanOfficerWebURL { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RealEstateAgencyWebURL
+        /// </summary>
+        [DataMember(Name="realEstateAgencyWebURL", EmitDefaultValue=false)]
+        public string RealEstateAgencyWebURL { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RealEstateAgentWebURL
+        /// </summary>
+        [DataMember(Name="realEstateAgentWebURL", EmitDefaultValue=false)]
+        public string RealEstateAgentWebURL { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ClosingCompanyWebURL
+        /// </summary>
+        [DataMember(Name="closingCompanyWebURL", EmitDefaultValue=false)]
+        public string ClosingCompanyWebURL { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ClosingAgentWebURL
+        /// </summary>
+        [DataMember(Name="closingAgentWebURL", EmitDefaultValue=false)]
+        public string ClosingAgentWebURL { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -694,6 +742,14 @@ namespace Elli.Api.Loans.Model
             sb.Append("  DesigneeAcceptedDate: ").Append(DesigneeAcceptedDate).Append("\n");
             sb.Append("  AppraisalMade: ").Append(AppraisalMade).Append("\n");
             sb.Append("  NotNaturalPersonFlag: ").Append(NotNaturalPersonFlag).Append("\n");
+            sb.Append("  MortgageLenderCompanyWebURL: ").Append(MortgageLenderCompanyWebURL).Append("\n");
+            sb.Append("  MortgageLenderLoanOfficerWebURL: ").Append(MortgageLenderLoanOfficerWebURL).Append("\n");
+            sb.Append("  MortgageBrokerCompanyWebURL: ").Append(MortgageBrokerCompanyWebURL).Append("\n");
+            sb.Append("  MortgageBrokerLoanOfficerWebURL: ").Append(MortgageBrokerLoanOfficerWebURL).Append("\n");
+            sb.Append("  RealEstateAgencyWebURL: ").Append(RealEstateAgencyWebURL).Append("\n");
+            sb.Append("  RealEstateAgentWebURL: ").Append(RealEstateAgentWebURL).Append("\n");
+            sb.Append("  ClosingCompanyWebURL: ").Append(ClosingCompanyWebURL).Append("\n");
+            sb.Append("  ClosingAgentWebURL: ").Append(ClosingAgentWebURL).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -1172,6 +1228,46 @@ namespace Elli.Api.Loans.Model
                     this.NotNaturalPersonFlag == input.NotNaturalPersonFlag ||
                     (this.NotNaturalPersonFlag != null &&
                     this.NotNaturalPersonFlag.Equals(input.NotNaturalPersonFlag))
+                ) && 
+                (
+                    this.MortgageLenderCompanyWebURL == input.MortgageLenderCompanyWebURL ||
+                    (this.MortgageLenderCompanyWebURL != null &&
+                    this.MortgageLenderCompanyWebURL.Equals(input.MortgageLenderCompanyWebURL))
+                ) && 
+                (
+                    this.MortgageLenderLoanOfficerWebURL == input.MortgageLenderLoanOfficerWebURL ||
+                    (this.MortgageLenderLoanOfficerWebURL != null &&
+                    this.MortgageLenderLoanOfficerWebURL.Equals(input.MortgageLenderLoanOfficerWebURL))
+                ) && 
+                (
+                    this.MortgageBrokerCompanyWebURL == input.MortgageBrokerCompanyWebURL ||
+                    (this.MortgageBrokerCompanyWebURL != null &&
+                    this.MortgageBrokerCompanyWebURL.Equals(input.MortgageBrokerCompanyWebURL))
+                ) && 
+                (
+                    this.MortgageBrokerLoanOfficerWebURL == input.MortgageBrokerLoanOfficerWebURL ||
+                    (this.MortgageBrokerLoanOfficerWebURL != null &&
+                    this.MortgageBrokerLoanOfficerWebURL.Equals(input.MortgageBrokerLoanOfficerWebURL))
+                ) && 
+                (
+                    this.RealEstateAgencyWebURL == input.RealEstateAgencyWebURL ||
+                    (this.RealEstateAgencyWebURL != null &&
+                    this.RealEstateAgencyWebURL.Equals(input.RealEstateAgencyWebURL))
+                ) && 
+                (
+                    this.RealEstateAgentWebURL == input.RealEstateAgentWebURL ||
+                    (this.RealEstateAgentWebURL != null &&
+                    this.RealEstateAgentWebURL.Equals(input.RealEstateAgentWebURL))
+                ) && 
+                (
+                    this.ClosingCompanyWebURL == input.ClosingCompanyWebURL ||
+                    (this.ClosingCompanyWebURL != null &&
+                    this.ClosingCompanyWebURL.Equals(input.ClosingCompanyWebURL))
+                ) && 
+                (
+                    this.ClosingAgentWebURL == input.ClosingAgentWebURL ||
+                    (this.ClosingAgentWebURL != null &&
+                    this.ClosingAgentWebURL.Equals(input.ClosingAgentWebURL))
                 );
         }
 
@@ -1362,6 +1458,22 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.AppraisalMade.GetHashCode();
                 if (this.NotNaturalPersonFlag != null)
                     hashCode = hashCode * 59 + this.NotNaturalPersonFlag.GetHashCode();
+                if (this.MortgageLenderCompanyWebURL != null)
+                    hashCode = hashCode * 59 + this.MortgageLenderCompanyWebURL.GetHashCode();
+                if (this.MortgageLenderLoanOfficerWebURL != null)
+                    hashCode = hashCode * 59 + this.MortgageLenderLoanOfficerWebURL.GetHashCode();
+                if (this.MortgageBrokerCompanyWebURL != null)
+                    hashCode = hashCode * 59 + this.MortgageBrokerCompanyWebURL.GetHashCode();
+                if (this.MortgageBrokerLoanOfficerWebURL != null)
+                    hashCode = hashCode * 59 + this.MortgageBrokerLoanOfficerWebURL.GetHashCode();
+                if (this.RealEstateAgencyWebURL != null)
+                    hashCode = hashCode * 59 + this.RealEstateAgencyWebURL.GetHashCode();
+                if (this.RealEstateAgentWebURL != null)
+                    hashCode = hashCode * 59 + this.RealEstateAgentWebURL.GetHashCode();
+                if (this.ClosingCompanyWebURL != null)
+                    hashCode = hashCode * 59 + this.ClosingCompanyWebURL.GetHashCode();
+                if (this.ClosingAgentWebURL != null)
+                    hashCode = hashCode * 59 + this.ClosingAgentWebURL.GetHashCode();
                 return hashCode;
             }
         }

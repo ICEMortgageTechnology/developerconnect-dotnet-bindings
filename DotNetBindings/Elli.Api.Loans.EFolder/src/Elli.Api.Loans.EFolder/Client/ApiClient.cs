@@ -260,10 +260,14 @@ namespace Elli.Api.Loans.EFolder.Client
         /// <returns>FileParameter.</returns>
         public FileParameter ParameterToFile(string name, Stream stream)
         {
-            if (stream is FileStream)
-                return FileParameter.Create(name, ReadAsBytes(stream), Path.GetFileName(((FileStream)stream).Name));
-            else
-                return FileParameter.Create(name, ReadAsBytes(stream), "no_file_name_provided");
+            try
+            {
+                if (stream is FileStream)
+                    return FileParameter.Create(name, ReadAsBytes(stream), Path.GetFileName(((FileStream)stream).Name));
+                else
+                    return FileParameter.Create(name, ReadAsBytes(stream), "no_file_name_provided");
+            }
+            catch (Exception) { throw; }
         }
 
         /// <summary>
@@ -310,6 +314,8 @@ namespace Elli.Api.Loans.EFolder.Client
         /// <returns>Object representation of the JSON string.</returns>
         public object Deserialize(IRestResponse response, Type type)
         {
+		    try
+            {
             IList<Parameter> headers = response.Headers;
             if (type == typeof(byte[])) // return byte array
             {
@@ -350,8 +356,6 @@ namespace Elli.Api.Loans.EFolder.Client
             }
 
             // at this point, it must be a model (json)
-            try
-            {
                 return JsonConvert.DeserializeObject(response.Content, type, serializerSettings);
             }
             catch (Exception e)

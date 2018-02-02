@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **BrokerCommissionBasedUnitPrice** | **double?** |  | [optional] 
 **ClosingCostProgram** | **string** |  | [optional] 
 **ClosingCostScenarioXml** | **string** |  | [optional] 
+**DisclosedSalesPrice** | **double?** |  | [optional] 
 **EscrowCompanyName** | **string** |  | [optional] 
 **EscrowTableDesc1** | **string** |  | [optional] 
 **EscrowTableDesc2** | **string** |  | [optional] 

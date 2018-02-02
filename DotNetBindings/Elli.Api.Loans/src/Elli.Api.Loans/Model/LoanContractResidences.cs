@@ -127,13 +127,13 @@ namespace Elli.Api.Loans.Model
         /// Gets or Sets DurationTermMonths
         /// </summary>
         [DataMember(Name="durationTermMonths", EmitDefaultValue=false)]
-        public byte[] DurationTermMonths { get; set; }
+        public int? DurationTermMonths { get; set; }
 
         /// <summary>
         /// Gets or Sets DurationTermYears
         /// </summary>
         [DataMember(Name="durationTermYears", EmitDefaultValue=false)]
-        public byte[] DurationTermYears { get; set; }
+        public int? DurationTermYears { get; set; }
 
         /// <summary>
         /// Gets or Sets LandlordAttention

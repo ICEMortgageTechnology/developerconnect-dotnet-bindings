@@ -93,9 +93,15 @@ Name | Type | Description | Notes
 **CopyFromSubjectProperty** | **bool?** |  | [optional] 
 **FreddieLPAAutoOrderIndicator** | **bool?** |  | [optional] 
 **FreddieLQAAutoOrderIndicator** | **bool?** |  | [optional] 
+**ContactTitle** | **string** |  | [optional] 
+**ContactName** | **string** |  | [optional] 
+**ContactFax** | **string** |  | [optional] 
+**ContactPhone** | **string** |  | [optional] 
+**PrintStateLicenseOn1003** | **bool?** |  | [optional] 
 **MaventATRQMResult** | **string** |  | [optional] 
 **MIPremiums** | **double?** |  | [optional] 
 **SubTaxYearMIPremiums** | **double?** |  | [optional] 
+**LoanFileSequenceNumber** | **int?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -1114,6 +1114,12 @@ namespace Elli.Api.Loans.Model
         public string ImpoundWavied { get; set; }
 
         /// <summary>
+        /// Gets or Sets ImpoundWaived
+        /// </summary>
+        [DataMember(Name="impoundWaived", EmitDefaultValue=false)]
+        public string ImpoundWaived { get; set; }
+
+        /// <summary>
         /// Gets or Sets Interest
         /// </summary>
         [DataMember(Name="interest", EmitDefaultValue=false)]
@@ -1522,6 +1528,12 @@ namespace Elli.Api.Loans.Model
         public string RequestImpoundWavied { get; set; }
 
         /// <summary>
+        /// Gets or Sets RequestImpoundWaived
+        /// </summary>
+        [DataMember(Name="requestImpoundWaived", EmitDefaultValue=false)]
+        public string RequestImpoundWaived { get; set; }
+
+        /// <summary>
         /// Gets or Sets RequestLockCancellationComment
         /// </summary>
         [DataMember(Name="requestLockCancellationComment", EmitDefaultValue=false)]
@@ -1664,6 +1676,12 @@ namespace Elli.Api.Loans.Model
         /// </summary>
         [DataMember(Name="requestOnrpLockDate", EmitDefaultValue=false)]
         public DateTime? RequestOnrpLockDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CommitmentType
+        /// </summary>
+        [DataMember(Name="commitmentType", EmitDefaultValue=false)]
+        public string CommitmentType { get; set; }
 
         /// <summary>
         /// Gets or Sets RoundToNearest50
@@ -2002,6 +2020,24 @@ namespace Elli.Api.Loans.Model
         public string CorrespondentWarehouseBankAcctNum { get; set; }
 
         /// <summary>
+        /// Gets or Sets CorrespondentWarehouseBankAcctName
+        /// </summary>
+        [DataMember(Name="correspondentWarehouseBankAcctName", EmitDefaultValue=false)]
+        public string CorrespondentWarehouseBankAcctName { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentWarehouseBankFurtherCreditAcctNum
+        /// </summary>
+        [DataMember(Name="correspondentWarehouseBankFurtherCreditAcctNum", EmitDefaultValue=false)]
+        public string CorrespondentWarehouseBankFurtherCreditAcctNum { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentWarehouseBankFurtherCreditAcctName
+        /// </summary>
+        [DataMember(Name="correspondentWarehouseBankFurtherCreditAcctName", EmitDefaultValue=false)]
+        public string CorrespondentWarehouseBankFurtherCreditAcctName { get; set; }
+
+        /// <summary>
         /// Gets or Sets CorrespondentWarehouseBankABANum
         /// </summary>
         [DataMember(Name="correspondentWarehouseBankABANum", EmitDefaultValue=false)]
@@ -2254,10 +2290,400 @@ namespace Elli.Api.Loans.Model
         public double? PriceAdjustment { get; set; }
 
         /// <summary>
+        /// Gets or Sets CorrespondentTotalBuyAmount
+        /// </summary>
+        [DataMember(Name="correspondentTotalBuyAmount", EmitDefaultValue=false)]
+        public double? CorrespondentTotalBuyAmount { get; set; }
+
+        /// <summary>
         /// Gets or Sets SRPPaidOut
         /// </summary>
         [DataMember(Name="sRPPaidOut", EmitDefaultValue=false)]
         public double? SRPPaidOut { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentTotalFees
+        /// </summary>
+        [DataMember(Name="correspondentTotalFees", EmitDefaultValue=false)]
+        public double? CorrespondentTotalFees { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentWarehouseBankWireConfirmationNumber
+        /// </summary>
+        [DataMember(Name="correspondentWarehouseBankWireConfirmationNumber", EmitDefaultValue=false)]
+        public string CorrespondentWarehouseBankWireConfirmationNumber { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDHomeInsurance
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDHomeInsurance", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDHomeInsurance { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDMortgageInsurance
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDMortgageInsurance", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDMortgageInsurance { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDPropertyTax
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDPropertyTax", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDPropertyTax { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDCityPropertyTax
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDCityPropertyTax", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDCityPropertyTax { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDFloodInsurance
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDFloodInsurance", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDFloodInsurance { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDDescription1007
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDDescription1007", EmitDefaultValue=false)]
+        public string CorrespondentFinalCDDescription1007 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDAmount1007
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDAmount1007", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDAmount1007 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDDescription1008
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDDescription1008", EmitDefaultValue=false)]
+        public string CorrespondentFinalCDDescription1008 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDAmount1008
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDAmount1008", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDAmount1008 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDDescription1009
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDDescription1009", EmitDefaultValue=false)]
+        public string CorrespondentFinalCDDescription1009 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDAmount1009
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDAmount1009", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDAmount1009 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDUSDAAnnualFee
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDUSDAAnnualFee", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDUSDAAnnualFee { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDAggAdjAmount
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDAggAdjAmount", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDAggAdjAmount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDOption1Desc
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDOption1Desc", EmitDefaultValue=false)]
+        public string CorrespondentFinalCDOption1Desc { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDOption1Amount
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDOption1Amount", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDOption1Amount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDOption2Desc
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDOption2Desc", EmitDefaultValue=false)]
+        public string CorrespondentFinalCDOption2Desc { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDOption2Amount
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDOption2Amount", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDOption2Amount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentFinalCDReservesCollectedAtClosing
+        /// </summary>
+        [DataMember(Name="correspondentFinalCDReservesCollectedAtClosing", EmitDefaultValue=false)]
+        public double? CorrespondentFinalCDReservesCollectedAtClosing { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowHomeInsurance
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowHomeInsurance", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowHomeInsurance { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowPropertyTax
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowPropertyTax", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowPropertyTax { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowCityPropertyTax
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowCityPropertyTax", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowCityPropertyTax { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowFloodInsurance
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowFloodInsurance", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowFloodInsurance { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowDescription1007
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowDescription1007", EmitDefaultValue=false)]
+        public string CorrespondentAdditionalEscrowDescription1007 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowAmount1007
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowAmount1007", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowAmount1007 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowDescription1008
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowDescription1008", EmitDefaultValue=false)]
+        public string CorrespondentAdditionalEscrowDescription1008 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowAmount1008
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowAmount1008", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowAmount1008 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowDescription1009
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowDescription1009", EmitDefaultValue=false)]
+        public string CorrespondentAdditionalEscrowDescription1009 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowAmount1009
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowAmount1009", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowAmount1009 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowUSDAAnnualFee
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowUSDAAnnualFee", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowUSDAAnnualFee { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowOption1Desc
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowOption1Desc", EmitDefaultValue=false)]
+        public string CorrespondentAdditionalEscrowOption1Desc { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowOption1Amount
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowOption1Amount", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowOption1Amount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowOption2Desc
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowOption2Desc", EmitDefaultValue=false)]
+        public string CorrespondentAdditionalEscrowOption2Desc { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowOption2Amount
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowOption2Amount", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowOption2Amount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowNumOfPayments
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowNumOfPayments", EmitDefaultValue=false)]
+        public int? CorrespondentAdditionalEscrowNumOfPayments { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowSumOfPayments
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowSumOfPayments", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowSumOfPayments { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowMIMIP
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowMIMIP", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowMIMIP { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentAdditionalEscrowAdditionalEscrow
+        /// </summary>
+        [DataMember(Name="correspondentAdditionalEscrowAdditionalEscrow", EmitDefaultValue=false)]
+        public double? CorrespondentAdditionalEscrowAdditionalEscrow { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsHomeInsurance
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsHomeInsurance", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsHomeInsurance { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsMortgageInsurance
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsMortgageInsurance", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsMortgageInsurance { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsPropertyTax
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsPropertyTax", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsPropertyTax { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsCityPropertyTax
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsCityPropertyTax", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsCityPropertyTax { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsFloodInsurance
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsFloodInsurance", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsFloodInsurance { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsDescription1007
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsDescription1007", EmitDefaultValue=false)]
+        public string CorrespondentEscrowDisbursementsDescription1007 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsAmount1007
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsAmount1007", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsAmount1007 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsDescription1008
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsDescription1008", EmitDefaultValue=false)]
+        public string CorrespondentEscrowDisbursementsDescription1008 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsAmount1008
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsAmount1008", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsAmount1008 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsDescription1009
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsDescription1009", EmitDefaultValue=false)]
+        public string CorrespondentEscrowDisbursementsDescription1009 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsAmount1009
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsAmount1009", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsAmount1009 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsUSDAAnnualFee
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsUSDAAnnualFee", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsUSDAAnnualFee { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsOption1Desc
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsOption1Desc", EmitDefaultValue=false)]
+        public string CorrespondentEscrowDisbursementsOption1Desc { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsOption1Amount
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsOption1Amount", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsOption1Amount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsOption2Desc
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsOption2Desc", EmitDefaultValue=false)]
+        public string CorrespondentEscrowDisbursementsOption2Desc { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsOption2Amount
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsOption2Amount", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsOption2Amount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsEscrowsToBePaidBySeller", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentEscrowDisbursementsEsrowFundedByInvestor
+        /// </summary>
+        [DataMember(Name="correspondentEscrowDisbursementsEsrowFundedByInvestor", EmitDefaultValue=false)]
+        public double? CorrespondentEscrowDisbursementsEsrowFundedByInvestor { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentPaymentHistoryNoteDate
+        /// </summary>
+        [DataMember(Name="correspondentPaymentHistoryNoteDate", EmitDefaultValue=false)]
+        public DateTime? CorrespondentPaymentHistoryNoteDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate
+        /// </summary>
+        [DataMember(Name="correspondentPaymentHistoryFirstBorrowerPaymentDueDate", EmitDefaultValue=false)]
+        public DateTime? CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentPaymentHistoryPricipalReduction
+        /// </summary>
+        [DataMember(Name="correspondentPaymentHistoryPricipalReduction", EmitDefaultValue=false)]
+        public double? CorrespondentPaymentHistoryPricipalReduction { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentPaymentHistoryAnticipatedPurchaseDate
+        /// </summary>
+        [DataMember(Name="correspondentPaymentHistoryAnticipatedPurchaseDate", EmitDefaultValue=false)]
+        public DateTime? CorrespondentPaymentHistoryAnticipatedPurchaseDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentPaymentHistoryFirstInvestorPaymentDate
+        /// </summary>
+        [DataMember(Name="correspondentPaymentHistoryFirstInvestorPaymentDate", EmitDefaultValue=false)]
+        public DateTime? CorrespondentPaymentHistoryFirstInvestorPaymentDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CorrespondentPaymentHistoryCalculatedPurchasedPrincipal
+        /// </summary>
+        [DataMember(Name="correspondentPaymentHistoryCalculatedPurchasedPrincipal", EmitDefaultValue=false)]
+        public double? CorrespondentPaymentHistoryCalculatedPurchasedPrincipal { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ExtraPayments
+        /// </summary>
+        [DataMember(Name="extraPayments", EmitDefaultValue=false)]
+        public List<LoanContractRateLockExtraPayments> ExtraPayments { get; set; }
 
         /// <summary>
         /// Gets or Sets RateRequestStatus
@@ -2608,6 +3034,12 @@ namespace Elli.Api.Loans.Model
         public string RequestLockType { get; set; }
 
         /// <summary>
+        /// Gets or Sets RequestLockStatus
+        /// </summary>
+        [DataMember(Name="requestLockStatus", EmitDefaultValue=false)]
+        public string RequestLockStatus { get; set; }
+
+        /// <summary>
         /// Gets or Sets TotalForLesserOfSumAsIs
         /// </summary>
         [DataMember(Name="totalForLesserOfSumAsIs", EmitDefaultValue=false)]
@@ -2844,6 +3276,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  Impounds: ").Append(Impounds).Append("\n");
             sb.Append("  ImpoundType: ").Append(ImpoundType).Append("\n");
             sb.Append("  ImpoundWavied: ").Append(ImpoundWavied).Append("\n");
+            sb.Append("  ImpoundWaived: ").Append(ImpoundWaived).Append("\n");
             sb.Append("  Interest: ").Append(Interest).Append("\n");
             sb.Append("  InvestorAddress: ").Append(InvestorAddress).Append("\n");
             sb.Append("  InvestorCity: ").Append(InvestorCity).Append("\n");
@@ -2912,6 +3345,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  RequestFullfilledDateTime: ").Append(RequestFullfilledDateTime).Append("\n");
             sb.Append("  RequestImpoundType: ").Append(RequestImpoundType).Append("\n");
             sb.Append("  RequestImpoundWavied: ").Append(RequestImpoundWavied).Append("\n");
+            sb.Append("  RequestImpoundWaived: ").Append(RequestImpoundWaived).Append("\n");
             sb.Append("  RequestLockCancellationComment: ").Append(RequestLockCancellationComment).Append("\n");
             sb.Append("  RequestLockCancellationDate: ").Append(RequestLockCancellationDate).Append("\n");
             sb.Append("  RequestLockDate: ").Append(RequestLockDate).Append("\n");
@@ -2936,6 +3370,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  RequestOnrpLockTime: ").Append(RequestOnrpLockTime).Append("\n");
             sb.Append("  RequestOnrpEligible: ").Append(RequestOnrpEligible).Append("\n");
             sb.Append("  RequestOnrpLockDate: ").Append(RequestOnrpLockDate).Append("\n");
+            sb.Append("  CommitmentType: ").Append(CommitmentType).Append("\n");
             sb.Append("  RoundToNearest50: ").Append(RoundToNearest50).Append("\n");
             sb.Append("  SecondSubordinateAmount: ").Append(SecondSubordinateAmount).Append("\n");
             sb.Append("  SellerPaidMIPremium: ").Append(SellerPaidMIPremium).Append("\n");
@@ -2992,6 +3427,9 @@ namespace Elli.Api.Loans.Model
             sb.Append("  CorrespondentAdditionalLineAmount13: ").Append(CorrespondentAdditionalLineAmount13).Append("\n");
             sb.Append("  CorrespondentWarehouseBankName: ").Append(CorrespondentWarehouseBankName).Append("\n");
             sb.Append("  CorrespondentWarehouseBankAcctNum: ").Append(CorrespondentWarehouseBankAcctNum).Append("\n");
+            sb.Append("  CorrespondentWarehouseBankAcctName: ").Append(CorrespondentWarehouseBankAcctName).Append("\n");
+            sb.Append("  CorrespondentWarehouseBankFurtherCreditAcctNum: ").Append(CorrespondentWarehouseBankFurtherCreditAcctNum).Append("\n");
+            sb.Append("  CorrespondentWarehouseBankFurtherCreditAcctName: ").Append(CorrespondentWarehouseBankFurtherCreditAcctName).Append("\n");
             sb.Append("  CorrespondentWarehouseBankABANum: ").Append(CorrespondentWarehouseBankABANum).Append("\n");
             sb.Append("  CorrespondentWarehouseBankWireInstructionsReceivedIndicator: ").Append(CorrespondentWarehouseBankWireInstructionsReceivedIndicator).Append("\n");
             sb.Append("  CorrespondentWarehouseBankBaileeLetterReceivedIndicator: ").Append(CorrespondentWarehouseBankBaileeLetterReceivedIndicator).Append("\n");
@@ -3034,7 +3472,72 @@ namespace Elli.Api.Loans.Model
             sb.Append("  SellSideMSRValue: ").Append(SellSideMSRValue).Append("\n");
             sb.Append("  DaysToExtend: ").Append(DaysToExtend).Append("\n");
             sb.Append("  PriceAdjustment: ").Append(PriceAdjustment).Append("\n");
+            sb.Append("  CorrespondentTotalBuyAmount: ").Append(CorrespondentTotalBuyAmount).Append("\n");
             sb.Append("  SRPPaidOut: ").Append(SRPPaidOut).Append("\n");
+            sb.Append("  CorrespondentTotalFees: ").Append(CorrespondentTotalFees).Append("\n");
+            sb.Append("  CorrespondentWarehouseBankWireConfirmationNumber: ").Append(CorrespondentWarehouseBankWireConfirmationNumber).Append("\n");
+            sb.Append("  CorrespondentFinalCDHomeInsurance: ").Append(CorrespondentFinalCDHomeInsurance).Append("\n");
+            sb.Append("  CorrespondentFinalCDMortgageInsurance: ").Append(CorrespondentFinalCDMortgageInsurance).Append("\n");
+            sb.Append("  CorrespondentFinalCDPropertyTax: ").Append(CorrespondentFinalCDPropertyTax).Append("\n");
+            sb.Append("  CorrespondentFinalCDCityPropertyTax: ").Append(CorrespondentFinalCDCityPropertyTax).Append("\n");
+            sb.Append("  CorrespondentFinalCDFloodInsurance: ").Append(CorrespondentFinalCDFloodInsurance).Append("\n");
+            sb.Append("  CorrespondentFinalCDDescription1007: ").Append(CorrespondentFinalCDDescription1007).Append("\n");
+            sb.Append("  CorrespondentFinalCDAmount1007: ").Append(CorrespondentFinalCDAmount1007).Append("\n");
+            sb.Append("  CorrespondentFinalCDDescription1008: ").Append(CorrespondentFinalCDDescription1008).Append("\n");
+            sb.Append("  CorrespondentFinalCDAmount1008: ").Append(CorrespondentFinalCDAmount1008).Append("\n");
+            sb.Append("  CorrespondentFinalCDDescription1009: ").Append(CorrespondentFinalCDDescription1009).Append("\n");
+            sb.Append("  CorrespondentFinalCDAmount1009: ").Append(CorrespondentFinalCDAmount1009).Append("\n");
+            sb.Append("  CorrespondentFinalCDUSDAAnnualFee: ").Append(CorrespondentFinalCDUSDAAnnualFee).Append("\n");
+            sb.Append("  CorrespondentFinalCDAggAdjAmount: ").Append(CorrespondentFinalCDAggAdjAmount).Append("\n");
+            sb.Append("  CorrespondentFinalCDOption1Desc: ").Append(CorrespondentFinalCDOption1Desc).Append("\n");
+            sb.Append("  CorrespondentFinalCDOption1Amount: ").Append(CorrespondentFinalCDOption1Amount).Append("\n");
+            sb.Append("  CorrespondentFinalCDOption2Desc: ").Append(CorrespondentFinalCDOption2Desc).Append("\n");
+            sb.Append("  CorrespondentFinalCDOption2Amount: ").Append(CorrespondentFinalCDOption2Amount).Append("\n");
+            sb.Append("  CorrespondentFinalCDReservesCollectedAtClosing: ").Append(CorrespondentFinalCDReservesCollectedAtClosing).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowHomeInsurance: ").Append(CorrespondentAdditionalEscrowHomeInsurance).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowPropertyTax: ").Append(CorrespondentAdditionalEscrowPropertyTax).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowCityPropertyTax: ").Append(CorrespondentAdditionalEscrowCityPropertyTax).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowFloodInsurance: ").Append(CorrespondentAdditionalEscrowFloodInsurance).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowDescription1007: ").Append(CorrespondentAdditionalEscrowDescription1007).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowAmount1007: ").Append(CorrespondentAdditionalEscrowAmount1007).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowDescription1008: ").Append(CorrespondentAdditionalEscrowDescription1008).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowAmount1008: ").Append(CorrespondentAdditionalEscrowAmount1008).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowDescription1009: ").Append(CorrespondentAdditionalEscrowDescription1009).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowAmount1009: ").Append(CorrespondentAdditionalEscrowAmount1009).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowUSDAAnnualFee: ").Append(CorrespondentAdditionalEscrowUSDAAnnualFee).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowOption1Desc: ").Append(CorrespondentAdditionalEscrowOption1Desc).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowOption1Amount: ").Append(CorrespondentAdditionalEscrowOption1Amount).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowOption2Desc: ").Append(CorrespondentAdditionalEscrowOption2Desc).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowOption2Amount: ").Append(CorrespondentAdditionalEscrowOption2Amount).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowNumOfPayments: ").Append(CorrespondentAdditionalEscrowNumOfPayments).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowSumOfPayments: ").Append(CorrespondentAdditionalEscrowSumOfPayments).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowMIMIP: ").Append(CorrespondentAdditionalEscrowMIMIP).Append("\n");
+            sb.Append("  CorrespondentAdditionalEscrowAdditionalEscrow: ").Append(CorrespondentAdditionalEscrowAdditionalEscrow).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsHomeInsurance: ").Append(CorrespondentEscrowDisbursementsHomeInsurance).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsMortgageInsurance: ").Append(CorrespondentEscrowDisbursementsMortgageInsurance).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsPropertyTax: ").Append(CorrespondentEscrowDisbursementsPropertyTax).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsCityPropertyTax: ").Append(CorrespondentEscrowDisbursementsCityPropertyTax).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsFloodInsurance: ").Append(CorrespondentEscrowDisbursementsFloodInsurance).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsDescription1007: ").Append(CorrespondentEscrowDisbursementsDescription1007).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsAmount1007: ").Append(CorrespondentEscrowDisbursementsAmount1007).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsDescription1008: ").Append(CorrespondentEscrowDisbursementsDescription1008).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsAmount1008: ").Append(CorrespondentEscrowDisbursementsAmount1008).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsDescription1009: ").Append(CorrespondentEscrowDisbursementsDescription1009).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsAmount1009: ").Append(CorrespondentEscrowDisbursementsAmount1009).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsUSDAAnnualFee: ").Append(CorrespondentEscrowDisbursementsUSDAAnnualFee).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsOption1Desc: ").Append(CorrespondentEscrowDisbursementsOption1Desc).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsOption1Amount: ").Append(CorrespondentEscrowDisbursementsOption1Amount).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsOption2Desc: ").Append(CorrespondentEscrowDisbursementsOption2Desc).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsOption2Amount: ").Append(CorrespondentEscrowDisbursementsOption2Amount).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller: ").Append(CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller).Append("\n");
+            sb.Append("  CorrespondentEscrowDisbursementsEsrowFundedByInvestor: ").Append(CorrespondentEscrowDisbursementsEsrowFundedByInvestor).Append("\n");
+            sb.Append("  CorrespondentPaymentHistoryNoteDate: ").Append(CorrespondentPaymentHistoryNoteDate).Append("\n");
+            sb.Append("  CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate: ").Append(CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate).Append("\n");
+            sb.Append("  CorrespondentPaymentHistoryPricipalReduction: ").Append(CorrespondentPaymentHistoryPricipalReduction).Append("\n");
+            sb.Append("  CorrespondentPaymentHistoryAnticipatedPurchaseDate: ").Append(CorrespondentPaymentHistoryAnticipatedPurchaseDate).Append("\n");
+            sb.Append("  CorrespondentPaymentHistoryFirstInvestorPaymentDate: ").Append(CorrespondentPaymentHistoryFirstInvestorPaymentDate).Append("\n");
+            sb.Append("  CorrespondentPaymentHistoryCalculatedPurchasedPrincipal: ").Append(CorrespondentPaymentHistoryCalculatedPurchasedPrincipal).Append("\n");
+            sb.Append("  ExtraPayments: ").Append(ExtraPayments).Append("\n");
             sb.Append("  RateRequestStatus: ").Append(RateRequestStatus).Append("\n");
             sb.Append("  CompSideAdjustments: ").Append(CompSideAdjustments).Append("\n");
             sb.Append("  BuySideUnDiscountedRate: ").Append(BuySideUnDiscountedRate).Append("\n");
@@ -3093,6 +3596,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  CompInvestorProgramCode: ").Append(CompInvestorProgramCode).Append("\n");
             sb.Append("  CompInvestorWebsite: ").Append(CompInvestorWebsite).Append("\n");
             sb.Append("  RequestLockType: ").Append(RequestLockType).Append("\n");
+            sb.Append("  RequestLockStatus: ").Append(RequestLockStatus).Append("\n");
             sb.Append("  TotalForLesserOfSumAsIs: ").Append(TotalForLesserOfSumAsIs).Append("\n");
             sb.Append("  IsCancelled: ").Append(IsCancelled).Append("\n");
             sb.Append("  RateStatus: ").Append(RateStatus).Append("\n");
@@ -4012,6 +4516,11 @@ namespace Elli.Api.Loans.Model
                     this.ImpoundWavied.Equals(input.ImpoundWavied))
                 ) && 
                 (
+                    this.ImpoundWaived == input.ImpoundWaived ||
+                    (this.ImpoundWaived != null &&
+                    this.ImpoundWaived.Equals(input.ImpoundWaived))
+                ) && 
+                (
                     this.Interest == input.Interest ||
                     (this.Interest != null &&
                     this.Interest.Equals(input.Interest))
@@ -4352,6 +4861,11 @@ namespace Elli.Api.Loans.Model
                     this.RequestImpoundWavied.Equals(input.RequestImpoundWavied))
                 ) && 
                 (
+                    this.RequestImpoundWaived == input.RequestImpoundWaived ||
+                    (this.RequestImpoundWaived != null &&
+                    this.RequestImpoundWaived.Equals(input.RequestImpoundWaived))
+                ) && 
+                (
                     this.RequestLockCancellationComment == input.RequestLockCancellationComment ||
                     (this.RequestLockCancellationComment != null &&
                     this.RequestLockCancellationComment.Equals(input.RequestLockCancellationComment))
@@ -4470,6 +4984,11 @@ namespace Elli.Api.Loans.Model
                     this.RequestOnrpLockDate == input.RequestOnrpLockDate ||
                     (this.RequestOnrpLockDate != null &&
                     this.RequestOnrpLockDate.Equals(input.RequestOnrpLockDate))
+                ) && 
+                (
+                    this.CommitmentType == input.CommitmentType ||
+                    (this.CommitmentType != null &&
+                    this.CommitmentType.Equals(input.CommitmentType))
                 ) && 
                 (
                     this.RoundToNearest50 == input.RoundToNearest50 ||
@@ -4752,6 +5271,21 @@ namespace Elli.Api.Loans.Model
                     this.CorrespondentWarehouseBankAcctNum.Equals(input.CorrespondentWarehouseBankAcctNum))
                 ) && 
                 (
+                    this.CorrespondentWarehouseBankAcctName == input.CorrespondentWarehouseBankAcctName ||
+                    (this.CorrespondentWarehouseBankAcctName != null &&
+                    this.CorrespondentWarehouseBankAcctName.Equals(input.CorrespondentWarehouseBankAcctName))
+                ) && 
+                (
+                    this.CorrespondentWarehouseBankFurtherCreditAcctNum == input.CorrespondentWarehouseBankFurtherCreditAcctNum ||
+                    (this.CorrespondentWarehouseBankFurtherCreditAcctNum != null &&
+                    this.CorrespondentWarehouseBankFurtherCreditAcctNum.Equals(input.CorrespondentWarehouseBankFurtherCreditAcctNum))
+                ) && 
+                (
+                    this.CorrespondentWarehouseBankFurtherCreditAcctName == input.CorrespondentWarehouseBankFurtherCreditAcctName ||
+                    (this.CorrespondentWarehouseBankFurtherCreditAcctName != null &&
+                    this.CorrespondentWarehouseBankFurtherCreditAcctName.Equals(input.CorrespondentWarehouseBankFurtherCreditAcctName))
+                ) && 
+                (
                     this.CorrespondentWarehouseBankABANum == input.CorrespondentWarehouseBankABANum ||
                     (this.CorrespondentWarehouseBankABANum != null &&
                     this.CorrespondentWarehouseBankABANum.Equals(input.CorrespondentWarehouseBankABANum))
@@ -4962,9 +5496,334 @@ namespace Elli.Api.Loans.Model
                     this.PriceAdjustment.Equals(input.PriceAdjustment))
                 ) && 
                 (
+                    this.CorrespondentTotalBuyAmount == input.CorrespondentTotalBuyAmount ||
+                    (this.CorrespondentTotalBuyAmount != null &&
+                    this.CorrespondentTotalBuyAmount.Equals(input.CorrespondentTotalBuyAmount))
+                ) && 
+                (
                     this.SRPPaidOut == input.SRPPaidOut ||
                     (this.SRPPaidOut != null &&
                     this.SRPPaidOut.Equals(input.SRPPaidOut))
+                ) && 
+                (
+                    this.CorrespondentTotalFees == input.CorrespondentTotalFees ||
+                    (this.CorrespondentTotalFees != null &&
+                    this.CorrespondentTotalFees.Equals(input.CorrespondentTotalFees))
+                ) && 
+                (
+                    this.CorrespondentWarehouseBankWireConfirmationNumber == input.CorrespondentWarehouseBankWireConfirmationNumber ||
+                    (this.CorrespondentWarehouseBankWireConfirmationNumber != null &&
+                    this.CorrespondentWarehouseBankWireConfirmationNumber.Equals(input.CorrespondentWarehouseBankWireConfirmationNumber))
+                ) && 
+                (
+                    this.CorrespondentFinalCDHomeInsurance == input.CorrespondentFinalCDHomeInsurance ||
+                    (this.CorrespondentFinalCDHomeInsurance != null &&
+                    this.CorrespondentFinalCDHomeInsurance.Equals(input.CorrespondentFinalCDHomeInsurance))
+                ) && 
+                (
+                    this.CorrespondentFinalCDMortgageInsurance == input.CorrespondentFinalCDMortgageInsurance ||
+                    (this.CorrespondentFinalCDMortgageInsurance != null &&
+                    this.CorrespondentFinalCDMortgageInsurance.Equals(input.CorrespondentFinalCDMortgageInsurance))
+                ) && 
+                (
+                    this.CorrespondentFinalCDPropertyTax == input.CorrespondentFinalCDPropertyTax ||
+                    (this.CorrespondentFinalCDPropertyTax != null &&
+                    this.CorrespondentFinalCDPropertyTax.Equals(input.CorrespondentFinalCDPropertyTax))
+                ) && 
+                (
+                    this.CorrespondentFinalCDCityPropertyTax == input.CorrespondentFinalCDCityPropertyTax ||
+                    (this.CorrespondentFinalCDCityPropertyTax != null &&
+                    this.CorrespondentFinalCDCityPropertyTax.Equals(input.CorrespondentFinalCDCityPropertyTax))
+                ) && 
+                (
+                    this.CorrespondentFinalCDFloodInsurance == input.CorrespondentFinalCDFloodInsurance ||
+                    (this.CorrespondentFinalCDFloodInsurance != null &&
+                    this.CorrespondentFinalCDFloodInsurance.Equals(input.CorrespondentFinalCDFloodInsurance))
+                ) && 
+                (
+                    this.CorrespondentFinalCDDescription1007 == input.CorrespondentFinalCDDescription1007 ||
+                    (this.CorrespondentFinalCDDescription1007 != null &&
+                    this.CorrespondentFinalCDDescription1007.Equals(input.CorrespondentFinalCDDescription1007))
+                ) && 
+                (
+                    this.CorrespondentFinalCDAmount1007 == input.CorrespondentFinalCDAmount1007 ||
+                    (this.CorrespondentFinalCDAmount1007 != null &&
+                    this.CorrespondentFinalCDAmount1007.Equals(input.CorrespondentFinalCDAmount1007))
+                ) && 
+                (
+                    this.CorrespondentFinalCDDescription1008 == input.CorrespondentFinalCDDescription1008 ||
+                    (this.CorrespondentFinalCDDescription1008 != null &&
+                    this.CorrespondentFinalCDDescription1008.Equals(input.CorrespondentFinalCDDescription1008))
+                ) && 
+                (
+                    this.CorrespondentFinalCDAmount1008 == input.CorrespondentFinalCDAmount1008 ||
+                    (this.CorrespondentFinalCDAmount1008 != null &&
+                    this.CorrespondentFinalCDAmount1008.Equals(input.CorrespondentFinalCDAmount1008))
+                ) && 
+                (
+                    this.CorrespondentFinalCDDescription1009 == input.CorrespondentFinalCDDescription1009 ||
+                    (this.CorrespondentFinalCDDescription1009 != null &&
+                    this.CorrespondentFinalCDDescription1009.Equals(input.CorrespondentFinalCDDescription1009))
+                ) && 
+                (
+                    this.CorrespondentFinalCDAmount1009 == input.CorrespondentFinalCDAmount1009 ||
+                    (this.CorrespondentFinalCDAmount1009 != null &&
+                    this.CorrespondentFinalCDAmount1009.Equals(input.CorrespondentFinalCDAmount1009))
+                ) && 
+                (
+                    this.CorrespondentFinalCDUSDAAnnualFee == input.CorrespondentFinalCDUSDAAnnualFee ||
+                    (this.CorrespondentFinalCDUSDAAnnualFee != null &&
+                    this.CorrespondentFinalCDUSDAAnnualFee.Equals(input.CorrespondentFinalCDUSDAAnnualFee))
+                ) && 
+                (
+                    this.CorrespondentFinalCDAggAdjAmount == input.CorrespondentFinalCDAggAdjAmount ||
+                    (this.CorrespondentFinalCDAggAdjAmount != null &&
+                    this.CorrespondentFinalCDAggAdjAmount.Equals(input.CorrespondentFinalCDAggAdjAmount))
+                ) && 
+                (
+                    this.CorrespondentFinalCDOption1Desc == input.CorrespondentFinalCDOption1Desc ||
+                    (this.CorrespondentFinalCDOption1Desc != null &&
+                    this.CorrespondentFinalCDOption1Desc.Equals(input.CorrespondentFinalCDOption1Desc))
+                ) && 
+                (
+                    this.CorrespondentFinalCDOption1Amount == input.CorrespondentFinalCDOption1Amount ||
+                    (this.CorrespondentFinalCDOption1Amount != null &&
+                    this.CorrespondentFinalCDOption1Amount.Equals(input.CorrespondentFinalCDOption1Amount))
+                ) && 
+                (
+                    this.CorrespondentFinalCDOption2Desc == input.CorrespondentFinalCDOption2Desc ||
+                    (this.CorrespondentFinalCDOption2Desc != null &&
+                    this.CorrespondentFinalCDOption2Desc.Equals(input.CorrespondentFinalCDOption2Desc))
+                ) && 
+                (
+                    this.CorrespondentFinalCDOption2Amount == input.CorrespondentFinalCDOption2Amount ||
+                    (this.CorrespondentFinalCDOption2Amount != null &&
+                    this.CorrespondentFinalCDOption2Amount.Equals(input.CorrespondentFinalCDOption2Amount))
+                ) && 
+                (
+                    this.CorrespondentFinalCDReservesCollectedAtClosing == input.CorrespondentFinalCDReservesCollectedAtClosing ||
+                    (this.CorrespondentFinalCDReservesCollectedAtClosing != null &&
+                    this.CorrespondentFinalCDReservesCollectedAtClosing.Equals(input.CorrespondentFinalCDReservesCollectedAtClosing))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowHomeInsurance == input.CorrespondentAdditionalEscrowHomeInsurance ||
+                    (this.CorrespondentAdditionalEscrowHomeInsurance != null &&
+                    this.CorrespondentAdditionalEscrowHomeInsurance.Equals(input.CorrespondentAdditionalEscrowHomeInsurance))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowPropertyTax == input.CorrespondentAdditionalEscrowPropertyTax ||
+                    (this.CorrespondentAdditionalEscrowPropertyTax != null &&
+                    this.CorrespondentAdditionalEscrowPropertyTax.Equals(input.CorrespondentAdditionalEscrowPropertyTax))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowCityPropertyTax == input.CorrespondentAdditionalEscrowCityPropertyTax ||
+                    (this.CorrespondentAdditionalEscrowCityPropertyTax != null &&
+                    this.CorrespondentAdditionalEscrowCityPropertyTax.Equals(input.CorrespondentAdditionalEscrowCityPropertyTax))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowFloodInsurance == input.CorrespondentAdditionalEscrowFloodInsurance ||
+                    (this.CorrespondentAdditionalEscrowFloodInsurance != null &&
+                    this.CorrespondentAdditionalEscrowFloodInsurance.Equals(input.CorrespondentAdditionalEscrowFloodInsurance))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowDescription1007 == input.CorrespondentAdditionalEscrowDescription1007 ||
+                    (this.CorrespondentAdditionalEscrowDescription1007 != null &&
+                    this.CorrespondentAdditionalEscrowDescription1007.Equals(input.CorrespondentAdditionalEscrowDescription1007))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowAmount1007 == input.CorrespondentAdditionalEscrowAmount1007 ||
+                    (this.CorrespondentAdditionalEscrowAmount1007 != null &&
+                    this.CorrespondentAdditionalEscrowAmount1007.Equals(input.CorrespondentAdditionalEscrowAmount1007))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowDescription1008 == input.CorrespondentAdditionalEscrowDescription1008 ||
+                    (this.CorrespondentAdditionalEscrowDescription1008 != null &&
+                    this.CorrespondentAdditionalEscrowDescription1008.Equals(input.CorrespondentAdditionalEscrowDescription1008))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowAmount1008 == input.CorrespondentAdditionalEscrowAmount1008 ||
+                    (this.CorrespondentAdditionalEscrowAmount1008 != null &&
+                    this.CorrespondentAdditionalEscrowAmount1008.Equals(input.CorrespondentAdditionalEscrowAmount1008))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowDescription1009 == input.CorrespondentAdditionalEscrowDescription1009 ||
+                    (this.CorrespondentAdditionalEscrowDescription1009 != null &&
+                    this.CorrespondentAdditionalEscrowDescription1009.Equals(input.CorrespondentAdditionalEscrowDescription1009))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowAmount1009 == input.CorrespondentAdditionalEscrowAmount1009 ||
+                    (this.CorrespondentAdditionalEscrowAmount1009 != null &&
+                    this.CorrespondentAdditionalEscrowAmount1009.Equals(input.CorrespondentAdditionalEscrowAmount1009))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowUSDAAnnualFee == input.CorrespondentAdditionalEscrowUSDAAnnualFee ||
+                    (this.CorrespondentAdditionalEscrowUSDAAnnualFee != null &&
+                    this.CorrespondentAdditionalEscrowUSDAAnnualFee.Equals(input.CorrespondentAdditionalEscrowUSDAAnnualFee))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowOption1Desc == input.CorrespondentAdditionalEscrowOption1Desc ||
+                    (this.CorrespondentAdditionalEscrowOption1Desc != null &&
+                    this.CorrespondentAdditionalEscrowOption1Desc.Equals(input.CorrespondentAdditionalEscrowOption1Desc))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowOption1Amount == input.CorrespondentAdditionalEscrowOption1Amount ||
+                    (this.CorrespondentAdditionalEscrowOption1Amount != null &&
+                    this.CorrespondentAdditionalEscrowOption1Amount.Equals(input.CorrespondentAdditionalEscrowOption1Amount))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowOption2Desc == input.CorrespondentAdditionalEscrowOption2Desc ||
+                    (this.CorrespondentAdditionalEscrowOption2Desc != null &&
+                    this.CorrespondentAdditionalEscrowOption2Desc.Equals(input.CorrespondentAdditionalEscrowOption2Desc))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowOption2Amount == input.CorrespondentAdditionalEscrowOption2Amount ||
+                    (this.CorrespondentAdditionalEscrowOption2Amount != null &&
+                    this.CorrespondentAdditionalEscrowOption2Amount.Equals(input.CorrespondentAdditionalEscrowOption2Amount))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowNumOfPayments == input.CorrespondentAdditionalEscrowNumOfPayments ||
+                    (this.CorrespondentAdditionalEscrowNumOfPayments != null &&
+                    this.CorrespondentAdditionalEscrowNumOfPayments.Equals(input.CorrespondentAdditionalEscrowNumOfPayments))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowSumOfPayments == input.CorrespondentAdditionalEscrowSumOfPayments ||
+                    (this.CorrespondentAdditionalEscrowSumOfPayments != null &&
+                    this.CorrespondentAdditionalEscrowSumOfPayments.Equals(input.CorrespondentAdditionalEscrowSumOfPayments))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowMIMIP == input.CorrespondentAdditionalEscrowMIMIP ||
+                    (this.CorrespondentAdditionalEscrowMIMIP != null &&
+                    this.CorrespondentAdditionalEscrowMIMIP.Equals(input.CorrespondentAdditionalEscrowMIMIP))
+                ) && 
+                (
+                    this.CorrespondentAdditionalEscrowAdditionalEscrow == input.CorrespondentAdditionalEscrowAdditionalEscrow ||
+                    (this.CorrespondentAdditionalEscrowAdditionalEscrow != null &&
+                    this.CorrespondentAdditionalEscrowAdditionalEscrow.Equals(input.CorrespondentAdditionalEscrowAdditionalEscrow))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsHomeInsurance == input.CorrespondentEscrowDisbursementsHomeInsurance ||
+                    (this.CorrespondentEscrowDisbursementsHomeInsurance != null &&
+                    this.CorrespondentEscrowDisbursementsHomeInsurance.Equals(input.CorrespondentEscrowDisbursementsHomeInsurance))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsMortgageInsurance == input.CorrespondentEscrowDisbursementsMortgageInsurance ||
+                    (this.CorrespondentEscrowDisbursementsMortgageInsurance != null &&
+                    this.CorrespondentEscrowDisbursementsMortgageInsurance.Equals(input.CorrespondentEscrowDisbursementsMortgageInsurance))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsPropertyTax == input.CorrespondentEscrowDisbursementsPropertyTax ||
+                    (this.CorrespondentEscrowDisbursementsPropertyTax != null &&
+                    this.CorrespondentEscrowDisbursementsPropertyTax.Equals(input.CorrespondentEscrowDisbursementsPropertyTax))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsCityPropertyTax == input.CorrespondentEscrowDisbursementsCityPropertyTax ||
+                    (this.CorrespondentEscrowDisbursementsCityPropertyTax != null &&
+                    this.CorrespondentEscrowDisbursementsCityPropertyTax.Equals(input.CorrespondentEscrowDisbursementsCityPropertyTax))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsFloodInsurance == input.CorrespondentEscrowDisbursementsFloodInsurance ||
+                    (this.CorrespondentEscrowDisbursementsFloodInsurance != null &&
+                    this.CorrespondentEscrowDisbursementsFloodInsurance.Equals(input.CorrespondentEscrowDisbursementsFloodInsurance))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsDescription1007 == input.CorrespondentEscrowDisbursementsDescription1007 ||
+                    (this.CorrespondentEscrowDisbursementsDescription1007 != null &&
+                    this.CorrespondentEscrowDisbursementsDescription1007.Equals(input.CorrespondentEscrowDisbursementsDescription1007))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsAmount1007 == input.CorrespondentEscrowDisbursementsAmount1007 ||
+                    (this.CorrespondentEscrowDisbursementsAmount1007 != null &&
+                    this.CorrespondentEscrowDisbursementsAmount1007.Equals(input.CorrespondentEscrowDisbursementsAmount1007))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsDescription1008 == input.CorrespondentEscrowDisbursementsDescription1008 ||
+                    (this.CorrespondentEscrowDisbursementsDescription1008 != null &&
+                    this.CorrespondentEscrowDisbursementsDescription1008.Equals(input.CorrespondentEscrowDisbursementsDescription1008))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsAmount1008 == input.CorrespondentEscrowDisbursementsAmount1008 ||
+                    (this.CorrespondentEscrowDisbursementsAmount1008 != null &&
+                    this.CorrespondentEscrowDisbursementsAmount1008.Equals(input.CorrespondentEscrowDisbursementsAmount1008))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsDescription1009 == input.CorrespondentEscrowDisbursementsDescription1009 ||
+                    (this.CorrespondentEscrowDisbursementsDescription1009 != null &&
+                    this.CorrespondentEscrowDisbursementsDescription1009.Equals(input.CorrespondentEscrowDisbursementsDescription1009))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsAmount1009 == input.CorrespondentEscrowDisbursementsAmount1009 ||
+                    (this.CorrespondentEscrowDisbursementsAmount1009 != null &&
+                    this.CorrespondentEscrowDisbursementsAmount1009.Equals(input.CorrespondentEscrowDisbursementsAmount1009))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsUSDAAnnualFee == input.CorrespondentEscrowDisbursementsUSDAAnnualFee ||
+                    (this.CorrespondentEscrowDisbursementsUSDAAnnualFee != null &&
+                    this.CorrespondentEscrowDisbursementsUSDAAnnualFee.Equals(input.CorrespondentEscrowDisbursementsUSDAAnnualFee))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsOption1Desc == input.CorrespondentEscrowDisbursementsOption1Desc ||
+                    (this.CorrespondentEscrowDisbursementsOption1Desc != null &&
+                    this.CorrespondentEscrowDisbursementsOption1Desc.Equals(input.CorrespondentEscrowDisbursementsOption1Desc))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsOption1Amount == input.CorrespondentEscrowDisbursementsOption1Amount ||
+                    (this.CorrespondentEscrowDisbursementsOption1Amount != null &&
+                    this.CorrespondentEscrowDisbursementsOption1Amount.Equals(input.CorrespondentEscrowDisbursementsOption1Amount))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsOption2Desc == input.CorrespondentEscrowDisbursementsOption2Desc ||
+                    (this.CorrespondentEscrowDisbursementsOption2Desc != null &&
+                    this.CorrespondentEscrowDisbursementsOption2Desc.Equals(input.CorrespondentEscrowDisbursementsOption2Desc))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsOption2Amount == input.CorrespondentEscrowDisbursementsOption2Amount ||
+                    (this.CorrespondentEscrowDisbursementsOption2Amount != null &&
+                    this.CorrespondentEscrowDisbursementsOption2Amount.Equals(input.CorrespondentEscrowDisbursementsOption2Amount))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller == input.CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller ||
+                    (this.CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller != null &&
+                    this.CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller.Equals(input.CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller))
+                ) && 
+                (
+                    this.CorrespondentEscrowDisbursementsEsrowFundedByInvestor == input.CorrespondentEscrowDisbursementsEsrowFundedByInvestor ||
+                    (this.CorrespondentEscrowDisbursementsEsrowFundedByInvestor != null &&
+                    this.CorrespondentEscrowDisbursementsEsrowFundedByInvestor.Equals(input.CorrespondentEscrowDisbursementsEsrowFundedByInvestor))
+                ) && 
+                (
+                    this.CorrespondentPaymentHistoryNoteDate == input.CorrespondentPaymentHistoryNoteDate ||
+                    (this.CorrespondentPaymentHistoryNoteDate != null &&
+                    this.CorrespondentPaymentHistoryNoteDate.Equals(input.CorrespondentPaymentHistoryNoteDate))
+                ) && 
+                (
+                    this.CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate == input.CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate ||
+                    (this.CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate != null &&
+                    this.CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate.Equals(input.CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate))
+                ) && 
+                (
+                    this.CorrespondentPaymentHistoryPricipalReduction == input.CorrespondentPaymentHistoryPricipalReduction ||
+                    (this.CorrespondentPaymentHistoryPricipalReduction != null &&
+                    this.CorrespondentPaymentHistoryPricipalReduction.Equals(input.CorrespondentPaymentHistoryPricipalReduction))
+                ) && 
+                (
+                    this.CorrespondentPaymentHistoryAnticipatedPurchaseDate == input.CorrespondentPaymentHistoryAnticipatedPurchaseDate ||
+                    (this.CorrespondentPaymentHistoryAnticipatedPurchaseDate != null &&
+                    this.CorrespondentPaymentHistoryAnticipatedPurchaseDate.Equals(input.CorrespondentPaymentHistoryAnticipatedPurchaseDate))
+                ) && 
+                (
+                    this.CorrespondentPaymentHistoryFirstInvestorPaymentDate == input.CorrespondentPaymentHistoryFirstInvestorPaymentDate ||
+                    (this.CorrespondentPaymentHistoryFirstInvestorPaymentDate != null &&
+                    this.CorrespondentPaymentHistoryFirstInvestorPaymentDate.Equals(input.CorrespondentPaymentHistoryFirstInvestorPaymentDate))
+                ) && 
+                (
+                    this.CorrespondentPaymentHistoryCalculatedPurchasedPrincipal == input.CorrespondentPaymentHistoryCalculatedPurchasedPrincipal ||
+                    (this.CorrespondentPaymentHistoryCalculatedPurchasedPrincipal != null &&
+                    this.CorrespondentPaymentHistoryCalculatedPurchasedPrincipal.Equals(input.CorrespondentPaymentHistoryCalculatedPurchasedPrincipal))
+                ) && 
+                (
+                    this.ExtraPayments == input.ExtraPayments ||
+                    this.ExtraPayments != null &&
+                    this.ExtraPayments.SequenceEqual(input.ExtraPayments)
                 ) && 
                 (
                     this.RateRequestStatus == input.RateRequestStatus ||
@@ -5255,6 +6114,11 @@ namespace Elli.Api.Loans.Model
                     this.RequestLockType == input.RequestLockType ||
                     (this.RequestLockType != null &&
                     this.RequestLockType.Equals(input.RequestLockType))
+                ) && 
+                (
+                    this.RequestLockStatus == input.RequestLockStatus ||
+                    (this.RequestLockStatus != null &&
+                    this.RequestLockStatus.Equals(input.RequestLockStatus))
                 ) && 
                 (
                     this.TotalForLesserOfSumAsIs == input.TotalForLesserOfSumAsIs ||
@@ -5662,6 +6526,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.ImpoundType.GetHashCode();
                 if (this.ImpoundWavied != null)
                     hashCode = hashCode * 59 + this.ImpoundWavied.GetHashCode();
+                if (this.ImpoundWaived != null)
+                    hashCode = hashCode * 59 + this.ImpoundWaived.GetHashCode();
                 if (this.Interest != null)
                     hashCode = hashCode * 59 + this.Interest.GetHashCode();
                 if (this.InvestorAddress != null)
@@ -5798,6 +6664,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.RequestImpoundType.GetHashCode();
                 if (this.RequestImpoundWavied != null)
                     hashCode = hashCode * 59 + this.RequestImpoundWavied.GetHashCode();
+                if (this.RequestImpoundWaived != null)
+                    hashCode = hashCode * 59 + this.RequestImpoundWaived.GetHashCode();
                 if (this.RequestLockCancellationComment != null)
                     hashCode = hashCode * 59 + this.RequestLockCancellationComment.GetHashCode();
                 if (this.RequestLockCancellationDate != null)
@@ -5846,6 +6714,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.RequestOnrpEligible.GetHashCode();
                 if (this.RequestOnrpLockDate != null)
                     hashCode = hashCode * 59 + this.RequestOnrpLockDate.GetHashCode();
+                if (this.CommitmentType != null)
+                    hashCode = hashCode * 59 + this.CommitmentType.GetHashCode();
                 if (this.RoundToNearest50 != null)
                     hashCode = hashCode * 59 + this.RoundToNearest50.GetHashCode();
                 if (this.SecondSubordinateAmount != null)
@@ -5958,6 +6828,12 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.CorrespondentWarehouseBankName.GetHashCode();
                 if (this.CorrespondentWarehouseBankAcctNum != null)
                     hashCode = hashCode * 59 + this.CorrespondentWarehouseBankAcctNum.GetHashCode();
+                if (this.CorrespondentWarehouseBankAcctName != null)
+                    hashCode = hashCode * 59 + this.CorrespondentWarehouseBankAcctName.GetHashCode();
+                if (this.CorrespondentWarehouseBankFurtherCreditAcctNum != null)
+                    hashCode = hashCode * 59 + this.CorrespondentWarehouseBankFurtherCreditAcctNum.GetHashCode();
+                if (this.CorrespondentWarehouseBankFurtherCreditAcctName != null)
+                    hashCode = hashCode * 59 + this.CorrespondentWarehouseBankFurtherCreditAcctName.GetHashCode();
                 if (this.CorrespondentWarehouseBankABANum != null)
                     hashCode = hashCode * 59 + this.CorrespondentWarehouseBankABANum.GetHashCode();
                 if (this.CorrespondentWarehouseBankWireInstructionsReceivedIndicator != null)
@@ -6042,8 +6918,138 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.DaysToExtend.GetHashCode();
                 if (this.PriceAdjustment != null)
                     hashCode = hashCode * 59 + this.PriceAdjustment.GetHashCode();
+                if (this.CorrespondentTotalBuyAmount != null)
+                    hashCode = hashCode * 59 + this.CorrespondentTotalBuyAmount.GetHashCode();
                 if (this.SRPPaidOut != null)
                     hashCode = hashCode * 59 + this.SRPPaidOut.GetHashCode();
+                if (this.CorrespondentTotalFees != null)
+                    hashCode = hashCode * 59 + this.CorrespondentTotalFees.GetHashCode();
+                if (this.CorrespondentWarehouseBankWireConfirmationNumber != null)
+                    hashCode = hashCode * 59 + this.CorrespondentWarehouseBankWireConfirmationNumber.GetHashCode();
+                if (this.CorrespondentFinalCDHomeInsurance != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDHomeInsurance.GetHashCode();
+                if (this.CorrespondentFinalCDMortgageInsurance != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDMortgageInsurance.GetHashCode();
+                if (this.CorrespondentFinalCDPropertyTax != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDPropertyTax.GetHashCode();
+                if (this.CorrespondentFinalCDCityPropertyTax != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDCityPropertyTax.GetHashCode();
+                if (this.CorrespondentFinalCDFloodInsurance != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDFloodInsurance.GetHashCode();
+                if (this.CorrespondentFinalCDDescription1007 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDDescription1007.GetHashCode();
+                if (this.CorrespondentFinalCDAmount1007 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDAmount1007.GetHashCode();
+                if (this.CorrespondentFinalCDDescription1008 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDDescription1008.GetHashCode();
+                if (this.CorrespondentFinalCDAmount1008 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDAmount1008.GetHashCode();
+                if (this.CorrespondentFinalCDDescription1009 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDDescription1009.GetHashCode();
+                if (this.CorrespondentFinalCDAmount1009 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDAmount1009.GetHashCode();
+                if (this.CorrespondentFinalCDUSDAAnnualFee != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDUSDAAnnualFee.GetHashCode();
+                if (this.CorrespondentFinalCDAggAdjAmount != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDAggAdjAmount.GetHashCode();
+                if (this.CorrespondentFinalCDOption1Desc != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDOption1Desc.GetHashCode();
+                if (this.CorrespondentFinalCDOption1Amount != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDOption1Amount.GetHashCode();
+                if (this.CorrespondentFinalCDOption2Desc != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDOption2Desc.GetHashCode();
+                if (this.CorrespondentFinalCDOption2Amount != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDOption2Amount.GetHashCode();
+                if (this.CorrespondentFinalCDReservesCollectedAtClosing != null)
+                    hashCode = hashCode * 59 + this.CorrespondentFinalCDReservesCollectedAtClosing.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowHomeInsurance != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowHomeInsurance.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowPropertyTax != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowPropertyTax.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowCityPropertyTax != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowCityPropertyTax.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowFloodInsurance != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowFloodInsurance.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowDescription1007 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowDescription1007.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowAmount1007 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowAmount1007.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowDescription1008 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowDescription1008.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowAmount1008 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowAmount1008.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowDescription1009 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowDescription1009.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowAmount1009 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowAmount1009.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowUSDAAnnualFee != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowUSDAAnnualFee.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowOption1Desc != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowOption1Desc.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowOption1Amount != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowOption1Amount.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowOption2Desc != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowOption2Desc.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowOption2Amount != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowOption2Amount.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowNumOfPayments != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowNumOfPayments.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowSumOfPayments != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowSumOfPayments.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowMIMIP != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowMIMIP.GetHashCode();
+                if (this.CorrespondentAdditionalEscrowAdditionalEscrow != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAdditionalEscrowAdditionalEscrow.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsHomeInsurance != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsHomeInsurance.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsMortgageInsurance != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsMortgageInsurance.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsPropertyTax != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsPropertyTax.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsCityPropertyTax != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsCityPropertyTax.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsFloodInsurance != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsFloodInsurance.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsDescription1007 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsDescription1007.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsAmount1007 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsAmount1007.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsDescription1008 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsDescription1008.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsAmount1008 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsAmount1008.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsDescription1009 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsDescription1009.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsAmount1009 != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsAmount1009.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsUSDAAnnualFee != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsUSDAAnnualFee.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsOption1Desc != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsOption1Desc.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsOption1Amount != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsOption1Amount.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsOption2Desc != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsOption2Desc.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsOption2Amount != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsOption2Amount.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsEscrowsToBePaidBySeller.GetHashCode();
+                if (this.CorrespondentEscrowDisbursementsEsrowFundedByInvestor != null)
+                    hashCode = hashCode * 59 + this.CorrespondentEscrowDisbursementsEsrowFundedByInvestor.GetHashCode();
+                if (this.CorrespondentPaymentHistoryNoteDate != null)
+                    hashCode = hashCode * 59 + this.CorrespondentPaymentHistoryNoteDate.GetHashCode();
+                if (this.CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate != null)
+                    hashCode = hashCode * 59 + this.CorrespondentPaymentHistoryFirstBorrowerPaymentDueDate.GetHashCode();
+                if (this.CorrespondentPaymentHistoryPricipalReduction != null)
+                    hashCode = hashCode * 59 + this.CorrespondentPaymentHistoryPricipalReduction.GetHashCode();
+                if (this.CorrespondentPaymentHistoryAnticipatedPurchaseDate != null)
+                    hashCode = hashCode * 59 + this.CorrespondentPaymentHistoryAnticipatedPurchaseDate.GetHashCode();
+                if (this.CorrespondentPaymentHistoryFirstInvestorPaymentDate != null)
+                    hashCode = hashCode * 59 + this.CorrespondentPaymentHistoryFirstInvestorPaymentDate.GetHashCode();
+                if (this.CorrespondentPaymentHistoryCalculatedPurchasedPrincipal != null)
+                    hashCode = hashCode * 59 + this.CorrespondentPaymentHistoryCalculatedPurchasedPrincipal.GetHashCode();
+                if (this.ExtraPayments != null)
+                    hashCode = hashCode * 59 + this.ExtraPayments.GetHashCode();
                 if (this.RateRequestStatus != null)
                     hashCode = hashCode * 59 + this.RateRequestStatus.GetHashCode();
                 if (this.CompSideAdjustments != null)
@@ -6160,6 +7166,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.CompInvestorWebsite.GetHashCode();
                 if (this.RequestLockType != null)
                     hashCode = hashCode * 59 + this.RequestLockType.GetHashCode();
+                if (this.RequestLockStatus != null)
+                    hashCode = hashCode * 59 + this.RequestLockStatus.GetHashCode();
                 if (this.TotalForLesserOfSumAsIs != null)
                     hashCode = hashCode * 59 + this.TotalForLesserOfSumAsIs.GetHashCode();
                 if (this.IsCancelled != null)

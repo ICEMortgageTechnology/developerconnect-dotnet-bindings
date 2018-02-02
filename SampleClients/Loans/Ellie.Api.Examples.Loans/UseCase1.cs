@@ -47,6 +47,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Configuration;
 using Elli.Api.Base;
 using Elli.Api.Loans.Api;
 using Elli.Api.Loans.EFolder.Api;
@@ -84,7 +85,13 @@ namespace Ellie.Api.Examples.Loans
                 Console.WriteLine(" 9: Create/Add Attachment");
                 Console.WriteLine("10: Unlock Loan");
                 Console.WriteLine("11: Delete Loan");
-                Console.WriteLine("12: Choose another Loan ID");
+                Console.WriteLine("12: Get Loan Milestones");
+                Console.WriteLine("13: Get Specific Loan Milestone");
+                Console.WriteLine("14: Get All Loan Associates");
+                Console.WriteLine("15: Assign Loan Associate To A Milestone");
+                Console.WriteLine("16: Unassign Loan Associate From A Milestone");
+                Console.WriteLine("17: Complete A Milestone");
+                Console.WriteLine("98: Choose another Loan ID");
                 Console.WriteLine("99: Exit");
                 Console.Write("Enter your choice: ");
                 int choice;
@@ -129,6 +136,24 @@ namespace Ellie.Api.Examples.Loans
                                 DeleteLoan();
                                 break;
                             case 12:
+                                GetLoanMilestones();
+                                break;
+                            case 13:
+                                GetLoanMilestone();
+                                break;
+                            case 14:
+                                GetAllLoanAssociates();
+                                break;
+                            case 15:
+                                AssignLoanAssociate();
+                                break;
+                            case 16:
+                                UnassignLoanAssociate();
+                                break;
+                            case 17:
+                                CompleteMilestone();
+                                break;
+                            case 98:
                                 _loanId = null;
                                 _accessToken = null;
                                 _lockId = null;
@@ -161,13 +186,25 @@ namespace Ellie.Api.Examples.Loans
         /// </summary>
         public static void Authenticate()
         {
+            ApiConfiguration config = (ApiConfiguration)ConfigurationManager.GetSection("ElliApiConfig");
+            string instanceId = config.InstanceId, userName = config.Username, password = config.Password;
+
             Console.Clear();
-            Console.Write("Instance Id     : ");
-            var instanceId = Console.ReadLine();
-            Console.Write("Username        : ");
-            var userName = Console.ReadLine();
-            Console.Write("Password        : ");
-            var password = Console.ReadLine();
+            if (string.IsNullOrEmpty(instanceId))
+            {
+                Console.Write("Instance Id     : ");
+                instanceId = Console.ReadLine();
+            }
+            if (string.IsNullOrEmpty(userName))
+            {
+                Console.Write("Username        : ");
+                userName = Console.ReadLine();
+            }
+            if (string.IsNullOrEmpty(password))
+            {
+                Console.Write("Password        : ");
+                password = Console.ReadLine();
+            }
 
             var credentials = new UserCredential
             {
@@ -517,6 +554,149 @@ namespace Ellie.Api.Examples.Loans
             {
                 _documentId = value;
             }
+        }
+
+        /// <summary>
+        /// Example: Get Loan Milestones
+        /// </summary>
+        private static void GetLoanMilestones()
+        {
+            if (_accessToken == null)
+                Authenticate();
+
+            //Initializing the API Client
+            MilestonesApi milestoneApiClient = ApiClientProvider.GetApiClient<MilestonesApi>(_accessToken);
+
+            //Retrieving loan milestones
+            var milestones = milestoneApiClient.GetMilestones(LoanId);
+
+            for (int i = 0; i < milestones.Count; i++)
+            {
+                //Printing the response with couple of fields
+                Console.WriteLine("{0})Milestone Id   : {1}", (i + 1).ToString("00"), milestones[i].Id);
+                Console.WriteLine("   Milestone Name : {0}", milestones[i].MilestoneName);
+                Console.WriteLine("   Start Date     : {0}", milestones[i].StartDate);
+            }
+        }
+
+        /// <summary>
+        /// Example: Get specific loan milestone
+        /// </summary>
+        private static void GetLoanMilestone()
+        {
+            if (_accessToken == null)
+                Authenticate();
+
+            Console.WriteLine("Enter Milestone Id: ");
+            string milestoneId = Console.ReadLine();
+
+            //Initializing the API Client
+            MilestonesApi milestoneApiClient = ApiClientProvider.GetApiClient<MilestonesApi>(_accessToken);
+
+            //Retrieving loan milestones
+            var milestone = milestoneApiClient.GetMilestone(milestoneId, LoanId);
+
+            //Printing the response with couple of fields
+            Console.WriteLine("Milestone Id     : {0}", milestone.Id);
+            Console.WriteLine("Milestone Name   : {0}", milestone.MilestoneName);
+            Console.WriteLine("Start Date       : {0}", milestone.StartDate);
+            Console.WriteLine("Loan Team Member : {0}", milestone.LoanAssociate.Name);
+        }
+
+        /// <summary>
+        /// Example: Get all associates for a loan
+        /// </summary>
+        private static void GetAllLoanAssociates()
+        {
+            if (_accessToken == null)
+                Authenticate();
+
+            //Initializing the API Client
+            LoanAssociatesApi loanAssociateApiClient = ApiClientProvider.GetApiClient<LoanAssociatesApi>(_accessToken);
+
+            //Retrieving all loan associates
+            var associates = loanAssociateApiClient.GetAssociates(LoanId);
+
+            //Printing the response with couple of fields
+            for (int i = 0; i < associates.Count; i++)
+            {
+                Console.WriteLine("{0})User Id  : {1}", (i + 1).ToString("00"), associates[i].Id);
+                Console.WriteLine("   Name     : {0}", associates[i].Name);
+                Console.WriteLine("   Role     : {0}", associates[i].RoleName);
+                Console.WriteLine("   Type     : {0}", associates[i].LoanAssociateType);
+            }
+        }
+
+        /// <summary>
+        /// Example: Assign associate to a milestone
+        /// </summary>
+        private static void AssignLoanAssociate()
+        {
+            if (_accessToken == null)
+                Authenticate();
+
+            string loanId = LoanId;
+
+            Console.Write("Enter Milestone Id      : ");
+            string milestoneId = Console.ReadLine();
+
+            Console.Write("Enter Loan Associate Id : ");
+            string associateId = Console.ReadLine();
+
+            Console.Write("Enter Associate Type    : ");
+            string associateType = Console.ReadLine();
+
+            //Initializing the API Client
+            LoanAssociatesApi loanAssociateApiClient = ApiClientProvider.GetApiClient<LoanAssociatesApi>(_accessToken);
+
+            //Initializing the contract
+            LoanTeamMemberContract loanAssociate = new LoanTeamMemberContract { Id = associateId, LoanAssociateType = associateType };
+
+            //Calling AssignLoanTeamMember
+            loanAssociateApiClient.AssignLoanTeamMember(milestoneId, LoanId, loanAssociate);
+            Console.WriteLine("");
+            Console.WriteLine("Associate assigned");
+        }
+
+        /// <summary>
+        /// Example: Unassign a loan associate
+        /// </summary>
+        private static void UnassignLoanAssociate()
+        {
+            if (_accessToken == null)
+                Authenticate();
+
+            string loanId = LoanId;
+
+            Console.Write("Enter Milestone Id : ");
+            string milestoneId = Console.ReadLine();
+
+            //Initializing the API Client
+            LoanAssociatesApi loanAssociateApiClient = ApiClientProvider.GetApiClient<LoanAssociatesApi>(_accessToken);
+
+            //Calling UnassignLoanAssociate
+            loanAssociateApiClient.UnassignLoanTeamMember(milestoneId, loanId);
+
+        }
+
+        /// <summary>
+        /// Example: Finish a loan milestone
+        /// </summary>
+        private static void CompleteMilestone()
+        {
+            if (_accessToken == null)
+                Authenticate();
+
+            string loanId = LoanId;
+
+            Console.Write("Enter Milestone Id : ");
+            string milestoneId = Console.ReadLine();
+
+            //Initializing the API Client
+            MilestonesApi milestoneApiClient = ApiClientProvider.GetApiClient<MilestonesApi>(_accessToken);
+
+            //Calling UpdateMilestone operation which completes the milestone when action is passed as finish
+            milestoneApiClient.UpdateMilestone(milestoneId, LoanId, action: "finish", milestoneLogContract: new MilestoneContract());
         }
     }
 }

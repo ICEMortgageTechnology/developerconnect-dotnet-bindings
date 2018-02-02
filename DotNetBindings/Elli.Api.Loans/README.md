@@ -98,6 +98,10 @@ All URIs are relative to *https://api.elliemae.com*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *EntityRefContractApi* | [**GetLoanTemplatesSetFolders**](docs/EntityRefContractApi.md#getloantemplatessetfolders) | **GET** /v1/settings/templates/loanTemplateSet/folders/{folderPath} | Returns all folders.
+*LoanAssociatesApi* | [**AssignLoanTeamMember**](docs/LoanAssociatesApi.md#assignloanteammember) | **PUT** /encompass/v1/loans/{id}/associates/{logId} | Assign loan associate
+*LoanAssociatesApi* | [**GetAssociate**](docs/LoanAssociatesApi.md#getassociate) | **GET** /encompass/v1/loans/{id}/associates/{logId} | Retrieve a loan associate
+*LoanAssociatesApi* | [**GetAssociates**](docs/LoanAssociatesApi.md#getassociates) | **GET** /encompass/v1/loans/{id}/associates | Retrieve loan associates
+*LoanAssociatesApi* | [**UnassignLoanTeamMember**](docs/LoanAssociatesApi.md#unassignloanteammember) | **DELETE** /encompass/v1/loans/{id}/associates/{logId} | Unassign loan associate
 *LoanBatchApi* | [**BatchUpdateRequestStatus**](docs/LoanBatchApi.md#batchupdaterequeststatus) | **GET** /encompass/v1/loanBatch/updateRequests/{requestId} | 
 *LoanBatchApi* | [**BatchUpdateRequests**](docs/LoanBatchApi.md#batchupdaterequests) | **POST** /encompass/v1/loanBatch/updateRequests | 
 *LoanFoldersApi* | [**MoveLoanFolder**](docs/LoanFoldersApi.md#moveloanfolder) | **PATCH** /encompass/v1/loanfolders/{folderName}/loans | Move loan folder
@@ -106,6 +110,12 @@ Class | Method | HTTP request | Description
 *LoansApi* | [**DeleteLoan**](docs/LoansApi.md#deleteloan) | **DELETE** /encompass/v1/loans/{loanId} | 
 *LoansApi* | [**GetLoan**](docs/LoansApi.md#getloan) | **GET** /encompass/v1/loans/{loanId} | 
 *LoansApi* | [**UpdateLoan**](docs/LoansApi.md#updateloan) | **PATCH** /encompass/v1/loans/{loanId} | Updates an existing loan.
+*MilestoneFreeRolesApi* | [**GetMilestoneFreeRole**](docs/MilestoneFreeRolesApi.md#getmilestonefreerole) | **GET** /encompass/v1/loans/{id}/milestoneFreeRoles/{logId} | Retrieve specific milestonefreerole log
+*MilestoneFreeRolesApi* | [**GetMilestoneFreeRoles**](docs/MilestoneFreeRolesApi.md#getmilestonefreeroles) | **GET** /encompass/v1/loans/{id}/milestoneFreeRoles | Retrieve milestonefreelogs
+*MilestoneFreeRolesApi* | [**UpdateMilestoneFreeRole**](docs/MilestoneFreeRolesApi.md#updatemilestonefreerole) | **PATCH** /encompass/v1/loans/{id}/milestoneFreeRoles/{logId} | Update specific milestoneFreeRole to loan
+*MilestonesApi* | [**GetMilestone**](docs/MilestonesApi.md#getmilestone) | **GET** /encompass/v1/loans/{id}/milestones/{logId} | Get specific milestone of a loan
+*MilestonesApi* | [**GetMilestones**](docs/MilestonesApi.md#getmilestones) | **GET** /encompass/v1/loans/{id}/milestones | Get all milestones for a loan
+*MilestonesApi* | [**UpdateMilestone**](docs/MilestonesApi.md#updatemilestone) | **PATCH** /encompass/v1/loans/{id}/milestones/{logId} | Update a specific milestone
 *ResourceLocksApi* | [**CreateResourceLock**](docs/ResourceLocksApi.md#createresourcelock) | **POST** /encompass/v1/resourceLocks | Create a lock
 *ResourceLocksApi* | [**GetResourceLock**](docs/ResourceLocksApi.md#getresourcelock) | **GET** /encompass/v1/resourceLocks | Retrieve locks
 *ResourceLocksApi* | [**GetResourceLockByLockId**](docs/ResourceLocksApi.md#getresourcelockbylockid) | **GET** /encompass/v1/resourceLocks/{lockId} | Retrieve a lock
@@ -172,7 +182,11 @@ Class | Method | HTTP request | Description
  - [Model.LoanContractDisclosureNotices](docs/LoanContractDisclosureNotices.md)
  - [Model.LoanContractDisclosureTracking2015Logs](docs/LoanContractDisclosureTracking2015Logs.md)
  - [Model.LoanContractDisclosureTrackingLogs](docs/LoanContractDisclosureTrackingLogs.md)
+ - [Model.LoanContractDocList](docs/LoanContractDocList.md)
+ - [Model.LoanContractDocumentAudit](docs/LoanContractDocumentAudit.md)
+ - [Model.LoanContractDocumentAuditAlerts](docs/LoanContractDocumentAuditAlerts.md)
  - [Model.LoanContractDocumentLogs](docs/LoanContractDocumentLogs.md)
+ - [Model.LoanContractDocumentOrderLogs](docs/LoanContractDocumentOrderLogs.md)
  - [Model.LoanContractDocuments](docs/LoanContractDocuments.md)
  - [Model.LoanContractDownPayment](docs/LoanContractDownPayment.md)
  - [Model.LoanContractDownloadLogs](docs/LoanContractDownloadLogs.md)
@@ -244,6 +258,9 @@ Class | Method | HTTP request | Description
  - [Model.LoanContractMilestoneTemplateLogs](docs/LoanContractMilestoneTemplateLogs.md)
  - [Model.LoanContractMiscellaneous](docs/LoanContractMiscellaneous.md)
  - [Model.LoanContractNetTangibleBenefit](docs/LoanContractNetTangibleBenefit.md)
+ - [Model.LoanContractNonVols](docs/LoanContractNonVols.md)
+ - [Model.LoanContractOrderedDocuments](docs/LoanContractOrderedDocuments.md)
+ - [Model.LoanContractOverflows](docs/LoanContractOverflows.md)
  - [Model.LoanContractPostClosingConditionLogs](docs/LoanContractPostClosingConditionLogs.md)
  - [Model.LoanContractPreliminaryConditionLogs](docs/LoanContractPreliminaryConditionLogs.md)
  - [Model.LoanContractPrequalification](docs/LoanContractPrequalification.md)
@@ -257,6 +274,7 @@ Class | Method | HTTP request | Description
  - [Model.LoanContractPurchaseCredits](docs/LoanContractPurchaseCredits.md)
  - [Model.LoanContractRateLock](docs/LoanContractRateLock.md)
  - [Model.LoanContractRateLockBuySideAdjustments](docs/LoanContractRateLockBuySideAdjustments.md)
+ - [Model.LoanContractRateLockExtraPayments](docs/LoanContractRateLockExtraPayments.md)
  - [Model.LoanContractRateLockLockRequestBorrowers](docs/LoanContractRateLockLockRequestBorrowers.md)
  - [Model.LoanContractRateLockPurchaseAdvicePayouts](docs/LoanContractRateLockPurchaseAdvicePayouts.md)
  - [Model.LoanContractRegistrationLogs](docs/LoanContractRegistrationLogs.md)
@@ -301,6 +319,11 @@ Class | Method | HTTP request | Description
  - [Model.LoanErrorObject](docs/LoanErrorObject.md)
  - [Model.LoanFolderContract](docs/LoanFolderContract.md)
  - [Model.LoanFolderContractActivityRules](docs/LoanFolderContractActivityRules.md)
+ - [Model.LoanTeamMemberContract](docs/LoanTeamMemberContract.md)
+ - [Model.MilestoneContract](docs/MilestoneContract.md)
+ - [Model.MilestoneContractLoanAssociate](docs/MilestoneContractLoanAssociate.md)
+ - [Model.MilestoneFreeRoleContract](docs/MilestoneFreeRoleContract.md)
+ - [Model.MilestoneFreeRoleContractLoanAssociate](docs/MilestoneFreeRoleContractLoanAssociate.md)
  - [Model.ResourceLockContract](docs/ResourceLockContract.md)
  - [Model.ResourceLockContractResource](docs/ResourceLockContractResource.md)
  - [Model.ResourceRef](docs/ResourceRef.md)
@@ -314,7 +337,7 @@ Class | Method | HTTP request | Description
 
 - **Type**: OAuth
 - **Flow**: accessCode
-- **Authorization URL**: 
+- **Authorization URL**: https://api.elliemae.com/oauth2/v1/token
 - **Scopes**: 
   - lp: Lending platform
 

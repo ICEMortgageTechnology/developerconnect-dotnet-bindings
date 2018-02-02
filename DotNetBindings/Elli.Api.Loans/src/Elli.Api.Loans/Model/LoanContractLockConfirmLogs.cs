@@ -112,6 +112,12 @@ namespace Elli.Api.Loans.Model
         public bool? ConfirmedByIdIndicator { get; set; }
 
         /// <summary>
+        /// Gets or Sets ConfirmedById
+        /// </summary>
+        [DataMember(Name="confirmedById", EmitDefaultValue=false)]
+        public string ConfirmedById { get; set; }
+
+        /// <summary>
         /// Gets or Sets DateUtc
         /// </summary>
         [DataMember(Name="dateUtc", EmitDefaultValue=false)]
@@ -193,6 +199,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  Comments: ").Append(Comments).Append("\n");
             sb.Append("  ConfirmedBy: ").Append(ConfirmedBy).Append("\n");
             sb.Append("  ConfirmedByIdIndicator: ").Append(ConfirmedByIdIndicator).Append("\n");
+            sb.Append("  ConfirmedById: ").Append(ConfirmedById).Append("\n");
             sb.Append("  DateUtc: ").Append(DateUtc).Append("\n");
             sb.Append("  FileAttachmentsMigrated: ").Append(FileAttachmentsMigrated).Append("\n");
             sb.Append("  Guid: ").Append(Guid).Append("\n");
@@ -279,6 +286,11 @@ namespace Elli.Api.Loans.Model
                     this.ConfirmedByIdIndicator.Equals(input.ConfirmedByIdIndicator))
                 ) && 
                 (
+                    this.ConfirmedById == input.ConfirmedById ||
+                    (this.ConfirmedById != null &&
+                    this.ConfirmedById.Equals(input.ConfirmedById))
+                ) && 
+                (
                     this.DateUtc == input.DateUtc ||
                     (this.DateUtc != null &&
                     this.DateUtc.Equals(input.DateUtc))
@@ -360,6 +372,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.ConfirmedBy.GetHashCode();
                 if (this.ConfirmedByIdIndicator != null)
                     hashCode = hashCode * 59 + this.ConfirmedByIdIndicator.GetHashCode();
+                if (this.ConfirmedById != null)
+                    hashCode = hashCode * 59 + this.ConfirmedById.GetHashCode();
                 if (this.DateUtc != null)
                     hashCode = hashCode * 59 + this.DateUtc.GetHashCode();
                 if (this.FileAttachmentsMigrated != null)

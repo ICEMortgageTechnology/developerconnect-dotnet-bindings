@@ -44,13 +44,15 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Security;
+using System.Runtime.InteropServices;
 
 namespace Elli.Api.Services.Client
 {
     /// <summary>
     /// Represents a set of configuration settings
     /// </summary>
-    public class Configuration
+    public class Configuration : IDisposable
     {
         /// <summary>
         /// Initializes a new instance of the Configuration class with different settings
@@ -233,11 +235,37 @@ namespace Elli.Api.Services.Client
         /// <value>The username.</value>
         public String Username { get; set; }
 
+        SecureString password;
         /// <summary>
         /// Gets or sets the password (HTTP basic authentication).
         /// </summary>
         /// <value>The password.</value>
-        public String Password { get; set; }
+        public String Password
+        {
+            get { return SecureStringToString(password); }
+            set
+            {
+                if (value != null)
+                {
+					password = new SecureString();
+                    foreach (char c in value) password.AppendChar(c);
+                }
+            }
+        }
+		
+		String SecureStringToString(SecureString value)
+        {
+            IntPtr valuePtr = IntPtr.Zero;
+            try
+            {
+                valuePtr = Marshal.SecureStringToGlobalAllocUnicode(value);
+                return Marshal.PtrToStringUni(valuePtr);
+            }
+            finally
+            {
+                Marshal.ZeroFreeGlobalAllocUnicode(valuePtr);
+            }
+        }
 
         /// <summary>
         /// Gets or sets the access token for OAuth2 authentication.
@@ -359,6 +387,11 @@ namespace Elli.Api.Services.Client
             report += "    SDK Package Version: 1.0.0\n";
 
             return report;
+        }
+		
+		public void Dispose()
+        {
+            password.Dispose();
         }
     }
 }

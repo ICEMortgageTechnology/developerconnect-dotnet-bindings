@@ -58,6 +58,10 @@ Name | Type | Description | Notes
 **IsConstructionPhaseDisclosedSeparately** | **bool?** |  | [optional] 
 **LinkedIsConstructionPhaseDisclosedSeparately** | **bool?** |  | [optional] 
 **LinkedLoanPurposeType** | **string** |  | [optional] 
+**LinkedMortgageType** | **string** |  | [optional] 
+**LinkedLienPriorityType** | **string** |  | [optional] 
+**PriorLoanRecordationOriginalLoanNumber** | **string** |  | [optional] 
+**PriorLoanRecordationDated** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

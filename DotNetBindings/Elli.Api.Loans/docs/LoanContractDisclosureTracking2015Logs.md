@@ -151,6 +151,7 @@ Name | Type | Description | Notes
 **LoanEstimate2UnroundedTotalLoanCosts** | **string** |  | [optional] 
 **LoanEstimate2UnroundedTotalOtherCosts** | **string** |  | [optional] 
 **PurchasePriceAmount** | **string** |  | [optional] 
+**DisclosedSalesPrice** | **string** |  | [optional] 
 **LoanClosingCost2LenderCredits** | **string** |  | [optional] 
 **Line907PropertyIndicator2015** | **string** |  | [optional] 
 **Line908PropertyIndicator2015** | **string** |  | [optional] 
@@ -202,6 +203,11 @@ Name | Type | Description | Notes
 **ChangesReceivedDate** | **DateTime?** |  | [optional] 
 **RevisedDueDate** | **DateTime?** |  | [optional] 
 **NumberOfDisclosureDocs** | **int?** |  | [optional] 
+**LockedDisclosedDateField** | **DateTime?** |  | [optional] 
+**LockedIntentReceivedByField** | **string** |  | [optional] 
+**IsIntentReceivedByLocked** | **bool?** |  | [optional] 
+**IsDisclosedDailyInterestLocked** | **bool?** |  | [optional] 
+**LockedDisclosedDailyInterestField** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -265,7 +265,7 @@ namespace Elli.Api.Loans.Model
         /// Gets or Sets VodIndex
         /// </summary>
         [DataMember(Name="vodIndex", EmitDefaultValue=false)]
-        public byte[] VodIndex { get; set; }
+        public int? VodIndex { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

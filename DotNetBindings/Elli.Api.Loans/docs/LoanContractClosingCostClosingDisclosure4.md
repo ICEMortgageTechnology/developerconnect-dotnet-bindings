@@ -37,6 +37,8 @@ Name | Type | Description | Notes
 **InterestOnlyPaymentMonths** | **int?** |  | [optional] 
 **InterestRateAdjustments** | **int?** |  | [optional] 
 **StepRateFirstChange** | **double?** |  | [optional] 
+**MaximumARMPaymentAmount** | **int?** |  | [optional] 
+**MaximumARMPaymentMonthReached** | **int?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -74,5 +74,44 @@ namespace Elli.Api.Base
                 this["redirectUrl"] = value;
             }
         }
+
+        [ConfigurationProperty("userName")]
+        public string Username
+        {
+            get
+            {
+                return (string)this["userName"];
+            }
+            set
+            {
+                this["userName"] = value;
+            }
+        }
+
+        [ConfigurationProperty("password")]
+        public string Password
+        {
+            get
+            {
+                return (string)this["password"];
+            }
+            set
+            {
+                this["password"] = value;
+            }
+        }
+
+        [ConfigurationProperty("instanceId")]
+        public string InstanceId
+        {
+            get
+            {
+                return (string)this["instanceId"];
+            }
+            set
+            {
+                this["instanceId"] = value;
+            }
+        }
     }
 }

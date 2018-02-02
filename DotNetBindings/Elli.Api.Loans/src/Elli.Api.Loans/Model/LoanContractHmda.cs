@@ -442,6 +442,18 @@ namespace Elli.Api.Loans.Model
         public string LegalEntityIdentifier { get; set; }
 
         /// <summary>
+        /// Gets or Sets LegalEntityIdentifierReporting
+        /// </summary>
+        [DataMember(Name="legalEntityIdentifierReporting", EmitDefaultValue=false)]
+        public string LegalEntityIdentifierReporting { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LegalEntityIdentifierUsed
+        /// </summary>
+        [DataMember(Name="legalEntityIdentifierUsed", EmitDefaultValue=false)]
+        public string LegalEntityIdentifierUsed { get; set; }
+
+        /// <summary>
         /// Gets or Sets RespondentID
         /// </summary>
         [DataMember(Name="respondentID", EmitDefaultValue=false)]
@@ -568,6 +580,84 @@ namespace Elli.Api.Loans.Model
         public bool? HmdaSyncAddressIndicator { get; set; }
 
         /// <summary>
+        /// Gets or Sets RepurchasedReportingYear
+        /// </summary>
+        [DataMember(Name="repurchasedReportingYear", EmitDefaultValue=false)]
+        public int? RepurchasedReportingYear { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RepurchasedLoanAmount
+        /// </summary>
+        [DataMember(Name="repurchasedLoanAmount", EmitDefaultValue=false)]
+        public double? RepurchasedLoanAmount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RepurchasedTypeOfPurchaser
+        /// </summary>
+        [DataMember(Name="repurchasedTypeOfPurchaser", EmitDefaultValue=false)]
+        public string RepurchasedTypeOfPurchaser { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RepurchasedActionTaken
+        /// </summary>
+        [DataMember(Name="repurchasedActionTaken", EmitDefaultValue=false)]
+        public string RepurchasedActionTaken { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RepurchasedActionDate
+        /// </summary>
+        [DataMember(Name="repurchasedActionDate", EmitDefaultValue=false)]
+        public string RepurchasedActionDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaDtiIndicator
+        /// </summary>
+        [DataMember(Name="hmdaDtiIndicator", EmitDefaultValue=false)]
+        public bool? HmdaDtiIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaCltvIndicator
+        /// </summary>
+        [DataMember(Name="hmdaCltvIndicator", EmitDefaultValue=false)]
+        public bool? HmdaCltvIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaIncomeIndicator
+        /// </summary>
+        [DataMember(Name="hmdaIncomeIndicator", EmitDefaultValue=false)]
+        public bool? HmdaIncomeIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HMDAProfileID
+        /// </summary>
+        [DataMember(Name="hMDAProfileID", EmitDefaultValue=false)]
+        public string HMDAProfileID { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HMDAProfileDTIValue
+        /// </summary>
+        [DataMember(Name="hMDAProfileDTIValue", EmitDefaultValue=false)]
+        public string HMDAProfileDTIValue { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HMDAProfileCLTVValue
+        /// </summary>
+        [DataMember(Name="hMDAProfileCLTVValue", EmitDefaultValue=false)]
+        public string HMDAProfileCLTVValue { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HMDAProfileIncomeValue
+        /// </summary>
+        [DataMember(Name="hMDAProfileIncomeValue", EmitDefaultValue=false)]
+        public string HMDAProfileIncomeValue { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HMDAProfileApplicationDateValue
+        /// </summary>
+        [DataMember(Name="hMDAProfileApplicationDateValue", EmitDefaultValue=false)]
+        public string HMDAProfileApplicationDateValue { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -638,6 +728,8 @@ namespace Elli.Api.Loans.Model
             sb.Append("  FederalAgency: ").Append(FederalAgency).Append("\n");
             sb.Append("  FederalTaxpayerIdNumber: ").Append(FederalTaxpayerIdNumber).Append("\n");
             sb.Append("  LegalEntityIdentifier: ").Append(LegalEntityIdentifier).Append("\n");
+            sb.Append("  LegalEntityIdentifierReporting: ").Append(LegalEntityIdentifierReporting).Append("\n");
+            sb.Append("  LegalEntityIdentifierUsed: ").Append(LegalEntityIdentifierUsed).Append("\n");
             sb.Append("  RespondentID: ").Append(RespondentID).Append("\n");
             sb.Append("  ParentName: ").Append(ParentName).Append("\n");
             sb.Append("  ParentAddress: ").Append(ParentAddress).Append("\n");
@@ -659,6 +751,19 @@ namespace Elli.Api.Loans.Model
             sb.Append("  HmdaPropertyCity: ").Append(HmdaPropertyCity).Append("\n");
             sb.Append("  HmdaPropertyState: ").Append(HmdaPropertyState).Append("\n");
             sb.Append("  HmdaSyncAddressIndicator: ").Append(HmdaSyncAddressIndicator).Append("\n");
+            sb.Append("  RepurchasedReportingYear: ").Append(RepurchasedReportingYear).Append("\n");
+            sb.Append("  RepurchasedLoanAmount: ").Append(RepurchasedLoanAmount).Append("\n");
+            sb.Append("  RepurchasedTypeOfPurchaser: ").Append(RepurchasedTypeOfPurchaser).Append("\n");
+            sb.Append("  RepurchasedActionTaken: ").Append(RepurchasedActionTaken).Append("\n");
+            sb.Append("  RepurchasedActionDate: ").Append(RepurchasedActionDate).Append("\n");
+            sb.Append("  HmdaDtiIndicator: ").Append(HmdaDtiIndicator).Append("\n");
+            sb.Append("  HmdaCltvIndicator: ").Append(HmdaCltvIndicator).Append("\n");
+            sb.Append("  HmdaIncomeIndicator: ").Append(HmdaIncomeIndicator).Append("\n");
+            sb.Append("  HMDAProfileID: ").Append(HMDAProfileID).Append("\n");
+            sb.Append("  HMDAProfileDTIValue: ").Append(HMDAProfileDTIValue).Append("\n");
+            sb.Append("  HMDAProfileCLTVValue: ").Append(HMDAProfileCLTVValue).Append("\n");
+            sb.Append("  HMDAProfileIncomeValue: ").Append(HMDAProfileIncomeValue).Append("\n");
+            sb.Append("  HMDAProfileApplicationDateValue: ").Append(HMDAProfileApplicationDateValue).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -1009,6 +1114,16 @@ namespace Elli.Api.Loans.Model
                     this.LegalEntityIdentifier.Equals(input.LegalEntityIdentifier))
                 ) && 
                 (
+                    this.LegalEntityIdentifierReporting == input.LegalEntityIdentifierReporting ||
+                    (this.LegalEntityIdentifierReporting != null &&
+                    this.LegalEntityIdentifierReporting.Equals(input.LegalEntityIdentifierReporting))
+                ) && 
+                (
+                    this.LegalEntityIdentifierUsed == input.LegalEntityIdentifierUsed ||
+                    (this.LegalEntityIdentifierUsed != null &&
+                    this.LegalEntityIdentifierUsed.Equals(input.LegalEntityIdentifierUsed))
+                ) && 
+                (
                     this.RespondentID == input.RespondentID ||
                     (this.RespondentID != null &&
                     this.RespondentID.Equals(input.RespondentID))
@@ -1112,6 +1227,71 @@ namespace Elli.Api.Loans.Model
                     this.HmdaSyncAddressIndicator == input.HmdaSyncAddressIndicator ||
                     (this.HmdaSyncAddressIndicator != null &&
                     this.HmdaSyncAddressIndicator.Equals(input.HmdaSyncAddressIndicator))
+                ) && 
+                (
+                    this.RepurchasedReportingYear == input.RepurchasedReportingYear ||
+                    (this.RepurchasedReportingYear != null &&
+                    this.RepurchasedReportingYear.Equals(input.RepurchasedReportingYear))
+                ) && 
+                (
+                    this.RepurchasedLoanAmount == input.RepurchasedLoanAmount ||
+                    (this.RepurchasedLoanAmount != null &&
+                    this.RepurchasedLoanAmount.Equals(input.RepurchasedLoanAmount))
+                ) && 
+                (
+                    this.RepurchasedTypeOfPurchaser == input.RepurchasedTypeOfPurchaser ||
+                    (this.RepurchasedTypeOfPurchaser != null &&
+                    this.RepurchasedTypeOfPurchaser.Equals(input.RepurchasedTypeOfPurchaser))
+                ) && 
+                (
+                    this.RepurchasedActionTaken == input.RepurchasedActionTaken ||
+                    (this.RepurchasedActionTaken != null &&
+                    this.RepurchasedActionTaken.Equals(input.RepurchasedActionTaken))
+                ) && 
+                (
+                    this.RepurchasedActionDate == input.RepurchasedActionDate ||
+                    (this.RepurchasedActionDate != null &&
+                    this.RepurchasedActionDate.Equals(input.RepurchasedActionDate))
+                ) && 
+                (
+                    this.HmdaDtiIndicator == input.HmdaDtiIndicator ||
+                    (this.HmdaDtiIndicator != null &&
+                    this.HmdaDtiIndicator.Equals(input.HmdaDtiIndicator))
+                ) && 
+                (
+                    this.HmdaCltvIndicator == input.HmdaCltvIndicator ||
+                    (this.HmdaCltvIndicator != null &&
+                    this.HmdaCltvIndicator.Equals(input.HmdaCltvIndicator))
+                ) && 
+                (
+                    this.HmdaIncomeIndicator == input.HmdaIncomeIndicator ||
+                    (this.HmdaIncomeIndicator != null &&
+                    this.HmdaIncomeIndicator.Equals(input.HmdaIncomeIndicator))
+                ) && 
+                (
+                    this.HMDAProfileID == input.HMDAProfileID ||
+                    (this.HMDAProfileID != null &&
+                    this.HMDAProfileID.Equals(input.HMDAProfileID))
+                ) && 
+                (
+                    this.HMDAProfileDTIValue == input.HMDAProfileDTIValue ||
+                    (this.HMDAProfileDTIValue != null &&
+                    this.HMDAProfileDTIValue.Equals(input.HMDAProfileDTIValue))
+                ) && 
+                (
+                    this.HMDAProfileCLTVValue == input.HMDAProfileCLTVValue ||
+                    (this.HMDAProfileCLTVValue != null &&
+                    this.HMDAProfileCLTVValue.Equals(input.HMDAProfileCLTVValue))
+                ) && 
+                (
+                    this.HMDAProfileIncomeValue == input.HMDAProfileIncomeValue ||
+                    (this.HMDAProfileIncomeValue != null &&
+                    this.HMDAProfileIncomeValue.Equals(input.HMDAProfileIncomeValue))
+                ) && 
+                (
+                    this.HMDAProfileApplicationDateValue == input.HMDAProfileApplicationDateValue ||
+                    (this.HMDAProfileApplicationDateValue != null &&
+                    this.HMDAProfileApplicationDateValue.Equals(input.HMDAProfileApplicationDateValue))
                 );
         }
 
@@ -1250,6 +1430,10 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.FederalTaxpayerIdNumber.GetHashCode();
                 if (this.LegalEntityIdentifier != null)
                     hashCode = hashCode * 59 + this.LegalEntityIdentifier.GetHashCode();
+                if (this.LegalEntityIdentifierReporting != null)
+                    hashCode = hashCode * 59 + this.LegalEntityIdentifierReporting.GetHashCode();
+                if (this.LegalEntityIdentifierUsed != null)
+                    hashCode = hashCode * 59 + this.LegalEntityIdentifierUsed.GetHashCode();
                 if (this.RespondentID != null)
                     hashCode = hashCode * 59 + this.RespondentID.GetHashCode();
                 if (this.ParentName != null)
@@ -1292,6 +1476,32 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.HmdaPropertyState.GetHashCode();
                 if (this.HmdaSyncAddressIndicator != null)
                     hashCode = hashCode * 59 + this.HmdaSyncAddressIndicator.GetHashCode();
+                if (this.RepurchasedReportingYear != null)
+                    hashCode = hashCode * 59 + this.RepurchasedReportingYear.GetHashCode();
+                if (this.RepurchasedLoanAmount != null)
+                    hashCode = hashCode * 59 + this.RepurchasedLoanAmount.GetHashCode();
+                if (this.RepurchasedTypeOfPurchaser != null)
+                    hashCode = hashCode * 59 + this.RepurchasedTypeOfPurchaser.GetHashCode();
+                if (this.RepurchasedActionTaken != null)
+                    hashCode = hashCode * 59 + this.RepurchasedActionTaken.GetHashCode();
+                if (this.RepurchasedActionDate != null)
+                    hashCode = hashCode * 59 + this.RepurchasedActionDate.GetHashCode();
+                if (this.HmdaDtiIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaDtiIndicator.GetHashCode();
+                if (this.HmdaCltvIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaCltvIndicator.GetHashCode();
+                if (this.HmdaIncomeIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaIncomeIndicator.GetHashCode();
+                if (this.HMDAProfileID != null)
+                    hashCode = hashCode * 59 + this.HMDAProfileID.GetHashCode();
+                if (this.HMDAProfileDTIValue != null)
+                    hashCode = hashCode * 59 + this.HMDAProfileDTIValue.GetHashCode();
+                if (this.HMDAProfileCLTVValue != null)
+                    hashCode = hashCode * 59 + this.HMDAProfileCLTVValue.GetHashCode();
+                if (this.HMDAProfileIncomeValue != null)
+                    hashCode = hashCode * 59 + this.HMDAProfileIncomeValue.GetHashCode();
+                if (this.HMDAProfileApplicationDateValue != null)
+                    hashCode = hashCode * 59 + this.HMDAProfileApplicationDateValue.GetHashCode();
                 return hashCode;
             }
         }

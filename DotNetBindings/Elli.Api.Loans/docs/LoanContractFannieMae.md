@@ -15,6 +15,12 @@ Name | Type | Description | Notes
 **StartUpMortgage** | **bool?** |  | [optional] 
 **PropertyInspectionWaiverMessage** | **string** |  | [optional] 
 **CollateralUnderwriterScore** | **string** |  | [optional] 
+**UCDPStatus** | **string** |  | [optional] 
+**ECStatus1003** | **string** |  | [optional] 
+**ULDDECStatus** | **string** |  | [optional] 
+**UCDCollectionStatus** | **string** |  | [optional] 
+**CaseIDAssignedByUCDIndicator** | **bool?** |  | [optional] 
+**CorrespondentAssignmentID** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -352,6 +352,24 @@ namespace Elli.Api.Loans.Model
         public DateTime? WithdrawnDate { get; set; }
 
         /// <summary>
+        /// Gets or Sets CancelledDate
+        /// </summary>
+        [DataMember(Name="cancelledDate", EmitDefaultValue=false)]
+        public DateTime? CancelledDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets VoidedDate
+        /// </summary>
+        [DataMember(Name="voidedDate", EmitDefaultValue=false)]
+        public DateTime? VoidedDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WithdrawalRequestedDate
+        /// </summary>
+        [DataMember(Name="withdrawalRequestedDate", EmitDefaultValue=false)]
+        public DateTime? WithdrawalRequestedDate { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -407,6 +425,9 @@ namespace Elli.Api.Loans.Model
             sb.Append("  LateDaysEndTrigger: ").Append(LateDaysEndTrigger).Append("\n");
             sb.Append("  SubmittedforPurchaseDate: ").Append(SubmittedforPurchaseDate).Append("\n");
             sb.Append("  WithdrawnDate: ").Append(WithdrawnDate).Append("\n");
+            sb.Append("  CancelledDate: ").Append(CancelledDate).Append("\n");
+            sb.Append("  VoidedDate: ").Append(VoidedDate).Append("\n");
+            sb.Append("  WithdrawalRequestedDate: ").Append(WithdrawalRequestedDate).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -680,6 +701,21 @@ namespace Elli.Api.Loans.Model
                     this.WithdrawnDate == input.WithdrawnDate ||
                     (this.WithdrawnDate != null &&
                     this.WithdrawnDate.Equals(input.WithdrawnDate))
+                ) && 
+                (
+                    this.CancelledDate == input.CancelledDate ||
+                    (this.CancelledDate != null &&
+                    this.CancelledDate.Equals(input.CancelledDate))
+                ) && 
+                (
+                    this.VoidedDate == input.VoidedDate ||
+                    (this.VoidedDate != null &&
+                    this.VoidedDate.Equals(input.VoidedDate))
+                ) && 
+                (
+                    this.WithdrawalRequestedDate == input.WithdrawalRequestedDate ||
+                    (this.WithdrawalRequestedDate != null &&
+                    this.WithdrawalRequestedDate.Equals(input.WithdrawalRequestedDate))
                 );
         }
 
@@ -788,6 +824,12 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.SubmittedforPurchaseDate.GetHashCode();
                 if (this.WithdrawnDate != null)
                     hashCode = hashCode * 59 + this.WithdrawnDate.GetHashCode();
+                if (this.CancelledDate != null)
+                    hashCode = hashCode * 59 + this.CancelledDate.GetHashCode();
+                if (this.VoidedDate != null)
+                    hashCode = hashCode * 59 + this.VoidedDate.GetHashCode();
+                if (this.WithdrawalRequestedDate != null)
+                    hashCode = hashCode * 59 + this.WithdrawalRequestedDate.GetHashCode();
                 return hashCode;
             }
         }

@@ -268,6 +268,18 @@ namespace Elli.Api.Loans.Model
         public double? StepRateFirstChange { get; set; }
 
         /// <summary>
+        /// Gets or Sets MaximumARMPaymentAmount
+        /// </summary>
+        [DataMember(Name="maximumARMPaymentAmount", EmitDefaultValue=false)]
+        public int? MaximumARMPaymentAmount { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MaximumARMPaymentMonthReached
+        /// </summary>
+        [DataMember(Name="maximumARMPaymentMonthReached", EmitDefaultValue=false)]
+        public int? MaximumARMPaymentMonthReached { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -309,6 +321,8 @@ namespace Elli.Api.Loans.Model
             sb.Append("  InterestOnlyPaymentMonths: ").Append(InterestOnlyPaymentMonths).Append("\n");
             sb.Append("  InterestRateAdjustments: ").Append(InterestRateAdjustments).Append("\n");
             sb.Append("  StepRateFirstChange: ").Append(StepRateFirstChange).Append("\n");
+            sb.Append("  MaximumARMPaymentAmount: ").Append(MaximumARMPaymentAmount).Append("\n");
+            sb.Append("  MaximumARMPaymentMonthReached: ").Append(MaximumARMPaymentMonthReached).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -512,6 +526,16 @@ namespace Elli.Api.Loans.Model
                     this.StepRateFirstChange == input.StepRateFirstChange ||
                     (this.StepRateFirstChange != null &&
                     this.StepRateFirstChange.Equals(input.StepRateFirstChange))
+                ) && 
+                (
+                    this.MaximumARMPaymentAmount == input.MaximumARMPaymentAmount ||
+                    (this.MaximumARMPaymentAmount != null &&
+                    this.MaximumARMPaymentAmount.Equals(input.MaximumARMPaymentAmount))
+                ) && 
+                (
+                    this.MaximumARMPaymentMonthReached == input.MaximumARMPaymentMonthReached ||
+                    (this.MaximumARMPaymentMonthReached != null &&
+                    this.MaximumARMPaymentMonthReached.Equals(input.MaximumARMPaymentMonthReached))
                 );
         }
 
@@ -592,6 +616,10 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.InterestRateAdjustments.GetHashCode();
                 if (this.StepRateFirstChange != null)
                     hashCode = hashCode * 59 + this.StepRateFirstChange.GetHashCode();
+                if (this.MaximumARMPaymentAmount != null)
+                    hashCode = hashCode * 59 + this.MaximumARMPaymentAmount.GetHashCode();
+                if (this.MaximumARMPaymentMonthReached != null)
+                    hashCode = hashCode * 59 + this.MaximumARMPaymentMonthReached.GetHashCode();
                 return hashCode;
             }
         }

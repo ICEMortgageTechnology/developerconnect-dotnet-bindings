@@ -60,6 +60,7 @@ Name | Type | Description | Notes
 **DiscountPoint** | **double?** |  | [optional] 
 **DocEngine** | **string** |  | [optional] 
 **DocumentLogs** | [**List&lt;LoanContractDocumentLogs&gt;**](LoanContractDocumentLogs.md) |  | [optional] 
+**DocumentOrderLogs** | [**List&lt;LoanContractDocumentOrderLogs&gt;**](LoanContractDocumentOrderLogs.md) |  | [optional] 
 **DoNotCheckEmail** | **string** |  | [optional] 
 **DoNotPrintCompensationFees** | **bool?** |  | [optional] 
 **DownloadLogs** | [**List&lt;LoanContractDownloadLogs&gt;**](LoanContractDownloadLogs.md) |  | [optional] 
@@ -336,8 +337,11 @@ Name | Type | Description | Notes
 **SystemIdGuid** | **string** |  | [optional] 
 **Use2018DiIndicator** | **bool?** |  | [optional] 
 **IsEmployeeLoan** | **bool?** |  | [optional] 
-**VirtualFields** | **Object** |  | [optional] 
+**NonVols** | [**List&lt;LoanContractNonVols&gt;**](LoanContractNonVols.md) |  | [optional] 
+**EncompassVersion** | **string** |  | [optional] 
 **ElliUCDFields** | [**LoanContractElliUCDFields**](LoanContractElliUCDFields.md) |  | [optional] 
+**VirtualFields** | **Object** |  | [optional] 
+**LinkedBorrowerRequestedLoanAmount** | **double?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

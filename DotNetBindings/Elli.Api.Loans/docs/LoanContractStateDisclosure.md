@@ -168,6 +168,7 @@ Name | Type | Description | Notes
 **ScheduleOfChargesEstimatedFinalIndicator** | **string** |  | [optional] 
 **ScRegulatoryAgencyType** | **string** |  | [optional] 
 **RegulatorAddress** | **string** |  | [optional] 
+**RegulatorWebAddress** | **string** |  | [optional] 
 **RegulatorCity** | **string** |  | [optional] 
 **RegulatorState** | **string** |  | [optional] 
 **RegulatorZipCode** | **string** |  | [optional] 

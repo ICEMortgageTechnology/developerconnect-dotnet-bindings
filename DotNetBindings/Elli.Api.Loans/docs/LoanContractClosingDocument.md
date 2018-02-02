@@ -177,6 +177,19 @@ Name | Type | Description | Notes
 **MfgHomeManufacturerState** | **string** |  | [optional] 
 **MfgHomeManufacturerPostalCode** | **string** |  | [optional] 
 **MfgHomeManufacturerPhoneNumber** | **string** |  | [optional] 
+**CLTitleOrderSentDateTime** | **DateTime?** |  | [optional] 
+**CLClosingEscrowOrderSentDateTime** | **DateTime?** |  | [optional] 
+**CLTitleOrderAcceptedDateTime** | **DateTime?** |  | [optional] 
+**CLClosingEscrowOrderAcceptedDateTime** | **DateTime?** |  | [optional] 
+**CLPayoffsRequestedDateTime** | **DateTime?** |  | [optional] 
+**CLLastFeeQuoteRequestedDateTime** | **DateTime?** |  | [optional] 
+**CLLastFeeQuoteReceivedDateTime** | **DateTime?** |  | [optional] 
+**CLPrelimCommitmentReceivedByLenderDateTime** | **DateTime?** |  | [optional] 
+**CLDraftClosingDisclosureReceivedByLenderDateTime** | **DateTime?** |  | [optional] 
+**CLClearCloseStatusReceivedByLenderDateTime** | **DateTime?** |  | [optional] 
+**CLFinalCDSentDateTime** | **DateTime?** |  | [optional] 
+**CLProviderDisburseFundsDateTime** | **DateTime?** |  | [optional] 
+**CLFinalTitlePolicyDateTime** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

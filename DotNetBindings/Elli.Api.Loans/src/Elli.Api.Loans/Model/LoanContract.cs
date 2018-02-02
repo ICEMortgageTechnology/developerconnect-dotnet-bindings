@@ -406,6 +406,12 @@ namespace Elli.Api.Loans.Model
         public List<LoanContractDocumentLogs> DocumentLogs { get; set; }
 
         /// <summary>
+        /// Gets or Sets DocumentOrderLogs
+        /// </summary>
+        [DataMember(Name="documentOrderLogs", EmitDefaultValue=false)]
+        public List<LoanContractDocumentOrderLogs> DocumentOrderLogs { get; set; }
+
+        /// <summary>
         /// Gets or Sets DoNotCheckEmail
         /// </summary>
         [DataMember(Name="doNotCheckEmail", EmitDefaultValue=false)]
@@ -2062,16 +2068,34 @@ namespace Elli.Api.Loans.Model
         public bool? IsEmployeeLoan { get; set; }
 
         /// <summary>
-        /// Gets or Sets VirtualFields
+        /// Gets or Sets NonVols
         /// </summary>
-        [DataMember(Name="virtualFields", EmitDefaultValue=false)]
-        public Object VirtualFields { get; set; }
+        [DataMember(Name="nonVols", EmitDefaultValue=false)]
+        public List<LoanContractNonVols> NonVols { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EncompassVersion
+        /// </summary>
+        [DataMember(Name="encompassVersion", EmitDefaultValue=false)]
+        public string EncompassVersion { get; set; }
 
         /// <summary>
         /// Gets or Sets ElliUCDFields
         /// </summary>
         [DataMember(Name="elliUCDFields", EmitDefaultValue=false)]
         public LoanContractElliUCDFields ElliUCDFields { get; set; }
+
+        /// <summary>
+        /// Gets or Sets VirtualFields
+        /// </summary>
+        [DataMember(Name="virtualFields", EmitDefaultValue=false)]
+        public Object VirtualFields { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LinkedBorrowerRequestedLoanAmount
+        /// </summary>
+        [DataMember(Name="linkedBorrowerRequestedLoanAmount", EmitDefaultValue=false)]
+        public double? LinkedBorrowerRequestedLoanAmount { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -2138,6 +2162,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  DiscountPoint: ").Append(DiscountPoint).Append("\n");
             sb.Append("  DocEngine: ").Append(DocEngine).Append("\n");
             sb.Append("  DocumentLogs: ").Append(DocumentLogs).Append("\n");
+            sb.Append("  DocumentOrderLogs: ").Append(DocumentOrderLogs).Append("\n");
             sb.Append("  DoNotCheckEmail: ").Append(DoNotCheckEmail).Append("\n");
             sb.Append("  DoNotPrintCompensationFees: ").Append(DoNotPrintCompensationFees).Append("\n");
             sb.Append("  DownloadLogs: ").Append(DownloadLogs).Append("\n");
@@ -2414,8 +2439,11 @@ namespace Elli.Api.Loans.Model
             sb.Append("  SystemIdGuid: ").Append(SystemIdGuid).Append("\n");
             sb.Append("  Use2018DiIndicator: ").Append(Use2018DiIndicator).Append("\n");
             sb.Append("  IsEmployeeLoan: ").Append(IsEmployeeLoan).Append("\n");
-            sb.Append("  VirtualFields: ").Append(VirtualFields).Append("\n");
+            sb.Append("  NonVols: ").Append(NonVols).Append("\n");
+            sb.Append("  EncompassVersion: ").Append(EncompassVersion).Append("\n");
             sb.Append("  ElliUCDFields: ").Append(ElliUCDFields).Append("\n");
+            sb.Append("  VirtualFields: ").Append(VirtualFields).Append("\n");
+            sb.Append("  LinkedBorrowerRequestedLoanAmount: ").Append(LinkedBorrowerRequestedLoanAmount).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -2734,6 +2762,11 @@ namespace Elli.Api.Loans.Model
                     this.DocumentLogs == input.DocumentLogs ||
                     this.DocumentLogs != null &&
                     this.DocumentLogs.SequenceEqual(input.DocumentLogs)
+                ) && 
+                (
+                    this.DocumentOrderLogs == input.DocumentOrderLogs ||
+                    this.DocumentOrderLogs != null &&
+                    this.DocumentOrderLogs.SequenceEqual(input.DocumentOrderLogs)
                 ) && 
                 (
                     this.DoNotCheckEmail == input.DoNotCheckEmail ||
@@ -4116,14 +4149,29 @@ namespace Elli.Api.Loans.Model
                     this.IsEmployeeLoan.Equals(input.IsEmployeeLoan))
                 ) && 
                 (
-                    this.VirtualFields == input.VirtualFields ||
-                    (this.VirtualFields != null &&
-                    this.VirtualFields.Equals(input.VirtualFields))
+                    this.NonVols == input.NonVols ||
+                    this.NonVols != null &&
+                    this.NonVols.SequenceEqual(input.NonVols)
+                ) && 
+                (
+                    this.EncompassVersion == input.EncompassVersion ||
+                    (this.EncompassVersion != null &&
+                    this.EncompassVersion.Equals(input.EncompassVersion))
                 ) && 
                 (
                     this.ElliUCDFields == input.ElliUCDFields ||
                     (this.ElliUCDFields != null &&
                     this.ElliUCDFields.Equals(input.ElliUCDFields))
+                ) && 
+                (
+                    this.VirtualFields == input.VirtualFields ||
+                    (this.VirtualFields != null &&
+                    this.VirtualFields.Equals(input.VirtualFields))
+                ) && 
+                (
+                    this.LinkedBorrowerRequestedLoanAmount == input.LinkedBorrowerRequestedLoanAmount ||
+                    (this.LinkedBorrowerRequestedLoanAmount != null &&
+                    this.LinkedBorrowerRequestedLoanAmount.Equals(input.LinkedBorrowerRequestedLoanAmount))
                 );
         }
 
@@ -4250,6 +4298,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.DocEngine.GetHashCode();
                 if (this.DocumentLogs != null)
                     hashCode = hashCode * 59 + this.DocumentLogs.GetHashCode();
+                if (this.DocumentOrderLogs != null)
+                    hashCode = hashCode * 59 + this.DocumentOrderLogs.GetHashCode();
                 if (this.DoNotCheckEmail != null)
                     hashCode = hashCode * 59 + this.DoNotCheckEmail.GetHashCode();
                 if (this.DoNotPrintCompensationFees != null)
@@ -4802,10 +4852,16 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.Use2018DiIndicator.GetHashCode();
                 if (this.IsEmployeeLoan != null)
                     hashCode = hashCode * 59 + this.IsEmployeeLoan.GetHashCode();
-                if (this.VirtualFields != null)
-                    hashCode = hashCode * 59 + this.VirtualFields.GetHashCode();
+                if (this.NonVols != null)
+                    hashCode = hashCode * 59 + this.NonVols.GetHashCode();
+                if (this.EncompassVersion != null)
+                    hashCode = hashCode * 59 + this.EncompassVersion.GetHashCode();
                 if (this.ElliUCDFields != null)
                     hashCode = hashCode * 59 + this.ElliUCDFields.GetHashCode();
+                if (this.VirtualFields != null)
+                    hashCode = hashCode * 59 + this.VirtualFields.GetHashCode();
+                if (this.LinkedBorrowerRequestedLoanAmount != null)
+                    hashCode = hashCode * 59 + this.LinkedBorrowerRequestedLoanAmount.GetHashCode();
                 return hashCode;
             }
         }

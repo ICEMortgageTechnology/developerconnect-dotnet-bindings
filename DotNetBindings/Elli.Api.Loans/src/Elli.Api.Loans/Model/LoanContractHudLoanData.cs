@@ -928,6 +928,108 @@ namespace Elli.Api.Loans.Model
         public string CriteriaForAppropriateLTVFactor { get; set; }
 
         /// <summary>
+        /// Gets or Sets LessLeadBasedPaintCredit
+        /// </summary>
+        [DataMember(Name="lessLeadBasedPaintCredit", EmitDefaultValue=false)]
+        public double? LessLeadBasedPaintCredit { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CaseLTV
+        /// </summary>
+        [DataMember(Name="caseLTV", EmitDefaultValue=false)]
+        public double? CaseLTV { get; set; }
+
+        /// <summary>
+        /// Gets or Sets InitialDrawAtClosingConsultantFees
+        /// </summary>
+        [DataMember(Name="initialDrawAtClosingConsultantFees", EmitDefaultValue=false)]
+        public double? InitialDrawAtClosingConsultantFees { get; set; }
+
+        /// <summary>
+        /// Gets or Sets InitialDrawAtClosingArchitecturalorEngineeringFees
+        /// </summary>
+        [DataMember(Name="initialDrawAtClosingArchitecturalorEngineeringFees", EmitDefaultValue=false)]
+        public double? InitialDrawAtClosingArchitecturalorEngineeringFees { get; set; }
+
+        /// <summary>
+        /// Gets or Sets InitialDrawAtClosingPermitFees
+        /// </summary>
+        [DataMember(Name="initialDrawAtClosingPermitFees", EmitDefaultValue=false)]
+        public double? InitialDrawAtClosingPermitFees { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UnpaidPrincipalBalanceFirstLien
+        /// </summary>
+        [DataMember(Name="unpaidPrincipalBalanceFirstLien", EmitDefaultValue=false)]
+        public double? UnpaidPrincipalBalanceFirstLien { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UnpaidPrincipalBalanceOfPurchaseJuniorLiens
+        /// </summary>
+        [DataMember(Name="unpaidPrincipalBalanceOfPurchaseJuniorLiens", EmitDefaultValue=false)]
+        public double? UnpaidPrincipalBalanceOfPurchaseJuniorLiens { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UnpaidPrincipalBalanceOfAnyJuniorLiens
+        /// </summary>
+        [DataMember(Name="unpaidPrincipalBalanceOfAnyJuniorLiens", EmitDefaultValue=false)]
+        public double? UnpaidPrincipalBalanceOfAnyJuniorLiens { get; set; }
+
+        /// <summary>
+        /// Gets or Sets InterestDueonExistingMortgage
+        /// </summary>
+        [DataMember(Name="interestDueonExistingMortgage", EmitDefaultValue=false)]
+        public double? InterestDueonExistingMortgage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets MIPDueOnExistingMortgage
+        /// </summary>
+        [DataMember(Name="mIPDueOnExistingMortgage", EmitDefaultValue=false)]
+        public double? MIPDueOnExistingMortgage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PrepaymentPenalties
+        /// </summary>
+        [DataMember(Name="prepaymentPenalties", EmitDefaultValue=false)]
+        public double? PrepaymentPenalties { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LateCharges
+        /// </summary>
+        [DataMember(Name="lateCharges", EmitDefaultValue=false)]
+        public double? LateCharges { get; set; }
+
+        /// <summary>
+        /// Gets or Sets EscrowShortages
+        /// </summary>
+        [DataMember(Name="escrowShortages", EmitDefaultValue=false)]
+        public double? EscrowShortages { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Existing203KDebtTotal
+        /// </summary>
+        [DataMember(Name="existing203KDebtTotal", EmitDefaultValue=false)]
+        public double? Existing203KDebtTotal { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WaterPurificationOrganization
+        /// </summary>
+        [DataMember(Name="waterPurificationOrganization", EmitDefaultValue=false)]
+        public string WaterPurificationOrganization { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WaterPurificationAgent
+        /// </summary>
+        [DataMember(Name="waterPurificationAgent", EmitDefaultValue=false)]
+        public string WaterPurificationAgent { get; set; }
+
+        /// <summary>
+        /// Gets or Sets WaterPurificationPayees
+        /// </summary>
+        [DataMember(Name="waterPurificationPayees", EmitDefaultValue=false)]
+        public string WaterPurificationPayees { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -1079,6 +1181,23 @@ namespace Elli.Api.Loans.Model
             sb.Append("  RehabilitationEscrowAmountBalanceForFutureDraws: ").Append(RehabilitationEscrowAmountBalanceForFutureDraws).Append("\n");
             sb.Append("  LimitedProgram: ").Append(LimitedProgram).Append("\n");
             sb.Append("  CriteriaForAppropriateLTVFactor: ").Append(CriteriaForAppropriateLTVFactor).Append("\n");
+            sb.Append("  LessLeadBasedPaintCredit: ").Append(LessLeadBasedPaintCredit).Append("\n");
+            sb.Append("  CaseLTV: ").Append(CaseLTV).Append("\n");
+            sb.Append("  InitialDrawAtClosingConsultantFees: ").Append(InitialDrawAtClosingConsultantFees).Append("\n");
+            sb.Append("  InitialDrawAtClosingArchitecturalorEngineeringFees: ").Append(InitialDrawAtClosingArchitecturalorEngineeringFees).Append("\n");
+            sb.Append("  InitialDrawAtClosingPermitFees: ").Append(InitialDrawAtClosingPermitFees).Append("\n");
+            sb.Append("  UnpaidPrincipalBalanceFirstLien: ").Append(UnpaidPrincipalBalanceFirstLien).Append("\n");
+            sb.Append("  UnpaidPrincipalBalanceOfPurchaseJuniorLiens: ").Append(UnpaidPrincipalBalanceOfPurchaseJuniorLiens).Append("\n");
+            sb.Append("  UnpaidPrincipalBalanceOfAnyJuniorLiens: ").Append(UnpaidPrincipalBalanceOfAnyJuniorLiens).Append("\n");
+            sb.Append("  InterestDueonExistingMortgage: ").Append(InterestDueonExistingMortgage).Append("\n");
+            sb.Append("  MIPDueOnExistingMortgage: ").Append(MIPDueOnExistingMortgage).Append("\n");
+            sb.Append("  PrepaymentPenalties: ").Append(PrepaymentPenalties).Append("\n");
+            sb.Append("  LateCharges: ").Append(LateCharges).Append("\n");
+            sb.Append("  EscrowShortages: ").Append(EscrowShortages).Append("\n");
+            sb.Append("  Existing203KDebtTotal: ").Append(Existing203KDebtTotal).Append("\n");
+            sb.Append("  WaterPurificationOrganization: ").Append(WaterPurificationOrganization).Append("\n");
+            sb.Append("  WaterPurificationAgent: ").Append(WaterPurificationAgent).Append("\n");
+            sb.Append("  WaterPurificationPayees: ").Append(WaterPurificationPayees).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -1832,6 +1951,91 @@ namespace Elli.Api.Loans.Model
                     this.CriteriaForAppropriateLTVFactor == input.CriteriaForAppropriateLTVFactor ||
                     (this.CriteriaForAppropriateLTVFactor != null &&
                     this.CriteriaForAppropriateLTVFactor.Equals(input.CriteriaForAppropriateLTVFactor))
+                ) && 
+                (
+                    this.LessLeadBasedPaintCredit == input.LessLeadBasedPaintCredit ||
+                    (this.LessLeadBasedPaintCredit != null &&
+                    this.LessLeadBasedPaintCredit.Equals(input.LessLeadBasedPaintCredit))
+                ) && 
+                (
+                    this.CaseLTV == input.CaseLTV ||
+                    (this.CaseLTV != null &&
+                    this.CaseLTV.Equals(input.CaseLTV))
+                ) && 
+                (
+                    this.InitialDrawAtClosingConsultantFees == input.InitialDrawAtClosingConsultantFees ||
+                    (this.InitialDrawAtClosingConsultantFees != null &&
+                    this.InitialDrawAtClosingConsultantFees.Equals(input.InitialDrawAtClosingConsultantFees))
+                ) && 
+                (
+                    this.InitialDrawAtClosingArchitecturalorEngineeringFees == input.InitialDrawAtClosingArchitecturalorEngineeringFees ||
+                    (this.InitialDrawAtClosingArchitecturalorEngineeringFees != null &&
+                    this.InitialDrawAtClosingArchitecturalorEngineeringFees.Equals(input.InitialDrawAtClosingArchitecturalorEngineeringFees))
+                ) && 
+                (
+                    this.InitialDrawAtClosingPermitFees == input.InitialDrawAtClosingPermitFees ||
+                    (this.InitialDrawAtClosingPermitFees != null &&
+                    this.InitialDrawAtClosingPermitFees.Equals(input.InitialDrawAtClosingPermitFees))
+                ) && 
+                (
+                    this.UnpaidPrincipalBalanceFirstLien == input.UnpaidPrincipalBalanceFirstLien ||
+                    (this.UnpaidPrincipalBalanceFirstLien != null &&
+                    this.UnpaidPrincipalBalanceFirstLien.Equals(input.UnpaidPrincipalBalanceFirstLien))
+                ) && 
+                (
+                    this.UnpaidPrincipalBalanceOfPurchaseJuniorLiens == input.UnpaidPrincipalBalanceOfPurchaseJuniorLiens ||
+                    (this.UnpaidPrincipalBalanceOfPurchaseJuniorLiens != null &&
+                    this.UnpaidPrincipalBalanceOfPurchaseJuniorLiens.Equals(input.UnpaidPrincipalBalanceOfPurchaseJuniorLiens))
+                ) && 
+                (
+                    this.UnpaidPrincipalBalanceOfAnyJuniorLiens == input.UnpaidPrincipalBalanceOfAnyJuniorLiens ||
+                    (this.UnpaidPrincipalBalanceOfAnyJuniorLiens != null &&
+                    this.UnpaidPrincipalBalanceOfAnyJuniorLiens.Equals(input.UnpaidPrincipalBalanceOfAnyJuniorLiens))
+                ) && 
+                (
+                    this.InterestDueonExistingMortgage == input.InterestDueonExistingMortgage ||
+                    (this.InterestDueonExistingMortgage != null &&
+                    this.InterestDueonExistingMortgage.Equals(input.InterestDueonExistingMortgage))
+                ) && 
+                (
+                    this.MIPDueOnExistingMortgage == input.MIPDueOnExistingMortgage ||
+                    (this.MIPDueOnExistingMortgage != null &&
+                    this.MIPDueOnExistingMortgage.Equals(input.MIPDueOnExistingMortgage))
+                ) && 
+                (
+                    this.PrepaymentPenalties == input.PrepaymentPenalties ||
+                    (this.PrepaymentPenalties != null &&
+                    this.PrepaymentPenalties.Equals(input.PrepaymentPenalties))
+                ) && 
+                (
+                    this.LateCharges == input.LateCharges ||
+                    (this.LateCharges != null &&
+                    this.LateCharges.Equals(input.LateCharges))
+                ) && 
+                (
+                    this.EscrowShortages == input.EscrowShortages ||
+                    (this.EscrowShortages != null &&
+                    this.EscrowShortages.Equals(input.EscrowShortages))
+                ) && 
+                (
+                    this.Existing203KDebtTotal == input.Existing203KDebtTotal ||
+                    (this.Existing203KDebtTotal != null &&
+                    this.Existing203KDebtTotal.Equals(input.Existing203KDebtTotal))
+                ) && 
+                (
+                    this.WaterPurificationOrganization == input.WaterPurificationOrganization ||
+                    (this.WaterPurificationOrganization != null &&
+                    this.WaterPurificationOrganization.Equals(input.WaterPurificationOrganization))
+                ) && 
+                (
+                    this.WaterPurificationAgent == input.WaterPurificationAgent ||
+                    (this.WaterPurificationAgent != null &&
+                    this.WaterPurificationAgent.Equals(input.WaterPurificationAgent))
+                ) && 
+                (
+                    this.WaterPurificationPayees == input.WaterPurificationPayees ||
+                    (this.WaterPurificationPayees != null &&
+                    this.WaterPurificationPayees.Equals(input.WaterPurificationPayees))
                 );
         }
 
@@ -2132,6 +2336,40 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.LimitedProgram.GetHashCode();
                 if (this.CriteriaForAppropriateLTVFactor != null)
                     hashCode = hashCode * 59 + this.CriteriaForAppropriateLTVFactor.GetHashCode();
+                if (this.LessLeadBasedPaintCredit != null)
+                    hashCode = hashCode * 59 + this.LessLeadBasedPaintCredit.GetHashCode();
+                if (this.CaseLTV != null)
+                    hashCode = hashCode * 59 + this.CaseLTV.GetHashCode();
+                if (this.InitialDrawAtClosingConsultantFees != null)
+                    hashCode = hashCode * 59 + this.InitialDrawAtClosingConsultantFees.GetHashCode();
+                if (this.InitialDrawAtClosingArchitecturalorEngineeringFees != null)
+                    hashCode = hashCode * 59 + this.InitialDrawAtClosingArchitecturalorEngineeringFees.GetHashCode();
+                if (this.InitialDrawAtClosingPermitFees != null)
+                    hashCode = hashCode * 59 + this.InitialDrawAtClosingPermitFees.GetHashCode();
+                if (this.UnpaidPrincipalBalanceFirstLien != null)
+                    hashCode = hashCode * 59 + this.UnpaidPrincipalBalanceFirstLien.GetHashCode();
+                if (this.UnpaidPrincipalBalanceOfPurchaseJuniorLiens != null)
+                    hashCode = hashCode * 59 + this.UnpaidPrincipalBalanceOfPurchaseJuniorLiens.GetHashCode();
+                if (this.UnpaidPrincipalBalanceOfAnyJuniorLiens != null)
+                    hashCode = hashCode * 59 + this.UnpaidPrincipalBalanceOfAnyJuniorLiens.GetHashCode();
+                if (this.InterestDueonExistingMortgage != null)
+                    hashCode = hashCode * 59 + this.InterestDueonExistingMortgage.GetHashCode();
+                if (this.MIPDueOnExistingMortgage != null)
+                    hashCode = hashCode * 59 + this.MIPDueOnExistingMortgage.GetHashCode();
+                if (this.PrepaymentPenalties != null)
+                    hashCode = hashCode * 59 + this.PrepaymentPenalties.GetHashCode();
+                if (this.LateCharges != null)
+                    hashCode = hashCode * 59 + this.LateCharges.GetHashCode();
+                if (this.EscrowShortages != null)
+                    hashCode = hashCode * 59 + this.EscrowShortages.GetHashCode();
+                if (this.Existing203KDebtTotal != null)
+                    hashCode = hashCode * 59 + this.Existing203KDebtTotal.GetHashCode();
+                if (this.WaterPurificationOrganization != null)
+                    hashCode = hashCode * 59 + this.WaterPurificationOrganization.GetHashCode();
+                if (this.WaterPurificationAgent != null)
+                    hashCode = hashCode * 59 + this.WaterPurificationAgent.GetHashCode();
+                if (this.WaterPurificationPayees != null)
+                    hashCode = hashCode * 59 + this.WaterPurificationPayees.GetHashCode();
                 return hashCode;
             }
         }

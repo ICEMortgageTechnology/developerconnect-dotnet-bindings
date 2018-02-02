@@ -73,6 +73,14 @@ Name | Type | Description | Notes
 **FileAttachmentsXml** | **string** |  | [optional] 
 **AlertsXml** | **string** |  | [optional] 
 **CommentListXml** | **string** |  | [optional] 
+**GroupName** | **string** |  | [optional] 
+**IsObligationVerification** | **bool?** |  | [optional] 
+**IsIncomeVerification** | **bool?** |  | [optional] 
+**IsEmploymentVerification** | **bool?** |  | [optional] 
+**IsAssetVerification** | **bool?** |  | [optional] 
+**Description** | **string** |  | [optional] 
+**LastAttachmentDateUtc** | **DateTime?** |  | [optional] 
+**DocVerificationsXml** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

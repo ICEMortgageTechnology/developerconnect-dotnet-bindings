@@ -394,6 +394,30 @@ namespace Elli.Api.Loans.Model
         public string LinkedLoanPurposeType { get; set; }
 
         /// <summary>
+        /// Gets or Sets LinkedMortgageType
+        /// </summary>
+        [DataMember(Name="linkedMortgageType", EmitDefaultValue=false)]
+        public string LinkedMortgageType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LinkedLienPriorityType
+        /// </summary>
+        [DataMember(Name="linkedLienPriorityType", EmitDefaultValue=false)]
+        public string LinkedLienPriorityType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PriorLoanRecordationOriginalLoanNumber
+        /// </summary>
+        [DataMember(Name="priorLoanRecordationOriginalLoanNumber", EmitDefaultValue=false)]
+        public string PriorLoanRecordationOriginalLoanNumber { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PriorLoanRecordationDated
+        /// </summary>
+        [DataMember(Name="priorLoanRecordationDated", EmitDefaultValue=false)]
+        public DateTime? PriorLoanRecordationDated { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -456,6 +480,10 @@ namespace Elli.Api.Loans.Model
             sb.Append("  IsConstructionPhaseDisclosedSeparately: ").Append(IsConstructionPhaseDisclosedSeparately).Append("\n");
             sb.Append("  LinkedIsConstructionPhaseDisclosedSeparately: ").Append(LinkedIsConstructionPhaseDisclosedSeparately).Append("\n");
             sb.Append("  LinkedLoanPurposeType: ").Append(LinkedLoanPurposeType).Append("\n");
+            sb.Append("  LinkedMortgageType: ").Append(LinkedMortgageType).Append("\n");
+            sb.Append("  LinkedLienPriorityType: ").Append(LinkedLienPriorityType).Append("\n");
+            sb.Append("  PriorLoanRecordationOriginalLoanNumber: ").Append(PriorLoanRecordationOriginalLoanNumber).Append("\n");
+            sb.Append("  PriorLoanRecordationDated: ").Append(PriorLoanRecordationDated).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -764,6 +792,26 @@ namespace Elli.Api.Loans.Model
                     this.LinkedLoanPurposeType == input.LinkedLoanPurposeType ||
                     (this.LinkedLoanPurposeType != null &&
                     this.LinkedLoanPurposeType.Equals(input.LinkedLoanPurposeType))
+                ) && 
+                (
+                    this.LinkedMortgageType == input.LinkedMortgageType ||
+                    (this.LinkedMortgageType != null &&
+                    this.LinkedMortgageType.Equals(input.LinkedMortgageType))
+                ) && 
+                (
+                    this.LinkedLienPriorityType == input.LinkedLienPriorityType ||
+                    (this.LinkedLienPriorityType != null &&
+                    this.LinkedLienPriorityType.Equals(input.LinkedLienPriorityType))
+                ) && 
+                (
+                    this.PriorLoanRecordationOriginalLoanNumber == input.PriorLoanRecordationOriginalLoanNumber ||
+                    (this.PriorLoanRecordationOriginalLoanNumber != null &&
+                    this.PriorLoanRecordationOriginalLoanNumber.Equals(input.PriorLoanRecordationOriginalLoanNumber))
+                ) && 
+                (
+                    this.PriorLoanRecordationDated == input.PriorLoanRecordationDated ||
+                    (this.PriorLoanRecordationDated != null &&
+                    this.PriorLoanRecordationDated.Equals(input.PriorLoanRecordationDated))
                 );
         }
 
@@ -886,6 +934,14 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.LinkedIsConstructionPhaseDisclosedSeparately.GetHashCode();
                 if (this.LinkedLoanPurposeType != null)
                     hashCode = hashCode * 59 + this.LinkedLoanPurposeType.GetHashCode();
+                if (this.LinkedMortgageType != null)
+                    hashCode = hashCode * 59 + this.LinkedMortgageType.GetHashCode();
+                if (this.LinkedLienPriorityType != null)
+                    hashCode = hashCode * 59 + this.LinkedLienPriorityType.GetHashCode();
+                if (this.PriorLoanRecordationOriginalLoanNumber != null)
+                    hashCode = hashCode * 59 + this.PriorLoanRecordationOriginalLoanNumber.GetHashCode();
+                if (this.PriorLoanRecordationDated != null)
+                    hashCode = hashCode * 59 + this.PriorLoanRecordationDated.GetHashCode();
                 return hashCode;
             }
         }

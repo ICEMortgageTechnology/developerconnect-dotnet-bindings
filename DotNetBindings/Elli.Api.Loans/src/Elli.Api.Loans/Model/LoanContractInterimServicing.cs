@@ -730,6 +730,12 @@ namespace Elli.Api.Loans.Model
         public string Comments { get; set; }
 
         /// <summary>
+        /// Gets or Sets BeginningBalance
+        /// </summary>
+        [DataMember(Name="beginningBalance", EmitDefaultValue=false)]
+        public double? BeginningBalance { get; set; }
+
+        /// <summary>
         /// Gets or Sets LastPaymentEscrowTax
         /// </summary>
         [DataMember(Name="lastPaymentEscrowTax", EmitDefaultValue=false)]
@@ -1082,6 +1088,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  UnpaidMiscrFee: ").Append(UnpaidMiscrFee).Append("\n");
             sb.Append("  UnpaidPrincipal: ").Append(UnpaidPrincipal).Append("\n");
             sb.Append("  Comments: ").Append(Comments).Append("\n");
+            sb.Append("  BeginningBalance: ").Append(BeginningBalance).Append("\n");
             sb.Append("  LastPaymentEscrowTax: ").Append(LastPaymentEscrowTax).Append("\n");
             sb.Append("  LastPaymentEscrowHazardInsurance: ").Append(LastPaymentEscrowHazardInsurance).Append("\n");
             sb.Append("  LastPaymentEscrowMortgageInsurance: ").Append(LastPaymentEscrowMortgageInsurance).Append("\n");
@@ -1711,6 +1718,11 @@ namespace Elli.Api.Loans.Model
                     this.Comments.Equals(input.Comments))
                 ) && 
                 (
+                    this.BeginningBalance == input.BeginningBalance ||
+                    (this.BeginningBalance != null &&
+                    this.BeginningBalance.Equals(input.BeginningBalance))
+                ) && 
+                (
                     this.LastPaymentEscrowTax == input.LastPaymentEscrowTax ||
                     (this.LastPaymentEscrowTax != null &&
                     this.LastPaymentEscrowTax.Equals(input.LastPaymentEscrowTax))
@@ -2138,6 +2150,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.UnpaidPrincipal.GetHashCode();
                 if (this.Comments != null)
                     hashCode = hashCode * 59 + this.Comments.GetHashCode();
+                if (this.BeginningBalance != null)
+                    hashCode = hashCode * 59 + this.BeginningBalance.GetHashCode();
                 if (this.LastPaymentEscrowTax != null)
                     hashCode = hashCode * 59 + this.LastPaymentEscrowTax.GetHashCode();
                 if (this.LastPaymentEscrowHazardInsurance != null)
