@@ -202,6 +202,11 @@ Name | Type | Description | Notes
 **SofDCoBorrowerAddressZipcode** | **string** |  | [optional] 
 **AUSTrackingLogs** | [**List&lt;LoanContractAUSTrackingLogs&gt;**](LoanContractAUSTrackingLogs.md) |  | [optional] 
 **ATRQMBorrowers** | [**List&lt;LoanContractATRQMBorrower&gt;**](LoanContractATRQMBorrower.md) |  | [optional] 
+**LoanOfficerId** | **string** |  | [optional] 
+**LoanOfficerName** | **string** |  | [optional] 
+**LastModified** | **string** |  | [optional] 
+**Respa6** | **string** |  | [optional] 
+**LoanAmount** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

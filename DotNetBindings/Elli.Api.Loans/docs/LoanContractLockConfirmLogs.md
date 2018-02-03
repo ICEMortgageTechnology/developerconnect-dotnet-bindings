@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **Comments** | **string** |  | [optional] 
 **ConfirmedBy** | **string** |  | [optional] 
 **ConfirmedByIdIndicator** | **bool?** |  | [optional] 
+**ConfirmedById** | **string** |  | [optional] 
 **DateUtc** | **DateTime?** |  | [optional] 
 **FileAttachmentsMigrated** | **bool?** |  | [optional] 
 **Guid** | **string** |  | [optional] 

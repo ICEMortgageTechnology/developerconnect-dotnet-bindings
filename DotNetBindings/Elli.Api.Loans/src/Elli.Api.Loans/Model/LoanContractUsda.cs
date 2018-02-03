@@ -310,6 +310,12 @@ namespace Elli.Api.Loans.Model
         public string FinancedLoanClosingCostDescription { get; set; }
 
         /// <summary>
+        /// Gets or Sets FinancedLoanClosingCosts
+        /// </summary>
+        [DataMember(Name="financedLoanClosingCosts", EmitDefaultValue=false)]
+        public double? FinancedLoanClosingCosts { get; set; }
+
+        /// <summary>
         /// Gets or Sets GuaranteeFeeCollected
         /// </summary>
         [DataMember(Name="guaranteeFeeCollected", EmitDefaultValue=false)]
@@ -946,6 +952,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  ElderlyHouseholdDeduction: ").Append(ElderlyHouseholdDeduction).Append("\n");
             sb.Append("  FeeRate: ").Append(FeeRate).Append("\n");
             sb.Append("  FinancedLoanClosingCostDescription: ").Append(FinancedLoanClosingCostDescription).Append("\n");
+            sb.Append("  FinancedLoanClosingCosts: ").Append(FinancedLoanClosingCosts).Append("\n");
             sb.Append("  GuaranteeFeeCollected: ").Append(GuaranteeFeeCollected).Append("\n");
             sb.Append("  GuaranteeFeeOnCommitment: ").Append(GuaranteeFeeOnCommitment).Append("\n");
             sb.Append("  GuaranteeFeePurposeCodeType: ").Append(GuaranteeFeePurposeCodeType).Append("\n");
@@ -1282,6 +1289,11 @@ namespace Elli.Api.Loans.Model
                     this.FinancedLoanClosingCostDescription == input.FinancedLoanClosingCostDescription ||
                     (this.FinancedLoanClosingCostDescription != null &&
                     this.FinancedLoanClosingCostDescription.Equals(input.FinancedLoanClosingCostDescription))
+                ) && 
+                (
+                    this.FinancedLoanClosingCosts == input.FinancedLoanClosingCosts ||
+                    (this.FinancedLoanClosingCosts != null &&
+                    this.FinancedLoanClosingCosts.Equals(input.FinancedLoanClosingCosts))
                 ) && 
                 (
                     this.GuaranteeFeeCollected == input.GuaranteeFeeCollected ||
@@ -1866,6 +1878,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.FeeRate.GetHashCode();
                 if (this.FinancedLoanClosingCostDescription != null)
                     hashCode = hashCode * 59 + this.FinancedLoanClosingCostDescription.GetHashCode();
+                if (this.FinancedLoanClosingCosts != null)
+                    hashCode = hashCode * 59 + this.FinancedLoanClosingCosts.GetHashCode();
                 if (this.GuaranteeFeeCollected != null)
                     hashCode = hashCode * 59 + this.GuaranteeFeeCollected.GetHashCode();
                 if (this.GuaranteeFeeOnCommitment != null)

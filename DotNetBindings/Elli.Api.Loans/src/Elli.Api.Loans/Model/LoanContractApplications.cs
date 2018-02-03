@@ -1258,6 +1258,36 @@ namespace Elli.Api.Loans.Model
         public List<LoanContractATRQMBorrower> ATRQMBorrowers { get; set; }
 
         /// <summary>
+        /// Gets or Sets LoanOfficerId
+        /// </summary>
+        [DataMember(Name="loanOfficerId", EmitDefaultValue=false)]
+        public string LoanOfficerId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanOfficerName
+        /// </summary>
+        [DataMember(Name="loanOfficerName", EmitDefaultValue=false)]
+        public string LoanOfficerName { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LastModified
+        /// </summary>
+        [DataMember(Name="lastModified", EmitDefaultValue=false)]
+        public string LastModified { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Respa6
+        /// </summary>
+        [DataMember(Name="respa6", EmitDefaultValue=false)]
+        public string Respa6 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanAmount
+        /// </summary>
+        [DataMember(Name="loanAmount", EmitDefaultValue=false)]
+        public string LoanAmount { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -1464,6 +1494,11 @@ namespace Elli.Api.Loans.Model
             sb.Append("  SofDCoBorrowerAddressZipcode: ").Append(SofDCoBorrowerAddressZipcode).Append("\n");
             sb.Append("  AUSTrackingLogs: ").Append(AUSTrackingLogs).Append("\n");
             sb.Append("  ATRQMBorrowers: ").Append(ATRQMBorrowers).Append("\n");
+            sb.Append("  LoanOfficerId: ").Append(LoanOfficerId).Append("\n");
+            sb.Append("  LoanOfficerName: ").Append(LoanOfficerName).Append("\n");
+            sb.Append("  LastModified: ").Append(LastModified).Append("\n");
+            sb.Append("  Respa6: ").Append(Respa6).Append("\n");
+            sb.Append("  LoanAmount: ").Append(LoanAmount).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -2492,6 +2527,31 @@ namespace Elli.Api.Loans.Model
                     this.ATRQMBorrowers == input.ATRQMBorrowers ||
                     this.ATRQMBorrowers != null &&
                     this.ATRQMBorrowers.SequenceEqual(input.ATRQMBorrowers)
+                ) && 
+                (
+                    this.LoanOfficerId == input.LoanOfficerId ||
+                    (this.LoanOfficerId != null &&
+                    this.LoanOfficerId.Equals(input.LoanOfficerId))
+                ) && 
+                (
+                    this.LoanOfficerName == input.LoanOfficerName ||
+                    (this.LoanOfficerName != null &&
+                    this.LoanOfficerName.Equals(input.LoanOfficerName))
+                ) && 
+                (
+                    this.LastModified == input.LastModified ||
+                    (this.LastModified != null &&
+                    this.LastModified.Equals(input.LastModified))
+                ) && 
+                (
+                    this.Respa6 == input.Respa6 ||
+                    (this.Respa6 != null &&
+                    this.Respa6.Equals(input.Respa6))
+                ) && 
+                (
+                    this.LoanAmount == input.LoanAmount ||
+                    (this.LoanAmount != null &&
+                    this.LoanAmount.Equals(input.LoanAmount))
                 );
         }
 
@@ -2902,6 +2962,16 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.AUSTrackingLogs.GetHashCode();
                 if (this.ATRQMBorrowers != null)
                     hashCode = hashCode * 59 + this.ATRQMBorrowers.GetHashCode();
+                if (this.LoanOfficerId != null)
+                    hashCode = hashCode * 59 + this.LoanOfficerId.GetHashCode();
+                if (this.LoanOfficerName != null)
+                    hashCode = hashCode * 59 + this.LoanOfficerName.GetHashCode();
+                if (this.LastModified != null)
+                    hashCode = hashCode * 59 + this.LastModified.GetHashCode();
+                if (this.Respa6 != null)
+                    hashCode = hashCode * 59 + this.Respa6.GetHashCode();
+                if (this.LoanAmount != null)
+                    hashCode = hashCode * 59 + this.LoanAmount.GetHashCode();
                 return hashCode;
             }
         }

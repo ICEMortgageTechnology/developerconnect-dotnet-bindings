@@ -118,6 +118,12 @@ namespace Elli.Api.Loans.Model
         public string ClosingCostScenarioXml { get; set; }
 
         /// <summary>
+        /// Gets or Sets DisclosedSalesPrice
+        /// </summary>
+        [DataMember(Name="disclosedSalesPrice", EmitDefaultValue=false)]
+        public double? DisclosedSalesPrice { get; set; }
+
+        /// <summary>
         /// Gets or Sets EscrowCompanyName
         /// </summary>
         [DataMember(Name="escrowCompanyName", EmitDefaultValue=false)]
@@ -470,6 +476,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  BrokerCommissionBasedUnitPrice: ").Append(BrokerCommissionBasedUnitPrice).Append("\n");
             sb.Append("  ClosingCostProgram: ").Append(ClosingCostProgram).Append("\n");
             sb.Append("  ClosingCostScenarioXml: ").Append(ClosingCostScenarioXml).Append("\n");
+            sb.Append("  DisclosedSalesPrice: ").Append(DisclosedSalesPrice).Append("\n");
             sb.Append("  EscrowCompanyName: ").Append(EscrowCompanyName).Append("\n");
             sb.Append("  EscrowTableDesc1: ").Append(EscrowTableDesc1).Append("\n");
             sb.Append("  EscrowTableDesc2: ").Append(EscrowTableDesc2).Append("\n");
@@ -604,6 +611,11 @@ namespace Elli.Api.Loans.Model
                     this.ClosingCostScenarioXml == input.ClosingCostScenarioXml ||
                     (this.ClosingCostScenarioXml != null &&
                     this.ClosingCostScenarioXml.Equals(input.ClosingCostScenarioXml))
+                ) && 
+                (
+                    this.DisclosedSalesPrice == input.DisclosedSalesPrice ||
+                    (this.DisclosedSalesPrice != null &&
+                    this.DisclosedSalesPrice.Equals(input.DisclosedSalesPrice))
                 ) && 
                 (
                     this.EscrowCompanyName == input.EscrowCompanyName ||
@@ -914,6 +926,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.ClosingCostProgram.GetHashCode();
                 if (this.ClosingCostScenarioXml != null)
                     hashCode = hashCode * 59 + this.ClosingCostScenarioXml.GetHashCode();
+                if (this.DisclosedSalesPrice != null)
+                    hashCode = hashCode * 59 + this.DisclosedSalesPrice.GetHashCode();
                 if (this.EscrowCompanyName != null)
                     hashCode = hashCode * 59 + this.EscrowCompanyName.GetHashCode();
                 if (this.EscrowTableDesc1 != null)

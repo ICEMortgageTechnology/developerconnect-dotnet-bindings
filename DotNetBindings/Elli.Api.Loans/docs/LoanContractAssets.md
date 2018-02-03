@@ -36,7 +36,7 @@ Name | Type | Description | Notes
 **TitleFax** | **string** |  | [optional] 
 **TitlePhone** | **string** |  | [optional] 
 **Total** | **double?** |  | [optional] 
-**VodIndex** | **byte[]** |  | [optional] 
+**VodIndex** | **int?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

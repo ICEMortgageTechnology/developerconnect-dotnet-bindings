@@ -44,6 +44,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Configuration;
 using Elli.Api.Base;
 using Elli.Api.CustomDataObjects.Api;
 using Elli.Api.CustomDataObjects.Model;
@@ -127,13 +128,25 @@ namespace Ellie.Api.Examples.Loans
         /// </summary>
         private static void Authenticate()
         {
+            ApiConfiguration config = (ApiConfiguration)ConfigurationManager.GetSection("ElliApiConfig");
+            string instanceId = config.InstanceId, userName = config.Username, password = config.Password;
+
             Console.Clear();
-            Console.Write("Instance Id     : ");
-            var instanceId = Console.ReadLine();
-            Console.Write("Username        : ");
-            var userName = Console.ReadLine();
-            Console.Write("Password        : ");
-            var password = Console.ReadLine();
+            if (string.IsNullOrEmpty(instanceId))
+            {
+                Console.Write("Instance Id     : ");
+                instanceId = Console.ReadLine();
+            }
+            if (string.IsNullOrEmpty(userName))
+            {
+                Console.Write("Username        : ");
+                userName = Console.ReadLine();
+            }
+            if (string.IsNullOrEmpty(password))
+            {
+                Console.Write("Password        : ");
+                password = Console.ReadLine();
+            }
 
             var credentials = new UserCredential
             {

@@ -259,25 +259,25 @@ namespace Elli.Api.Loans.Model
         /// Gets or Sets TimeInLineOfWorkMonths
         /// </summary>
         [DataMember(Name="timeInLineOfWorkMonths", EmitDefaultValue=false)]
-        public byte[] TimeInLineOfWorkMonths { get; set; }
+        public int? TimeInLineOfWorkMonths { get; set; }
 
         /// <summary>
         /// Gets or Sets TimeInLineOfWorkYears
         /// </summary>
         [DataMember(Name="timeInLineOfWorkYears", EmitDefaultValue=false)]
-        public byte[] TimeInLineOfWorkYears { get; set; }
+        public int? TimeInLineOfWorkYears { get; set; }
 
         /// <summary>
         /// Gets or Sets TimeOnJobTermMonths
         /// </summary>
         [DataMember(Name="timeOnJobTermMonths", EmitDefaultValue=false)]
-        public byte[] TimeOnJobTermMonths { get; set; }
+        public int? TimeOnJobTermMonths { get; set; }
 
         /// <summary>
         /// Gets or Sets TimeOnJobTermYears
         /// </summary>
         [DataMember(Name="timeOnJobTermYears", EmitDefaultValue=false)]
-        public byte[] TimeOnJobTermYears { get; set; }
+        public int? TimeOnJobTermYears { get; set; }
 
         /// <summary>
         /// Gets or Sets Title

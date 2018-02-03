@@ -604,6 +604,36 @@ namespace Elli.Api.Loans.Model
         public bool? FreddieLQAAutoOrderIndicator { get; set; }
 
         /// <summary>
+        /// Gets or Sets ContactTitle
+        /// </summary>
+        [DataMember(Name="contactTitle", EmitDefaultValue=false)]
+        public string ContactTitle { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ContactName
+        /// </summary>
+        [DataMember(Name="contactName", EmitDefaultValue=false)]
+        public string ContactName { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ContactFax
+        /// </summary>
+        [DataMember(Name="contactFax", EmitDefaultValue=false)]
+        public string ContactFax { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ContactPhone
+        /// </summary>
+        [DataMember(Name="contactPhone", EmitDefaultValue=false)]
+        public string ContactPhone { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PrintStateLicenseOn1003
+        /// </summary>
+        [DataMember(Name="printStateLicenseOn1003", EmitDefaultValue=false)]
+        public bool? PrintStateLicenseOn1003 { get; set; }
+
+        /// <summary>
         /// Gets or Sets MaventATRQMResult
         /// </summary>
         [DataMember(Name="maventATRQMResult", EmitDefaultValue=false)]
@@ -620,6 +650,12 @@ namespace Elli.Api.Loans.Model
         /// </summary>
         [DataMember(Name="subTaxYearMIPremiums", EmitDefaultValue=false)]
         public double? SubTaxYearMIPremiums { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanFileSequenceNumber
+        /// </summary>
+        [DataMember(Name="loanFileSequenceNumber", EmitDefaultValue=false)]
+        public int? LoanFileSequenceNumber { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -719,9 +755,15 @@ namespace Elli.Api.Loans.Model
             sb.Append("  CopyFromSubjectProperty: ").Append(CopyFromSubjectProperty).Append("\n");
             sb.Append("  FreddieLPAAutoOrderIndicator: ").Append(FreddieLPAAutoOrderIndicator).Append("\n");
             sb.Append("  FreddieLQAAutoOrderIndicator: ").Append(FreddieLQAAutoOrderIndicator).Append("\n");
+            sb.Append("  ContactTitle: ").Append(ContactTitle).Append("\n");
+            sb.Append("  ContactName: ").Append(ContactName).Append("\n");
+            sb.Append("  ContactFax: ").Append(ContactFax).Append("\n");
+            sb.Append("  ContactPhone: ").Append(ContactPhone).Append("\n");
+            sb.Append("  PrintStateLicenseOn1003: ").Append(PrintStateLicenseOn1003).Append("\n");
             sb.Append("  MaventATRQMResult: ").Append(MaventATRQMResult).Append("\n");
             sb.Append("  MIPremiums: ").Append(MIPremiums).Append("\n");
             sb.Append("  SubTaxYearMIPremiums: ").Append(SubTaxYearMIPremiums).Append("\n");
+            sb.Append("  LoanFileSequenceNumber: ").Append(LoanFileSequenceNumber).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -1207,6 +1249,31 @@ namespace Elli.Api.Loans.Model
                     this.FreddieLQAAutoOrderIndicator.Equals(input.FreddieLQAAutoOrderIndicator))
                 ) && 
                 (
+                    this.ContactTitle == input.ContactTitle ||
+                    (this.ContactTitle != null &&
+                    this.ContactTitle.Equals(input.ContactTitle))
+                ) && 
+                (
+                    this.ContactName == input.ContactName ||
+                    (this.ContactName != null &&
+                    this.ContactName.Equals(input.ContactName))
+                ) && 
+                (
+                    this.ContactFax == input.ContactFax ||
+                    (this.ContactFax != null &&
+                    this.ContactFax.Equals(input.ContactFax))
+                ) && 
+                (
+                    this.ContactPhone == input.ContactPhone ||
+                    (this.ContactPhone != null &&
+                    this.ContactPhone.Equals(input.ContactPhone))
+                ) && 
+                (
+                    this.PrintStateLicenseOn1003 == input.PrintStateLicenseOn1003 ||
+                    (this.PrintStateLicenseOn1003 != null &&
+                    this.PrintStateLicenseOn1003.Equals(input.PrintStateLicenseOn1003))
+                ) && 
+                (
                     this.MaventATRQMResult == input.MaventATRQMResult ||
                     (this.MaventATRQMResult != null &&
                     this.MaventATRQMResult.Equals(input.MaventATRQMResult))
@@ -1220,6 +1287,11 @@ namespace Elli.Api.Loans.Model
                     this.SubTaxYearMIPremiums == input.SubTaxYearMIPremiums ||
                     (this.SubTaxYearMIPremiums != null &&
                     this.SubTaxYearMIPremiums.Equals(input.SubTaxYearMIPremiums))
+                ) && 
+                (
+                    this.LoanFileSequenceNumber == input.LoanFileSequenceNumber ||
+                    (this.LoanFileSequenceNumber != null &&
+                    this.LoanFileSequenceNumber.Equals(input.LoanFileSequenceNumber))
                 );
         }
 
@@ -1412,12 +1484,24 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.FreddieLPAAutoOrderIndicator.GetHashCode();
                 if (this.FreddieLQAAutoOrderIndicator != null)
                     hashCode = hashCode * 59 + this.FreddieLQAAutoOrderIndicator.GetHashCode();
+                if (this.ContactTitle != null)
+                    hashCode = hashCode * 59 + this.ContactTitle.GetHashCode();
+                if (this.ContactName != null)
+                    hashCode = hashCode * 59 + this.ContactName.GetHashCode();
+                if (this.ContactFax != null)
+                    hashCode = hashCode * 59 + this.ContactFax.GetHashCode();
+                if (this.ContactPhone != null)
+                    hashCode = hashCode * 59 + this.ContactPhone.GetHashCode();
+                if (this.PrintStateLicenseOn1003 != null)
+                    hashCode = hashCode * 59 + this.PrintStateLicenseOn1003.GetHashCode();
                 if (this.MaventATRQMResult != null)
                     hashCode = hashCode * 59 + this.MaventATRQMResult.GetHashCode();
                 if (this.MIPremiums != null)
                     hashCode = hashCode * 59 + this.MIPremiums.GetHashCode();
                 if (this.SubTaxYearMIPremiums != null)
                     hashCode = hashCode * 59 + this.SubTaxYearMIPremiums.GetHashCode();
+                if (this.LoanFileSequenceNumber != null)
+                    hashCode = hashCode * 59 + this.LoanFileSequenceNumber.GetHashCode();
                 return hashCode;
             }
         }

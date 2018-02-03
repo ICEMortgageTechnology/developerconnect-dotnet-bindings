@@ -538,6 +538,12 @@ namespace Elli.Api.Loans.Model
         public string YearsOfCoverage { get; set; }
 
         /// <summary>
+        /// Gets or Sets CorrespondentAssignmentID
+        /// </summary>
+        [DataMember(Name="correspondentAssignmentID", EmitDefaultValue=false)]
+        public string CorrespondentAssignmentID { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -624,6 +630,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  State: ").Append(State).Append("\n");
             sb.Append("  TransferLoanToConduitIndicator: ").Append(TransferLoanToConduitIndicator).Append("\n");
             sb.Append("  YearsOfCoverage: ").Append(YearsOfCoverage).Append("\n");
+            sb.Append("  CorrespondentAssignmentID: ").Append(CorrespondentAssignmentID).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -1052,6 +1059,11 @@ namespace Elli.Api.Loans.Model
                     this.YearsOfCoverage == input.YearsOfCoverage ||
                     (this.YearsOfCoverage != null &&
                     this.YearsOfCoverage.Equals(input.YearsOfCoverage))
+                ) && 
+                (
+                    this.CorrespondentAssignmentID == input.CorrespondentAssignmentID ||
+                    (this.CorrespondentAssignmentID != null &&
+                    this.CorrespondentAssignmentID.Equals(input.CorrespondentAssignmentID))
                 );
         }
 
@@ -1222,6 +1234,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.TransferLoanToConduitIndicator.GetHashCode();
                 if (this.YearsOfCoverage != null)
                     hashCode = hashCode * 59 + this.YearsOfCoverage.GetHashCode();
+                if (this.CorrespondentAssignmentID != null)
+                    hashCode = hashCode * 59 + this.CorrespondentAssignmentID.GetHashCode();
                 return hashCode;
             }
         }

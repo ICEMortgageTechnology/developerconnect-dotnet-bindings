@@ -952,6 +952,12 @@ namespace Elli.Api.Loans.Model
         public string PurchasePriceAmount { get; set; }
 
         /// <summary>
+        /// Gets or Sets DisclosedSalesPrice
+        /// </summary>
+        [DataMember(Name="disclosedSalesPrice", EmitDefaultValue=false)]
+        public string DisclosedSalesPrice { get; set; }
+
+        /// <summary>
         /// Gets or Sets LoanClosingCost2LenderCredits
         /// </summary>
         [DataMember(Name="loanClosingCost2LenderCredits", EmitDefaultValue=false)]
@@ -1258,6 +1264,36 @@ namespace Elli.Api.Loans.Model
         public int? NumberOfDisclosureDocs { get; set; }
 
         /// <summary>
+        /// Gets or Sets LockedDisclosedDateField
+        /// </summary>
+        [DataMember(Name="lockedDisclosedDateField", EmitDefaultValue=false)]
+        public DateTime? LockedDisclosedDateField { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LockedIntentReceivedByField
+        /// </summary>
+        [DataMember(Name="lockedIntentReceivedByField", EmitDefaultValue=false)]
+        public string LockedIntentReceivedByField { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsIntentReceivedByLocked
+        /// </summary>
+        [DataMember(Name="isIntentReceivedByLocked", EmitDefaultValue=false)]
+        public bool? IsIntentReceivedByLocked { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsDisclosedDailyInterestLocked
+        /// </summary>
+        [DataMember(Name="isDisclosedDailyInterestLocked", EmitDefaultValue=false)]
+        public bool? IsDisclosedDailyInterestLocked { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LockedDisclosedDailyInterestField
+        /// </summary>
+        [DataMember(Name="lockedDisclosedDailyInterestField", EmitDefaultValue=false)]
+        public string LockedDisclosedDailyInterestField { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -1413,6 +1449,7 @@ namespace Elli.Api.Loans.Model
             sb.Append("  LoanEstimate2UnroundedTotalLoanCosts: ").Append(LoanEstimate2UnroundedTotalLoanCosts).Append("\n");
             sb.Append("  LoanEstimate2UnroundedTotalOtherCosts: ").Append(LoanEstimate2UnroundedTotalOtherCosts).Append("\n");
             sb.Append("  PurchasePriceAmount: ").Append(PurchasePriceAmount).Append("\n");
+            sb.Append("  DisclosedSalesPrice: ").Append(DisclosedSalesPrice).Append("\n");
             sb.Append("  LoanClosingCost2LenderCredits: ").Append(LoanClosingCost2LenderCredits).Append("\n");
             sb.Append("  Line907PropertyIndicator2015: ").Append(Line907PropertyIndicator2015).Append("\n");
             sb.Append("  Line908PropertyIndicator2015: ").Append(Line908PropertyIndicator2015).Append("\n");
@@ -1464,6 +1501,11 @@ namespace Elli.Api.Loans.Model
             sb.Append("  ChangesReceivedDate: ").Append(ChangesReceivedDate).Append("\n");
             sb.Append("  RevisedDueDate: ").Append(RevisedDueDate).Append("\n");
             sb.Append("  NumberOfDisclosureDocs: ").Append(NumberOfDisclosureDocs).Append("\n");
+            sb.Append("  LockedDisclosedDateField: ").Append(LockedDisclosedDateField).Append("\n");
+            sb.Append("  LockedIntentReceivedByField: ").Append(LockedIntentReceivedByField).Append("\n");
+            sb.Append("  IsIntentReceivedByLocked: ").Append(IsIntentReceivedByLocked).Append("\n");
+            sb.Append("  IsDisclosedDailyInterestLocked: ").Append(IsDisclosedDailyInterestLocked).Append("\n");
+            sb.Append("  LockedDisclosedDailyInterestField: ").Append(LockedDisclosedDailyInterestField).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -2239,6 +2281,11 @@ namespace Elli.Api.Loans.Model
                     this.PurchasePriceAmount.Equals(input.PurchasePriceAmount))
                 ) && 
                 (
+                    this.DisclosedSalesPrice == input.DisclosedSalesPrice ||
+                    (this.DisclosedSalesPrice != null &&
+                    this.DisclosedSalesPrice.Equals(input.DisclosedSalesPrice))
+                ) && 
+                (
                     this.LoanClosingCost2LenderCredits == input.LoanClosingCost2LenderCredits ||
                     (this.LoanClosingCost2LenderCredits != null &&
                     this.LoanClosingCost2LenderCredits.Equals(input.LoanClosingCost2LenderCredits))
@@ -2492,6 +2539,31 @@ namespace Elli.Api.Loans.Model
                     this.NumberOfDisclosureDocs == input.NumberOfDisclosureDocs ||
                     (this.NumberOfDisclosureDocs != null &&
                     this.NumberOfDisclosureDocs.Equals(input.NumberOfDisclosureDocs))
+                ) && 
+                (
+                    this.LockedDisclosedDateField == input.LockedDisclosedDateField ||
+                    (this.LockedDisclosedDateField != null &&
+                    this.LockedDisclosedDateField.Equals(input.LockedDisclosedDateField))
+                ) && 
+                (
+                    this.LockedIntentReceivedByField == input.LockedIntentReceivedByField ||
+                    (this.LockedIntentReceivedByField != null &&
+                    this.LockedIntentReceivedByField.Equals(input.LockedIntentReceivedByField))
+                ) && 
+                (
+                    this.IsIntentReceivedByLocked == input.IsIntentReceivedByLocked ||
+                    (this.IsIntentReceivedByLocked != null &&
+                    this.IsIntentReceivedByLocked.Equals(input.IsIntentReceivedByLocked))
+                ) && 
+                (
+                    this.IsDisclosedDailyInterestLocked == input.IsDisclosedDailyInterestLocked ||
+                    (this.IsDisclosedDailyInterestLocked != null &&
+                    this.IsDisclosedDailyInterestLocked.Equals(input.IsDisclosedDailyInterestLocked))
+                ) && 
+                (
+                    this.LockedDisclosedDailyInterestField == input.LockedDisclosedDailyInterestField ||
+                    (this.LockedDisclosedDailyInterestField != null &&
+                    this.LockedDisclosedDailyInterestField.Equals(input.LockedDisclosedDailyInterestField))
                 );
         }
 
@@ -2800,6 +2872,8 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.LoanEstimate2UnroundedTotalOtherCosts.GetHashCode();
                 if (this.PurchasePriceAmount != null)
                     hashCode = hashCode * 59 + this.PurchasePriceAmount.GetHashCode();
+                if (this.DisclosedSalesPrice != null)
+                    hashCode = hashCode * 59 + this.DisclosedSalesPrice.GetHashCode();
                 if (this.LoanClosingCost2LenderCredits != null)
                     hashCode = hashCode * 59 + this.LoanClosingCost2LenderCredits.GetHashCode();
                 if (this.Line907PropertyIndicator2015 != null)
@@ -2902,6 +2976,16 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.RevisedDueDate.GetHashCode();
                 if (this.NumberOfDisclosureDocs != null)
                     hashCode = hashCode * 59 + this.NumberOfDisclosureDocs.GetHashCode();
+                if (this.LockedDisclosedDateField != null)
+                    hashCode = hashCode * 59 + this.LockedDisclosedDateField.GetHashCode();
+                if (this.LockedIntentReceivedByField != null)
+                    hashCode = hashCode * 59 + this.LockedIntentReceivedByField.GetHashCode();
+                if (this.IsIntentReceivedByLocked != null)
+                    hashCode = hashCode * 59 + this.IsIntentReceivedByLocked.GetHashCode();
+                if (this.IsDisclosedDailyInterestLocked != null)
+                    hashCode = hashCode * 59 + this.IsDisclosedDailyInterestLocked.GetHashCode();
+                if (this.LockedDisclosedDailyInterestField != null)
+                    hashCode = hashCode * 59 + this.LockedDisclosedDailyInterestField.GetHashCode();
                 return hashCode;
             }
         }

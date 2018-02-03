@@ -66,6 +66,8 @@ Name | Type | Description | Notes
 **FederalAgency** | **string** |  | [optional] 
 **FederalTaxpayerIdNumber** | **string** |  | [optional] 
 **LegalEntityIdentifier** | **string** |  | [optional] 
+**LegalEntityIdentifierReporting** | **string** |  | [optional] 
+**LegalEntityIdentifierUsed** | **string** |  | [optional] 
 **RespondentID** | **string** |  | [optional] 
 **ParentName** | **string** |  | [optional] 
 **ParentAddress** | **string** |  | [optional] 
@@ -87,6 +89,19 @@ Name | Type | Description | Notes
 **HmdaPropertyCity** | **string** |  | [optional] 
 **HmdaPropertyState** | **string** |  | [optional] 
 **HmdaSyncAddressIndicator** | **bool?** |  | [optional] 
+**RepurchasedReportingYear** | **int?** |  | [optional] 
+**RepurchasedLoanAmount** | **double?** |  | [optional] 
+**RepurchasedTypeOfPurchaser** | **string** |  | [optional] 
+**RepurchasedActionTaken** | **string** |  | [optional] 
+**RepurchasedActionDate** | **string** |  | [optional] 
+**HmdaDtiIndicator** | **bool?** |  | [optional] 
+**HmdaCltvIndicator** | **bool?** |  | [optional] 
+**HmdaIncomeIndicator** | **bool?** |  | [optional] 
+**HMDAProfileID** | **string** |  | [optional] 
+**HMDAProfileDTIValue** | **string** |  | [optional] 
+**HMDAProfileCLTVValue** | **string** |  | [optional] 
+**HMDAProfileIncomeValue** | **string** |  | [optional] 
+**HMDAProfileApplicationDateValue** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

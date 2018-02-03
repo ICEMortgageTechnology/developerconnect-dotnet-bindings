@@ -13,6 +13,7 @@ This repository contains the .NET bindings, also referred to as .NET Client Libr
 **Prerequisites:**
 
     Visual Studio 2015 Or Higher
+    Visual Sudio 2015 Or Higher
 
 ### Step 1: Install the .NET Language Binding
 

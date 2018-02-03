@@ -9,6 +9,10 @@ Name | Type | Description | Notes
 **LastFraudOrderAlertLevel** | **string** |  | [optional] 
 **LastFraudOrderDescriptionOfAlerts** | **string** |  | [optional] 
 **TQLFraudAlertIndex** | **int?** |  | [optional] 
+**DriveFraudAlertStatus** | **string** |  | [optional] 
+**DriveFraudAlertCode** | **string** |  | [optional] 
+**FraudGuardFraudAlertStatus** | **string** |  | [optional] 
+**FraudGuardFraudAlertCode** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

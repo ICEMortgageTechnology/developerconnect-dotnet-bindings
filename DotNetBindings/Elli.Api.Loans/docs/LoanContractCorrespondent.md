@@ -51,6 +51,9 @@ Name | Type | Description | Notes
 **LateDaysEndTrigger** | **string** |  | [optional] 
 **SubmittedforPurchaseDate** | **DateTime?** |  | [optional] 
 **WithdrawnDate** | **DateTime?** |  | [optional] 
+**CancelledDate** | **DateTime?** |  | [optional] 
+**VoidedDate** | **DateTime?** |  | [optional] 
+**WithdrawalRequestedDate** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

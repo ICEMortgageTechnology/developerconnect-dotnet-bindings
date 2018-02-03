@@ -73,7 +73,7 @@ namespace Elli.Api.Loans.Model
         /// Gets or Sets AgeAtApplicationYearsCount
         /// </summary>
         [DataMember(Name="ageAtApplicationYearsCount", EmitDefaultValue=false)]
-        public byte[] AgeAtApplicationYearsCount { get; set; }
+        public int? AgeAtApplicationYearsCount { get; set; }
 
         /// <summary>
         /// Gets or Sets AliasName
@@ -253,7 +253,7 @@ namespace Elli.Api.Loans.Model
         /// Gets or Sets DependentCount
         /// </summary>
         [DataMember(Name="dependentCount", EmitDefaultValue=false)]
-        public byte[] DependentCount { get; set; }
+        public int? DependentCount { get; set; }
 
         /// <summary>
         /// Gets or Sets DependentsAgesDescription
@@ -568,6 +568,18 @@ namespace Elli.Api.Loans.Model
         public string FullNameWithSuffix { get; set; }
 
         /// <summary>
+        /// Gets or Sets FannieFirstName
+        /// </summary>
+        [DataMember(Name="fannieFirstName", EmitDefaultValue=false)]
+        public string FannieFirstName { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FannieMiddleName
+        /// </summary>
+        [DataMember(Name="fannieMiddleName", EmitDefaultValue=false)]
+        public string FannieMiddleName { get; set; }
+
+        /// <summary>
         /// Gets or Sets HighestCreditLimit
         /// </summary>
         [DataMember(Name="highestCreditLimit", EmitDefaultValue=false)]
@@ -788,6 +800,78 @@ namespace Elli.Api.Loans.Model
         /// </summary>
         [DataMember(Name="hmdaPacificIslanderOtherIndicator", EmitDefaultValue=false)]
         public bool? HmdaPacificIslanderOtherIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaRaceReportedField1
+        /// </summary>
+        [DataMember(Name="hmdaRaceReportedField1", EmitDefaultValue=false)]
+        public string HmdaRaceReportedField1 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaRaceReportedField2
+        /// </summary>
+        [DataMember(Name="hmdaRaceReportedField2", EmitDefaultValue=false)]
+        public string HmdaRaceReportedField2 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaRaceReportedField3
+        /// </summary>
+        [DataMember(Name="hmdaRaceReportedField3", EmitDefaultValue=false)]
+        public string HmdaRaceReportedField3 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaRaceReportedField4
+        /// </summary>
+        [DataMember(Name="hmdaRaceReportedField4", EmitDefaultValue=false)]
+        public string HmdaRaceReportedField4 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaRaceReportedField5
+        /// </summary>
+        [DataMember(Name="hmdaRaceReportedField5", EmitDefaultValue=false)]
+        public string HmdaRaceReportedField5 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityReportedField1
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityReportedField1", EmitDefaultValue=false)]
+        public string HmdaEthnicityReportedField1 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityReportedField2
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityReportedField2", EmitDefaultValue=false)]
+        public string HmdaEthnicityReportedField2 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityReportedField3
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityReportedField3", EmitDefaultValue=false)]
+        public string HmdaEthnicityReportedField3 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityReportedField4
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityReportedField4", EmitDefaultValue=false)]
+        public string HmdaEthnicityReportedField4 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityReportedField5
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityReportedField5", EmitDefaultValue=false)]
+        public string HmdaEthnicityReportedField5 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityReportedFields
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityReportedFields", EmitDefaultValue=false)]
+        public string HmdaEthnicityReportedFields { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaRaceReportedFields
+        /// </summary>
+        [DataMember(Name="hmdaRaceReportedFields", EmitDefaultValue=false)]
+        public string HmdaRaceReportedFields { get; set; }
 
         /// <summary>
         /// Gets or Sets HomeownerPastThreeYearsIndicator
@@ -1756,6 +1840,174 @@ namespace Elli.Api.Loans.Model
         public string Vendor12 { get; set; }
 
         /// <summary>
+        /// Gets or Sets NoCoApplicantEthnicityIndicator
+        /// </summary>
+        [DataMember(Name="noCoApplicantEthnicityIndicator", EmitDefaultValue=false)]
+        public bool? NoCoApplicantEthnicityIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets NoCoApplicantSexIndicator
+        /// </summary>
+        [DataMember(Name="noCoApplicantSexIndicator", EmitDefaultValue=false)]
+        public bool? NoCoApplicantSexIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaGendertypeFemaleIndicator
+        /// </summary>
+        [DataMember(Name="hmdaGendertypeFemaleIndicator", EmitDefaultValue=false)]
+        public bool? HmdaGendertypeFemaleIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaGendertypeMaleIndicator
+        /// </summary>
+        [DataMember(Name="hmdaGendertypeMaleIndicator", EmitDefaultValue=false)]
+        public bool? HmdaGendertypeMaleIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaGendertypeDoNotWishIndicator
+        /// </summary>
+        [DataMember(Name="hmdaGendertypeDoNotWishIndicator", EmitDefaultValue=false)]
+        public bool? HmdaGendertypeDoNotWishIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaGendertypeNotApplicableIndicator
+        /// </summary>
+        [DataMember(Name="hmdaGendertypeNotApplicableIndicator", EmitDefaultValue=false)]
+        public bool? HmdaGendertypeNotApplicableIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityDoNotWishIndicator
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityDoNotWishIndicator", EmitDefaultValue=false)]
+        public bool? HmdaEthnicityDoNotWishIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityHispanicLatinoIndicator
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityHispanicLatinoIndicator", EmitDefaultValue=false)]
+        public bool? HmdaEthnicityHispanicLatinoIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityNotHispanicLatinoIndicator
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityNotHispanicLatinoIndicator", EmitDefaultValue=false)]
+        public bool? HmdaEthnicityNotHispanicLatinoIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityNotApplicableIndicator
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityNotApplicableIndicator", EmitDefaultValue=false)]
+        public bool? HmdaEthnicityNotApplicableIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaEthnicityInfoNotProvided
+        /// </summary>
+        [DataMember(Name="hmdaEthnicityInfoNotProvided", EmitDefaultValue=false)]
+        public bool? HmdaEthnicityInfoNotProvided { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaRaceInfoNotProvided
+        /// </summary>
+        [DataMember(Name="hmdaRaceInfoNotProvided", EmitDefaultValue=false)]
+        public bool? HmdaRaceInfoNotProvided { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaRaceDoNotWishProvideIndicator
+        /// </summary>
+        [DataMember(Name="hmdaRaceDoNotWishProvideIndicator", EmitDefaultValue=false)]
+        public bool? HmdaRaceDoNotWishProvideIndicator { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HmdaSexInfoNotProvided
+        /// </summary>
+        [DataMember(Name="hmdaSexInfoNotProvided", EmitDefaultValue=false)]
+        public bool? HmdaSexInfoNotProvided { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PIWMessage
+        /// </summary>
+        [DataMember(Name="pIWMessage", EmitDefaultValue=false)]
+        public string PIWMessage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ValueRepAndWarrantyMessage
+        /// </summary>
+        [DataMember(Name="valueRepAndWarrantyMessage", EmitDefaultValue=false)]
+        public string ValueRepAndWarrantyMessage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IncomeRepAndWarrantyMessage
+        /// </summary>
+        [DataMember(Name="incomeRepAndWarrantyMessage", EmitDefaultValue=false)]
+        public string IncomeRepAndWarrantyMessage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AssetRepAndWarrantyMessage
+        /// </summary>
+        [DataMember(Name="assetRepAndWarrantyMessage", EmitDefaultValue=false)]
+        public string AssetRepAndWarrantyMessage { get; set; }
+
+        /// <summary>
+        /// Gets or Sets PIWAccepted
+        /// </summary>
+        [DataMember(Name="pIWAccepted", EmitDefaultValue=false)]
+        public bool? PIWAccepted { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ValueRepAndWarrantyAvailable
+        /// </summary>
+        [DataMember(Name="valueRepAndWarrantyAvailable", EmitDefaultValue=false)]
+        public bool? ValueRepAndWarrantyAvailable { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AssetRepAndWarrantyReliefAvailable
+        /// </summary>
+        [DataMember(Name="assetRepAndWarrantyReliefAvailable", EmitDefaultValue=false)]
+        public bool? AssetRepAndWarrantyReliefAvailable { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IncomeRepAndWarrantyReliefAvailable
+        /// </summary>
+        [DataMember(Name="incomeRepAndWarrantyReliefAvailable", EmitDefaultValue=false)]
+        public bool? IncomeRepAndWarrantyReliefAvailable { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsBaseIncomeAvailable
+        /// </summary>
+        [DataMember(Name="isBaseIncomeAvailable", EmitDefaultValue=false)]
+        public bool? IsBaseIncomeAvailable { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsBonusAvailable
+        /// </summary>
+        [DataMember(Name="isBonusAvailable", EmitDefaultValue=false)]
+        public bool? IsBonusAvailable { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsOvertimeAvailable
+        /// </summary>
+        [DataMember(Name="isOvertimeAvailable", EmitDefaultValue=false)]
+        public bool? IsOvertimeAvailable { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsCommissionAvailable
+        /// </summary>
+        [DataMember(Name="isCommissionAvailable", EmitDefaultValue=false)]
+        public bool? IsCommissionAvailable { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsSocialSecurityAvailable
+        /// </summary>
+        [DataMember(Name="isSocialSecurityAvailable", EmitDefaultValue=false)]
+        public bool? IsSocialSecurityAvailable { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsSelfEmployed
+        /// </summary>
+        [DataMember(Name="isSelfEmployed", EmitDefaultValue=false)]
+        public bool? IsSelfEmployed { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -1847,6 +2099,8 @@ namespace Elli.Api.Loans.Model
             sb.Append("  FreddieMacPerson2: ").Append(FreddieMacPerson2).Append("\n");
             sb.Append("  FullName: ").Append(FullName).Append("\n");
             sb.Append("  FullNameWithSuffix: ").Append(FullNameWithSuffix).Append("\n");
+            sb.Append("  FannieFirstName: ").Append(FannieFirstName).Append("\n");
+            sb.Append("  FannieMiddleName: ").Append(FannieMiddleName).Append("\n");
             sb.Append("  HighestCreditLimit: ").Append(HighestCreditLimit).Append("\n");
             sb.Append("  Hmda2003OtherRaceNationalOriginDescription: ").Append(Hmda2003OtherRaceNationalOriginDescription).Append("\n");
             sb.Append("  Hmda2003RaceNationalOriginType: ").Append(Hmda2003RaceNationalOriginType).Append("\n");
@@ -1884,6 +2138,18 @@ namespace Elli.Api.Loans.Model
             sb.Append("  HmdaGuamanianOrChamorroIndicator: ").Append(HmdaGuamanianOrChamorroIndicator).Append("\n");
             sb.Append("  HmdaSamoanIndicator: ").Append(HmdaSamoanIndicator).Append("\n");
             sb.Append("  HmdaPacificIslanderOtherIndicator: ").Append(HmdaPacificIslanderOtherIndicator).Append("\n");
+            sb.Append("  HmdaRaceReportedField1: ").Append(HmdaRaceReportedField1).Append("\n");
+            sb.Append("  HmdaRaceReportedField2: ").Append(HmdaRaceReportedField2).Append("\n");
+            sb.Append("  HmdaRaceReportedField3: ").Append(HmdaRaceReportedField3).Append("\n");
+            sb.Append("  HmdaRaceReportedField4: ").Append(HmdaRaceReportedField4).Append("\n");
+            sb.Append("  HmdaRaceReportedField5: ").Append(HmdaRaceReportedField5).Append("\n");
+            sb.Append("  HmdaEthnicityReportedField1: ").Append(HmdaEthnicityReportedField1).Append("\n");
+            sb.Append("  HmdaEthnicityReportedField2: ").Append(HmdaEthnicityReportedField2).Append("\n");
+            sb.Append("  HmdaEthnicityReportedField3: ").Append(HmdaEthnicityReportedField3).Append("\n");
+            sb.Append("  HmdaEthnicityReportedField4: ").Append(HmdaEthnicityReportedField4).Append("\n");
+            sb.Append("  HmdaEthnicityReportedField5: ").Append(HmdaEthnicityReportedField5).Append("\n");
+            sb.Append("  HmdaEthnicityReportedFields: ").Append(HmdaEthnicityReportedFields).Append("\n");
+            sb.Append("  HmdaRaceReportedFields: ").Append(HmdaRaceReportedFields).Append("\n");
             sb.Append("  HomeownerPastThreeYearsIndicator: ").Append(HomeownerPastThreeYearsIndicator).Append("\n");
             sb.Append("  HomePhoneNumber: ").Append(HomePhoneNumber).Append("\n");
             sb.Append("  IntentToOccupyIndicator: ").Append(IntentToOccupyIndicator).Append("\n");
@@ -2045,6 +2311,34 @@ namespace Elli.Api.Loans.Model
             sb.Append("  Vendor10: ").Append(Vendor10).Append("\n");
             sb.Append("  Vendor11: ").Append(Vendor11).Append("\n");
             sb.Append("  Vendor12: ").Append(Vendor12).Append("\n");
+            sb.Append("  NoCoApplicantEthnicityIndicator: ").Append(NoCoApplicantEthnicityIndicator).Append("\n");
+            sb.Append("  NoCoApplicantSexIndicator: ").Append(NoCoApplicantSexIndicator).Append("\n");
+            sb.Append("  HmdaGendertypeFemaleIndicator: ").Append(HmdaGendertypeFemaleIndicator).Append("\n");
+            sb.Append("  HmdaGendertypeMaleIndicator: ").Append(HmdaGendertypeMaleIndicator).Append("\n");
+            sb.Append("  HmdaGendertypeDoNotWishIndicator: ").Append(HmdaGendertypeDoNotWishIndicator).Append("\n");
+            sb.Append("  HmdaGendertypeNotApplicableIndicator: ").Append(HmdaGendertypeNotApplicableIndicator).Append("\n");
+            sb.Append("  HmdaEthnicityDoNotWishIndicator: ").Append(HmdaEthnicityDoNotWishIndicator).Append("\n");
+            sb.Append("  HmdaEthnicityHispanicLatinoIndicator: ").Append(HmdaEthnicityHispanicLatinoIndicator).Append("\n");
+            sb.Append("  HmdaEthnicityNotHispanicLatinoIndicator: ").Append(HmdaEthnicityNotHispanicLatinoIndicator).Append("\n");
+            sb.Append("  HmdaEthnicityNotApplicableIndicator: ").Append(HmdaEthnicityNotApplicableIndicator).Append("\n");
+            sb.Append("  HmdaEthnicityInfoNotProvided: ").Append(HmdaEthnicityInfoNotProvided).Append("\n");
+            sb.Append("  HmdaRaceInfoNotProvided: ").Append(HmdaRaceInfoNotProvided).Append("\n");
+            sb.Append("  HmdaRaceDoNotWishProvideIndicator: ").Append(HmdaRaceDoNotWishProvideIndicator).Append("\n");
+            sb.Append("  HmdaSexInfoNotProvided: ").Append(HmdaSexInfoNotProvided).Append("\n");
+            sb.Append("  PIWMessage: ").Append(PIWMessage).Append("\n");
+            sb.Append("  ValueRepAndWarrantyMessage: ").Append(ValueRepAndWarrantyMessage).Append("\n");
+            sb.Append("  IncomeRepAndWarrantyMessage: ").Append(IncomeRepAndWarrantyMessage).Append("\n");
+            sb.Append("  AssetRepAndWarrantyMessage: ").Append(AssetRepAndWarrantyMessage).Append("\n");
+            sb.Append("  PIWAccepted: ").Append(PIWAccepted).Append("\n");
+            sb.Append("  ValueRepAndWarrantyAvailable: ").Append(ValueRepAndWarrantyAvailable).Append("\n");
+            sb.Append("  AssetRepAndWarrantyReliefAvailable: ").Append(AssetRepAndWarrantyReliefAvailable).Append("\n");
+            sb.Append("  IncomeRepAndWarrantyReliefAvailable: ").Append(IncomeRepAndWarrantyReliefAvailable).Append("\n");
+            sb.Append("  IsBaseIncomeAvailable: ").Append(IsBaseIncomeAvailable).Append("\n");
+            sb.Append("  IsBonusAvailable: ").Append(IsBonusAvailable).Append("\n");
+            sb.Append("  IsOvertimeAvailable: ").Append(IsOvertimeAvailable).Append("\n");
+            sb.Append("  IsCommissionAvailable: ").Append(IsCommissionAvailable).Append("\n");
+            sb.Append("  IsSocialSecurityAvailable: ").Append(IsSocialSecurityAvailable).Append("\n");
+            sb.Append("  IsSelfEmployed: ").Append(IsSelfEmployed).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -2500,6 +2794,16 @@ namespace Elli.Api.Loans.Model
                     this.FullNameWithSuffix.Equals(input.FullNameWithSuffix))
                 ) && 
                 (
+                    this.FannieFirstName == input.FannieFirstName ||
+                    (this.FannieFirstName != null &&
+                    this.FannieFirstName.Equals(input.FannieFirstName))
+                ) && 
+                (
+                    this.FannieMiddleName == input.FannieMiddleName ||
+                    (this.FannieMiddleName != null &&
+                    this.FannieMiddleName.Equals(input.FannieMiddleName))
+                ) && 
+                (
                     this.HighestCreditLimit == input.HighestCreditLimit ||
                     (this.HighestCreditLimit != null &&
                     this.HighestCreditLimit.Equals(input.HighestCreditLimit))
@@ -2683,6 +2987,66 @@ namespace Elli.Api.Loans.Model
                     this.HmdaPacificIslanderOtherIndicator == input.HmdaPacificIslanderOtherIndicator ||
                     (this.HmdaPacificIslanderOtherIndicator != null &&
                     this.HmdaPacificIslanderOtherIndicator.Equals(input.HmdaPacificIslanderOtherIndicator))
+                ) && 
+                (
+                    this.HmdaRaceReportedField1 == input.HmdaRaceReportedField1 ||
+                    (this.HmdaRaceReportedField1 != null &&
+                    this.HmdaRaceReportedField1.Equals(input.HmdaRaceReportedField1))
+                ) && 
+                (
+                    this.HmdaRaceReportedField2 == input.HmdaRaceReportedField2 ||
+                    (this.HmdaRaceReportedField2 != null &&
+                    this.HmdaRaceReportedField2.Equals(input.HmdaRaceReportedField2))
+                ) && 
+                (
+                    this.HmdaRaceReportedField3 == input.HmdaRaceReportedField3 ||
+                    (this.HmdaRaceReportedField3 != null &&
+                    this.HmdaRaceReportedField3.Equals(input.HmdaRaceReportedField3))
+                ) && 
+                (
+                    this.HmdaRaceReportedField4 == input.HmdaRaceReportedField4 ||
+                    (this.HmdaRaceReportedField4 != null &&
+                    this.HmdaRaceReportedField4.Equals(input.HmdaRaceReportedField4))
+                ) && 
+                (
+                    this.HmdaRaceReportedField5 == input.HmdaRaceReportedField5 ||
+                    (this.HmdaRaceReportedField5 != null &&
+                    this.HmdaRaceReportedField5.Equals(input.HmdaRaceReportedField5))
+                ) && 
+                (
+                    this.HmdaEthnicityReportedField1 == input.HmdaEthnicityReportedField1 ||
+                    (this.HmdaEthnicityReportedField1 != null &&
+                    this.HmdaEthnicityReportedField1.Equals(input.HmdaEthnicityReportedField1))
+                ) && 
+                (
+                    this.HmdaEthnicityReportedField2 == input.HmdaEthnicityReportedField2 ||
+                    (this.HmdaEthnicityReportedField2 != null &&
+                    this.HmdaEthnicityReportedField2.Equals(input.HmdaEthnicityReportedField2))
+                ) && 
+                (
+                    this.HmdaEthnicityReportedField3 == input.HmdaEthnicityReportedField3 ||
+                    (this.HmdaEthnicityReportedField3 != null &&
+                    this.HmdaEthnicityReportedField3.Equals(input.HmdaEthnicityReportedField3))
+                ) && 
+                (
+                    this.HmdaEthnicityReportedField4 == input.HmdaEthnicityReportedField4 ||
+                    (this.HmdaEthnicityReportedField4 != null &&
+                    this.HmdaEthnicityReportedField4.Equals(input.HmdaEthnicityReportedField4))
+                ) && 
+                (
+                    this.HmdaEthnicityReportedField5 == input.HmdaEthnicityReportedField5 ||
+                    (this.HmdaEthnicityReportedField5 != null &&
+                    this.HmdaEthnicityReportedField5.Equals(input.HmdaEthnicityReportedField5))
+                ) && 
+                (
+                    this.HmdaEthnicityReportedFields == input.HmdaEthnicityReportedFields ||
+                    (this.HmdaEthnicityReportedFields != null &&
+                    this.HmdaEthnicityReportedFields.Equals(input.HmdaEthnicityReportedFields))
+                ) && 
+                (
+                    this.HmdaRaceReportedFields == input.HmdaRaceReportedFields ||
+                    (this.HmdaRaceReportedFields != null &&
+                    this.HmdaRaceReportedFields.Equals(input.HmdaRaceReportedFields))
                 ) && 
                 (
                     this.HomeownerPastThreeYearsIndicator == input.HomeownerPastThreeYearsIndicator ||
@@ -3488,6 +3852,146 @@ namespace Elli.Api.Loans.Model
                     this.Vendor12 == input.Vendor12 ||
                     (this.Vendor12 != null &&
                     this.Vendor12.Equals(input.Vendor12))
+                ) && 
+                (
+                    this.NoCoApplicantEthnicityIndicator == input.NoCoApplicantEthnicityIndicator ||
+                    (this.NoCoApplicantEthnicityIndicator != null &&
+                    this.NoCoApplicantEthnicityIndicator.Equals(input.NoCoApplicantEthnicityIndicator))
+                ) && 
+                (
+                    this.NoCoApplicantSexIndicator == input.NoCoApplicantSexIndicator ||
+                    (this.NoCoApplicantSexIndicator != null &&
+                    this.NoCoApplicantSexIndicator.Equals(input.NoCoApplicantSexIndicator))
+                ) && 
+                (
+                    this.HmdaGendertypeFemaleIndicator == input.HmdaGendertypeFemaleIndicator ||
+                    (this.HmdaGendertypeFemaleIndicator != null &&
+                    this.HmdaGendertypeFemaleIndicator.Equals(input.HmdaGendertypeFemaleIndicator))
+                ) && 
+                (
+                    this.HmdaGendertypeMaleIndicator == input.HmdaGendertypeMaleIndicator ||
+                    (this.HmdaGendertypeMaleIndicator != null &&
+                    this.HmdaGendertypeMaleIndicator.Equals(input.HmdaGendertypeMaleIndicator))
+                ) && 
+                (
+                    this.HmdaGendertypeDoNotWishIndicator == input.HmdaGendertypeDoNotWishIndicator ||
+                    (this.HmdaGendertypeDoNotWishIndicator != null &&
+                    this.HmdaGendertypeDoNotWishIndicator.Equals(input.HmdaGendertypeDoNotWishIndicator))
+                ) && 
+                (
+                    this.HmdaGendertypeNotApplicableIndicator == input.HmdaGendertypeNotApplicableIndicator ||
+                    (this.HmdaGendertypeNotApplicableIndicator != null &&
+                    this.HmdaGendertypeNotApplicableIndicator.Equals(input.HmdaGendertypeNotApplicableIndicator))
+                ) && 
+                (
+                    this.HmdaEthnicityDoNotWishIndicator == input.HmdaEthnicityDoNotWishIndicator ||
+                    (this.HmdaEthnicityDoNotWishIndicator != null &&
+                    this.HmdaEthnicityDoNotWishIndicator.Equals(input.HmdaEthnicityDoNotWishIndicator))
+                ) && 
+                (
+                    this.HmdaEthnicityHispanicLatinoIndicator == input.HmdaEthnicityHispanicLatinoIndicator ||
+                    (this.HmdaEthnicityHispanicLatinoIndicator != null &&
+                    this.HmdaEthnicityHispanicLatinoIndicator.Equals(input.HmdaEthnicityHispanicLatinoIndicator))
+                ) && 
+                (
+                    this.HmdaEthnicityNotHispanicLatinoIndicator == input.HmdaEthnicityNotHispanicLatinoIndicator ||
+                    (this.HmdaEthnicityNotHispanicLatinoIndicator != null &&
+                    this.HmdaEthnicityNotHispanicLatinoIndicator.Equals(input.HmdaEthnicityNotHispanicLatinoIndicator))
+                ) && 
+                (
+                    this.HmdaEthnicityNotApplicableIndicator == input.HmdaEthnicityNotApplicableIndicator ||
+                    (this.HmdaEthnicityNotApplicableIndicator != null &&
+                    this.HmdaEthnicityNotApplicableIndicator.Equals(input.HmdaEthnicityNotApplicableIndicator))
+                ) && 
+                (
+                    this.HmdaEthnicityInfoNotProvided == input.HmdaEthnicityInfoNotProvided ||
+                    (this.HmdaEthnicityInfoNotProvided != null &&
+                    this.HmdaEthnicityInfoNotProvided.Equals(input.HmdaEthnicityInfoNotProvided))
+                ) && 
+                (
+                    this.HmdaRaceInfoNotProvided == input.HmdaRaceInfoNotProvided ||
+                    (this.HmdaRaceInfoNotProvided != null &&
+                    this.HmdaRaceInfoNotProvided.Equals(input.HmdaRaceInfoNotProvided))
+                ) && 
+                (
+                    this.HmdaRaceDoNotWishProvideIndicator == input.HmdaRaceDoNotWishProvideIndicator ||
+                    (this.HmdaRaceDoNotWishProvideIndicator != null &&
+                    this.HmdaRaceDoNotWishProvideIndicator.Equals(input.HmdaRaceDoNotWishProvideIndicator))
+                ) && 
+                (
+                    this.HmdaSexInfoNotProvided == input.HmdaSexInfoNotProvided ||
+                    (this.HmdaSexInfoNotProvided != null &&
+                    this.HmdaSexInfoNotProvided.Equals(input.HmdaSexInfoNotProvided))
+                ) && 
+                (
+                    this.PIWMessage == input.PIWMessage ||
+                    (this.PIWMessage != null &&
+                    this.PIWMessage.Equals(input.PIWMessage))
+                ) && 
+                (
+                    this.ValueRepAndWarrantyMessage == input.ValueRepAndWarrantyMessage ||
+                    (this.ValueRepAndWarrantyMessage != null &&
+                    this.ValueRepAndWarrantyMessage.Equals(input.ValueRepAndWarrantyMessage))
+                ) && 
+                (
+                    this.IncomeRepAndWarrantyMessage == input.IncomeRepAndWarrantyMessage ||
+                    (this.IncomeRepAndWarrantyMessage != null &&
+                    this.IncomeRepAndWarrantyMessage.Equals(input.IncomeRepAndWarrantyMessage))
+                ) && 
+                (
+                    this.AssetRepAndWarrantyMessage == input.AssetRepAndWarrantyMessage ||
+                    (this.AssetRepAndWarrantyMessage != null &&
+                    this.AssetRepAndWarrantyMessage.Equals(input.AssetRepAndWarrantyMessage))
+                ) && 
+                (
+                    this.PIWAccepted == input.PIWAccepted ||
+                    (this.PIWAccepted != null &&
+                    this.PIWAccepted.Equals(input.PIWAccepted))
+                ) && 
+                (
+                    this.ValueRepAndWarrantyAvailable == input.ValueRepAndWarrantyAvailable ||
+                    (this.ValueRepAndWarrantyAvailable != null &&
+                    this.ValueRepAndWarrantyAvailable.Equals(input.ValueRepAndWarrantyAvailable))
+                ) && 
+                (
+                    this.AssetRepAndWarrantyReliefAvailable == input.AssetRepAndWarrantyReliefAvailable ||
+                    (this.AssetRepAndWarrantyReliefAvailable != null &&
+                    this.AssetRepAndWarrantyReliefAvailable.Equals(input.AssetRepAndWarrantyReliefAvailable))
+                ) && 
+                (
+                    this.IncomeRepAndWarrantyReliefAvailable == input.IncomeRepAndWarrantyReliefAvailable ||
+                    (this.IncomeRepAndWarrantyReliefAvailable != null &&
+                    this.IncomeRepAndWarrantyReliefAvailable.Equals(input.IncomeRepAndWarrantyReliefAvailable))
+                ) && 
+                (
+                    this.IsBaseIncomeAvailable == input.IsBaseIncomeAvailable ||
+                    (this.IsBaseIncomeAvailable != null &&
+                    this.IsBaseIncomeAvailable.Equals(input.IsBaseIncomeAvailable))
+                ) && 
+                (
+                    this.IsBonusAvailable == input.IsBonusAvailable ||
+                    (this.IsBonusAvailable != null &&
+                    this.IsBonusAvailable.Equals(input.IsBonusAvailable))
+                ) && 
+                (
+                    this.IsOvertimeAvailable == input.IsOvertimeAvailable ||
+                    (this.IsOvertimeAvailable != null &&
+                    this.IsOvertimeAvailable.Equals(input.IsOvertimeAvailable))
+                ) && 
+                (
+                    this.IsCommissionAvailable == input.IsCommissionAvailable ||
+                    (this.IsCommissionAvailable != null &&
+                    this.IsCommissionAvailable.Equals(input.IsCommissionAvailable))
+                ) && 
+                (
+                    this.IsSocialSecurityAvailable == input.IsSocialSecurityAvailable ||
+                    (this.IsSocialSecurityAvailable != null &&
+                    this.IsSocialSecurityAvailable.Equals(input.IsSocialSecurityAvailable))
+                ) && 
+                (
+                    this.IsSelfEmployed == input.IsSelfEmployed ||
+                    (this.IsSelfEmployed != null &&
+                    this.IsSelfEmployed.Equals(input.IsSelfEmployed))
                 );
         }
 
@@ -3668,6 +4172,10 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.FullName.GetHashCode();
                 if (this.FullNameWithSuffix != null)
                     hashCode = hashCode * 59 + this.FullNameWithSuffix.GetHashCode();
+                if (this.FannieFirstName != null)
+                    hashCode = hashCode * 59 + this.FannieFirstName.GetHashCode();
+                if (this.FannieMiddleName != null)
+                    hashCode = hashCode * 59 + this.FannieMiddleName.GetHashCode();
                 if (this.HighestCreditLimit != null)
                     hashCode = hashCode * 59 + this.HighestCreditLimit.GetHashCode();
                 if (this.Hmda2003OtherRaceNationalOriginDescription != null)
@@ -3742,6 +4250,30 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.HmdaSamoanIndicator.GetHashCode();
                 if (this.HmdaPacificIslanderOtherIndicator != null)
                     hashCode = hashCode * 59 + this.HmdaPacificIslanderOtherIndicator.GetHashCode();
+                if (this.HmdaRaceReportedField1 != null)
+                    hashCode = hashCode * 59 + this.HmdaRaceReportedField1.GetHashCode();
+                if (this.HmdaRaceReportedField2 != null)
+                    hashCode = hashCode * 59 + this.HmdaRaceReportedField2.GetHashCode();
+                if (this.HmdaRaceReportedField3 != null)
+                    hashCode = hashCode * 59 + this.HmdaRaceReportedField3.GetHashCode();
+                if (this.HmdaRaceReportedField4 != null)
+                    hashCode = hashCode * 59 + this.HmdaRaceReportedField4.GetHashCode();
+                if (this.HmdaRaceReportedField5 != null)
+                    hashCode = hashCode * 59 + this.HmdaRaceReportedField5.GetHashCode();
+                if (this.HmdaEthnicityReportedField1 != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityReportedField1.GetHashCode();
+                if (this.HmdaEthnicityReportedField2 != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityReportedField2.GetHashCode();
+                if (this.HmdaEthnicityReportedField3 != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityReportedField3.GetHashCode();
+                if (this.HmdaEthnicityReportedField4 != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityReportedField4.GetHashCode();
+                if (this.HmdaEthnicityReportedField5 != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityReportedField5.GetHashCode();
+                if (this.HmdaEthnicityReportedFields != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityReportedFields.GetHashCode();
+                if (this.HmdaRaceReportedFields != null)
+                    hashCode = hashCode * 59 + this.HmdaRaceReportedFields.GetHashCode();
                 if (this.HomeownerPastThreeYearsIndicator != null)
                     hashCode = hashCode * 59 + this.HomeownerPastThreeYearsIndicator.GetHashCode();
                 if (this.HomePhoneNumber != null)
@@ -4064,6 +4596,62 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.Vendor11.GetHashCode();
                 if (this.Vendor12 != null)
                     hashCode = hashCode * 59 + this.Vendor12.GetHashCode();
+                if (this.NoCoApplicantEthnicityIndicator != null)
+                    hashCode = hashCode * 59 + this.NoCoApplicantEthnicityIndicator.GetHashCode();
+                if (this.NoCoApplicantSexIndicator != null)
+                    hashCode = hashCode * 59 + this.NoCoApplicantSexIndicator.GetHashCode();
+                if (this.HmdaGendertypeFemaleIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaGendertypeFemaleIndicator.GetHashCode();
+                if (this.HmdaGendertypeMaleIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaGendertypeMaleIndicator.GetHashCode();
+                if (this.HmdaGendertypeDoNotWishIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaGendertypeDoNotWishIndicator.GetHashCode();
+                if (this.HmdaGendertypeNotApplicableIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaGendertypeNotApplicableIndicator.GetHashCode();
+                if (this.HmdaEthnicityDoNotWishIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityDoNotWishIndicator.GetHashCode();
+                if (this.HmdaEthnicityHispanicLatinoIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityHispanicLatinoIndicator.GetHashCode();
+                if (this.HmdaEthnicityNotHispanicLatinoIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityNotHispanicLatinoIndicator.GetHashCode();
+                if (this.HmdaEthnicityNotApplicableIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityNotApplicableIndicator.GetHashCode();
+                if (this.HmdaEthnicityInfoNotProvided != null)
+                    hashCode = hashCode * 59 + this.HmdaEthnicityInfoNotProvided.GetHashCode();
+                if (this.HmdaRaceInfoNotProvided != null)
+                    hashCode = hashCode * 59 + this.HmdaRaceInfoNotProvided.GetHashCode();
+                if (this.HmdaRaceDoNotWishProvideIndicator != null)
+                    hashCode = hashCode * 59 + this.HmdaRaceDoNotWishProvideIndicator.GetHashCode();
+                if (this.HmdaSexInfoNotProvided != null)
+                    hashCode = hashCode * 59 + this.HmdaSexInfoNotProvided.GetHashCode();
+                if (this.PIWMessage != null)
+                    hashCode = hashCode * 59 + this.PIWMessage.GetHashCode();
+                if (this.ValueRepAndWarrantyMessage != null)
+                    hashCode = hashCode * 59 + this.ValueRepAndWarrantyMessage.GetHashCode();
+                if (this.IncomeRepAndWarrantyMessage != null)
+                    hashCode = hashCode * 59 + this.IncomeRepAndWarrantyMessage.GetHashCode();
+                if (this.AssetRepAndWarrantyMessage != null)
+                    hashCode = hashCode * 59 + this.AssetRepAndWarrantyMessage.GetHashCode();
+                if (this.PIWAccepted != null)
+                    hashCode = hashCode * 59 + this.PIWAccepted.GetHashCode();
+                if (this.ValueRepAndWarrantyAvailable != null)
+                    hashCode = hashCode * 59 + this.ValueRepAndWarrantyAvailable.GetHashCode();
+                if (this.AssetRepAndWarrantyReliefAvailable != null)
+                    hashCode = hashCode * 59 + this.AssetRepAndWarrantyReliefAvailable.GetHashCode();
+                if (this.IncomeRepAndWarrantyReliefAvailable != null)
+                    hashCode = hashCode * 59 + this.IncomeRepAndWarrantyReliefAvailable.GetHashCode();
+                if (this.IsBaseIncomeAvailable != null)
+                    hashCode = hashCode * 59 + this.IsBaseIncomeAvailable.GetHashCode();
+                if (this.IsBonusAvailable != null)
+                    hashCode = hashCode * 59 + this.IsBonusAvailable.GetHashCode();
+                if (this.IsOvertimeAvailable != null)
+                    hashCode = hashCode * 59 + this.IsOvertimeAvailable.GetHashCode();
+                if (this.IsCommissionAvailable != null)
+                    hashCode = hashCode * 59 + this.IsCommissionAvailable.GetHashCode();
+                if (this.IsSocialSecurityAvailable != null)
+                    hashCode = hashCode * 59 + this.IsSocialSecurityAvailable.GetHashCode();
+                if (this.IsSelfEmployed != null)
+                    hashCode = hashCode * 59 + this.IsSelfEmployed.GetHashCode();
                 return hashCode;
             }
         }

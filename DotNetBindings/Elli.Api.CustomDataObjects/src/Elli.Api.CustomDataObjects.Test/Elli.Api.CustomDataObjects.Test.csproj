@@ -74,7 +74,7 @@ OpenAPI spec version: 1.0.0
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.CustomDataObjects\Elli.Api.CustomDataObjects.csproj">
-      <Project>{4BFD3CB4-2657-421A-9942-982CC296603F}</Project>
+      <Project>{C35AF21E-76F6-4F74-A94E-5FD15FB79AD8}</Project>
       <Name>Elli.Api.CustomDataObjects</Name>
     </ProjectReference>
   </ItemGroup>

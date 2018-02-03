@@ -1060,6 +1060,300 @@ namespace Elli.Api.Loans.Model
         public double? TitleServicesLenderTitleinsuranceFee { get; set; }
 
         /// <summary>
+        /// Gets or Sets LoanProcessingInformationHA
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationHA", EmitDefaultValue=false)]
+        public string LoanProcessingInformationHA { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationGO
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationGO", EmitDefaultValue=false)]
+        public string LoanProcessingInformationGO { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationD4
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationD4", EmitDefaultValue=false)]
+        public string LoanProcessingInformationD4 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessages8Y
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessages8Y", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessages8Y { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesCN
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesCN", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesCN { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesCP
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesCP", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesCP { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesCV
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesCV", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesCV { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesCZ
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesCZ", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesCZ { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesX1
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesX1", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesX1 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesX3
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesX3", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesX3 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesX5
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesX5", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesX5 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesX7
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesX7", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesX7 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesXA
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesXA", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesXA { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesXM
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesXM", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesXM { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesXP
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesXP", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesXP { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesXR
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesXR", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesXR { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesXT
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesXT", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesXT { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesY8
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesY8", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesY8 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesYG
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesYG", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesYG { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesYJ
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesYJ", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesYJ { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationMA
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationMA", EmitDefaultValue=false)]
+        public string LoanProcessingInformationMA { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationLE
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationLE", EmitDefaultValue=false)]
+        public string LoanProcessingInformationLE { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationLF
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationLF", EmitDefaultValue=false)]
+        public string LoanProcessingInformationLF { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesDZ
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesDZ", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesDZ { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesQJ
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesQJ", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesQJ { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesJF
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesJF", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesJF { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesQN
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesQN", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesQN { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesU7
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesU7", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesU7 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesQQ
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesQQ", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesQQ { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesE5
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesE5", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesE5 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesQS
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesQS", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesQS { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesIM
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesIM", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesIM { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesIQ
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesIQ", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesIQ { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessages4V
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessages4V", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessages4V { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessages5C
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessages5C", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessages5C { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesCY
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesCY", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesCY { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesDP
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesDP", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesDP { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesYY
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesYY", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesYY { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocumentationGuidelineMessagesYZ
+        /// </summary>
+        [DataMember(Name="documentationGuidelineMessagesYZ", EmitDefaultValue=false)]
+        public string DocumentationGuidelineMessagesYZ { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CollateralRepandWarrReliefEligibilityType
+        /// </summary>
+        [DataMember(Name="collateralRepandWarrReliefEligibilityType", EmitDefaultValue=false)]
+        public string CollateralRepandWarrReliefEligibilityType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets AssetRepresentationAndWarrantyReliefEligibilityType
+        /// </summary>
+        [DataMember(Name="assetRepresentationAndWarrantyReliefEligibilityType", EmitDefaultValue=false)]
+        public string AssetRepresentationAndWarrantyReliefEligibilityType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationCode24
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationCode24", EmitDefaultValue=false)]
+        public string LoanProcessingInformationCode24 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationCode31
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationCode31", EmitDefaultValue=false)]
+        public string LoanProcessingInformationCode31 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationCode32
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationCode32", EmitDefaultValue=false)]
+        public string LoanProcessingInformationCode32 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationCode33
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationCode33", EmitDefaultValue=false)]
+        public string LoanProcessingInformationCode33 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationCode97
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationCode97", EmitDefaultValue=false)]
+        public string LoanProcessingInformationCode97 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationCodeJr
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationCodeJr", EmitDefaultValue=false)]
+        public string LoanProcessingInformationCodeJr { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LoanProcessingInformationCodeJt
+        /// </summary>
+        [DataMember(Name="loanProcessingInformationCodeJt", EmitDefaultValue=false)]
+        public string LoanProcessingInformationCodeJt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UcdRequirement
+        /// </summary>
+        [DataMember(Name="ucdRequirement", EmitDefaultValue=false)]
+        public string UcdRequirement { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -1233,6 +1527,55 @@ namespace Elli.Api.Loans.Model
             sb.Append("  AUSDataDiscrepencyResolutionComments: ").Append(AUSDataDiscrepencyResolutionComments).Append("\n");
             sb.Append("  AUSDataDiscrepencyResolvedBy: ").Append(AUSDataDiscrepencyResolvedBy).Append("\n");
             sb.Append("  TitleServicesLenderTitleinsuranceFee: ").Append(TitleServicesLenderTitleinsuranceFee).Append("\n");
+            sb.Append("  LoanProcessingInformationHA: ").Append(LoanProcessingInformationHA).Append("\n");
+            sb.Append("  LoanProcessingInformationGO: ").Append(LoanProcessingInformationGO).Append("\n");
+            sb.Append("  LoanProcessingInformationD4: ").Append(LoanProcessingInformationD4).Append("\n");
+            sb.Append("  DocumentationGuidelineMessages8Y: ").Append(DocumentationGuidelineMessages8Y).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesCN: ").Append(DocumentationGuidelineMessagesCN).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesCP: ").Append(DocumentationGuidelineMessagesCP).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesCV: ").Append(DocumentationGuidelineMessagesCV).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesCZ: ").Append(DocumentationGuidelineMessagesCZ).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesX1: ").Append(DocumentationGuidelineMessagesX1).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesX3: ").Append(DocumentationGuidelineMessagesX3).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesX5: ").Append(DocumentationGuidelineMessagesX5).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesX7: ").Append(DocumentationGuidelineMessagesX7).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesXA: ").Append(DocumentationGuidelineMessagesXA).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesXM: ").Append(DocumentationGuidelineMessagesXM).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesXP: ").Append(DocumentationGuidelineMessagesXP).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesXR: ").Append(DocumentationGuidelineMessagesXR).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesXT: ").Append(DocumentationGuidelineMessagesXT).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesY8: ").Append(DocumentationGuidelineMessagesY8).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesYG: ").Append(DocumentationGuidelineMessagesYG).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesYJ: ").Append(DocumentationGuidelineMessagesYJ).Append("\n");
+            sb.Append("  LoanProcessingInformationMA: ").Append(LoanProcessingInformationMA).Append("\n");
+            sb.Append("  LoanProcessingInformationLE: ").Append(LoanProcessingInformationLE).Append("\n");
+            sb.Append("  LoanProcessingInformationLF: ").Append(LoanProcessingInformationLF).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesDZ: ").Append(DocumentationGuidelineMessagesDZ).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesQJ: ").Append(DocumentationGuidelineMessagesQJ).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesJF: ").Append(DocumentationGuidelineMessagesJF).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesQN: ").Append(DocumentationGuidelineMessagesQN).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesU7: ").Append(DocumentationGuidelineMessagesU7).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesQQ: ").Append(DocumentationGuidelineMessagesQQ).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesE5: ").Append(DocumentationGuidelineMessagesE5).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesQS: ").Append(DocumentationGuidelineMessagesQS).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesIM: ").Append(DocumentationGuidelineMessagesIM).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesIQ: ").Append(DocumentationGuidelineMessagesIQ).Append("\n");
+            sb.Append("  DocumentationGuidelineMessages4V: ").Append(DocumentationGuidelineMessages4V).Append("\n");
+            sb.Append("  DocumentationGuidelineMessages5C: ").Append(DocumentationGuidelineMessages5C).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesCY: ").Append(DocumentationGuidelineMessagesCY).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesDP: ").Append(DocumentationGuidelineMessagesDP).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesYY: ").Append(DocumentationGuidelineMessagesYY).Append("\n");
+            sb.Append("  DocumentationGuidelineMessagesYZ: ").Append(DocumentationGuidelineMessagesYZ).Append("\n");
+            sb.Append("  CollateralRepandWarrReliefEligibilityType: ").Append(CollateralRepandWarrReliefEligibilityType).Append("\n");
+            sb.Append("  AssetRepresentationAndWarrantyReliefEligibilityType: ").Append(AssetRepresentationAndWarrantyReliefEligibilityType).Append("\n");
+            sb.Append("  LoanProcessingInformationCode24: ").Append(LoanProcessingInformationCode24).Append("\n");
+            sb.Append("  LoanProcessingInformationCode31: ").Append(LoanProcessingInformationCode31).Append("\n");
+            sb.Append("  LoanProcessingInformationCode32: ").Append(LoanProcessingInformationCode32).Append("\n");
+            sb.Append("  LoanProcessingInformationCode33: ").Append(LoanProcessingInformationCode33).Append("\n");
+            sb.Append("  LoanProcessingInformationCode97: ").Append(LoanProcessingInformationCode97).Append("\n");
+            sb.Append("  LoanProcessingInformationCodeJr: ").Append(LoanProcessingInformationCodeJr).Append("\n");
+            sb.Append("  LoanProcessingInformationCodeJt: ").Append(LoanProcessingInformationCodeJt).Append("\n");
+            sb.Append("  UcdRequirement: ").Append(UcdRequirement).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -2096,6 +2439,251 @@ namespace Elli.Api.Loans.Model
                     this.TitleServicesLenderTitleinsuranceFee == input.TitleServicesLenderTitleinsuranceFee ||
                     (this.TitleServicesLenderTitleinsuranceFee != null &&
                     this.TitleServicesLenderTitleinsuranceFee.Equals(input.TitleServicesLenderTitleinsuranceFee))
+                ) && 
+                (
+                    this.LoanProcessingInformationHA == input.LoanProcessingInformationHA ||
+                    (this.LoanProcessingInformationHA != null &&
+                    this.LoanProcessingInformationHA.Equals(input.LoanProcessingInformationHA))
+                ) && 
+                (
+                    this.LoanProcessingInformationGO == input.LoanProcessingInformationGO ||
+                    (this.LoanProcessingInformationGO != null &&
+                    this.LoanProcessingInformationGO.Equals(input.LoanProcessingInformationGO))
+                ) && 
+                (
+                    this.LoanProcessingInformationD4 == input.LoanProcessingInformationD4 ||
+                    (this.LoanProcessingInformationD4 != null &&
+                    this.LoanProcessingInformationD4.Equals(input.LoanProcessingInformationD4))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessages8Y == input.DocumentationGuidelineMessages8Y ||
+                    (this.DocumentationGuidelineMessages8Y != null &&
+                    this.DocumentationGuidelineMessages8Y.Equals(input.DocumentationGuidelineMessages8Y))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesCN == input.DocumentationGuidelineMessagesCN ||
+                    (this.DocumentationGuidelineMessagesCN != null &&
+                    this.DocumentationGuidelineMessagesCN.Equals(input.DocumentationGuidelineMessagesCN))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesCP == input.DocumentationGuidelineMessagesCP ||
+                    (this.DocumentationGuidelineMessagesCP != null &&
+                    this.DocumentationGuidelineMessagesCP.Equals(input.DocumentationGuidelineMessagesCP))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesCV == input.DocumentationGuidelineMessagesCV ||
+                    (this.DocumentationGuidelineMessagesCV != null &&
+                    this.DocumentationGuidelineMessagesCV.Equals(input.DocumentationGuidelineMessagesCV))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesCZ == input.DocumentationGuidelineMessagesCZ ||
+                    (this.DocumentationGuidelineMessagesCZ != null &&
+                    this.DocumentationGuidelineMessagesCZ.Equals(input.DocumentationGuidelineMessagesCZ))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesX1 == input.DocumentationGuidelineMessagesX1 ||
+                    (this.DocumentationGuidelineMessagesX1 != null &&
+                    this.DocumentationGuidelineMessagesX1.Equals(input.DocumentationGuidelineMessagesX1))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesX3 == input.DocumentationGuidelineMessagesX3 ||
+                    (this.DocumentationGuidelineMessagesX3 != null &&
+                    this.DocumentationGuidelineMessagesX3.Equals(input.DocumentationGuidelineMessagesX3))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesX5 == input.DocumentationGuidelineMessagesX5 ||
+                    (this.DocumentationGuidelineMessagesX5 != null &&
+                    this.DocumentationGuidelineMessagesX5.Equals(input.DocumentationGuidelineMessagesX5))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesX7 == input.DocumentationGuidelineMessagesX7 ||
+                    (this.DocumentationGuidelineMessagesX7 != null &&
+                    this.DocumentationGuidelineMessagesX7.Equals(input.DocumentationGuidelineMessagesX7))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesXA == input.DocumentationGuidelineMessagesXA ||
+                    (this.DocumentationGuidelineMessagesXA != null &&
+                    this.DocumentationGuidelineMessagesXA.Equals(input.DocumentationGuidelineMessagesXA))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesXM == input.DocumentationGuidelineMessagesXM ||
+                    (this.DocumentationGuidelineMessagesXM != null &&
+                    this.DocumentationGuidelineMessagesXM.Equals(input.DocumentationGuidelineMessagesXM))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesXP == input.DocumentationGuidelineMessagesXP ||
+                    (this.DocumentationGuidelineMessagesXP != null &&
+                    this.DocumentationGuidelineMessagesXP.Equals(input.DocumentationGuidelineMessagesXP))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesXR == input.DocumentationGuidelineMessagesXR ||
+                    (this.DocumentationGuidelineMessagesXR != null &&
+                    this.DocumentationGuidelineMessagesXR.Equals(input.DocumentationGuidelineMessagesXR))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesXT == input.DocumentationGuidelineMessagesXT ||
+                    (this.DocumentationGuidelineMessagesXT != null &&
+                    this.DocumentationGuidelineMessagesXT.Equals(input.DocumentationGuidelineMessagesXT))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesY8 == input.DocumentationGuidelineMessagesY8 ||
+                    (this.DocumentationGuidelineMessagesY8 != null &&
+                    this.DocumentationGuidelineMessagesY8.Equals(input.DocumentationGuidelineMessagesY8))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesYG == input.DocumentationGuidelineMessagesYG ||
+                    (this.DocumentationGuidelineMessagesYG != null &&
+                    this.DocumentationGuidelineMessagesYG.Equals(input.DocumentationGuidelineMessagesYG))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesYJ == input.DocumentationGuidelineMessagesYJ ||
+                    (this.DocumentationGuidelineMessagesYJ != null &&
+                    this.DocumentationGuidelineMessagesYJ.Equals(input.DocumentationGuidelineMessagesYJ))
+                ) && 
+                (
+                    this.LoanProcessingInformationMA == input.LoanProcessingInformationMA ||
+                    (this.LoanProcessingInformationMA != null &&
+                    this.LoanProcessingInformationMA.Equals(input.LoanProcessingInformationMA))
+                ) && 
+                (
+                    this.LoanProcessingInformationLE == input.LoanProcessingInformationLE ||
+                    (this.LoanProcessingInformationLE != null &&
+                    this.LoanProcessingInformationLE.Equals(input.LoanProcessingInformationLE))
+                ) && 
+                (
+                    this.LoanProcessingInformationLF == input.LoanProcessingInformationLF ||
+                    (this.LoanProcessingInformationLF != null &&
+                    this.LoanProcessingInformationLF.Equals(input.LoanProcessingInformationLF))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesDZ == input.DocumentationGuidelineMessagesDZ ||
+                    (this.DocumentationGuidelineMessagesDZ != null &&
+                    this.DocumentationGuidelineMessagesDZ.Equals(input.DocumentationGuidelineMessagesDZ))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesQJ == input.DocumentationGuidelineMessagesQJ ||
+                    (this.DocumentationGuidelineMessagesQJ != null &&
+                    this.DocumentationGuidelineMessagesQJ.Equals(input.DocumentationGuidelineMessagesQJ))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesJF == input.DocumentationGuidelineMessagesJF ||
+                    (this.DocumentationGuidelineMessagesJF != null &&
+                    this.DocumentationGuidelineMessagesJF.Equals(input.DocumentationGuidelineMessagesJF))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesQN == input.DocumentationGuidelineMessagesQN ||
+                    (this.DocumentationGuidelineMessagesQN != null &&
+                    this.DocumentationGuidelineMessagesQN.Equals(input.DocumentationGuidelineMessagesQN))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesU7 == input.DocumentationGuidelineMessagesU7 ||
+                    (this.DocumentationGuidelineMessagesU7 != null &&
+                    this.DocumentationGuidelineMessagesU7.Equals(input.DocumentationGuidelineMessagesU7))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesQQ == input.DocumentationGuidelineMessagesQQ ||
+                    (this.DocumentationGuidelineMessagesQQ != null &&
+                    this.DocumentationGuidelineMessagesQQ.Equals(input.DocumentationGuidelineMessagesQQ))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesE5 == input.DocumentationGuidelineMessagesE5 ||
+                    (this.DocumentationGuidelineMessagesE5 != null &&
+                    this.DocumentationGuidelineMessagesE5.Equals(input.DocumentationGuidelineMessagesE5))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesQS == input.DocumentationGuidelineMessagesQS ||
+                    (this.DocumentationGuidelineMessagesQS != null &&
+                    this.DocumentationGuidelineMessagesQS.Equals(input.DocumentationGuidelineMessagesQS))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesIM == input.DocumentationGuidelineMessagesIM ||
+                    (this.DocumentationGuidelineMessagesIM != null &&
+                    this.DocumentationGuidelineMessagesIM.Equals(input.DocumentationGuidelineMessagesIM))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesIQ == input.DocumentationGuidelineMessagesIQ ||
+                    (this.DocumentationGuidelineMessagesIQ != null &&
+                    this.DocumentationGuidelineMessagesIQ.Equals(input.DocumentationGuidelineMessagesIQ))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessages4V == input.DocumentationGuidelineMessages4V ||
+                    (this.DocumentationGuidelineMessages4V != null &&
+                    this.DocumentationGuidelineMessages4V.Equals(input.DocumentationGuidelineMessages4V))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessages5C == input.DocumentationGuidelineMessages5C ||
+                    (this.DocumentationGuidelineMessages5C != null &&
+                    this.DocumentationGuidelineMessages5C.Equals(input.DocumentationGuidelineMessages5C))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesCY == input.DocumentationGuidelineMessagesCY ||
+                    (this.DocumentationGuidelineMessagesCY != null &&
+                    this.DocumentationGuidelineMessagesCY.Equals(input.DocumentationGuidelineMessagesCY))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesDP == input.DocumentationGuidelineMessagesDP ||
+                    (this.DocumentationGuidelineMessagesDP != null &&
+                    this.DocumentationGuidelineMessagesDP.Equals(input.DocumentationGuidelineMessagesDP))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesYY == input.DocumentationGuidelineMessagesYY ||
+                    (this.DocumentationGuidelineMessagesYY != null &&
+                    this.DocumentationGuidelineMessagesYY.Equals(input.DocumentationGuidelineMessagesYY))
+                ) && 
+                (
+                    this.DocumentationGuidelineMessagesYZ == input.DocumentationGuidelineMessagesYZ ||
+                    (this.DocumentationGuidelineMessagesYZ != null &&
+                    this.DocumentationGuidelineMessagesYZ.Equals(input.DocumentationGuidelineMessagesYZ))
+                ) && 
+                (
+                    this.CollateralRepandWarrReliefEligibilityType == input.CollateralRepandWarrReliefEligibilityType ||
+                    (this.CollateralRepandWarrReliefEligibilityType != null &&
+                    this.CollateralRepandWarrReliefEligibilityType.Equals(input.CollateralRepandWarrReliefEligibilityType))
+                ) && 
+                (
+                    this.AssetRepresentationAndWarrantyReliefEligibilityType == input.AssetRepresentationAndWarrantyReliefEligibilityType ||
+                    (this.AssetRepresentationAndWarrantyReliefEligibilityType != null &&
+                    this.AssetRepresentationAndWarrantyReliefEligibilityType.Equals(input.AssetRepresentationAndWarrantyReliefEligibilityType))
+                ) && 
+                (
+                    this.LoanProcessingInformationCode24 == input.LoanProcessingInformationCode24 ||
+                    (this.LoanProcessingInformationCode24 != null &&
+                    this.LoanProcessingInformationCode24.Equals(input.LoanProcessingInformationCode24))
+                ) && 
+                (
+                    this.LoanProcessingInformationCode31 == input.LoanProcessingInformationCode31 ||
+                    (this.LoanProcessingInformationCode31 != null &&
+                    this.LoanProcessingInformationCode31.Equals(input.LoanProcessingInformationCode31))
+                ) && 
+                (
+                    this.LoanProcessingInformationCode32 == input.LoanProcessingInformationCode32 ||
+                    (this.LoanProcessingInformationCode32 != null &&
+                    this.LoanProcessingInformationCode32.Equals(input.LoanProcessingInformationCode32))
+                ) && 
+                (
+                    this.LoanProcessingInformationCode33 == input.LoanProcessingInformationCode33 ||
+                    (this.LoanProcessingInformationCode33 != null &&
+                    this.LoanProcessingInformationCode33.Equals(input.LoanProcessingInformationCode33))
+                ) && 
+                (
+                    this.LoanProcessingInformationCode97 == input.LoanProcessingInformationCode97 ||
+                    (this.LoanProcessingInformationCode97 != null &&
+                    this.LoanProcessingInformationCode97.Equals(input.LoanProcessingInformationCode97))
+                ) && 
+                (
+                    this.LoanProcessingInformationCodeJr == input.LoanProcessingInformationCodeJr ||
+                    (this.LoanProcessingInformationCodeJr != null &&
+                    this.LoanProcessingInformationCodeJr.Equals(input.LoanProcessingInformationCodeJr))
+                ) && 
+                (
+                    this.LoanProcessingInformationCodeJt == input.LoanProcessingInformationCodeJt ||
+                    (this.LoanProcessingInformationCodeJt != null &&
+                    this.LoanProcessingInformationCodeJt.Equals(input.LoanProcessingInformationCodeJt))
+                ) && 
+                (
+                    this.UcdRequirement == input.UcdRequirement ||
+                    (this.UcdRequirement != null &&
+                    this.UcdRequirement.Equals(input.UcdRequirement))
                 );
         }
 
@@ -2440,6 +3028,104 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.AUSDataDiscrepencyResolvedBy.GetHashCode();
                 if (this.TitleServicesLenderTitleinsuranceFee != null)
                     hashCode = hashCode * 59 + this.TitleServicesLenderTitleinsuranceFee.GetHashCode();
+                if (this.LoanProcessingInformationHA != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationHA.GetHashCode();
+                if (this.LoanProcessingInformationGO != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationGO.GetHashCode();
+                if (this.LoanProcessingInformationD4 != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationD4.GetHashCode();
+                if (this.DocumentationGuidelineMessages8Y != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessages8Y.GetHashCode();
+                if (this.DocumentationGuidelineMessagesCN != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesCN.GetHashCode();
+                if (this.DocumentationGuidelineMessagesCP != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesCP.GetHashCode();
+                if (this.DocumentationGuidelineMessagesCV != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesCV.GetHashCode();
+                if (this.DocumentationGuidelineMessagesCZ != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesCZ.GetHashCode();
+                if (this.DocumentationGuidelineMessagesX1 != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesX1.GetHashCode();
+                if (this.DocumentationGuidelineMessagesX3 != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesX3.GetHashCode();
+                if (this.DocumentationGuidelineMessagesX5 != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesX5.GetHashCode();
+                if (this.DocumentationGuidelineMessagesX7 != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesX7.GetHashCode();
+                if (this.DocumentationGuidelineMessagesXA != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesXA.GetHashCode();
+                if (this.DocumentationGuidelineMessagesXM != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesXM.GetHashCode();
+                if (this.DocumentationGuidelineMessagesXP != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesXP.GetHashCode();
+                if (this.DocumentationGuidelineMessagesXR != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesXR.GetHashCode();
+                if (this.DocumentationGuidelineMessagesXT != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesXT.GetHashCode();
+                if (this.DocumentationGuidelineMessagesY8 != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesY8.GetHashCode();
+                if (this.DocumentationGuidelineMessagesYG != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesYG.GetHashCode();
+                if (this.DocumentationGuidelineMessagesYJ != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesYJ.GetHashCode();
+                if (this.LoanProcessingInformationMA != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationMA.GetHashCode();
+                if (this.LoanProcessingInformationLE != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationLE.GetHashCode();
+                if (this.LoanProcessingInformationLF != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationLF.GetHashCode();
+                if (this.DocumentationGuidelineMessagesDZ != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesDZ.GetHashCode();
+                if (this.DocumentationGuidelineMessagesQJ != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesQJ.GetHashCode();
+                if (this.DocumentationGuidelineMessagesJF != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesJF.GetHashCode();
+                if (this.DocumentationGuidelineMessagesQN != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesQN.GetHashCode();
+                if (this.DocumentationGuidelineMessagesU7 != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesU7.GetHashCode();
+                if (this.DocumentationGuidelineMessagesQQ != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesQQ.GetHashCode();
+                if (this.DocumentationGuidelineMessagesE5 != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesE5.GetHashCode();
+                if (this.DocumentationGuidelineMessagesQS != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesQS.GetHashCode();
+                if (this.DocumentationGuidelineMessagesIM != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesIM.GetHashCode();
+                if (this.DocumentationGuidelineMessagesIQ != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesIQ.GetHashCode();
+                if (this.DocumentationGuidelineMessages4V != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessages4V.GetHashCode();
+                if (this.DocumentationGuidelineMessages5C != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessages5C.GetHashCode();
+                if (this.DocumentationGuidelineMessagesCY != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesCY.GetHashCode();
+                if (this.DocumentationGuidelineMessagesDP != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesDP.GetHashCode();
+                if (this.DocumentationGuidelineMessagesYY != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesYY.GetHashCode();
+                if (this.DocumentationGuidelineMessagesYZ != null)
+                    hashCode = hashCode * 59 + this.DocumentationGuidelineMessagesYZ.GetHashCode();
+                if (this.CollateralRepandWarrReliefEligibilityType != null)
+                    hashCode = hashCode * 59 + this.CollateralRepandWarrReliefEligibilityType.GetHashCode();
+                if (this.AssetRepresentationAndWarrantyReliefEligibilityType != null)
+                    hashCode = hashCode * 59 + this.AssetRepresentationAndWarrantyReliefEligibilityType.GetHashCode();
+                if (this.LoanProcessingInformationCode24 != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationCode24.GetHashCode();
+                if (this.LoanProcessingInformationCode31 != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationCode31.GetHashCode();
+                if (this.LoanProcessingInformationCode32 != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationCode32.GetHashCode();
+                if (this.LoanProcessingInformationCode33 != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationCode33.GetHashCode();
+                if (this.LoanProcessingInformationCode97 != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationCode97.GetHashCode();
+                if (this.LoanProcessingInformationCodeJr != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationCodeJr.GetHashCode();
+                if (this.LoanProcessingInformationCodeJt != null)
+                    hashCode = hashCode * 59 + this.LoanProcessingInformationCodeJt.GetHashCode();
+                if (this.UcdRequirement != null)
+                    hashCode = hashCode * 59 + this.UcdRequirement.GetHashCode();
                 return hashCode;
             }
         }

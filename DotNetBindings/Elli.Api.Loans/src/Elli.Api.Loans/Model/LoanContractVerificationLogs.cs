@@ -484,6 +484,54 @@ namespace Elli.Api.Loans.Model
         public string CommentListXml { get; set; }
 
         /// <summary>
+        /// Gets or Sets GroupName
+        /// </summary>
+        [DataMember(Name="groupName", EmitDefaultValue=false)]
+        public string GroupName { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsObligationVerification
+        /// </summary>
+        [DataMember(Name="isObligationVerification", EmitDefaultValue=false)]
+        public bool? IsObligationVerification { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsIncomeVerification
+        /// </summary>
+        [DataMember(Name="isIncomeVerification", EmitDefaultValue=false)]
+        public bool? IsIncomeVerification { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsEmploymentVerification
+        /// </summary>
+        [DataMember(Name="isEmploymentVerification", EmitDefaultValue=false)]
+        public bool? IsEmploymentVerification { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsAssetVerification
+        /// </summary>
+        [DataMember(Name="isAssetVerification", EmitDefaultValue=false)]
+        public bool? IsAssetVerification { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Description
+        /// </summary>
+        [DataMember(Name="description", EmitDefaultValue=false)]
+        public string Description { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LastAttachmentDateUtc
+        /// </summary>
+        [DataMember(Name="lastAttachmentDateUtc", EmitDefaultValue=false)]
+        public DateTime? LastAttachmentDateUtc { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocVerificationsXml
+        /// </summary>
+        [DataMember(Name="docVerificationsXml", EmitDefaultValue=false)]
+        public string DocVerificationsXml { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -561,6 +609,14 @@ namespace Elli.Api.Loans.Model
             sb.Append("  FileAttachmentsXml: ").Append(FileAttachmentsXml).Append("\n");
             sb.Append("  AlertsXml: ").Append(AlertsXml).Append("\n");
             sb.Append("  CommentListXml: ").Append(CommentListXml).Append("\n");
+            sb.Append("  GroupName: ").Append(GroupName).Append("\n");
+            sb.Append("  IsObligationVerification: ").Append(IsObligationVerification).Append("\n");
+            sb.Append("  IsIncomeVerification: ").Append(IsIncomeVerification).Append("\n");
+            sb.Append("  IsEmploymentVerification: ").Append(IsEmploymentVerification).Append("\n");
+            sb.Append("  IsAssetVerification: ").Append(IsAssetVerification).Append("\n");
+            sb.Append("  Description: ").Append(Description).Append("\n");
+            sb.Append("  LastAttachmentDateUtc: ").Append(LastAttachmentDateUtc).Append("\n");
+            sb.Append("  DocVerificationsXml: ").Append(DocVerificationsXml).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -944,6 +1000,46 @@ namespace Elli.Api.Loans.Model
                     this.CommentListXml == input.CommentListXml ||
                     (this.CommentListXml != null &&
                     this.CommentListXml.Equals(input.CommentListXml))
+                ) && 
+                (
+                    this.GroupName == input.GroupName ||
+                    (this.GroupName != null &&
+                    this.GroupName.Equals(input.GroupName))
+                ) && 
+                (
+                    this.IsObligationVerification == input.IsObligationVerification ||
+                    (this.IsObligationVerification != null &&
+                    this.IsObligationVerification.Equals(input.IsObligationVerification))
+                ) && 
+                (
+                    this.IsIncomeVerification == input.IsIncomeVerification ||
+                    (this.IsIncomeVerification != null &&
+                    this.IsIncomeVerification.Equals(input.IsIncomeVerification))
+                ) && 
+                (
+                    this.IsEmploymentVerification == input.IsEmploymentVerification ||
+                    (this.IsEmploymentVerification != null &&
+                    this.IsEmploymentVerification.Equals(input.IsEmploymentVerification))
+                ) && 
+                (
+                    this.IsAssetVerification == input.IsAssetVerification ||
+                    (this.IsAssetVerification != null &&
+                    this.IsAssetVerification.Equals(input.IsAssetVerification))
+                ) && 
+                (
+                    this.Description == input.Description ||
+                    (this.Description != null &&
+                    this.Description.Equals(input.Description))
+                ) && 
+                (
+                    this.LastAttachmentDateUtc == input.LastAttachmentDateUtc ||
+                    (this.LastAttachmentDateUtc != null &&
+                    this.LastAttachmentDateUtc.Equals(input.LastAttachmentDateUtc))
+                ) && 
+                (
+                    this.DocVerificationsXml == input.DocVerificationsXml ||
+                    (this.DocVerificationsXml != null &&
+                    this.DocVerificationsXml.Equals(input.DocVerificationsXml))
                 );
         }
 
@@ -1096,6 +1192,22 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.AlertsXml.GetHashCode();
                 if (this.CommentListXml != null)
                     hashCode = hashCode * 59 + this.CommentListXml.GetHashCode();
+                if (this.GroupName != null)
+                    hashCode = hashCode * 59 + this.GroupName.GetHashCode();
+                if (this.IsObligationVerification != null)
+                    hashCode = hashCode * 59 + this.IsObligationVerification.GetHashCode();
+                if (this.IsIncomeVerification != null)
+                    hashCode = hashCode * 59 + this.IsIncomeVerification.GetHashCode();
+                if (this.IsEmploymentVerification != null)
+                    hashCode = hashCode * 59 + this.IsEmploymentVerification.GetHashCode();
+                if (this.IsAssetVerification != null)
+                    hashCode = hashCode * 59 + this.IsAssetVerification.GetHashCode();
+                if (this.Description != null)
+                    hashCode = hashCode * 59 + this.Description.GetHashCode();
+                if (this.LastAttachmentDateUtc != null)
+                    hashCode = hashCode * 59 + this.LastAttachmentDateUtc.GetHashCode();
+                if (this.DocVerificationsXml != null)
+                    hashCode = hashCode * 59 + this.DocVerificationsXml.GetHashCode();
                 return hashCode;
             }
         }

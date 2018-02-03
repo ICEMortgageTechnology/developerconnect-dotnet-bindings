@@ -147,6 +147,23 @@ Name | Type | Description | Notes
 **RehabilitationEscrowAmountBalanceForFutureDraws** | **double?** |  | [optional] 
 **LimitedProgram** | **bool?** |  | [optional] 
 **CriteriaForAppropriateLTVFactor** | **string** |  | [optional] 
+**LessLeadBasedPaintCredit** | **double?** |  | [optional] 
+**CaseLTV** | **double?** |  | [optional] 
+**InitialDrawAtClosingConsultantFees** | **double?** |  | [optional] 
+**InitialDrawAtClosingArchitecturalorEngineeringFees** | **double?** |  | [optional] 
+**InitialDrawAtClosingPermitFees** | **double?** |  | [optional] 
+**UnpaidPrincipalBalanceFirstLien** | **double?** |  | [optional] 
+**UnpaidPrincipalBalanceOfPurchaseJuniorLiens** | **double?** |  | [optional] 
+**UnpaidPrincipalBalanceOfAnyJuniorLiens** | **double?** |  | [optional] 
+**InterestDueonExistingMortgage** | **double?** |  | [optional] 
+**MIPDueOnExistingMortgage** | **double?** |  | [optional] 
+**PrepaymentPenalties** | **double?** |  | [optional] 
+**LateCharges** | **double?** |  | [optional] 
+**EscrowShortages** | **double?** |  | [optional] 
+**Existing203KDebtTotal** | **double?** |  | [optional] 
+**WaterPurificationOrganization** | **string** |  | [optional] 
+**WaterPurificationAgent** | **string** |  | [optional] 
+**WaterPurificationPayees** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

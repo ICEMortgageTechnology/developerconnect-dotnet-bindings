@@ -154,10 +154,22 @@ namespace Elli.Api.Loans.Model
         public string Subject { get; set; }
 
         /// <summary>
+        /// Gets or Sets ReadReceipt
+        /// </summary>
+        [DataMember(Name="readReceipt", EmitDefaultValue=false)]
+        public bool? ReadReceipt { get; set; }
+
+        /// <summary>
         /// Gets or Sets SystemId
         /// </summary>
         [DataMember(Name="systemId", EmitDefaultValue=false)]
         public string SystemId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocList
+        /// </summary>
+        [DataMember(Name="docList", EmitDefaultValue=false)]
+        public List<LoanContractDocList> DocList { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -182,7 +194,9 @@ namespace Elli.Api.Loans.Model
             sb.Append("  Recipient: ").Append(Recipient).Append("\n");
             sb.Append("  Sender: ").Append(Sender).Append("\n");
             sb.Append("  Subject: ").Append(Subject).Append("\n");
+            sb.Append("  ReadReceipt: ").Append(ReadReceipt).Append("\n");
             sb.Append("  SystemId: ").Append(SystemId).Append("\n");
+            sb.Append("  DocList: ").Append(DocList).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -293,9 +307,19 @@ namespace Elli.Api.Loans.Model
                     this.Subject.Equals(input.Subject))
                 ) && 
                 (
+                    this.ReadReceipt == input.ReadReceipt ||
+                    (this.ReadReceipt != null &&
+                    this.ReadReceipt.Equals(input.ReadReceipt))
+                ) && 
+                (
                     this.SystemId == input.SystemId ||
                     (this.SystemId != null &&
                     this.SystemId.Equals(input.SystemId))
+                ) && 
+                (
+                    this.DocList == input.DocList ||
+                    this.DocList != null &&
+                    this.DocList.SequenceEqual(input.DocList)
                 );
         }
 
@@ -338,8 +362,12 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.Sender.GetHashCode();
                 if (this.Subject != null)
                     hashCode = hashCode * 59 + this.Subject.GetHashCode();
+                if (this.ReadReceipt != null)
+                    hashCode = hashCode * 59 + this.ReadReceipt.GetHashCode();
                 if (this.SystemId != null)
                     hashCode = hashCode * 59 + this.SystemId.GetHashCode();
+                if (this.DocList != null)
+                    hashCode = hashCode * 59 + this.DocList.GetHashCode();
                 return hashCode;
             }
         }

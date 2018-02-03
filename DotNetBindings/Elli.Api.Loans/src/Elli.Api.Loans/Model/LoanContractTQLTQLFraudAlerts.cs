@@ -100,6 +100,30 @@ namespace Elli.Api.Loans.Model
         public int? TQLFraudAlertIndex { get; set; }
 
         /// <summary>
+        /// Gets or Sets DriveFraudAlertStatus
+        /// </summary>
+        [DataMember(Name="driveFraudAlertStatus", EmitDefaultValue=false)]
+        public string DriveFraudAlertStatus { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DriveFraudAlertCode
+        /// </summary>
+        [DataMember(Name="driveFraudAlertCode", EmitDefaultValue=false)]
+        public string DriveFraudAlertCode { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FraudGuardFraudAlertStatus
+        /// </summary>
+        [DataMember(Name="fraudGuardFraudAlertStatus", EmitDefaultValue=false)]
+        public string FraudGuardFraudAlertStatus { get; set; }
+
+        /// <summary>
+        /// Gets or Sets FraudGuardFraudAlertCode
+        /// </summary>
+        [DataMember(Name="fraudGuardFraudAlertCode", EmitDefaultValue=false)]
+        public string FraudGuardFraudAlertCode { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -113,6 +137,10 @@ namespace Elli.Api.Loans.Model
             sb.Append("  LastFraudOrderAlertLevel: ").Append(LastFraudOrderAlertLevel).Append("\n");
             sb.Append("  LastFraudOrderDescriptionOfAlerts: ").Append(LastFraudOrderDescriptionOfAlerts).Append("\n");
             sb.Append("  TQLFraudAlertIndex: ").Append(TQLFraudAlertIndex).Append("\n");
+            sb.Append("  DriveFraudAlertStatus: ").Append(DriveFraudAlertStatus).Append("\n");
+            sb.Append("  DriveFraudAlertCode: ").Append(DriveFraudAlertCode).Append("\n");
+            sb.Append("  FraudGuardFraudAlertStatus: ").Append(FraudGuardFraudAlertStatus).Append("\n");
+            sb.Append("  FraudGuardFraudAlertCode: ").Append(FraudGuardFraudAlertCode).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -176,6 +204,26 @@ namespace Elli.Api.Loans.Model
                     this.TQLFraudAlertIndex == input.TQLFraudAlertIndex ||
                     (this.TQLFraudAlertIndex != null &&
                     this.TQLFraudAlertIndex.Equals(input.TQLFraudAlertIndex))
+                ) && 
+                (
+                    this.DriveFraudAlertStatus == input.DriveFraudAlertStatus ||
+                    (this.DriveFraudAlertStatus != null &&
+                    this.DriveFraudAlertStatus.Equals(input.DriveFraudAlertStatus))
+                ) && 
+                (
+                    this.DriveFraudAlertCode == input.DriveFraudAlertCode ||
+                    (this.DriveFraudAlertCode != null &&
+                    this.DriveFraudAlertCode.Equals(input.DriveFraudAlertCode))
+                ) && 
+                (
+                    this.FraudGuardFraudAlertStatus == input.FraudGuardFraudAlertStatus ||
+                    (this.FraudGuardFraudAlertStatus != null &&
+                    this.FraudGuardFraudAlertStatus.Equals(input.FraudGuardFraudAlertStatus))
+                ) && 
+                (
+                    this.FraudGuardFraudAlertCode == input.FraudGuardFraudAlertCode ||
+                    (this.FraudGuardFraudAlertCode != null &&
+                    this.FraudGuardFraudAlertCode.Equals(input.FraudGuardFraudAlertCode))
                 );
         }
 
@@ -200,6 +248,14 @@ namespace Elli.Api.Loans.Model
                     hashCode = hashCode * 59 + this.LastFraudOrderDescriptionOfAlerts.GetHashCode();
                 if (this.TQLFraudAlertIndex != null)
                     hashCode = hashCode * 59 + this.TQLFraudAlertIndex.GetHashCode();
+                if (this.DriveFraudAlertStatus != null)
+                    hashCode = hashCode * 59 + this.DriveFraudAlertStatus.GetHashCode();
+                if (this.DriveFraudAlertCode != null)
+                    hashCode = hashCode * 59 + this.DriveFraudAlertCode.GetHashCode();
+                if (this.FraudGuardFraudAlertStatus != null)
+                    hashCode = hashCode * 59 + this.FraudGuardFraudAlertStatus.GetHashCode();
+                if (this.FraudGuardFraudAlertCode != null)
+                    hashCode = hashCode * 59 + this.FraudGuardFraudAlertCode.GetHashCode();
                 return hashCode;
             }
         }
