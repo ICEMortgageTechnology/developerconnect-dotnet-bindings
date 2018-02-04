@@ -36,13 +36,11 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Elli.Api.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d2dd5824bc7184dc, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Base.1.0.0\lib\Elli.Api.Base.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Elli.Api.Base, Version=1.1.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Base.1.1.0\lib\Elli.Api.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.OAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d2dd5824bc7184dc, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Base.1.0.0\lib\Elli.Api.OAuth.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Elli.Api.OAuth, Version=1.1.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Base.1.1.0\lib\Elli.Api.OAuth.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
