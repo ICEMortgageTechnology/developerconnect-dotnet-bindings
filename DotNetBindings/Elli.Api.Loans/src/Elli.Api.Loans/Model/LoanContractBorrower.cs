@@ -1207,7 +1207,7 @@ namespace Elli.Api.Loans.Model
         /// Gets or Sets SchoolingTermYears
         /// </summary>
         [DataMember(Name="schoolingTermYears", EmitDefaultValue=false)]
-        public byte[] SchoolingTermYears { get; set; }
+        public int? SchoolingTermYears { get; set; }
 
         /// <summary>
         /// Gets or Sets SubtotalLiquidAssetsMinusGiftAmount

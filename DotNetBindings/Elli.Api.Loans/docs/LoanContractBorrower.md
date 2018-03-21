@@ -193,7 +193,7 @@ Name | Type | Description | Notes
 **PropertyForeclosedPastSevenYearsIndicator** | **bool?** |  | [optional] 
 **RelationshipDescription** | **string** |  | [optional] 
 **RelationshipWithRDEmployeeIndicator** | **bool?** |  | [optional] 
-**SchoolingTermYears** | **byte[]** |  | [optional] 
+**SchoolingTermYears** | **int?** |  | [optional] 
 **SubtotalLiquidAssetsMinusGiftAmount** | **double?** |  | [optional] 
 **SuffixToName** | **string** |  | [optional] 
 **Tax4506LastInvestor** | **string** |  | [optional] 

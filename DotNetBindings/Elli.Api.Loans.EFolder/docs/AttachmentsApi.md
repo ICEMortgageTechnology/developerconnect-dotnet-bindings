@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 
 <a name="getattachment"></a>
 # **GetAttachment**
-> void GetAttachment (string attachmentId, string loanId)
+> EFolderAttachmentContract GetAttachment (string attachmentId, string loanId, bool? includeImageUrls = null)
 
 
 
@@ -240,10 +240,12 @@ namespace Example
             var apiInstance = new AttachmentsApi();
             var attachmentId = attachmentId_example;  // string | Attachment ID
             var loanId = loanId_example;  // string | Loan GUID
+            var includeImageUrls = true;  // bool? | Include image URLs in response in case attachment type is Image. (optional) 
 
             try
             {
-                apiInstance.GetAttachment(attachmentId, loanId);
+                EFolderAttachmentContract result = apiInstance.GetAttachment(attachmentId, loanId, includeImageUrls);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -260,10 +262,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **attachmentId** | **string**| Attachment ID | 
  **loanId** | **string**| Loan GUID | 
+ **includeImageUrls** | **bool?**| Include image URLs in response in case attachment type is Image. | [optional] 
 
 ### Return type
 
-void (empty response body)
+[**EFolderAttachmentContract**](EFolderAttachmentContract.md)
 
 ### Authorization
 
@@ -278,7 +281,7 @@ void (empty response body)
 
 <a name="getattachments"></a>
 # **GetAttachments**
-> void GetAttachments (string loanId)
+> List<EFolderAttachmentContract> GetAttachments (string loanId)
 
 
 
@@ -306,7 +309,8 @@ namespace Example
 
             try
             {
-                apiInstance.GetAttachments(loanId);
+                List&lt;EFolderAttachmentContract&gt; result = apiInstance.GetAttachments(loanId);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -325,7 +329,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**List<EFolderAttachmentContract>**](EFolderAttachmentContract.md)
 
 ### Authorization
 

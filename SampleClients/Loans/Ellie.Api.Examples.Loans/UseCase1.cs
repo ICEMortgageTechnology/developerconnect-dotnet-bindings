@@ -42,6 +42,12 @@
  *  9. CREATING/ADDING ATTACHMENT
  * 10. UNLOCK LOAN
  * 11. DELETE LOAN
+ * 12. GET LOAN MILESTONES
+ * 13. GET SPECIFIC LOAN MILESTONE
+ * 14. GET ALL ASSOCIATES OF A LOAN
+ * 15. ASSIGNING LOAN ASSOCIATE TO A MILESTONE
+ * 16. UNASSIGNING LOAN ASSOCIATE FROM A MILESTONE
+ * 17. COMPLETING A MILESTONE
  */
 
 using System;
@@ -59,6 +65,7 @@ using Elli.Api.Services.Api;
 using Elli.Api.Services.Model;
 using Newtonsoft.Json.Linq;
 using RestSharp;
+using System.Security;
 
 namespace Ellie.Api.Examples.Loans
 {
@@ -181,12 +188,15 @@ namespace Ellie.Api.Examples.Loans
             } while (true);
         }
 
+        
         /// <summary>
         /// Example: Obtain access token
         /// </summary>
         public static void Authenticate()
         {
             ApiConfiguration config = (ApiConfiguration)ConfigurationManager.GetSection("ElliApiConfig");
+            
+            //Passwords and other sensitive information should be handled by consumer application suitably            
             string instanceId = config.InstanceId, userName = config.Username, password = config.Password;
 
             Console.Clear();
@@ -199,7 +209,7 @@ namespace Ellie.Api.Examples.Loans
             {
                 Console.Write("Username        : ");
                 userName = Console.ReadLine();
-            }
+            }            
             if (string.IsNullOrEmpty(password))
             {
                 Console.Write("Password        : ");
@@ -350,7 +360,7 @@ namespace Ellie.Api.Examples.Loans
             Console.Write("Enter Credco User Name  : ");
             var userName = Console.ReadLine();
             Console.Write("Enter Credco Password   : ");
-            var password = Console.ReadLine();
+            string password = Console.ReadLine();
             Console.Write("Enter Borrower Id       : ");
             var borrowerId = Console.ReadLine();
 
@@ -432,7 +442,7 @@ namespace Ellie.Api.Examples.Loans
                 DateReviewed = DateTime.Now,
                 DateReadyForUw = DateTime.Now.AddDays(-2),
                 DateReadyToShip = DateTime.Now.AddDays(-2),
-                Comments = new List<object>()
+                Comments = new List<EFolderDocumentContractComments>()
             };
             var response = docsApiClient.CreateDocumentWithHttpInfo(LoanId, "id", request);
             var loc = response.Headers["Location"];
@@ -479,6 +489,7 @@ namespace Ellie.Api.Examples.Loans
                 fileReadAttemptFailed = false;
                 Console.WriteLine("Please enter the file path to upload the attachment: ");
                 path = Console.ReadLine() + "";
+                path = path.Replace("..", ""); //Fix for Path Traversal security threat
                 try
                 {
                     content = File.ReadAllBytes(path);
@@ -532,8 +543,16 @@ namespace Ellie.Api.Examples.Loans
             {
                 if (string.IsNullOrEmpty(_loanId))
                 {
+                    Guid guid = Guid.Empty;
+                    var correctVal = false;
                     Console.WriteLine("Enter Loan Id: ");
-                    _loanId = Console.ReadLine();
+                    while (!correctVal)
+                    {
+                        correctVal = Guid.TryParse(Console.ReadLine(), out guid);
+                        if (!correctVal)
+                            Console.Write("Please enter a valid loan id: ");
+                    }
+                    _loanId = guid.ToString();
                 }
                 return _loanId;
             }
@@ -543,10 +562,19 @@ namespace Ellie.Api.Examples.Loans
         {
             get
             {
+                
                 if (string.IsNullOrEmpty(_documentId))
                 {
+                    Guid guid = Guid.Empty;
+                    var correctVal = false;
                     Console.WriteLine("Enter Document Id: ");
-                    _documentId = Console.ReadLine();
+                    while (!correctVal)
+                    {
+                        correctVal = Guid.TryParse(Console.ReadLine(), out guid);
+                        if (!correctVal)
+                            Console.Write("Please enter a valid document id: ");
+                    }
+                    _documentId = guid.ToString();
                 }
                 return _documentId;
             }

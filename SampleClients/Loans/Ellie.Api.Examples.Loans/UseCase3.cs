@@ -40,6 +40,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Security;
 using Elli.Api.Base;
 using Elli.Api.Loans.Api;
 using Elli.Api.Loans.Model;
@@ -97,6 +98,8 @@ namespace Ellie.Api.Examples.Loans
         public static void Authenticate()
         {
             ApiConfiguration config = (ApiConfiguration)ConfigurationManager.GetSection("ElliApiConfig");
+
+            //Passwords and other sensitive information should be handled by consumer application suitably            
             string instanceId = config.InstanceId, userName = config.Username, password = config.Password;
 
             Console.Clear();
@@ -125,6 +128,7 @@ namespace Ellie.Api.Examples.Loans
             };
 
             _accessToken = AccessToken.GetAccessToken(credentials);
+            Console.WriteLine($"Your Access Token is: {_accessToken.Token}");
         }
 
         /// <summary>

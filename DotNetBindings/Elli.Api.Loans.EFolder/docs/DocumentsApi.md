@@ -80,7 +80,7 @@ void (empty response body)
 
 <a name="getdocument"></a>
 # **GetDocument**
-> void GetDocument (string documentId, string loanId)
+> EFolderDocumentContract GetDocument (string documentId, string loanId)
 
 
 
@@ -109,7 +109,8 @@ namespace Example
 
             try
             {
-                apiInstance.GetDocument(documentId, loanId);
+                EFolderDocumentContract result = apiInstance.GetDocument(documentId, loanId);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -129,7 +130,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**EFolderDocumentContract**](EFolderDocumentContract.md)
 
 ### Authorization
 
@@ -144,7 +145,7 @@ void (empty response body)
 
 <a name="getdocuments"></a>
 # **GetDocuments**
-> void GetDocuments (string loanId)
+> List<EFolderDocumentContract> GetDocuments (string loanId)
 
 
 
@@ -172,7 +173,8 @@ namespace Example
 
             try
             {
-                apiInstance.GetDocuments(loanId);
+                List&lt;EFolderDocumentContract&gt; result = apiInstance.GetDocuments(loanId);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -191,7 +193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**List<EFolderDocumentContract>**](EFolderDocumentContract.md)
 
 ### Authorization
 
@@ -206,7 +208,7 @@ void (empty response body)
 
 <a name="retrievedocattachments"></a>
 # **RetrieveDocAttachments**
-> void RetrieveDocAttachments (string documentId, string loanId)
+> List<EFolderEntityRefContract> RetrieveDocAttachments (string documentId, string loanId)
 
 
 
@@ -235,7 +237,8 @@ namespace Example
 
             try
             {
-                apiInstance.RetrieveDocAttachments(documentId, loanId);
+                List&lt;EFolderEntityRefContract&gt; result = apiInstance.RetrieveDocAttachments(documentId, loanId);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -255,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**List<EFolderEntityRefContract>**](EFolderEntityRefContract.md)
 
 ### Authorization
 
@@ -270,11 +273,11 @@ void (empty response body)
 
 <a name="updatedocattachments"></a>
 # **UpdateDocAttachments**
-> void UpdateDocAttachments (string documentId, string loanId, List<EFolderAttachmentContract> input = null)
+> void UpdateDocAttachments (string documentId, string loanId, string action, List<EFolderEntityRefContract> input = null)
 
 
 
-Update an attachment of a loan within a document
+Assign/Unassign attachment of a loan within a document
 
 ### Example
 ```csharp
@@ -296,11 +299,12 @@ namespace Example
             var apiInstance = new DocumentsApi();
             var documentId = documentId_example;  // string | Document GUID
             var loanId = loanId_example;  // string | Loan GUID
-            var input = new List<EFolderAttachmentContract>(); // List<EFolderAttachmentContract> |  (optional) 
+            var action = action_example;  // string | Can be add or remove to Assign or Unassign attachment.
+            var input = new List<EFolderEntityRefContract>(); // List<EFolderEntityRefContract> |  (optional) 
 
             try
             {
-                apiInstance.UpdateDocAttachments(documentId, loanId, input);
+                apiInstance.UpdateDocAttachments(documentId, loanId, action, input);
             }
             catch (Exception e)
             {
@@ -317,7 +321,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **documentId** | **string**| Document GUID | 
  **loanId** | **string**| Loan GUID | 
- **input** | [**List&lt;EFolderAttachmentContract&gt;**](EFolderAttachmentContract.md)|  | [optional] 
+ **action** | **string**| Can be add or remove to Assign or Unassign attachment. | 
+ **input** | [**List&lt;EFolderEntityRefContract&gt;**](EFolderEntityRefContract.md)|  | [optional] 
 
 ### Return type
 

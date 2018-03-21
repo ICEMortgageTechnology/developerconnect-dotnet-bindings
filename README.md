@@ -8,11 +8,13 @@ The purpose of this repository is to
 ## .NET Bindings
 This repository contains the .NET bindings, also referred to as .NET Client Libraries.
 
+## Simple Flow [Not to be published on public github]
+![Basic Flow Diagram](http://githubdev.dco.elmae/api-platform/commoncomponents-dotnetsdk/blob/master/FlowDiagram.png)
+
 ## Getting Started
 
 **Prerequisites:**
 
-    Visual Studio 2015 Or Higher
     Visual Sudio 2015 Or Higher
 
 ### Step 1: Install the .NET Language Binding
@@ -33,6 +35,8 @@ In addition to the internal dependencies, the following external dependencies ar
     
     Newtonsoft.Json version 10.0.3
 
+/*
+-- not for public GitHub --
 If you want to install the packages individually, follow the example for Loans package as follows: 
 
     PM> Install-Package Elli.Api.Loans
@@ -49,6 +53,24 @@ All available packages that will be installed are:
 Note: Each of the above packages references all dependencies including Oauth Client and Base DLL. If you wish to install just the OAuth reference, execute the following command:
 
     PM> Install-Package Elli.Api.OAuth
+
+#### Option 2: Import Project directly into Visual Studio
+
+Obtain the local copy of the code by executing this command:
+
+    git clone https://github.com/EllieMae/appraisal-dotnet-bindings
+    
+In the Visual Studio Solution explorer, right click Solution > Add Existing Project, and then navigate to the csproj file in the Browse Window.
+
+When following this approach, the reference to RestSharp and NewtonSoft.json is expected in the main executable project. If you do not have it already, add the following references to the solution:
+
+    RestSharpSigned version 105.1.0
+    OR
+    RestSharp version 105.1.0
+    
+    Newtonsoft.Json version 10.0.3
+    
+*/
 
 ### Step 2: Update API Client Configuration
 Elli.Api.Base enables easy configuration for project. Depending on the type of the project, in the web.config or app.config file, add following section for configuration:

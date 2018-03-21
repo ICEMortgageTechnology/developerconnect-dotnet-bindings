@@ -70,10 +70,28 @@ namespace Elli.Api.Loans.EFolder.Model
         public string DocumentId { get; set; }
 
         /// <summary>
+        /// Gets or Sets Title
+        /// </summary>
+        [DataMember(Name="title", EmitDefaultValue=false)]
+        public string Title { get; set; }
+
+        /// <summary>
         /// Gets or Sets TitleWithIndex
         /// </summary>
         [DataMember(Name="titleWithIndex", EmitDefaultValue=false)]
         public string TitleWithIndex { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Description
+        /// </summary>
+        [DataMember(Name="description", EmitDefaultValue=false)]
+        public string Description { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ApplicationId
+        /// </summary>
+        [DataMember(Name="applicationId", EmitDefaultValue=false)]
+        public string ApplicationId { get; set; }
 
         /// <summary>
         /// Gets or Sets ApplicationName
@@ -106,10 +124,82 @@ namespace Elli.Api.Loans.EFolder.Model
         public bool? ThirdPartyAllowed { get; set; }
 
         /// <summary>
+        /// Gets or Sets IsProtected
+        /// </summary>
+        [DataMember(Name="isProtected", EmitDefaultValue=false)]
+        public bool? IsProtected { get; set; }
+
+        /// <summary>
+        /// Gets or Sets IsRequired
+        /// </summary>
+        [DataMember(Name="isRequired", EmitDefaultValue=false)]
+        public bool? IsRequired { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DateExpected
+        /// </summary>
+        [DataMember(Name="dateExpected", EmitDefaultValue=false)]
+        public DateTime? DateExpected { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DaysDue
+        /// </summary>
+        [DataMember(Name="daysDue", EmitDefaultValue=false)]
+        public int? DaysDue { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DaysTillExpire
+        /// </summary>
+        [DataMember(Name="daysTillExpire", EmitDefaultValue=false)]
+        public int? DaysTillExpire { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RequestedFrom
+        /// </summary>
+        [DataMember(Name="requestedFrom", EmitDefaultValue=false)]
+        public string RequestedFrom { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DateCreated
+        /// </summary>
+        [DataMember(Name="dateCreated", EmitDefaultValue=false)]
+        public DateTime? DateCreated { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CreatedBy
+        /// </summary>
+        [DataMember(Name="createdBy", EmitDefaultValue=false)]
+        public string CreatedBy { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DateExpires
+        /// </summary>
+        [DataMember(Name="dateExpires", EmitDefaultValue=false)]
+        public DateTime? DateExpires { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Status
+        /// </summary>
+        [DataMember(Name="status", EmitDefaultValue=false)]
+        public string Status { get; set; }
+
+        /// <summary>
+        /// Gets or Sets StatusDate
+        /// </summary>
+        [DataMember(Name="statusDate", EmitDefaultValue=false)]
+        public DateTime? StatusDate { get; set; }
+
+        /// <summary>
         /// Gets or Sets IsRequested
         /// </summary>
         [DataMember(Name="isRequested", EmitDefaultValue=false)]
         public bool? IsRequested { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DateRequested
+        /// </summary>
+        [DataMember(Name="dateRequested", EmitDefaultValue=false)]
+        public DateTime? DateRequested { get; set; }
 
         /// <summary>
         /// Gets or Sets RequestedBy
@@ -136,16 +226,16 @@ namespace Elli.Api.Loans.EFolder.Model
         public string RerequestedBy { get; set; }
 
         /// <summary>
-        /// Gets or Sets DaysDue
-        /// </summary>
-        [DataMember(Name="daysDue", EmitDefaultValue=false)]
-        public int? DaysDue { get; set; }
-
-        /// <summary>
         /// Gets or Sets IsReceived
         /// </summary>
         [DataMember(Name="isReceived", EmitDefaultValue=false)]
         public bool? IsReceived { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DateReceived
+        /// </summary>
+        [DataMember(Name="dateReceived", EmitDefaultValue=false)]
+        public DateTime? DateReceived { get; set; }
 
         /// <summary>
         /// Gets or Sets ReceivedBy
@@ -154,16 +244,16 @@ namespace Elli.Api.Loans.EFolder.Model
         public string ReceivedBy { get; set; }
 
         /// <summary>
-        /// Gets or Sets DaysTillExpire
-        /// </summary>
-        [DataMember(Name="daysTillExpire", EmitDefaultValue=false)]
-        public int? DaysTillExpire { get; set; }
-
-        /// <summary>
         /// Gets or Sets IsReviewed
         /// </summary>
         [DataMember(Name="isReviewed", EmitDefaultValue=false)]
         public bool? IsReviewed { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DateReviewed
+        /// </summary>
+        [DataMember(Name="dateReviewed", EmitDefaultValue=false)]
+        public DateTime? DateReviewed { get; set; }
 
         /// <summary>
         /// Gets or Sets ReviewedBy
@@ -178,6 +268,12 @@ namespace Elli.Api.Loans.EFolder.Model
         public bool? IsReadyForUw { get; set; }
 
         /// <summary>
+        /// Gets or Sets DateReadyForUw
+        /// </summary>
+        [DataMember(Name="dateReadyForUw", EmitDefaultValue=false)]
+        public DateTime? DateReadyForUw { get; set; }
+
+        /// <summary>
         /// Gets or Sets ReadyForUwBy
         /// </summary>
         [DataMember(Name="readyForUwBy", EmitDefaultValue=false)]
@@ -190,52 +286,16 @@ namespace Elli.Api.Loans.EFolder.Model
         public bool? IsReadyToShip { get; set; }
 
         /// <summary>
+        /// Gets or Sets DateReadyToShip
+        /// </summary>
+        [DataMember(Name="dateReadyToShip", EmitDefaultValue=false)]
+        public DateTime? DateReadyToShip { get; set; }
+
+        /// <summary>
         /// Gets or Sets ReadyToShipBy
         /// </summary>
         [DataMember(Name="readyToShipBy", EmitDefaultValue=false)]
         public string ReadyToShipBy { get; set; }
-
-        /// <summary>
-        /// Gets or Sets DateExpires
-        /// </summary>
-        [DataMember(Name="dateExpires", EmitDefaultValue=false)]
-        public DateTime? DateExpires { get; set; }
-
-        /// <summary>
-        /// Gets or Sets CreatedBy
-        /// </summary>
-        [DataMember(Name="createdBy", EmitDefaultValue=false)]
-        public string CreatedBy { get; set; }
-
-        /// <summary>
-        /// Gets or Sets DateCreated
-        /// </summary>
-        [DataMember(Name="dateCreated", EmitDefaultValue=false)]
-        public DateTime? DateCreated { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Title
-        /// </summary>
-        [DataMember(Name="title", EmitDefaultValue=false)]
-        public string Title { get; set; }
-
-        /// <summary>
-        /// Gets or Sets Description
-        /// </summary>
-        [DataMember(Name="description", EmitDefaultValue=false)]
-        public string Description { get; set; }
-
-        /// <summary>
-        /// Gets or Sets RequestedFrom
-        /// </summary>
-        [DataMember(Name="requestedFrom", EmitDefaultValue=false)]
-        public string RequestedFrom { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ApplicationId
-        /// </summary>
-        [DataMember(Name="applicationId", EmitDefaultValue=false)]
-        public string ApplicationId { get; set; }
 
         /// <summary>
         /// Gets or Sets EmnSignature
@@ -244,64 +304,82 @@ namespace Elli.Api.Loans.EFolder.Model
         public string EmnSignature { get; set; }
 
         /// <summary>
-        /// Gets or Sets Status
+        /// Gets or Sets AttachmentRequired
         /// </summary>
-        [DataMember(Name="status", EmitDefaultValue=false)]
-        public string Status { get; set; }
+        [DataMember(Name="attachmentRequired", EmitDefaultValue=false)]
+        public bool? AttachmentRequired { get; set; }
 
         /// <summary>
-        /// Gets or Sets StatusDate
+        /// Gets or Sets IsClosingDocument
         /// </summary>
-        [DataMember(Name="statusDate", EmitDefaultValue=false)]
-        public DateTime? StatusDate { get; set; }
+        [DataMember(Name="isClosingDocument", EmitDefaultValue=false)]
+        public bool? IsClosingDocument { get; set; }
 
         /// <summary>
-        /// Gets or Sets DateRequested
+        /// Gets or Sets IsPreClosingDocument
         /// </summary>
-        [DataMember(Name="dateRequested", EmitDefaultValue=false)]
-        public DateTime? DateRequested { get; set; }
+        [DataMember(Name="isPreClosingDocument", EmitDefaultValue=false)]
+        public bool? IsPreClosingDocument { get; set; }
 
         /// <summary>
-        /// Gets or Sets DateExpected
+        /// Gets or Sets IsEDisclosuresDocument
         /// </summary>
-        [DataMember(Name="dateExpected", EmitDefaultValue=false)]
-        public DateTime? DateExpected { get; set; }
+        [DataMember(Name="isEDisclosuresDocument", EmitDefaultValue=false)]
+        public bool? IsEDisclosuresDocument { get; set; }
 
         /// <summary>
-        /// Gets or Sets DateReceived
+        /// Gets or Sets IsSettlementServicesDocument
         /// </summary>
-        [DataMember(Name="dateReceived", EmitDefaultValue=false)]
-        public DateTime? DateReceived { get; set; }
+        [DataMember(Name="isSettlementServicesDocument", EmitDefaultValue=false)]
+        public bool? IsSettlementServicesDocument { get; set; }
 
         /// <summary>
-        /// Gets or Sets DateReviewed
+        /// Gets or Sets HasIncomeVerifications
         /// </summary>
-        [DataMember(Name="dateReviewed", EmitDefaultValue=false)]
-        public DateTime? DateReviewed { get; set; }
+        [DataMember(Name="hasIncomeVerifications", EmitDefaultValue=false)]
+        public bool? HasIncomeVerifications { get; set; }
 
         /// <summary>
-        /// Gets or Sets DateReadyForUw
+        /// Gets or Sets HasObligationVerifications
         /// </summary>
-        [DataMember(Name="dateReadyForUw", EmitDefaultValue=false)]
-        public DateTime? DateReadyForUw { get; set; }
+        [DataMember(Name="hasObligationVerifications", EmitDefaultValue=false)]
+        public bool? HasObligationVerifications { get; set; }
 
         /// <summary>
-        /// Gets or Sets DateReadyToShip
+        /// Gets or Sets HasAssetVerifications
         /// </summary>
-        [DataMember(Name="dateReadyToShip", EmitDefaultValue=false)]
-        public DateTime? DateReadyToShip { get; set; }
+        [DataMember(Name="hasAssetVerifications", EmitDefaultValue=false)]
+        public bool? HasAssetVerifications { get; set; }
+
+        /// <summary>
+        /// Gets or Sets HasEmploymentVerifications
+        /// </summary>
+        [DataMember(Name="hasEmploymentVerifications", EmitDefaultValue=false)]
+        public bool? HasEmploymentVerifications { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DocGroups
+        /// </summary>
+        [DataMember(Name="docGroups", EmitDefaultValue=false)]
+        public List<string> DocGroups { get; set; }
 
         /// <summary>
         /// Gets or Sets Comments
         /// </summary>
         [DataMember(Name="comments", EmitDefaultValue=false)]
-        public List<Object> Comments { get; set; }
+        public List<EFolderDocumentContractComments> Comments { get; set; }
 
         /// <summary>
         /// Gets or Sets Attachments
         /// </summary>
         [DataMember(Name="attachments", EmitDefaultValue=false)]
         public List<EFolderDocumentContractAttachments> Attachments { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Conditions
+        /// </summary>
+        [DataMember(Name="conditions", EmitDefaultValue=false)]
+        public List<EFolderDocumentContractAttachments> Conditions { get; set; }
 
         /// <summary>
         /// Gets or Sets Roles
@@ -318,45 +396,58 @@ namespace Elli.Api.Loans.EFolder.Model
             var sb = new StringBuilder();
             sb.Append("class EFolderDocumentContract {\n");
             sb.Append("  DocumentId: ").Append(DocumentId).Append("\n");
+            sb.Append("  Title: ").Append(Title).Append("\n");
             sb.Append("  TitleWithIndex: ").Append(TitleWithIndex).Append("\n");
+            sb.Append("  Description: ").Append(Description).Append("\n");
+            sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
             sb.Append("  ApplicationName: ").Append(ApplicationName).Append("\n");
             sb.Append("  MilestoneId: ").Append(MilestoneId).Append("\n");
             sb.Append("  WebCenterAllowed: ").Append(WebCenterAllowed).Append("\n");
             sb.Append("  TpoAllowed: ").Append(TpoAllowed).Append("\n");
             sb.Append("  ThirdPartyAllowed: ").Append(ThirdPartyAllowed).Append("\n");
+            sb.Append("  IsProtected: ").Append(IsProtected).Append("\n");
+            sb.Append("  IsRequired: ").Append(IsRequired).Append("\n");
+            sb.Append("  DateExpected: ").Append(DateExpected).Append("\n");
+            sb.Append("  DaysDue: ").Append(DaysDue).Append("\n");
+            sb.Append("  DaysTillExpire: ").Append(DaysTillExpire).Append("\n");
+            sb.Append("  RequestedFrom: ").Append(RequestedFrom).Append("\n");
+            sb.Append("  DateCreated: ").Append(DateCreated).Append("\n");
+            sb.Append("  CreatedBy: ").Append(CreatedBy).Append("\n");
+            sb.Append("  DateExpires: ").Append(DateExpires).Append("\n");
+            sb.Append("  Status: ").Append(Status).Append("\n");
+            sb.Append("  StatusDate: ").Append(StatusDate).Append("\n");
             sb.Append("  IsRequested: ").Append(IsRequested).Append("\n");
+            sb.Append("  DateRequested: ").Append(DateRequested).Append("\n");
             sb.Append("  RequestedBy: ").Append(RequestedBy).Append("\n");
             sb.Append("  IsRerequested: ").Append(IsRerequested).Append("\n");
             sb.Append("  DateRerequested: ").Append(DateRerequested).Append("\n");
             sb.Append("  RerequestedBy: ").Append(RerequestedBy).Append("\n");
-            sb.Append("  DaysDue: ").Append(DaysDue).Append("\n");
             sb.Append("  IsReceived: ").Append(IsReceived).Append("\n");
+            sb.Append("  DateReceived: ").Append(DateReceived).Append("\n");
             sb.Append("  ReceivedBy: ").Append(ReceivedBy).Append("\n");
-            sb.Append("  DaysTillExpire: ").Append(DaysTillExpire).Append("\n");
             sb.Append("  IsReviewed: ").Append(IsReviewed).Append("\n");
+            sb.Append("  DateReviewed: ").Append(DateReviewed).Append("\n");
             sb.Append("  ReviewedBy: ").Append(ReviewedBy).Append("\n");
             sb.Append("  IsReadyForUw: ").Append(IsReadyForUw).Append("\n");
+            sb.Append("  DateReadyForUw: ").Append(DateReadyForUw).Append("\n");
             sb.Append("  ReadyForUwBy: ").Append(ReadyForUwBy).Append("\n");
             sb.Append("  IsReadyToShip: ").Append(IsReadyToShip).Append("\n");
-            sb.Append("  ReadyToShipBy: ").Append(ReadyToShipBy).Append("\n");
-            sb.Append("  DateExpires: ").Append(DateExpires).Append("\n");
-            sb.Append("  CreatedBy: ").Append(CreatedBy).Append("\n");
-            sb.Append("  DateCreated: ").Append(DateCreated).Append("\n");
-            sb.Append("  Title: ").Append(Title).Append("\n");
-            sb.Append("  Description: ").Append(Description).Append("\n");
-            sb.Append("  RequestedFrom: ").Append(RequestedFrom).Append("\n");
-            sb.Append("  ApplicationId: ").Append(ApplicationId).Append("\n");
-            sb.Append("  EmnSignature: ").Append(EmnSignature).Append("\n");
-            sb.Append("  Status: ").Append(Status).Append("\n");
-            sb.Append("  StatusDate: ").Append(StatusDate).Append("\n");
-            sb.Append("  DateRequested: ").Append(DateRequested).Append("\n");
-            sb.Append("  DateExpected: ").Append(DateExpected).Append("\n");
-            sb.Append("  DateReceived: ").Append(DateReceived).Append("\n");
-            sb.Append("  DateReviewed: ").Append(DateReviewed).Append("\n");
-            sb.Append("  DateReadyForUw: ").Append(DateReadyForUw).Append("\n");
             sb.Append("  DateReadyToShip: ").Append(DateReadyToShip).Append("\n");
+            sb.Append("  ReadyToShipBy: ").Append(ReadyToShipBy).Append("\n");
+            sb.Append("  EmnSignature: ").Append(EmnSignature).Append("\n");
+            sb.Append("  AttachmentRequired: ").Append(AttachmentRequired).Append("\n");
+            sb.Append("  IsClosingDocument: ").Append(IsClosingDocument).Append("\n");
+            sb.Append("  IsPreClosingDocument: ").Append(IsPreClosingDocument).Append("\n");
+            sb.Append("  IsEDisclosuresDocument: ").Append(IsEDisclosuresDocument).Append("\n");
+            sb.Append("  IsSettlementServicesDocument: ").Append(IsSettlementServicesDocument).Append("\n");
+            sb.Append("  HasIncomeVerifications: ").Append(HasIncomeVerifications).Append("\n");
+            sb.Append("  HasObligationVerifications: ").Append(HasObligationVerifications).Append("\n");
+            sb.Append("  HasAssetVerifications: ").Append(HasAssetVerifications).Append("\n");
+            sb.Append("  HasEmploymentVerifications: ").Append(HasEmploymentVerifications).Append("\n");
+            sb.Append("  DocGroups: ").Append(DocGroups).Append("\n");
             sb.Append("  Comments: ").Append(Comments).Append("\n");
             sb.Append("  Attachments: ").Append(Attachments).Append("\n");
+            sb.Append("  Conditions: ").Append(Conditions).Append("\n");
             sb.Append("  Roles: ").Append(Roles).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -398,9 +489,24 @@ namespace Elli.Api.Loans.EFolder.Model
                     this.DocumentId.Equals(input.DocumentId))
                 ) && 
                 (
+                    this.Title == input.Title ||
+                    (this.Title != null &&
+                    this.Title.Equals(input.Title))
+                ) && 
+                (
                     this.TitleWithIndex == input.TitleWithIndex ||
                     (this.TitleWithIndex != null &&
                     this.TitleWithIndex.Equals(input.TitleWithIndex))
+                ) && 
+                (
+                    this.Description == input.Description ||
+                    (this.Description != null &&
+                    this.Description.Equals(input.Description))
+                ) && 
+                (
+                    this.ApplicationId == input.ApplicationId ||
+                    (this.ApplicationId != null &&
+                    this.ApplicationId.Equals(input.ApplicationId))
                 ) && 
                 (
                     this.ApplicationName == input.ApplicationName ||
@@ -428,9 +534,69 @@ namespace Elli.Api.Loans.EFolder.Model
                     this.ThirdPartyAllowed.Equals(input.ThirdPartyAllowed))
                 ) && 
                 (
+                    this.IsProtected == input.IsProtected ||
+                    (this.IsProtected != null &&
+                    this.IsProtected.Equals(input.IsProtected))
+                ) && 
+                (
+                    this.IsRequired == input.IsRequired ||
+                    (this.IsRequired != null &&
+                    this.IsRequired.Equals(input.IsRequired))
+                ) && 
+                (
+                    this.DateExpected == input.DateExpected ||
+                    (this.DateExpected != null &&
+                    this.DateExpected.Equals(input.DateExpected))
+                ) && 
+                (
+                    this.DaysDue == input.DaysDue ||
+                    (this.DaysDue != null &&
+                    this.DaysDue.Equals(input.DaysDue))
+                ) && 
+                (
+                    this.DaysTillExpire == input.DaysTillExpire ||
+                    (this.DaysTillExpire != null &&
+                    this.DaysTillExpire.Equals(input.DaysTillExpire))
+                ) && 
+                (
+                    this.RequestedFrom == input.RequestedFrom ||
+                    (this.RequestedFrom != null &&
+                    this.RequestedFrom.Equals(input.RequestedFrom))
+                ) && 
+                (
+                    this.DateCreated == input.DateCreated ||
+                    (this.DateCreated != null &&
+                    this.DateCreated.Equals(input.DateCreated))
+                ) && 
+                (
+                    this.CreatedBy == input.CreatedBy ||
+                    (this.CreatedBy != null &&
+                    this.CreatedBy.Equals(input.CreatedBy))
+                ) && 
+                (
+                    this.DateExpires == input.DateExpires ||
+                    (this.DateExpires != null &&
+                    this.DateExpires.Equals(input.DateExpires))
+                ) && 
+                (
+                    this.Status == input.Status ||
+                    (this.Status != null &&
+                    this.Status.Equals(input.Status))
+                ) && 
+                (
+                    this.StatusDate == input.StatusDate ||
+                    (this.StatusDate != null &&
+                    this.StatusDate.Equals(input.StatusDate))
+                ) && 
+                (
                     this.IsRequested == input.IsRequested ||
                     (this.IsRequested != null &&
                     this.IsRequested.Equals(input.IsRequested))
+                ) && 
+                (
+                    this.DateRequested == input.DateRequested ||
+                    (this.DateRequested != null &&
+                    this.DateRequested.Equals(input.DateRequested))
                 ) && 
                 (
                     this.RequestedBy == input.RequestedBy ||
@@ -453,14 +619,14 @@ namespace Elli.Api.Loans.EFolder.Model
                     this.RerequestedBy.Equals(input.RerequestedBy))
                 ) && 
                 (
-                    this.DaysDue == input.DaysDue ||
-                    (this.DaysDue != null &&
-                    this.DaysDue.Equals(input.DaysDue))
-                ) && 
-                (
                     this.IsReceived == input.IsReceived ||
                     (this.IsReceived != null &&
                     this.IsReceived.Equals(input.IsReceived))
+                ) && 
+                (
+                    this.DateReceived == input.DateReceived ||
+                    (this.DateReceived != null &&
+                    this.DateReceived.Equals(input.DateReceived))
                 ) && 
                 (
                     this.ReceivedBy == input.ReceivedBy ||
@@ -468,14 +634,14 @@ namespace Elli.Api.Loans.EFolder.Model
                     this.ReceivedBy.Equals(input.ReceivedBy))
                 ) && 
                 (
-                    this.DaysTillExpire == input.DaysTillExpire ||
-                    (this.DaysTillExpire != null &&
-                    this.DaysTillExpire.Equals(input.DaysTillExpire))
-                ) && 
-                (
                     this.IsReviewed == input.IsReviewed ||
                     (this.IsReviewed != null &&
                     this.IsReviewed.Equals(input.IsReviewed))
+                ) && 
+                (
+                    this.DateReviewed == input.DateReviewed ||
+                    (this.DateReviewed != null &&
+                    this.DateReviewed.Equals(input.DateReviewed))
                 ) && 
                 (
                     this.ReviewedBy == input.ReviewedBy ||
@@ -488,6 +654,11 @@ namespace Elli.Api.Loans.EFolder.Model
                     this.IsReadyForUw.Equals(input.IsReadyForUw))
                 ) && 
                 (
+                    this.DateReadyForUw == input.DateReadyForUw ||
+                    (this.DateReadyForUw != null &&
+                    this.DateReadyForUw.Equals(input.DateReadyForUw))
+                ) && 
+                (
                     this.ReadyForUwBy == input.ReadyForUwBy ||
                     (this.ReadyForUwBy != null &&
                     this.ReadyForUwBy.Equals(input.ReadyForUwBy))
@@ -498,44 +669,14 @@ namespace Elli.Api.Loans.EFolder.Model
                     this.IsReadyToShip.Equals(input.IsReadyToShip))
                 ) && 
                 (
+                    this.DateReadyToShip == input.DateReadyToShip ||
+                    (this.DateReadyToShip != null &&
+                    this.DateReadyToShip.Equals(input.DateReadyToShip))
+                ) && 
+                (
                     this.ReadyToShipBy == input.ReadyToShipBy ||
                     (this.ReadyToShipBy != null &&
                     this.ReadyToShipBy.Equals(input.ReadyToShipBy))
-                ) && 
-                (
-                    this.DateExpires == input.DateExpires ||
-                    (this.DateExpires != null &&
-                    this.DateExpires.Equals(input.DateExpires))
-                ) && 
-                (
-                    this.CreatedBy == input.CreatedBy ||
-                    (this.CreatedBy != null &&
-                    this.CreatedBy.Equals(input.CreatedBy))
-                ) && 
-                (
-                    this.DateCreated == input.DateCreated ||
-                    (this.DateCreated != null &&
-                    this.DateCreated.Equals(input.DateCreated))
-                ) && 
-                (
-                    this.Title == input.Title ||
-                    (this.Title != null &&
-                    this.Title.Equals(input.Title))
-                ) && 
-                (
-                    this.Description == input.Description ||
-                    (this.Description != null &&
-                    this.Description.Equals(input.Description))
-                ) && 
-                (
-                    this.RequestedFrom == input.RequestedFrom ||
-                    (this.RequestedFrom != null &&
-                    this.RequestedFrom.Equals(input.RequestedFrom))
-                ) && 
-                (
-                    this.ApplicationId == input.ApplicationId ||
-                    (this.ApplicationId != null &&
-                    this.ApplicationId.Equals(input.ApplicationId))
                 ) && 
                 (
                     this.EmnSignature == input.EmnSignature ||
@@ -543,44 +684,54 @@ namespace Elli.Api.Loans.EFolder.Model
                     this.EmnSignature.Equals(input.EmnSignature))
                 ) && 
                 (
-                    this.Status == input.Status ||
-                    (this.Status != null &&
-                    this.Status.Equals(input.Status))
+                    this.AttachmentRequired == input.AttachmentRequired ||
+                    (this.AttachmentRequired != null &&
+                    this.AttachmentRequired.Equals(input.AttachmentRequired))
                 ) && 
                 (
-                    this.StatusDate == input.StatusDate ||
-                    (this.StatusDate != null &&
-                    this.StatusDate.Equals(input.StatusDate))
+                    this.IsClosingDocument == input.IsClosingDocument ||
+                    (this.IsClosingDocument != null &&
+                    this.IsClosingDocument.Equals(input.IsClosingDocument))
                 ) && 
                 (
-                    this.DateRequested == input.DateRequested ||
-                    (this.DateRequested != null &&
-                    this.DateRequested.Equals(input.DateRequested))
+                    this.IsPreClosingDocument == input.IsPreClosingDocument ||
+                    (this.IsPreClosingDocument != null &&
+                    this.IsPreClosingDocument.Equals(input.IsPreClosingDocument))
                 ) && 
                 (
-                    this.DateExpected == input.DateExpected ||
-                    (this.DateExpected != null &&
-                    this.DateExpected.Equals(input.DateExpected))
+                    this.IsEDisclosuresDocument == input.IsEDisclosuresDocument ||
+                    (this.IsEDisclosuresDocument != null &&
+                    this.IsEDisclosuresDocument.Equals(input.IsEDisclosuresDocument))
                 ) && 
                 (
-                    this.DateReceived == input.DateReceived ||
-                    (this.DateReceived != null &&
-                    this.DateReceived.Equals(input.DateReceived))
+                    this.IsSettlementServicesDocument == input.IsSettlementServicesDocument ||
+                    (this.IsSettlementServicesDocument != null &&
+                    this.IsSettlementServicesDocument.Equals(input.IsSettlementServicesDocument))
                 ) && 
                 (
-                    this.DateReviewed == input.DateReviewed ||
-                    (this.DateReviewed != null &&
-                    this.DateReviewed.Equals(input.DateReviewed))
+                    this.HasIncomeVerifications == input.HasIncomeVerifications ||
+                    (this.HasIncomeVerifications != null &&
+                    this.HasIncomeVerifications.Equals(input.HasIncomeVerifications))
                 ) && 
                 (
-                    this.DateReadyForUw == input.DateReadyForUw ||
-                    (this.DateReadyForUw != null &&
-                    this.DateReadyForUw.Equals(input.DateReadyForUw))
+                    this.HasObligationVerifications == input.HasObligationVerifications ||
+                    (this.HasObligationVerifications != null &&
+                    this.HasObligationVerifications.Equals(input.HasObligationVerifications))
                 ) && 
                 (
-                    this.DateReadyToShip == input.DateReadyToShip ||
-                    (this.DateReadyToShip != null &&
-                    this.DateReadyToShip.Equals(input.DateReadyToShip))
+                    this.HasAssetVerifications == input.HasAssetVerifications ||
+                    (this.HasAssetVerifications != null &&
+                    this.HasAssetVerifications.Equals(input.HasAssetVerifications))
+                ) && 
+                (
+                    this.HasEmploymentVerifications == input.HasEmploymentVerifications ||
+                    (this.HasEmploymentVerifications != null &&
+                    this.HasEmploymentVerifications.Equals(input.HasEmploymentVerifications))
+                ) && 
+                (
+                    this.DocGroups == input.DocGroups ||
+                    this.DocGroups != null &&
+                    this.DocGroups.SequenceEqual(input.DocGroups)
                 ) && 
                 (
                     this.Comments == input.Comments ||
@@ -591,6 +742,11 @@ namespace Elli.Api.Loans.EFolder.Model
                     this.Attachments == input.Attachments ||
                     this.Attachments != null &&
                     this.Attachments.SequenceEqual(input.Attachments)
+                ) && 
+                (
+                    this.Conditions == input.Conditions ||
+                    this.Conditions != null &&
+                    this.Conditions.SequenceEqual(input.Conditions)
                 ) && 
                 (
                     this.Roles == input.Roles ||
@@ -610,8 +766,14 @@ namespace Elli.Api.Loans.EFolder.Model
                 int hashCode = 41;
                 if (this.DocumentId != null)
                     hashCode = hashCode * 59 + this.DocumentId.GetHashCode();
+                if (this.Title != null)
+                    hashCode = hashCode * 59 + this.Title.GetHashCode();
                 if (this.TitleWithIndex != null)
                     hashCode = hashCode * 59 + this.TitleWithIndex.GetHashCode();
+                if (this.Description != null)
+                    hashCode = hashCode * 59 + this.Description.GetHashCode();
+                if (this.ApplicationId != null)
+                    hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
                 if (this.ApplicationName != null)
                     hashCode = hashCode * 59 + this.ApplicationName.GetHashCode();
                 if (this.MilestoneId != null)
@@ -622,8 +784,32 @@ namespace Elli.Api.Loans.EFolder.Model
                     hashCode = hashCode * 59 + this.TpoAllowed.GetHashCode();
                 if (this.ThirdPartyAllowed != null)
                     hashCode = hashCode * 59 + this.ThirdPartyAllowed.GetHashCode();
+                if (this.IsProtected != null)
+                    hashCode = hashCode * 59 + this.IsProtected.GetHashCode();
+                if (this.IsRequired != null)
+                    hashCode = hashCode * 59 + this.IsRequired.GetHashCode();
+                if (this.DateExpected != null)
+                    hashCode = hashCode * 59 + this.DateExpected.GetHashCode();
+                if (this.DaysDue != null)
+                    hashCode = hashCode * 59 + this.DaysDue.GetHashCode();
+                if (this.DaysTillExpire != null)
+                    hashCode = hashCode * 59 + this.DaysTillExpire.GetHashCode();
+                if (this.RequestedFrom != null)
+                    hashCode = hashCode * 59 + this.RequestedFrom.GetHashCode();
+                if (this.DateCreated != null)
+                    hashCode = hashCode * 59 + this.DateCreated.GetHashCode();
+                if (this.CreatedBy != null)
+                    hashCode = hashCode * 59 + this.CreatedBy.GetHashCode();
+                if (this.DateExpires != null)
+                    hashCode = hashCode * 59 + this.DateExpires.GetHashCode();
+                if (this.Status != null)
+                    hashCode = hashCode * 59 + this.Status.GetHashCode();
+                if (this.StatusDate != null)
+                    hashCode = hashCode * 59 + this.StatusDate.GetHashCode();
                 if (this.IsRequested != null)
                     hashCode = hashCode * 59 + this.IsRequested.GetHashCode();
+                if (this.DateRequested != null)
+                    hashCode = hashCode * 59 + this.DateRequested.GetHashCode();
                 if (this.RequestedBy != null)
                     hashCode = hashCode * 59 + this.RequestedBy.GetHashCode();
                 if (this.IsRerequested != null)
@@ -632,62 +818,58 @@ namespace Elli.Api.Loans.EFolder.Model
                     hashCode = hashCode * 59 + this.DateRerequested.GetHashCode();
                 if (this.RerequestedBy != null)
                     hashCode = hashCode * 59 + this.RerequestedBy.GetHashCode();
-                if (this.DaysDue != null)
-                    hashCode = hashCode * 59 + this.DaysDue.GetHashCode();
                 if (this.IsReceived != null)
                     hashCode = hashCode * 59 + this.IsReceived.GetHashCode();
+                if (this.DateReceived != null)
+                    hashCode = hashCode * 59 + this.DateReceived.GetHashCode();
                 if (this.ReceivedBy != null)
                     hashCode = hashCode * 59 + this.ReceivedBy.GetHashCode();
-                if (this.DaysTillExpire != null)
-                    hashCode = hashCode * 59 + this.DaysTillExpire.GetHashCode();
                 if (this.IsReviewed != null)
                     hashCode = hashCode * 59 + this.IsReviewed.GetHashCode();
+                if (this.DateReviewed != null)
+                    hashCode = hashCode * 59 + this.DateReviewed.GetHashCode();
                 if (this.ReviewedBy != null)
                     hashCode = hashCode * 59 + this.ReviewedBy.GetHashCode();
                 if (this.IsReadyForUw != null)
                     hashCode = hashCode * 59 + this.IsReadyForUw.GetHashCode();
+                if (this.DateReadyForUw != null)
+                    hashCode = hashCode * 59 + this.DateReadyForUw.GetHashCode();
                 if (this.ReadyForUwBy != null)
                     hashCode = hashCode * 59 + this.ReadyForUwBy.GetHashCode();
                 if (this.IsReadyToShip != null)
                     hashCode = hashCode * 59 + this.IsReadyToShip.GetHashCode();
-                if (this.ReadyToShipBy != null)
-                    hashCode = hashCode * 59 + this.ReadyToShipBy.GetHashCode();
-                if (this.DateExpires != null)
-                    hashCode = hashCode * 59 + this.DateExpires.GetHashCode();
-                if (this.CreatedBy != null)
-                    hashCode = hashCode * 59 + this.CreatedBy.GetHashCode();
-                if (this.DateCreated != null)
-                    hashCode = hashCode * 59 + this.DateCreated.GetHashCode();
-                if (this.Title != null)
-                    hashCode = hashCode * 59 + this.Title.GetHashCode();
-                if (this.Description != null)
-                    hashCode = hashCode * 59 + this.Description.GetHashCode();
-                if (this.RequestedFrom != null)
-                    hashCode = hashCode * 59 + this.RequestedFrom.GetHashCode();
-                if (this.ApplicationId != null)
-                    hashCode = hashCode * 59 + this.ApplicationId.GetHashCode();
-                if (this.EmnSignature != null)
-                    hashCode = hashCode * 59 + this.EmnSignature.GetHashCode();
-                if (this.Status != null)
-                    hashCode = hashCode * 59 + this.Status.GetHashCode();
-                if (this.StatusDate != null)
-                    hashCode = hashCode * 59 + this.StatusDate.GetHashCode();
-                if (this.DateRequested != null)
-                    hashCode = hashCode * 59 + this.DateRequested.GetHashCode();
-                if (this.DateExpected != null)
-                    hashCode = hashCode * 59 + this.DateExpected.GetHashCode();
-                if (this.DateReceived != null)
-                    hashCode = hashCode * 59 + this.DateReceived.GetHashCode();
-                if (this.DateReviewed != null)
-                    hashCode = hashCode * 59 + this.DateReviewed.GetHashCode();
-                if (this.DateReadyForUw != null)
-                    hashCode = hashCode * 59 + this.DateReadyForUw.GetHashCode();
                 if (this.DateReadyToShip != null)
                     hashCode = hashCode * 59 + this.DateReadyToShip.GetHashCode();
+                if (this.ReadyToShipBy != null)
+                    hashCode = hashCode * 59 + this.ReadyToShipBy.GetHashCode();
+                if (this.EmnSignature != null)
+                    hashCode = hashCode * 59 + this.EmnSignature.GetHashCode();
+                if (this.AttachmentRequired != null)
+                    hashCode = hashCode * 59 + this.AttachmentRequired.GetHashCode();
+                if (this.IsClosingDocument != null)
+                    hashCode = hashCode * 59 + this.IsClosingDocument.GetHashCode();
+                if (this.IsPreClosingDocument != null)
+                    hashCode = hashCode * 59 + this.IsPreClosingDocument.GetHashCode();
+                if (this.IsEDisclosuresDocument != null)
+                    hashCode = hashCode * 59 + this.IsEDisclosuresDocument.GetHashCode();
+                if (this.IsSettlementServicesDocument != null)
+                    hashCode = hashCode * 59 + this.IsSettlementServicesDocument.GetHashCode();
+                if (this.HasIncomeVerifications != null)
+                    hashCode = hashCode * 59 + this.HasIncomeVerifications.GetHashCode();
+                if (this.HasObligationVerifications != null)
+                    hashCode = hashCode * 59 + this.HasObligationVerifications.GetHashCode();
+                if (this.HasAssetVerifications != null)
+                    hashCode = hashCode * 59 + this.HasAssetVerifications.GetHashCode();
+                if (this.HasEmploymentVerifications != null)
+                    hashCode = hashCode * 59 + this.HasEmploymentVerifications.GetHashCode();
+                if (this.DocGroups != null)
+                    hashCode = hashCode * 59 + this.DocGroups.GetHashCode();
                 if (this.Comments != null)
                     hashCode = hashCode * 59 + this.Comments.GetHashCode();
                 if (this.Attachments != null)
                     hashCode = hashCode * 59 + this.Attachments.GetHashCode();
+                if (this.Conditions != null)
+                    hashCode = hashCode * 59 + this.Conditions.GetHashCode();
                 if (this.Roles != null)
                     hashCode = hashCode * 59 + this.Roles.GetHashCode();
                 return hashCode;

@@ -74,7 +74,7 @@ OpenAPI spec version: 1.0.0
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.Loans\Elli.Api.Loans.csproj">
-      <Project>{80D445CE-5ABC-430E-8E24-9BC9EEC7A18C}</Project>
+      <Project>{2799A617-1CFB-4F55-9A4C-DDA6986EDEAB}</Project>
       <Name>Elli.Api.Loans</Name>
     </ProjectReference>
   </ItemGroup>

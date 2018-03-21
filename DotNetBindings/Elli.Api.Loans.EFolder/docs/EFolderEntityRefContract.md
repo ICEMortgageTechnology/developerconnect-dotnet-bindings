@@ -1,4 +1,4 @@
-# Elli.Api.Loans.EFolder.Model.EFolderDocumentContractAttachments
+# Elli.Api.Loans.EFolder.Model.EFolderEntityRefContract
 ## Properties
 
 Name | Type | Description | Notes

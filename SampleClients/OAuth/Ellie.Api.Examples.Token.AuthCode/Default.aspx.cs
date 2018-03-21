@@ -71,6 +71,7 @@ namespace Ellie.Api.Examples.Token.AuthCode
             if (Session["access_token"] == null) return;
             ((AccessToken)Session["access_token"]).Revoke();
             Session["access_token"] = null;
+            Session.Abandon();
         }
     }
 }

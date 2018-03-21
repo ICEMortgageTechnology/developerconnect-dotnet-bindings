@@ -54,6 +54,7 @@ namespace Ellie.Api.Examples.Token.AuthCode
 
             //Handling the response
             lblAccessToken.Text = Server.HtmlEncode(accessToken.ToString());
+            Session.Abandon();
             Session["access_token"] = accessToken;
         }
     }

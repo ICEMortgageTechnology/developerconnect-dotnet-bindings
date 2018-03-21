@@ -51,6 +51,7 @@ using Elli.Api.CustomDataObjects.Model;
 using Elli.Api.Loans.Pipeline.Api;
 using Elli.Api.Loans.Pipeline.Model;
 using Newtonsoft.Json.Linq;
+using System.Security;
 
 namespace Ellie.Api.Examples.Loans
 {
@@ -129,6 +130,8 @@ namespace Ellie.Api.Examples.Loans
         private static void Authenticate()
         {
             ApiConfiguration config = (ApiConfiguration)ConfigurationManager.GetSection("ElliApiConfig");
+
+            //Passwords and other sensitive information should be handled by consumer application suitably            
             string instanceId = config.InstanceId, userName = config.Username, password = config.Password;
 
             Console.Clear();

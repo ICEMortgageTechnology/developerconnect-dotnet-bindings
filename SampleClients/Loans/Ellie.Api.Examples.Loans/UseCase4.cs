@@ -38,6 +38,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Security;
 using Elli.Api.Base;
 using Elli.Api.Loans.Api;
 using Elli.Api.Loans.Model;
@@ -91,6 +92,8 @@ namespace Ellie.Api.Examples.Loans
         public static void Authenticate()
         {
             ApiConfiguration config = (ApiConfiguration)ConfigurationManager.GetSection("ElliApiConfig");
+
+            //Passwords and other sensitive information should be handled by consumer application suitably            
             string instanceId = config.InstanceId, userName = config.Username, password = config.Password;
 
             Console.Clear();

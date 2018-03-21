@@ -475,7 +475,7 @@ namespace Elli.Api.Loans.Model
         /// Gets or Sets NumberofPeopleInHousehold
         /// </summary>
         [DataMember(Name="numberofPeopleInHousehold", EmitDefaultValue=false)]
-        public byte[] NumberofPeopleInHousehold { get; set; }
+        public int? NumberofPeopleInHousehold { get; set; }
 
         /// <summary>
         /// Gets or Sets ObligationMatchesCommitmentLenderRequestIndicator

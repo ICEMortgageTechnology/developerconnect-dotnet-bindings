@@ -79,7 +79,7 @@ namespace Elli.Api.Loans.EFolder.Model
         /// Gets or Sets Document
         /// </summary>
         [DataMember(Name="document", EmitDefaultValue=false)]
-        public EFolderDocumentContractAttachments Document { get; set; }
+        public EFolderAttachmentContractDocument Document { get; set; }
 
         /// <summary>
         /// Gets or Sets DateCreated
@@ -142,6 +142,12 @@ namespace Elli.Api.Loans.EFolder.Model
         public int? Rotation { get; set; }
 
         /// <summary>
+        /// Gets or Sets CallBackUrl
+        /// </summary>
+        [DataMember(Name="callBackUrl", EmitDefaultValue=false)]
+        public string CallBackUrl { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -162,6 +168,7 @@ namespace Elli.Api.Loans.EFolder.Model
             sb.Append("  IsActive: ").Append(IsActive).Append("\n");
             sb.Append("  Pages: ").Append(Pages).Append("\n");
             sb.Append("  Rotation: ").Append(Rotation).Append("\n");
+            sb.Append("  CallBackUrl: ").Append(CallBackUrl).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -260,6 +267,11 @@ namespace Elli.Api.Loans.EFolder.Model
                     this.Rotation == input.Rotation ||
                     (this.Rotation != null &&
                     this.Rotation.Equals(input.Rotation))
+                ) && 
+                (
+                    this.CallBackUrl == input.CallBackUrl ||
+                    (this.CallBackUrl != null &&
+                    this.CallBackUrl.Equals(input.CallBackUrl))
                 );
         }
 
@@ -298,6 +310,8 @@ namespace Elli.Api.Loans.EFolder.Model
                     hashCode = hashCode * 59 + this.Pages.GetHashCode();
                 if (this.Rotation != null)
                     hashCode = hashCode * 59 + this.Rotation.GetHashCode();
+                if (this.CallBackUrl != null)
+                    hashCode = hashCode * 59 + this.CallBackUrl.GetHashCode();
                 return hashCode;
             }
         }

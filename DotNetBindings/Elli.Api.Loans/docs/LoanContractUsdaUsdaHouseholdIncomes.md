@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | [optional] 
-**Age** | **byte[]** |  | [optional] 
+**Age** | **int?** |  | [optional] 
 **AnalysisDocumenting** | **string** |  | [optional] 
 **AnnualNonWageIncome** | **double?** |  | [optional] 
 **AnnualWageIncome** | **double?** |  | [optional] 

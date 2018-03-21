@@ -71,7 +71,7 @@ Name | Type | Description | Notes
 **ModerateIncomeLimit** | **double?** |  | [optional] 
 **MonthlyRepaymentIncome** | **double?** |  | [optional] 
 **NumberofDependents** | **int?** |  | [optional] 
-**NumberofPeopleInHousehold** | **byte[]** |  | [optional] 
+**NumberofPeopleInHousehold** | **int?** |  | [optional] 
 **ObligationMatchesCommitmentLenderRequestIndicator** | **bool?** |  | [optional] 
 **OfficialWhoConfirmedGlsUpdated** | **string** |  | [optional] 
 **OtherIncome** | **double?** |  | [optional] 

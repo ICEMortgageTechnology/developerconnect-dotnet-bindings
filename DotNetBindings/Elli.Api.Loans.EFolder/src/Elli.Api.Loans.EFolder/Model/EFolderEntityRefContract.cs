@@ -56,10 +56,10 @@ using SwaggerDateConverter = Elli.Api.Loans.EFolder.Client.SwaggerDateConverter;
 namespace Elli.Api.Loans.EFolder.Model
 {
     /// <summary>
-    /// EFolderDocumentContractAttachments
+    /// EFolderEntityRefContract
     /// </summary>
     [DataContract]
-    public partial class EFolderDocumentContractAttachments :  IEquatable<EFolderDocumentContractAttachments>, IValidatableObject
+    public partial class EFolderEntityRefContract :  IEquatable<EFolderEntityRefContract>, IValidatableObject
     {
     
         
@@ -94,7 +94,7 @@ namespace Elli.Api.Loans.EFolder.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class EFolderDocumentContractAttachments {\n");
+            sb.Append("class EFolderEntityRefContract {\n");
             sb.Append("  EntityId: ").Append(EntityId).Append("\n");
             sb.Append("  EntityType: ").Append(EntityType).Append("\n");
             sb.Append("  EntityName: ").Append(EntityName).Append("\n");
@@ -119,15 +119,15 @@ namespace Elli.Api.Loans.EFolder.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as EFolderDocumentContractAttachments);
+            return this.Equals(input as EFolderEntityRefContract);
         }
 
         /// <summary>
-        /// Returns true if EFolderDocumentContractAttachments instances are equal
+        /// Returns true if EFolderEntityRefContract instances are equal
         /// </summary>
-        /// <param name="input">Instance of EFolderDocumentContractAttachments to be compared</param>
+        /// <param name="input">Instance of EFolderEntityRefContract to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(EFolderDocumentContractAttachments input)
+        public bool Equals(EFolderEntityRefContract input)
         {
             if (input == null)
                 return false;

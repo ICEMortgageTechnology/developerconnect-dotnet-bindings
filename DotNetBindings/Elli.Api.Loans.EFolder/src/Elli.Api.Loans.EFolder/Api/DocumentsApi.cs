@@ -88,8 +88,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns></returns>
-        void GetDocument (string documentId, string loanId);
+        /// <returns>EFolderDocumentContract</returns>
+        EFolderDocumentContract GetDocument (string documentId, string loanId);
 
         /// <summary>
         /// 
@@ -100,8 +100,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetDocumentWithHttpInfo (string documentId, string loanId);
+        /// <returns>ApiResponse of EFolderDocumentContract</returns>
+        ApiResponse<EFolderDocumentContract> GetDocumentWithHttpInfo (string documentId, string loanId);
         /// <summary>
         /// 
         /// </summary>
@@ -110,8 +110,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns></returns>
-        void GetDocuments (string loanId);
+        /// <returns>List&lt;EFolderDocumentContract&gt;</returns>
+        List<EFolderDocumentContract> GetDocuments (string loanId);
 
         /// <summary>
         /// 
@@ -121,8 +121,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetDocumentsWithHttpInfo (string loanId);
+        /// <returns>ApiResponse of List&lt;EFolderDocumentContract&gt;</returns>
+        ApiResponse<List<EFolderDocumentContract>> GetDocumentsWithHttpInfo (string loanId);
         /// <summary>
         /// 
         /// </summary>
@@ -132,8 +132,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns></returns>
-        void RetrieveDocAttachments (string documentId, string loanId);
+        /// <returns>List&lt;EFolderEntityRefContract&gt;</returns>
+        List<EFolderEntityRefContract> RetrieveDocAttachments (string documentId, string loanId);
 
         /// <summary>
         /// 
@@ -144,33 +144,35 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> RetrieveDocAttachmentsWithHttpInfo (string documentId, string loanId);
+        /// <returns>ApiResponse of List&lt;EFolderEntityRefContract&gt;</returns>
+        ApiResponse<List<EFolderEntityRefContract>> RetrieveDocAttachmentsWithHttpInfo (string documentId, string loanId);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update an attachment of a loan within a document
+        /// Assign/Unassign attachment of a loan within a document
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
+        /// <param name="action">Can be add or remove to Assign or Unassign attachment.</param>
         /// <param name="input"> (optional)</param>
         /// <returns></returns>
-        void UpdateDocAttachments (string documentId, string loanId, List<EFolderAttachmentContract> input = null);
+        void UpdateDocAttachments (string documentId, string loanId, string action, List<EFolderEntityRefContract> input = null);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update an attachment of a loan within a document
+        /// Assign/Unassign attachment of a loan within a document
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
+        /// <param name="action">Can be add or remove to Assign or Unassign attachment.</param>
         /// <param name="input"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> UpdateDocAttachmentsWithHttpInfo (string documentId, string loanId, List<EFolderAttachmentContract> input = null);
+        ApiResponse<Object> UpdateDocAttachmentsWithHttpInfo (string documentId, string loanId, string action, List<EFolderEntityRefContract> input = null);
         /// <summary>
         /// 
         /// </summary>
@@ -234,8 +236,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetDocumentAsync (string documentId, string loanId);
+        /// <returns>Task of EFolderDocumentContract</returns>
+        System.Threading.Tasks.Task<EFolderDocumentContract> GetDocumentAsync (string documentId, string loanId);
 
         /// <summary>
         /// 
@@ -246,8 +248,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetDocumentAsyncWithHttpInfo (string documentId, string loanId);
+        /// <returns>Task of ApiResponse (EFolderDocumentContract)</returns>
+        System.Threading.Tasks.Task<ApiResponse<EFolderDocumentContract>> GetDocumentAsyncWithHttpInfo (string documentId, string loanId);
         /// <summary>
         /// 
         /// </summary>
@@ -256,8 +258,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetDocumentsAsync (string loanId);
+        /// <returns>Task of List&lt;EFolderDocumentContract&gt;</returns>
+        System.Threading.Tasks.Task<List<EFolderDocumentContract>> GetDocumentsAsync (string loanId);
 
         /// <summary>
         /// 
@@ -267,8 +269,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetDocumentsAsyncWithHttpInfo (string loanId);
+        /// <returns>Task of ApiResponse (List&lt;EFolderDocumentContract&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<EFolderDocumentContract>>> GetDocumentsAsyncWithHttpInfo (string loanId);
         /// <summary>
         /// 
         /// </summary>
@@ -278,8 +280,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task RetrieveDocAttachmentsAsync (string documentId, string loanId);
+        /// <returns>Task of List&lt;EFolderEntityRefContract&gt;</returns>
+        System.Threading.Tasks.Task<List<EFolderEntityRefContract>> RetrieveDocAttachmentsAsync (string documentId, string loanId);
 
         /// <summary>
         /// 
@@ -290,33 +292,35 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> RetrieveDocAttachmentsAsyncWithHttpInfo (string documentId, string loanId);
+        /// <returns>Task of ApiResponse (List&lt;EFolderEntityRefContract&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<EFolderEntityRefContract>>> RetrieveDocAttachmentsAsyncWithHttpInfo (string documentId, string loanId);
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update an attachment of a loan within a document
+        /// Assign/Unassign attachment of a loan within a document
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
+        /// <param name="action">Can be add or remove to Assign or Unassign attachment.</param>
         /// <param name="input"> (optional)</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task UpdateDocAttachmentsAsync (string documentId, string loanId, List<EFolderAttachmentContract> input = null);
+        System.Threading.Tasks.Task UpdateDocAttachmentsAsync (string documentId, string loanId, string action, List<EFolderEntityRefContract> input = null);
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Update an attachment of a loan within a document
+        /// Assign/Unassign attachment of a loan within a document
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
+        /// <param name="action">Can be add or remove to Assign or Unassign attachment.</param>
         /// <param name="input"> (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> UpdateDocAttachmentsAsyncWithHttpInfo (string documentId, string loanId, List<EFolderAttachmentContract> input = null);
+        System.Threading.Tasks.Task<ApiResponse<Object>> UpdateDocAttachmentsAsyncWithHttpInfo (string documentId, string loanId, string action, List<EFolderEntityRefContract> input = null);
         /// <summary>
         /// 
         /// </summary>
@@ -633,10 +637,11 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns></returns>
-        public void GetDocument (string documentId, string loanId)
+        /// <returns>EFolderDocumentContract</returns>
+        public EFolderDocumentContract GetDocument (string documentId, string loanId)
         {
-             GetDocumentWithHttpInfo(documentId, loanId);
+             ApiResponse<EFolderDocumentContract> localVarResponse = GetDocumentWithHttpInfo(documentId, loanId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -645,8 +650,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetDocumentWithHttpInfo (string documentId, string loanId)
+        /// <returns>ApiResponse of EFolderDocumentContract</returns>
+        public ApiResponse< EFolderDocumentContract > GetDocumentWithHttpInfo (string documentId, string loanId)
         {
             // verify the required parameter 'documentId' is set
             if (documentId == null)
@@ -700,9 +705,9 @@ namespace Elli.Api.Loans.EFolder.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<EFolderDocumentContract>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (EFolderDocumentContract) Configuration.ApiClient.Deserialize(localVarResponse, typeof(EFolderDocumentContract)));
         }
 
         /// <summary>
@@ -711,10 +716,11 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetDocumentAsync (string documentId, string loanId)
+        /// <returns>Task of EFolderDocumentContract</returns>
+        public async System.Threading.Tasks.Task<EFolderDocumentContract> GetDocumentAsync (string documentId, string loanId)
         {
-             await GetDocumentAsyncWithHttpInfo(documentId, loanId);
+             ApiResponse<EFolderDocumentContract> localVarResponse = await GetDocumentAsyncWithHttpInfo(documentId, loanId);
+             return localVarResponse.Data;
 
         }
 
@@ -724,8 +730,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetDocumentAsyncWithHttpInfo (string documentId, string loanId)
+        /// <returns>Task of ApiResponse (EFolderDocumentContract)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<EFolderDocumentContract>> GetDocumentAsyncWithHttpInfo (string documentId, string loanId)
         {
             // verify the required parameter 'documentId' is set
             if (documentId == null)
@@ -779,9 +785,9 @@ namespace Elli.Api.Loans.EFolder.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<EFolderDocumentContract>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (EFolderDocumentContract) Configuration.ApiClient.Deserialize(localVarResponse, typeof(EFolderDocumentContract)));
         }
 
         /// <summary>
@@ -789,10 +795,11 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns></returns>
-        public void GetDocuments (string loanId)
+        /// <returns>List&lt;EFolderDocumentContract&gt;</returns>
+        public List<EFolderDocumentContract> GetDocuments (string loanId)
         {
-             GetDocumentsWithHttpInfo(loanId);
+             ApiResponse<List<EFolderDocumentContract>> localVarResponse = GetDocumentsWithHttpInfo(loanId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -800,8 +807,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetDocumentsWithHttpInfo (string loanId)
+        /// <returns>ApiResponse of List&lt;EFolderDocumentContract&gt;</returns>
+        public ApiResponse< List<EFolderDocumentContract> > GetDocumentsWithHttpInfo (string loanId)
         {
             // verify the required parameter 'loanId' is set
             if (loanId == null)
@@ -851,9 +858,9 @@ namespace Elli.Api.Loans.EFolder.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<List<EFolderDocumentContract>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (List<EFolderDocumentContract>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<EFolderDocumentContract>)));
         }
 
         /// <summary>
@@ -861,10 +868,11 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetDocumentsAsync (string loanId)
+        /// <returns>Task of List&lt;EFolderDocumentContract&gt;</returns>
+        public async System.Threading.Tasks.Task<List<EFolderDocumentContract>> GetDocumentsAsync (string loanId)
         {
-             await GetDocumentsAsyncWithHttpInfo(loanId);
+             ApiResponse<List<EFolderDocumentContract>> localVarResponse = await GetDocumentsAsyncWithHttpInfo(loanId);
+             return localVarResponse.Data;
 
         }
 
@@ -873,8 +881,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetDocumentsAsyncWithHttpInfo (string loanId)
+        /// <returns>Task of ApiResponse (List&lt;EFolderDocumentContract&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<EFolderDocumentContract>>> GetDocumentsAsyncWithHttpInfo (string loanId)
         {
             // verify the required parameter 'loanId' is set
             if (loanId == null)
@@ -924,9 +932,9 @@ namespace Elli.Api.Loans.EFolder.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<List<EFolderDocumentContract>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (List<EFolderDocumentContract>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<EFolderDocumentContract>)));
         }
 
         /// <summary>
@@ -935,10 +943,11 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns></returns>
-        public void RetrieveDocAttachments (string documentId, string loanId)
+        /// <returns>List&lt;EFolderEntityRefContract&gt;</returns>
+        public List<EFolderEntityRefContract> RetrieveDocAttachments (string documentId, string loanId)
         {
-             RetrieveDocAttachmentsWithHttpInfo(documentId, loanId);
+             ApiResponse<List<EFolderEntityRefContract>> localVarResponse = RetrieveDocAttachmentsWithHttpInfo(documentId, loanId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -947,8 +956,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> RetrieveDocAttachmentsWithHttpInfo (string documentId, string loanId)
+        /// <returns>ApiResponse of List&lt;EFolderEntityRefContract&gt;</returns>
+        public ApiResponse< List<EFolderEntityRefContract> > RetrieveDocAttachmentsWithHttpInfo (string documentId, string loanId)
         {
             // verify the required parameter 'documentId' is set
             if (documentId == null)
@@ -1002,9 +1011,9 @@ namespace Elli.Api.Loans.EFolder.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<List<EFolderEntityRefContract>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (List<EFolderEntityRefContract>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<EFolderEntityRefContract>)));
         }
 
         /// <summary>
@@ -1013,10 +1022,11 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task RetrieveDocAttachmentsAsync (string documentId, string loanId)
+        /// <returns>Task of List&lt;EFolderEntityRefContract&gt;</returns>
+        public async System.Threading.Tasks.Task<List<EFolderEntityRefContract>> RetrieveDocAttachmentsAsync (string documentId, string loanId)
         {
-             await RetrieveDocAttachmentsAsyncWithHttpInfo(documentId, loanId);
+             ApiResponse<List<EFolderEntityRefContract>> localVarResponse = await RetrieveDocAttachmentsAsyncWithHttpInfo(documentId, loanId);
+             return localVarResponse.Data;
 
         }
 
@@ -1026,8 +1036,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> RetrieveDocAttachmentsAsyncWithHttpInfo (string documentId, string loanId)
+        /// <returns>Task of ApiResponse (List&lt;EFolderEntityRefContract&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<EFolderEntityRefContract>>> RetrieveDocAttachmentsAsyncWithHttpInfo (string documentId, string loanId)
         {
             // verify the required parameter 'documentId' is set
             if (documentId == null)
@@ -1081,33 +1091,35 @@ namespace Elli.Api.Loans.EFolder.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<List<EFolderEntityRefContract>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (List<EFolderEntityRefContract>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<EFolderEntityRefContract>)));
         }
 
         /// <summary>
-        ///  Update an attachment of a loan within a document
+        ///  Assign/Unassign attachment of a loan within a document
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
+        /// <param name="action">Can be add or remove to Assign or Unassign attachment.</param>
         /// <param name="input"> (optional)</param>
         /// <returns></returns>
-        public void UpdateDocAttachments (string documentId, string loanId, List<EFolderAttachmentContract> input = null)
+        public void UpdateDocAttachments (string documentId, string loanId, string action, List<EFolderEntityRefContract> input = null)
         {
-             UpdateDocAttachmentsWithHttpInfo(documentId, loanId, input);
+             UpdateDocAttachmentsWithHttpInfo(documentId, loanId, action, input);
         }
 
         /// <summary>
-        ///  Update an attachment of a loan within a document
+        ///  Assign/Unassign attachment of a loan within a document
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
+        /// <param name="action">Can be add or remove to Assign or Unassign attachment.</param>
         /// <param name="input"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> UpdateDocAttachmentsWithHttpInfo (string documentId, string loanId, List<EFolderAttachmentContract> input = null)
+        public ApiResponse<Object> UpdateDocAttachmentsWithHttpInfo (string documentId, string loanId, string action, List<EFolderEntityRefContract> input = null)
         {
             // verify the required parameter 'documentId' is set
             if (documentId == null)
@@ -1115,6 +1127,9 @@ namespace Elli.Api.Loans.EFolder.Api
             // verify the required parameter 'loanId' is set
             if (loanId == null)
                 throw new ApiException(400, "Missing required parameter 'loanId' when calling DocumentsApi->UpdateDocAttachments");
+            // verify the required parameter 'action' is set
+            if (action == null)
+                throw new ApiException(400, "Missing required parameter 'action' when calling DocumentsApi->UpdateDocAttachments");
 
             var localVarPath = "/encompass/v1/loans/{loanId}/documents/{documentId}/attachments";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1140,6 +1155,7 @@ namespace Elli.Api.Loans.EFolder.Api
 
             if (documentId != null) localVarPathParams.Add("documentId", Configuration.ApiClient.ParameterToString(documentId)); // path parameter
             if (loanId != null) localVarPathParams.Add("loanId", Configuration.ApiClient.ParameterToString(loanId)); // path parameter
+            if (action != null) localVarQueryParams.Add("action", Configuration.ApiClient.ParameterToString(action)); // query parameter
             if (input != null && input.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(input); // http body (model) parameter
@@ -1175,28 +1191,30 @@ namespace Elli.Api.Loans.EFolder.Api
         }
 
         /// <summary>
-        ///  Update an attachment of a loan within a document
+        ///  Assign/Unassign attachment of a loan within a document
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
+        /// <param name="action">Can be add or remove to Assign or Unassign attachment.</param>
         /// <param name="input"> (optional)</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task UpdateDocAttachmentsAsync (string documentId, string loanId, List<EFolderAttachmentContract> input = null)
+        public async System.Threading.Tasks.Task UpdateDocAttachmentsAsync (string documentId, string loanId, string action, List<EFolderEntityRefContract> input = null)
         {
-             await UpdateDocAttachmentsAsyncWithHttpInfo(documentId, loanId, input);
+             await UpdateDocAttachmentsAsyncWithHttpInfo(documentId, loanId, action, input);
 
         }
 
         /// <summary>
-        ///  Update an attachment of a loan within a document
+        ///  Assign/Unassign attachment of a loan within a document
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="documentId">Document GUID</param>
         /// <param name="loanId">Loan GUID</param>
+        /// <param name="action">Can be add or remove to Assign or Unassign attachment.</param>
         /// <param name="input"> (optional)</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> UpdateDocAttachmentsAsyncWithHttpInfo (string documentId, string loanId, List<EFolderAttachmentContract> input = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UpdateDocAttachmentsAsyncWithHttpInfo (string documentId, string loanId, string action, List<EFolderEntityRefContract> input = null)
         {
             // verify the required parameter 'documentId' is set
             if (documentId == null)
@@ -1204,6 +1222,9 @@ namespace Elli.Api.Loans.EFolder.Api
             // verify the required parameter 'loanId' is set
             if (loanId == null)
                 throw new ApiException(400, "Missing required parameter 'loanId' when calling DocumentsApi->UpdateDocAttachments");
+            // verify the required parameter 'action' is set
+            if (action == null)
+                throw new ApiException(400, "Missing required parameter 'action' when calling DocumentsApi->UpdateDocAttachments");
 
             var localVarPath = "/encompass/v1/loans/{loanId}/documents/{documentId}/attachments";
             var localVarPathParams = new Dictionary<String, String>();
@@ -1229,6 +1250,7 @@ namespace Elli.Api.Loans.EFolder.Api
 
             if (documentId != null) localVarPathParams.Add("documentId", Configuration.ApiClient.ParameterToString(documentId)); // path parameter
             if (loanId != null) localVarPathParams.Add("loanId", Configuration.ApiClient.ParameterToString(loanId)); // path parameter
+            if (action != null) localVarQueryParams.Add("action", Configuration.ApiClient.ParameterToString(action)); // query parameter
             if (input != null && input.GetType() != typeof(byte[]))
             {
                 localVarPostBody = Configuration.ApiClient.Serialize(input); // http body (model) parameter

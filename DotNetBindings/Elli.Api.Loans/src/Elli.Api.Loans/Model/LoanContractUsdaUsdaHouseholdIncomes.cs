@@ -73,7 +73,7 @@ namespace Elli.Api.Loans.Model
         /// Gets or Sets Age
         /// </summary>
         [DataMember(Name="age", EmitDefaultValue=false)]
-        public byte[] Age { get; set; }
+        public int? Age { get; set; }
 
         /// <summary>
         /// Gets or Sets AnalysisDocumenting

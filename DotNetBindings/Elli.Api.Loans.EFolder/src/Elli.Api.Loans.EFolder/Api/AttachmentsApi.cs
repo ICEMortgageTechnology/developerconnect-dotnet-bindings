@@ -136,8 +136,9 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">Attachment ID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns></returns>
-        void GetAttachment (string attachmentId, string loanId);
+        /// <param name="includeImageUrls">Include image URLs in response in case attachment type is Image. (optional)</param>
+        /// <returns>EFolderAttachmentContract</returns>
+        EFolderAttachmentContract GetAttachment (string attachmentId, string loanId, bool? includeImageUrls = null);
 
         /// <summary>
         /// 
@@ -148,8 +149,9 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">Attachment ID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetAttachmentWithHttpInfo (string attachmentId, string loanId);
+        /// <param name="includeImageUrls">Include image URLs in response in case attachment type is Image. (optional)</param>
+        /// <returns>ApiResponse of EFolderAttachmentContract</returns>
+        ApiResponse<EFolderAttachmentContract> GetAttachmentWithHttpInfo (string attachmentId, string loanId, bool? includeImageUrls = null);
         /// <summary>
         /// 
         /// </summary>
@@ -158,8 +160,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns></returns>
-        void GetAttachments (string loanId);
+        /// <returns>List&lt;EFolderAttachmentContract&gt;</returns>
+        List<EFolderAttachmentContract> GetAttachments (string loanId);
 
         /// <summary>
         /// 
@@ -169,8 +171,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetAttachmentsWithHttpInfo (string loanId);
+        /// <returns>ApiResponse of List&lt;EFolderAttachmentContract&gt;</returns>
+        ApiResponse<List<EFolderAttachmentContract>> GetAttachmentsWithHttpInfo (string loanId);
         /// <summary>
         /// 
         /// </summary>
@@ -307,8 +309,9 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">Attachment ID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetAttachmentAsync (string attachmentId, string loanId);
+        /// <param name="includeImageUrls">Include image URLs in response in case attachment type is Image. (optional)</param>
+        /// <returns>Task of EFolderAttachmentContract</returns>
+        System.Threading.Tasks.Task<EFolderAttachmentContract> GetAttachmentAsync (string attachmentId, string loanId, bool? includeImageUrls = null);
 
         /// <summary>
         /// 
@@ -319,8 +322,9 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">Attachment ID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetAttachmentAsyncWithHttpInfo (string attachmentId, string loanId);
+        /// <param name="includeImageUrls">Include image URLs in response in case attachment type is Image. (optional)</param>
+        /// <returns>Task of ApiResponse (EFolderAttachmentContract)</returns>
+        System.Threading.Tasks.Task<ApiResponse<EFolderAttachmentContract>> GetAttachmentAsyncWithHttpInfo (string attachmentId, string loanId, bool? includeImageUrls = null);
         /// <summary>
         /// 
         /// </summary>
@@ -329,8 +333,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetAttachmentsAsync (string loanId);
+        /// <returns>Task of List&lt;EFolderAttachmentContract&gt;</returns>
+        System.Threading.Tasks.Task<List<EFolderAttachmentContract>> GetAttachmentsAsync (string loanId);
 
         /// <summary>
         /// 
@@ -340,8 +344,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </remarks>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetAttachmentsAsyncWithHttpInfo (string loanId);
+        /// <returns>Task of ApiResponse (List&lt;EFolderAttachmentContract&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<EFolderAttachmentContract>>> GetAttachmentsAsyncWithHttpInfo (string loanId);
         /// <summary>
         /// 
         /// </summary>
@@ -1013,10 +1017,12 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">Attachment ID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns></returns>
-        public void GetAttachment (string attachmentId, string loanId)
+        /// <param name="includeImageUrls">Include image URLs in response in case attachment type is Image. (optional)</param>
+        /// <returns>EFolderAttachmentContract</returns>
+        public EFolderAttachmentContract GetAttachment (string attachmentId, string loanId, bool? includeImageUrls = null)
         {
-             GetAttachmentWithHttpInfo(attachmentId, loanId);
+             ApiResponse<EFolderAttachmentContract> localVarResponse = GetAttachmentWithHttpInfo(attachmentId, loanId, includeImageUrls);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1025,8 +1031,9 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">Attachment ID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetAttachmentWithHttpInfo (string attachmentId, string loanId)
+        /// <param name="includeImageUrls">Include image URLs in response in case attachment type is Image. (optional)</param>
+        /// <returns>ApiResponse of EFolderAttachmentContract</returns>
+        public ApiResponse< EFolderAttachmentContract > GetAttachmentWithHttpInfo (string attachmentId, string loanId, bool? includeImageUrls = null)
         {
             // verify the required parameter 'attachmentId' is set
             if (attachmentId == null)
@@ -1059,6 +1066,7 @@ namespace Elli.Api.Loans.EFolder.Api
 
             if (attachmentId != null) localVarPathParams.Add("attachmentId", Configuration.ApiClient.ParameterToString(attachmentId)); // path parameter
             if (loanId != null) localVarPathParams.Add("loanId", Configuration.ApiClient.ParameterToString(loanId)); // path parameter
+            if (includeImageUrls != null) localVarQueryParams.Add("includeImageUrls", Configuration.ApiClient.ParameterToString(includeImageUrls)); // query parameter
 
             // authentication (bearerAuth) required
             // oauth required
@@ -1080,9 +1088,9 @@ namespace Elli.Api.Loans.EFolder.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<EFolderAttachmentContract>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (EFolderAttachmentContract) Configuration.ApiClient.Deserialize(localVarResponse, typeof(EFolderAttachmentContract)));
         }
 
         /// <summary>
@@ -1091,10 +1099,12 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">Attachment ID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetAttachmentAsync (string attachmentId, string loanId)
+        /// <param name="includeImageUrls">Include image URLs in response in case attachment type is Image. (optional)</param>
+        /// <returns>Task of EFolderAttachmentContract</returns>
+        public async System.Threading.Tasks.Task<EFolderAttachmentContract> GetAttachmentAsync (string attachmentId, string loanId, bool? includeImageUrls = null)
         {
-             await GetAttachmentAsyncWithHttpInfo(attachmentId, loanId);
+             ApiResponse<EFolderAttachmentContract> localVarResponse = await GetAttachmentAsyncWithHttpInfo(attachmentId, loanId, includeImageUrls);
+             return localVarResponse.Data;
 
         }
 
@@ -1104,8 +1114,9 @@ namespace Elli.Api.Loans.EFolder.Api
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="attachmentId">Attachment ID</param>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetAttachmentAsyncWithHttpInfo (string attachmentId, string loanId)
+        /// <param name="includeImageUrls">Include image URLs in response in case attachment type is Image. (optional)</param>
+        /// <returns>Task of ApiResponse (EFolderAttachmentContract)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<EFolderAttachmentContract>> GetAttachmentAsyncWithHttpInfo (string attachmentId, string loanId, bool? includeImageUrls = null)
         {
             // verify the required parameter 'attachmentId' is set
             if (attachmentId == null)
@@ -1138,6 +1149,7 @@ namespace Elli.Api.Loans.EFolder.Api
 
             if (attachmentId != null) localVarPathParams.Add("attachmentId", Configuration.ApiClient.ParameterToString(attachmentId)); // path parameter
             if (loanId != null) localVarPathParams.Add("loanId", Configuration.ApiClient.ParameterToString(loanId)); // path parameter
+            if (includeImageUrls != null) localVarQueryParams.Add("includeImageUrls", Configuration.ApiClient.ParameterToString(includeImageUrls)); // query parameter
 
             // authentication (bearerAuth) required
             // oauth required
@@ -1159,9 +1171,9 @@ namespace Elli.Api.Loans.EFolder.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<EFolderAttachmentContract>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (EFolderAttachmentContract) Configuration.ApiClient.Deserialize(localVarResponse, typeof(EFolderAttachmentContract)));
         }
 
         /// <summary>
@@ -1169,10 +1181,11 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns></returns>
-        public void GetAttachments (string loanId)
+        /// <returns>List&lt;EFolderAttachmentContract&gt;</returns>
+        public List<EFolderAttachmentContract> GetAttachments (string loanId)
         {
-             GetAttachmentsWithHttpInfo(loanId);
+             ApiResponse<List<EFolderAttachmentContract>> localVarResponse = GetAttachmentsWithHttpInfo(loanId);
+             return localVarResponse.Data;
         }
 
         /// <summary>
@@ -1180,8 +1193,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetAttachmentsWithHttpInfo (string loanId)
+        /// <returns>ApiResponse of List&lt;EFolderAttachmentContract&gt;</returns>
+        public ApiResponse< List<EFolderAttachmentContract> > GetAttachmentsWithHttpInfo (string loanId)
         {
             // verify the required parameter 'loanId' is set
             if (loanId == null)
@@ -1231,9 +1244,9 @@ namespace Elli.Api.Loans.EFolder.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<List<EFolderAttachmentContract>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (List<EFolderAttachmentContract>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<EFolderAttachmentContract>)));
         }
 
         /// <summary>
@@ -1241,10 +1254,11 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetAttachmentsAsync (string loanId)
+        /// <returns>Task of List&lt;EFolderAttachmentContract&gt;</returns>
+        public async System.Threading.Tasks.Task<List<EFolderAttachmentContract>> GetAttachmentsAsync (string loanId)
         {
-             await GetAttachmentsAsyncWithHttpInfo(loanId);
+             ApiResponse<List<EFolderAttachmentContract>> localVarResponse = await GetAttachmentsAsyncWithHttpInfo(loanId);
+             return localVarResponse.Data;
 
         }
 
@@ -1253,8 +1267,8 @@ namespace Elli.Api.Loans.EFolder.Api
         /// </summary>
         /// <exception cref="Elli.Api.Loans.EFolder.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="loanId">Loan GUID</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetAttachmentsAsyncWithHttpInfo (string loanId)
+        /// <returns>Task of ApiResponse (List&lt;EFolderAttachmentContract&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<EFolderAttachmentContract>>> GetAttachmentsAsyncWithHttpInfo (string loanId)
         {
             // verify the required parameter 'loanId' is set
             if (loanId == null)
@@ -1304,9 +1318,9 @@ namespace Elli.Api.Loans.EFolder.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<Object>(localVarStatusCode,
+            return new ApiResponse<List<EFolderAttachmentContract>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
+                (List<EFolderAttachmentContract>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<EFolderAttachmentContract>)));
         }
 
         /// <summary>

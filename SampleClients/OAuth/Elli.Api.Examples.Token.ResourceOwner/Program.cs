@@ -29,6 +29,7 @@
 */
 
 using System;
+using System.Security;
 using Elli.Api.Base;
 
 namespace Elli.Api.Examples.Token.ResourceOwner
@@ -64,6 +65,7 @@ namespace Elli.Api.Examples.Token.ResourceOwner
             } while (true);
         }
 
+       
         /// <summary>
         /// Example: Lender and Admin Login
         /// </summary>
@@ -75,6 +77,8 @@ namespace Elli.Api.Examples.Token.ResourceOwner
             Console.Write("User Name   : ");
             var userName = Console.ReadLine();
             Console.Write("Password    : ");
+
+            //Passwords and other sensitive information should be handled by consumer application suitably            
             var password = Console.ReadLine();
             try
             {
@@ -82,7 +86,7 @@ namespace Elli.Api.Examples.Token.ResourceOwner
                 //User name transformation: username format accepted by the API is <username>@encompass:<instanceId>
                 var credentials = new UserCredential
                 {
-                    Password = password,
+                    Password =password,
                     IdentityType = IdentityType.Lender,
                     InstanceId = instanceId,
                     UserName = userName

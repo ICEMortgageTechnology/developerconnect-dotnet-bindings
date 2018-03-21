@@ -56,36 +56,18 @@ using SwaggerDateConverter = Elli.Api.Loans.EFolder.Client.SwaggerDateConverter;
 namespace Elli.Api.Loans.EFolder.Model
 {
     /// <summary>
-    /// EFolderDocumentContractAttachments
+    /// EFolderAttachmentContractDocument
     /// </summary>
     [DataContract]
-    public partial class EFolderDocumentContractAttachments :  IEquatable<EFolderDocumentContractAttachments>, IValidatableObject
+    public partial class EFolderAttachmentContractDocument :  IEquatable<EFolderAttachmentContractDocument>, IValidatableObject
     {
     
         
-        /// <summary>
-        /// Gets or Sets EntityId
-        /// </summary>
-        [DataMember(Name="entityId", EmitDefaultValue=false)]
-        public string EntityId { get; set; }
-
-        /// <summary>
-        /// Gets or Sets EntityType
-        /// </summary>
-        [DataMember(Name="entityType", EmitDefaultValue=false)]
-        public string EntityType { get; set; }
-
         /// <summary>
         /// Gets or Sets EntityName
         /// </summary>
         [DataMember(Name="entityName", EmitDefaultValue=false)]
         public string EntityName { get; set; }
-
-        /// <summary>
-        /// Gets or Sets EntityUri
-        /// </summary>
-        [DataMember(Name="entityUri", EmitDefaultValue=false)]
-        public string EntityUri { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -94,11 +76,8 @@ namespace Elli.Api.Loans.EFolder.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class EFolderDocumentContractAttachments {\n");
-            sb.Append("  EntityId: ").Append(EntityId).Append("\n");
-            sb.Append("  EntityType: ").Append(EntityType).Append("\n");
+            sb.Append("class EFolderAttachmentContractDocument {\n");
             sb.Append("  EntityName: ").Append(EntityName).Append("\n");
-            sb.Append("  EntityUri: ").Append(EntityUri).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -119,39 +98,24 @@ namespace Elli.Api.Loans.EFolder.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as EFolderDocumentContractAttachments);
+            return this.Equals(input as EFolderAttachmentContractDocument);
         }
 
         /// <summary>
-        /// Returns true if EFolderDocumentContractAttachments instances are equal
+        /// Returns true if EFolderAttachmentContractDocument instances are equal
         /// </summary>
-        /// <param name="input">Instance of EFolderDocumentContractAttachments to be compared</param>
+        /// <param name="input">Instance of EFolderAttachmentContractDocument to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(EFolderDocumentContractAttachments input)
+        public bool Equals(EFolderAttachmentContractDocument input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.EntityId == input.EntityId ||
-                    (this.EntityId != null &&
-                    this.EntityId.Equals(input.EntityId))
-                ) && 
-                (
-                    this.EntityType == input.EntityType ||
-                    (this.EntityType != null &&
-                    this.EntityType.Equals(input.EntityType))
-                ) && 
-                (
                     this.EntityName == input.EntityName ||
                     (this.EntityName != null &&
                     this.EntityName.Equals(input.EntityName))
-                ) && 
-                (
-                    this.EntityUri == input.EntityUri ||
-                    (this.EntityUri != null &&
-                    this.EntityUri.Equals(input.EntityUri))
                 );
         }
 
@@ -164,14 +128,8 @@ namespace Elli.Api.Loans.EFolder.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.EntityId != null)
-                    hashCode = hashCode * 59 + this.EntityId.GetHashCode();
-                if (this.EntityType != null)
-                    hashCode = hashCode * 59 + this.EntityType.GetHashCode();
                 if (this.EntityName != null)
                     hashCode = hashCode * 59 + this.EntityName.GetHashCode();
-                if (this.EntityUri != null)
-                    hashCode = hashCode * 59 + this.EntityUri.GetHashCode();
                 return hashCode;
             }
         }

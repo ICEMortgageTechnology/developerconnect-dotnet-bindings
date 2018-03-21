@@ -12,7 +12,7 @@ OpenAPI spec version: 1.0.0
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0BD1ACC1-4ADD-4D41-A549-B74B3DC26FEF}</ProjectGuid>
+    <ProjectGuid>{C3C979A0-93CB-41E6-935B-EBC76441E03A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Elli.Api.Loans.Pipeline</RootNamespace>
