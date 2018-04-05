@@ -78,14 +78,14 @@ The Access token can be obtained by using either of the following examples.
 
 **Using ROPC Flow**:
 
-    var credentials = new UserCredential
-        {
-            Password = password,
-            IdentityType = IdentityType.Borrower,
-            SiteId = siteId,
-            UserName = userName
-        };
-    var accessToken = AccessToken.GetAccessToken(credentials);
+ var credentials = new UserCredential
+                {
+                    Password =password,
+                    IdentityType = IdentityType.Lender,
+                    InstanceId = instanceId,
+                    UserName = userName
+                };
+                var accessToken = AccessToken.GetAccessToken(credentials);
     
 **Using Auth Code Flow**:
 In authcode flow, user is authenticated on Ellie Mae Identity provider and a code is given back to redirect url as a query parameter
