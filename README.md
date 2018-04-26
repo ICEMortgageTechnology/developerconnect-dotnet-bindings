@@ -78,7 +78,7 @@ The Access token can be obtained by using either of the following examples.
 
 **Using ROPC Flow**:
 
- var credentials = new UserCredential
+ 	var credentials = new UserCredential
                 {
                     Password =password,
                     IdentityType = IdentityType.Lender,
