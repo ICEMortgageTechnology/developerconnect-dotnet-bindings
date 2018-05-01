@@ -78,7 +78,7 @@ namespace Elli.Api.Loans.Pipeline.Client
                              string tempFolderPath = null,
                              string dateTimeFormat = null,
                              int timeout = 100000,
-                             string userAgent = "Ellie Mae Developer Connect API Client/1.1.1/csharp"
+                             string userAgent = "Ellie Mae Developer Connect API Client/1.1.2/csharp"
                             )
         {
             setApiClientUsingDefault(apiClient);
@@ -113,7 +113,7 @@ namespace Elli.Api.Loans.Pipeline.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "1.1.1";
+        public const string Version = "1.1.2";
 
         /// <summary>
         /// Gets or sets the default Configuration.
@@ -384,7 +384,7 @@ namespace Elli.Api.Loans.Pipeline.Client
                      .GetReferencedAssemblies()
                      .Where(x => x.Name == "System.Core").First().Version.ToString()  + "\n";
             report += "    Version of the API: 1.0.0\n";
-            report += "    SDK Package Version: 1.1.1\n";
+            report += "    SDK Package Version: 1.1.2\n";
 
             return report;
         }

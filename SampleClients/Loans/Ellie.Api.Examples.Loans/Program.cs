@@ -45,7 +45,6 @@ namespace Ellie.Api.Examples.Loans
 
         static void Main()
         {
-            System.Net.ServicePointManager.SecurityProtocol = System.Net.ServicePointManager.SecurityProtocol | System.Net.SecurityProtocolType.Tls12;
             do
             {
                 Console.Clear();
