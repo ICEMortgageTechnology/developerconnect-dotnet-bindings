@@ -12,7 +12,7 @@ OpenAPI spec version: 2016-09-08T00:04:12Z
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DDDB9BCC-70F1-4824-BA4F-C88125E3E58F}</ProjectGuid>
+    <ProjectGuid>{09BD9703-C4EC-4028-8F5A-C21DDA3D31FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Elli.Api.OAuth</RootNamespace>

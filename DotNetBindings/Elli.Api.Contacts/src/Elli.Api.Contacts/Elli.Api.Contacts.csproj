@@ -12,7 +12,7 @@ OpenAPI spec version: 1.0.0
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{96D24406-A589-4003-804B-C0E9733E8042}</ProjectGuid>
+    <ProjectGuid>{1D36ED9E-E394-47DC-A095-F74CF6D4457E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Elli.Api.Contacts</RootNamespace>

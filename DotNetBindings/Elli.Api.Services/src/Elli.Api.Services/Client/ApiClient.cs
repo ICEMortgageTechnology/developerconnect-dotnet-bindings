@@ -76,6 +76,17 @@ namespace Elli.Api.Services.Client
         /// <param name="response">The RestSharp response object</param>
         partial void InterceptResponse(IRestRequest request, IRestResponse response);
 
+		/// <summary>
+        /// Static contructor to enforce TLS 1.2 encryption in SDK
+        /// </summary>
+        static ApiClient()
+        {
+            if (System.Net.ServicePointManager.SecurityProtocol != (System.Net.ServicePointManager.SecurityProtocol | SecurityProtocolType.Tls12))
+            {
+                System.Net.ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls12;
+            }
+        }
+		
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
         /// with default configuration and base path (http://api.ellielabs.com).

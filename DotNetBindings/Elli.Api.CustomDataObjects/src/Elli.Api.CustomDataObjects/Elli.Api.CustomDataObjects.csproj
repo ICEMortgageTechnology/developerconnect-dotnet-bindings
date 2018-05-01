@@ -12,7 +12,7 @@ OpenAPI spec version: 1.0.0
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00728788-825B-4B05-A135-E200D3BA4FC9}</ProjectGuid>
+    <ProjectGuid>{466D8604-89E9-4BF3-BFD4-87AEC9612C89}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Elli.Api.CustomDataObjects</RootNamespace>
