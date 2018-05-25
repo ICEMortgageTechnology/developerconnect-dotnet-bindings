@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="queryborrowercontacts"></a>
 # **QueryBorrowerContacts**
-> List<BorrowerContactSelectorContract> QueryBorrowerContacts (string start = null, string limit = null, BorrowerContactQueryContract request = null)
+> List<BorrowerContactSelectorContract> QueryBorrowerContacts (string start = null, string limit = null, string cursorType = null, string cursor = null, BorrowerContactQueryContract request = null)
 
 Retrieve Borrower Contacts
 
@@ -33,14 +33,16 @@ namespace Example
             Configuration.Default.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new BorrowerContactSelectorApi();
-            var start = start_example;  // string | Start index or record number to retrieve a set of borrower contacts. This is defaulted to 1. (optional) 
+            var start = start_example;  // string | Start index or record number to retrieve a set of borrower contacts. (optional) 
             var limit = limit_example;  // string | This is the maximum number of records user wants to fetch. Response size is limited to 6 MB hence this is recalculated if response size exceeds 6 MB. Default value is 1000 and max value for this parameter is limited to 10000 in any case. (optional) 
+            var cursorType = cursorType_example;  // string | This should be passed when user wants to create a new cursor. Only RandomAccess cursor type is supported. (optional) 
+            var cursor = cursor_example;  // string | Id of the cursor from which data needs to be retrieved. This is responded in location header while creating a new cursor. (optional) 
             var request = new BorrowerContactQueryContract(); // BorrowerContactQueryContract | Borrower contact query object (optional) 
 
             try
             {
                 // Retrieve Borrower Contacts
-                List&lt;BorrowerContactSelectorContract&gt; result = apiInstance.QueryBorrowerContacts(start, limit, request);
+                List&lt;BorrowerContactSelectorContract&gt; result = apiInstance.QueryBorrowerContacts(start, limit, cursorType, cursor, request);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -56,8 +58,10 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **start** | **string**| Start index or record number to retrieve a set of borrower contacts. This is defaulted to 1. | [optional] 
+ **start** | **string**| Start index or record number to retrieve a set of borrower contacts. | [optional] 
  **limit** | **string**| This is the maximum number of records user wants to fetch. Response size is limited to 6 MB hence this is recalculated if response size exceeds 6 MB. Default value is 1000 and max value for this parameter is limited to 10000 in any case. | [optional] 
+ **cursorType** | **string**| This should be passed when user wants to create a new cursor. Only RandomAccess cursor type is supported. | [optional] 
+ **cursor** | **string**| Id of the cursor from which data needs to be retrieved. This is responded in location header while creating a new cursor. | [optional] 
  **request** | [**BorrowerContactQueryContract**](BorrowerContactQueryContract.md)| Borrower contact query object | [optional] 
 
 ### Return type

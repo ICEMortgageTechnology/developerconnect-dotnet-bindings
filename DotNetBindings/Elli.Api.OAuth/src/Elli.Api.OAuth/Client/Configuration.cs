@@ -78,7 +78,7 @@ namespace Elli.Api.OAuth.Client
                              string tempFolderPath = null,
                              string dateTimeFormat = null,
                              int timeout = 100000,
-                             string userAgent = "Ellie Mae Developer Connect API Client/1.1.2/csharp"
+                             string userAgent = "Ellie Mae Developer Connect API Client/1.2.0/csharp"
                             )
         {
             setApiClientUsingDefault(apiClient);
@@ -113,7 +113,7 @@ namespace Elli.Api.OAuth.Client
         /// Version of the package.
         /// </summary>
         /// <value>Version of the package.</value>
-        public const string Version = "1.1.2";
+        public const string Version = "1.2.0";
 
         /// <summary>
         /// Gets or sets the default Configuration.
@@ -127,8 +127,8 @@ namespace Elli.Api.OAuth.Client
         public static readonly ExceptionFactory DefaultExceptionFactory = (methodName, response) =>
         {
             int status = (int) response.StatusCode;
-            if (status >= 400) return new ApiException(status, String.Format("Error calling {0}: {1}", methodName, response.Content), response.Content);
-            if (status == 0) return new ApiException(status, String.Format("Error calling {0}: {1}", methodName, response.ErrorMessage), response.ErrorMessage);
+            if (status >= 400) return new ApiException(status, String.Format("Error calling {0}: {1}", methodName, response.Content), response.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()), response.Content);
+            if (status == 0) return new ApiException(status, String.Format("Error calling {0}: {1}", methodName, response.ErrorMessage), response.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()), response.ErrorMessage);
             return null;
         };
 
@@ -384,7 +384,7 @@ namespace Elli.Api.OAuth.Client
                      .GetReferencedAssemblies()
                      .Where(x => x.Name == "System.Core").First().Version.ToString()  + "\n";
             report += "    Version of the API: 2016-09-08T00:04:12Z\n";
-            report += "    SDK Package Version: 1.1.2\n";
+            report += "    SDK Package Version: 1.2.0\n";
 
             return report;
         }

@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **AllDateAndNumericalDisclosuresIndicator** | **bool?** |  | [optional] 
 **AmountFinanced** | **double?** |  | [optional] 
 **AprPercent** | **double?** |  | [optional] 
+**AprPercentUI** | **string** |  | [optional] 
 **ArmDisclosureDescription** | **string** |  | [optional] 
 **AssumptionOnYourProperty** | **string** |  | [optional] 
 **BorrowerIntendToContinueDate** | **DateTime?** |  | [optional] 

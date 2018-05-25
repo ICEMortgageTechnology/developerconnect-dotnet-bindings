@@ -299,6 +299,20 @@ Name | Type | Description | Notes
 **Vendor10** | **string** |  | [optional] 
 **Vendor11** | **string** |  | [optional] 
 **Vendor12** | **string** |  | [optional] 
+**Vendor13** | **string** |  | [optional] 
+**Vendor14** | **string** |  | [optional] 
+**Vendor15** | **string** |  | [optional] 
+**Vendor16** | **string** |  | [optional] 
+**Vendor17** | **string** |  | [optional] 
+**Vendor18** | **string** |  | [optional] 
+**Vendor19** | **string** |  | [optional] 
+**Vendor20** | **string** |  | [optional] 
+**Vendor21** | **string** |  | [optional] 
+**Vendor22** | **string** |  | [optional] 
+**Vendor23** | **string** |  | [optional] 
+**Vendor24** | **string** |  | [optional] 
+**Vendor25** | **string** |  | [optional] 
+**Vendor26** | **string** |  | [optional] 
 **NoCoApplicantEthnicityIndicator** | **bool?** |  | [optional] 
 **NoCoApplicantSexIndicator** | **bool?** |  | [optional] 
 **HmdaGendertypeFemaleIndicator** | **bool?** |  | [optional] 
@@ -327,6 +341,7 @@ Name | Type | Description | Notes
 **IsCommissionAvailable** | **bool?** |  | [optional] 
 **IsSocialSecurityAvailable** | **bool?** |  | [optional] 
 **IsSelfEmployed** | **bool?** |  | [optional] 
+**Contact** | [**EntityRefContract**](EntityRefContract.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

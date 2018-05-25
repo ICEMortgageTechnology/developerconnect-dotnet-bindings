@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **Servicing** | **string** |  | [optional] 
 **ConstructionLoan** | **bool?** |  | [optional] 
 **TotalInterestPercentage** | **double?** |  | [optional] 
+**TotalInterestPercentageUI** | **string** |  | [optional] 
 **In5YearsTotalYouWillHavePaid** | **int?** |  | [optional] 
 **In5YearsPrincipalYouWillHavePaidOff** | **int?** |  | [optional] 
 **SignatureType** | **string** |  | [optional] 

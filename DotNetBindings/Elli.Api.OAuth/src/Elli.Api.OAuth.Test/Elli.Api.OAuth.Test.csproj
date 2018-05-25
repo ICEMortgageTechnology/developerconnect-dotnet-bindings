@@ -75,7 +75,7 @@ OpenAPI spec version: 2016-09-08T00:04:12Z
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\Elli.Api.OAuth\Elli.Api.OAuth.csproj">
-          <Project>{09BD9703-C4EC-4028-8F5A-C21DDA3D31FD}</Project>
+          <Project>{B6BC47D9-CFAF-4F3D-9D51-F9CF8681B1B0}</Project>
           <Name>Elli.Api.OAuth</Name>
       </ProjectReference>
   </ItemGroup>

@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **BuySideExpirationDate** | **DateTime?** |  | [optional] 
 **BuySideNewLockExtensionDate** | **DateTime?** |  | [optional] 
 **BuySideNumDayExtended** | **int?** |  | [optional] 
+**ReLockSequenceNumberForInactiveLock** | **int?** |  | [optional] 
 **BuySideNumDayLocked** | **int?** |  | [optional] 
 **CommentList** | [**List&lt;LoanContractLogRecordCommentList&gt;**](LoanContractLogRecordCommentList.md) |  | [optional] 
 **Comments** | **string** |  | [optional] 

@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **OrderType** | **string** |  | [optional] 
 **OrderId** | **string** |  | [optional] 
 **UserId** | **string** |  | [optional] 
+**DateUtc** | **DateTime?** |  | [optional] 
 **DateFilesPurged** | **DateTime?** |  | [optional] 
 **DocumentFields** | **Object** |  | [optional] 
 **DocumentAudit** | [**LoanContractDocumentAudit**](LoanContractDocumentAudit.md) |  | [optional] 

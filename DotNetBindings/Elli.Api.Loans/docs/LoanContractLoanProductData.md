@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **EscrowWaiverIndicator** | **bool?** |  | [optional] 
 **FloorBasis** | **string** |  | [optional] 
 **FloorPercent** | **double?** |  | [optional] 
+**FloorPercentUI** | **string** |  | [optional] 
 **FloorVerbiage** | **string** |  | [optional] 
 **FnmProductPlanIdentifier** | **string** |  | [optional] 
 **FreddieMacArmIndexType** | **string** |  | [optional] 
@@ -33,6 +34,7 @@ Name | Type | Description | Notes
 **IndexCurrentValuePercent** | **double?** |  | [optional] 
 **IndexLookbackPeriod** | **string** |  | [optional] 
 **IndexMarginPercent** | **double?** |  | [optional] 
+**IndexMarginPercentUI** | **string** |  | [optional] 
 **InitialAdvanceAmount** | **double?** |  | [optional] 
 **LienPriorityType** | **string** |  | [optional] 
 **LoanDocumentationType** | **string** |  | [optional] 
@@ -41,6 +43,7 @@ Name | Type | Description | Notes
 **BorrowerEstimatedClosingDate** | **DateTime?** |  | [optional] 
 **MaximumMonthlyPayment** | **double?** |  | [optional] 
 **MaxLifeInterestCapPercent** | **double?** |  | [optional] 
+**MaxLifeInterestCapPercentUI** | **string** |  | [optional] 
 **MiCoveragePercent** | **double?** |  | [optional] 
 **MinimumAdvanceAmount** | **double?** |  | [optional] 
 **MinimumAllowableApr** | **double?** |  | [optional] 
@@ -82,7 +85,9 @@ Name | Type | Description | Notes
 **RateAdjustmentDurationMonthsCount** | **int?** |  | [optional] 
 **RateAdjustmentLifetimeCapPercent** | **double?** |  | [optional] 
 **RateAdjustmentPercent** | **double?** |  | [optional] 
+**RateAdjustmentPercentUI** | **string** |  | [optional] 
 **RateAdjustmentSubsequentCapPercent** | **double?** |  | [optional] 
+**RateAdjustmentSubsequentCapPercentUI** | **string** |  | [optional] 
 **ReleaseRecoringCharge** | **double?** |  | [optional] 
 **RemainingBuydownAmount** | **double?** |  | [optional] 
 **RepayPeriodMonthsCount** | **int?** |  | [optional] 
@@ -106,6 +111,8 @@ Name | Type | Description | Notes
 **WireFee** | **double?** |  | [optional] 
 **ParticipationFees** | **double?** |  | [optional] 
 **TransactionFees** | **double?** |  | [optional] 
+**NmlsPropertyType** | **string** |  | [optional] 
+**NmlsLienStatus** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

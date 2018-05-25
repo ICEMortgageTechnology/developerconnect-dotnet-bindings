@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getorderstatus"></a>
 # **GetOrderStatus**
-> Response GetOrderStatus (int? partnerId, string transactionId)
+> ResourceTransaction GetOrderStatus (int? partnerId, string transactionId, bool? generateFileUrls = null)
 
 Get a credit transaction's status.
 
@@ -36,11 +36,12 @@ namespace Example
             var apiInstance = new ServiceApi();
             var partnerId = 56;  // int? | Ellie Mae's Partner ID for the service provider. Partner IDs are listed on the Credit Partners and Samples page.
             var transactionId = transactionId_example;  // string | The unique identifier of the transaction provided in the response header when the order was submitted.
+            var generateFileUrls = true;  // bool? | Generate an accessible URL and populate the URL key for each of the resources returned by the Partner as a part of their service response. <br></br> <b>Note:</b> The URL's generated are temporarily accessible - time to expiration is 300 seconds (5 minutes). (optional) 
 
             try
             {
                 // Get a credit transaction's status.
-                Response result = apiInstance.GetOrderStatus(partnerId, transactionId);
+                ResourceTransaction result = apiInstance.GetOrderStatus(partnerId, transactionId, generateFileUrls);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -58,10 +59,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **partnerId** | **int?**| Ellie Mae&#39;s Partner ID for the service provider. Partner IDs are listed on the Credit Partners and Samples page. | 
  **transactionId** | **string**| The unique identifier of the transaction provided in the response header when the order was submitted. | 
+ **generateFileUrls** | **bool?**| Generate an accessible URL and populate the URL key for each of the resources returned by the Partner as a part of their service response. &lt;br&gt;&lt;/br&gt; &lt;b&gt;Note:&lt;/b&gt; The URL&#39;s generated are temporarily accessible - time to expiration is 300 seconds (5 minutes). | [optional] 
 
 ### Return type
 
-[**Response**](Response.md)
+[**ResourceTransaction**](ResourceTransaction.md)
 
 ### Authorization
 
@@ -76,7 +78,7 @@ Name | Type | Description  | Notes
 
 <a name="orderservice"></a>
 # **OrderService**
-> Response OrderService (int? partnerId, OrderServiceRequest product)
+> void OrderService (int? partnerId, OrderServiceRequest product)
 
 Order Service.
 
@@ -101,13 +103,12 @@ namespace Example
 
             var apiInstance = new ServiceApi();
             var partnerId = 56;  // int? | Ellie Mae's Partner ID for the service provider. Partner IDs are listed on the Credit Partners and Samples page.
-            var product = new OrderServiceRequest(); // OrderServiceRequest | The product data elements. Product attributes are listed on the Credit Partners and Samples page.
+            var product = new OrderServiceRequest(); // OrderServiceRequest | The product data elements that comprise of the transactions request object. Encapsulates information about the loan in whose context the service is being placed, product name, product options/configurations, service credentials to authenticate with the service provider and user preferences.
 
             try
             {
                 // Order Service.
-                Response result = apiInstance.OrderService(partnerId, product);
-                Debug.WriteLine(result);
+                apiInstance.OrderService(partnerId, product);
             }
             catch (Exception e)
             {
@@ -123,11 +124,11 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **partnerId** | **int?**| Ellie Mae&#39;s Partner ID for the service provider. Partner IDs are listed on the Credit Partners and Samples page. | 
- **product** | [**OrderServiceRequest**](OrderServiceRequest.md)| The product data elements. Product attributes are listed on the Credit Partners and Samples page. | 
+ **product** | [**OrderServiceRequest**](OrderServiceRequest.md)| The product data elements that comprise of the transactions request object. Encapsulates information about the loan in whose context the service is being placed, product name, product options/configurations, service credentials to authenticate with the service provider and user preferences. | 
 
 ### Return type
 
-[**Response**](Response.md)
+void (empty response body)
 
 ### Authorization
 

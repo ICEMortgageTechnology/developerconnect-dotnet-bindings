@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.0.0
+MinimumVisualStudioVersion = 10.0.0.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.Settings", "src\Elli.Api.Settings\Elli.Api.Settings.csproj", "{17FA3A0B-9DA7-435A-823E-8E4E3912CB8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.Settings.Test", "src\Elli.Api.Settings.Test\Elli.Api.Settings.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
+EndProject
+Global
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+EndGlobalSection
+GlobalSection(ProjectConfigurationPlatforms) = postSolution
+{17FA3A0B-9DA7-435A-823E-8E4E3912CB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+{17FA3A0B-9DA7-435A-823E-8E4E3912CB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+{17FA3A0B-9DA7-435A-823E-8E4E3912CB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+{17FA3A0B-9DA7-435A-823E-8E4E3912CB8B}.Release|Any CPU.Build.0 = Release|Any CPU
+{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.Build.0 = Release|Any CPU
+EndGlobalSection
+GlobalSection(SolutionProperties) = preSolution
+HideSolutionNode = FALSE
+EndGlobalSection
+EndGlobal

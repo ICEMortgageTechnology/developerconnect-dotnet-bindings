@@ -4,7 +4,7 @@ Credit
 
 Credit APIs
 
-OpenAPI spec version: 1.0.0
+OpenAPI spec version: 1.2.0
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,7 +74,7 @@ OpenAPI spec version: 1.0.0
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.Services\Elli.Api.Services.csproj">
-      <Project>{A9BB37F8-B7AC-4C2B-BC81-B2FA0D2D7AD9}</Project>
+      <Project>{C28EE900-578F-4461-91E5-143B80FBE00D}</Project>
       <Name>Elli.Api.Services</Name>
     </ProjectReference>
   </ItemGroup>
