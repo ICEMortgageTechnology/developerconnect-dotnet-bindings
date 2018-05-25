@@ -67,7 +67,7 @@ This endpoint does not need any parameter.
 
 <a name="pipelinerequest"></a>
 # **PipelineRequest**
-> List<LoanPipelineItemContract> PipelineRequest (string limit = null, string cursorType = null, string cursor = null, string start = null, LoanPipelineViewContract contract = null)
+> List<LoanPipelineItemContract> PipelineRequest (string limit = null, string cursorType = null, string cursor = null, string start = null, LoanPipelineViewContract contract = null, string ignoreInvalidFields = null)
 
 
 
@@ -94,10 +94,11 @@ namespace Example
             var cursor = cursor_example;  // string |  (optional) 
             var start = start_example;  // string |  (optional) 
             var contract = new LoanPipelineViewContract(); // LoanPipelineViewContract |  (optional) 
+            var ignoreInvalidFields = ignoreInvalidFields_example;  // string | Indicates whether to ignore invalid fields requested from response. Accepted values - true and false, default is false. (optional) 
 
             try
             {
-                List&lt;LoanPipelineItemContract&gt; result = apiInstance.PipelineRequest(limit, cursorType, cursor, start, contract);
+                List&lt;LoanPipelineItemContract&gt; result = apiInstance.PipelineRequest(limit, cursorType, cursor, start, contract, ignoreInvalidFields);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -118,6 +119,7 @@ Name | Type | Description  | Notes
  **cursor** | **string**|  | [optional] 
  **start** | **string**|  | [optional] 
  **contract** | [**LoanPipelineViewContract**](LoanPipelineViewContract.md)|  | [optional] 
+ **ignoreInvalidFields** | **string**| Indicates whether to ignore invalid fields requested from response. Accepted values - true and false, default is false. | [optional] 
 
 ### Return type
 

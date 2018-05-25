@@ -60,6 +60,7 @@ Name | Type | Description | Notes
 **Lates12Month150Day** | **int?** |  | [optional] 
 **Lates24Month150Day** | **int?** |  | [optional] 
 **Lates25Month150Day** | **int?** |  | [optional] 
+**Contact** | [**EntityRefContract**](EntityRefContract.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

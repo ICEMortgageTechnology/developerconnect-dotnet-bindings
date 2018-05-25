@@ -4,7 +4,7 @@ Loan
 
 APIs to manage eFolder related entities - document and attachment.
 
-OpenAPI spec version: 1.0.0
+OpenAPI spec version: 1.2.0
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,7 +74,7 @@ OpenAPI spec version: 1.0.0
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.Loans.EFolder\Elli.Api.Loans.EFolder.csproj">
-      <Project>{ABF2CEE9-7FE2-4FF8-A261-075919A41DF1}</Project>
+      <Project>{941A6474-CE03-4CAD-A6E3-EE6906E8E9C6}</Project>
       <Name>Elli.Api.Loans.EFolder</Name>
     </ProjectReference>
   </ItemGroup>

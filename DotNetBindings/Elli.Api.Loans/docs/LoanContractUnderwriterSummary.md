@@ -19,6 +19,8 @@ Name | Type | Description | Notes
 **ClearToCloseDate** | **DateTime?** |  | [optional] 
 **Concerns** | **string** |  | [optional] 
 **Conditions** | **string** |  | [optional] 
+**CounterOfferDate** | **DateTime?** |  | [optional] 
+**CounterOfferStatus** | **string** |  | [optional] 
 **Credit** | **string** |  | [optional] 
 **CreditApprovalDate** | **DateTime?** |  | [optional] 
 **DeniedBy** | **string** |  | [optional] 

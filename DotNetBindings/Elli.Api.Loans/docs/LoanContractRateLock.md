@@ -109,6 +109,8 @@ Name | Type | Description | Notes
 **CorrespondentSRPAmount** | **double?** |  | [optional] 
 **CumulatedDaystoExtend** | **int?** |  | [optional] 
 **CurrentAdjustments** | [**List&lt;LoanContractRateLockBuySideAdjustments&gt;**](LoanContractRateLockBuySideAdjustments.md) |  | [optional] 
+**CurrentAcquisition** | **bool?** |  | [optional] 
+**CurrentConstructionRefi** | **bool?** |  | [optional] 
 **CurrentComments** | **string** |  | [optional] 
 **CurrentLockDate** | **DateTime?** |  | [optional] 
 **CurrentLockExpires** | **DateTime?** |  | [optional] 

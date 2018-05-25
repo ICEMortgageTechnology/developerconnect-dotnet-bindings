@@ -16,7 +16,9 @@ Name | Type | Description | Notes
 **RateLockExpirationTime** | **string** |  | [optional] 
 **RateLockExpirationTimeZone** | **string** |  | [optional] 
 **ClosingCostEstimateExpirationTime** | **string** |  | [optional] 
+**ClosingCostEstimateExpirationTimeUI** | **string** |  | [optional] 
 **ClosingCostEstimateExpirationTimeZone** | **string** |  | [optional] 
+**ClosingCostEstimateExpirationTimeZoneUI** | **string** |  | [optional] 
 **LoanAmountCanGoGoes** | **string** |  | [optional] 
 **LoanAmountCanIncreaseOrIncreases** | **string** |  | [optional] 
 **YearsToRecast** | **int?** |  | [optional] 
@@ -36,6 +38,7 @@ Name | Type | Description | Notes
 **MonthlyPIInterestOnlyUntilYear** | **int?** |  | [optional] 
 **PrepaymentPenaltyPayOffDuringYear** | **int?** |  | [optional] 
 **ClosingCostEstimateExpirationDate** | **DateTime?** |  | [optional] 
+**ClosingCostEstimateExpirationDateUI** | **string** |  | [optional] 
 **EstimatedTaxesInsuranceAssessments** | **double?** |  | [optional] 
 **EstimatedTaxesInsuranceAssessmentsUI** | **string** |  | [optional] 
 **InEscrowPropertyTaxes** | **string** |  | [optional] 
@@ -124,6 +127,12 @@ Name | Type | Description | Notes
 **ReasonChangedCircumstanceFlags** | **string** |  | [optional] 
 **PrepaymentPenaltyPayOffInDateType** | **string** |  | [optional] 
 **PrepaymentPenaltyPayOffInFirstYear** | **string** |  | [optional] 
+**InitialMonthlyPaymentFor10000Loan** | **double?** |  | [optional] 
+**MaximumMonthlyPaymentFor10000Loan** | **double?** |  | [optional] 
+**MaximumPaymentMonth** | **int?** |  | [optional] 
+**InitialMonthlyPaymentFor60000Loan** | **double?** |  | [optional] 
+**ConversionBegin** | **string** |  | [optional] 
+**ConversionEnd** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

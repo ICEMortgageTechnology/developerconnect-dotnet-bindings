@@ -43,6 +43,8 @@ Name | Type | Description | Notes
 **LFSDayClearedOtherDate** | **string** |  | [optional] 
 **LFSOtherDateValue** | **string** |  | [optional] 
 **LFSDayClearedOtherDateValue** | **string** |  | [optional] 
+**LFSLateFee** | **double?** |  | [optional] 
+**LFSAmount** | **double?** |  | [optional] 
 **CommitmentType** | **string** |  | [optional] 
 **UnpaidPrincipalBalance** | **double?** |  | [optional] 
 **OriginalPrincipalBalance** | **double?** |  | [optional] 

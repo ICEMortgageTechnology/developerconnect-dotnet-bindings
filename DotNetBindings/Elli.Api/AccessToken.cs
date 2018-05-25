@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Elli.Api.OAuth.Api;
@@ -27,7 +28,7 @@ namespace Elli.Api.Base
 
         static AccessToken()
         {
-            Config = (ApiConfiguration)ConfigurationManager.GetSection("ElliApiConfig");
+            Config = (ApiConfiguration)ConfigurationManager.GetSection("ElliApiConfig");           
         }
 
         private AccessToken()

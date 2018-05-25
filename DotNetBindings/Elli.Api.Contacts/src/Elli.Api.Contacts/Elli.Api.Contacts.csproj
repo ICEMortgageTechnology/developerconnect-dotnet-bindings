@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 Contacts
 
 Represents borrower and business contacts
 
-OpenAPI spec version: 1.0.0
+OpenAPI spec version: 1.2.0
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1D36ED9E-E394-47DC-A095-F74CF6D4457E}</ProjectGuid>
+    <ProjectGuid>{8511A59D-4F55-4D14-9D50-C6F6F92BB1F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Elli.Api.Contacts</RootNamespace>
@@ -54,19 +53,54 @@ OpenAPI spec version: 1.0.0
       <HintPath Condition="Exists('..\..\vendor')">..\..\vendor\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp">
-        <HintPath Condition="Exists('$(SolutionDir)\packages')">$(SolutionDir)\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
-        <HintPath Condition="Exists('..\packages')">..\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
-        <HintPath Condition="Exists('..\..\packages')">..\..\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
+      <HintPath Condition="Exists('$(SolutionDir)\packages')">$(SolutionDir)\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
+      <HintPath Condition="Exists('..\packages')">..\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
+      <HintPath Condition="Exists('..\..\packages')">..\..\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
       <HintPath Condition="Exists('..\..\vendor')">..\..\vendor\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="**\*.cs"
-             Exclude="obj\**" />
+    <Compile Include="Api\BorrowerContactsApi.cs" />
+    <Compile Include="Api\BorrowerContactSelectorApi.cs" />
+    <Compile Include="Api\BorrowerFieldDefinitionsApi.cs" />
+    <Compile Include="Api\BusinessContactsApi.cs" />
+    <Compile Include="Api\BusinessContactSelectorApi.cs" />
+    <Compile Include="Api\BusinessFieldDefinitionsApi.cs" />
+    <Compile Include="Api\ContactGroupApi.cs" />
+    <Compile Include="Client\ApiClient.cs" />
+    <Compile Include="Client\ApiException.cs" />
+    <Compile Include="Client\ApiResponse.cs" />
+    <Compile Include="Client\Configuration.cs" />
+    <Compile Include="Client\ExceptionFactory.cs" />
+    <Compile Include="Client\IApiAccessor.cs" />
+    <Compile Include="Client\SwaggerDateConverter.cs" />
+    <Compile Include="Model\BorrowerContactContract.cs" />
+    <Compile Include="Model\BorrowerContactContractBizAddress.cs" />
+    <Compile Include="Model\BorrowerContactContractCurrentMailingAddress.cs" />
+    <Compile Include="Model\BorrowerContactQueryContract.cs" />
+    <Compile Include="Model\BorrowerContactQueryContractFilter.cs" />
+    <Compile Include="Model\BorrowerContactQueryContractSortOrder.cs" />
+    <Compile Include="Model\BorrowerContactSelectorContract.cs" />
+    <Compile Include="Model\BorrowerFieldDefinitionContract.cs" />
+    <Compile Include="Model\BusinessContactContract.cs" />
+    <Compile Include="Model\BusinessContactContractBusinessContactLicense.cs" />
+    <Compile Include="Model\BusinessContactContractCategoryFields.cs" />
+    <Compile Include="Model\BusinessContactContractPersonalContactLicense.cs" />
+    <Compile Include="Model\BusinessContactQueryContract.cs" />
+    <Compile Include="Model\BusinessContactQueryContractFilter.cs" />
+    <Compile Include="Model\BusinessContactQueryContractSortOrder.cs" />
+    <Compile Include="Model\BusinessContactSelectorContract.cs" />
+    <Compile Include="Model\BusinessFieldDefinitionContract.cs" />
+    <Compile Include="Model\ContactGroupContract.cs" />
+    <Compile Include="Model\ContactNoteContract.cs" />
+    <Compile Include="Model\EntityRefContract.cs" />
+    <Compile Include="Model\Error.cs" />
+    <Compile Include="Model\ErrorObject.cs" />
+    <Compile Include="Model\FilterTerms.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-      <None Include="packages.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
-

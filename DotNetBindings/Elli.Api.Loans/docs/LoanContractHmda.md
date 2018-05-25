@@ -102,6 +102,10 @@ Name | Type | Description | Notes
 **HMDAProfileCLTVValue** | **string** |  | [optional] 
 **HMDAProfileIncomeValue** | **string** |  | [optional] 
 **HMDAProfileApplicationDateValue** | **string** |  | [optional] 
+**HMDALoanPurpose** | **string** |  | [optional] 
+**HmdaPropertyValueNotReliedUponIndicator** | **bool?** |  | [optional] 
+**HmdaInterestOnlyIndicator** | **bool?** |  | [optional] 
+**IncomeExcludedFromHmda** | **double?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

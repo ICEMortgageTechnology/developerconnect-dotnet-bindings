@@ -48,6 +48,8 @@
  * 15. ASSIGNING LOAN ASSOCIATE TO A MILESTONE
  * 16. UNASSIGNING LOAN ASSOCIATE FROM A MILESTONE
  * 17. COMPLETING A MILESTONE
+ * 18. GET ALL UNDERWRITING CONDITIONS
+ * 19. GET SPECIFIC UNDERWRITING CONDITION
  */
 
 using System;
@@ -98,6 +100,8 @@ namespace Ellie.Api.Examples.Loans
                 Console.WriteLine("15: Assign Loan Associate To A Milestone");
                 Console.WriteLine("16: Unassign Loan Associate From A Milestone");
                 Console.WriteLine("17: Complete A Milestone");
+                Console.WriteLine("18: Get All Underwriting Conditions");
+                Console.WriteLine("19: Get Specific Underwriting Condition");
                 Console.WriteLine("98: Choose another Loan ID");
                 Console.WriteLine("99: Exit");
                 Console.Write("Enter your choice: ");
@@ -160,6 +164,12 @@ namespace Ellie.Api.Examples.Loans
                             case 17:
                                 CompleteMilestone();
                                 break;
+                            case 18:
+                                GetUnderwritingConditions();
+                                break;
+                            case 19:
+                                GetUnderwritingCondition();
+                                break;
                             case 98:
                                 _loanId = null;
                                 _accessToken = null;
@@ -181,14 +191,14 @@ namespace Ellie.Api.Examples.Loans
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(ex.Message);
+                        Console.WriteLine(ex.ToString());
                         Console.ReadLine();
                     }
                 }
             } while (true);
         }
 
-        
+
         /// <summary>
         /// Example: Obtain access token
         /// </summary>
@@ -263,7 +273,7 @@ namespace Ellie.Api.Examples.Loans
                 }
             };
 
-            var loans = loanPipelineApiClient.PipelineRequest("100", "randomAccess", null, "0", cursorRequest);
+            var loans = loanPipelineApiClient.PipelineRequest("100", "randomAccess", null, "0", cursorRequest, "true");
             Console.WriteLine("Total Loans: {0}", loans.Count);
             foreach (var loanInfo in loans)
             {
@@ -725,6 +735,60 @@ namespace Ellie.Api.Examples.Loans
 
             //Calling UpdateMilestone operation which completes the milestone when action is passed as finish
             milestoneApiClient.UpdateMilestone(milestoneId, LoanId, action: "finish", milestoneLogContract: new MilestoneContract());
+        }
+
+        /// <summary>
+        /// Example: Get all Underwriting conditions for a loan
+        /// </summary>
+        private static void GetUnderwritingCondition()
+        {
+            if (_accessToken == null)
+                Authenticate();
+            var conditionsApiClient = ApiClientProvider.GetApiClient<ConditionsApi>(_accessToken);
+
+            Console.Write("Enter Condition Id: ");
+            string conditionId = Console.ReadLine();
+
+            var condition = conditionsApiClient.GetEFolderUnderwritingConditionById(conditionId, LoanId);
+
+            Console.WriteLine("Id             - {0}", condition.Id);
+            Console.WriteLine("ConditionType  - {0}", condition.ConditionType);
+            Console.WriteLine("Title          - {0}", condition.Title);
+            Console.WriteLine("Description    - {0}", condition.Description);
+            Console.WriteLine("Status         - {0}", condition.Status);
+            Console.WriteLine("Source         - {0}", condition.Source);
+            Console.WriteLine("StatusDate     - {0}", condition.StatusDate);
+            Console.WriteLine("Comments Count - {0}", condition.Comments.Count);
+            Console.WriteLine("Docs Count     - {0}", condition.Documents.Count);
+        }
+
+        /// <summary>
+        /// Example: Get a specific Underwriting condition for a loan
+        /// </summary>
+        private static void GetUnderwritingConditions()
+        {
+            int count = 1;
+            if (_accessToken == null)
+                Authenticate();
+            var conditionsApiClient = ApiClientProvider.GetApiClient<ConditionsApi>(_accessToken);
+
+            var response = conditionsApiClient.GetEFolderUnderwritingConditions(LoanId);
+
+            Console.WriteLine("Total count of conditions - {0}", response.Count);
+            foreach (var condition in response)
+            {
+                //Printing only first five records
+                if (count > 5)
+                    break;
+                Console.WriteLine("Condition {0} - ", count);
+                Console.WriteLine("Id            - {0}", condition.Id);
+                Console.WriteLine("ConditionType - {0}", condition.ConditionType);
+                Console.WriteLine("Title         - {0}", condition.Title);
+                Console.WriteLine("Description   - {0}", condition.Description);
+                Console.WriteLine("Status        - {0}", condition.Status);
+                Console.WriteLine();
+                count++;
+            }
         }
     }
 }

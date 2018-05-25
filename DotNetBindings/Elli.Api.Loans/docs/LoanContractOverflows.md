@@ -7,7 +7,6 @@ Name | Type | Description | Notes
 **CoordinateTop** | **string** |  | [optional] 
 **CoordinateLeft** | **string** |  | [optional] 
 **CoordinateRight** | **string** |  | [optional] 
-**CoordinateText** | **string** |  | [optional] 
 **OriginalText** | **string** |  | [optional] 
 **PageNumber** | **int?** |  | [optional] 
 **TemplateFieldName** | **string** |  | [optional] 

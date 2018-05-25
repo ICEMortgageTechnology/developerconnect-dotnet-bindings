@@ -53,6 +53,7 @@ Name | Type | Description | Notes
 **NFIPCommunityNumber** | **string** |  | [optional] 
 **NFIPMapEffectiveRevisedDate** | **DateTime?** |  | [optional] 
 **MapPanelNumber** | **string** |  | [optional] 
+**NFIPParticipationStatus** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

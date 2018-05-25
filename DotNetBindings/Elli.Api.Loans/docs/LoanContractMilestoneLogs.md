@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **RoleRequired** | **string** |  | [optional] 
 **Stage** | **string** |  | [optional] 
 **SystemId** | **string** |  | [optional] 
+**TPOConnectStatus** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

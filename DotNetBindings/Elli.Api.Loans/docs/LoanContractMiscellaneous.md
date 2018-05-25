@@ -102,6 +102,8 @@ Name | Type | Description | Notes
 **MIPremiums** | **double?** |  | [optional] 
 **SubTaxYearMIPremiums** | **double?** |  | [optional] 
 **LoanFileSequenceNumber** | **int?** |  | [optional] 
+**ComplianceVersionCD3X1505** | **string** |  | [optional] 
+**TPOConnectStatusUpdated** | **bool?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -117,7 +117,7 @@ namespace Ellie.Api.Examples.Loans
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(ex.Message);
+                        Console.WriteLine(ex.ToString());
                         Console.ReadLine();
                     }
                 }
@@ -213,12 +213,13 @@ namespace Ellie.Api.Examples.Loans
             var loanPipelineApiClient = ApiClientProvider.GetApiClient<LoanPipelineApi>(_accessToken);
 
             //We will need to read headers and hence calling method with http info
-            var resp = loanPipelineApiClient.PipelineRequestWithHttpInfo("100", "randomAccess", null, "0", cursorRequest);
+            var resp = loanPipelineApiClient.PipelineRequestWithHttpInfo("100", "randomAccess", null, "0", cursorRequest, "true");
 
             //Reading the cursor ID from headers
-            _cursor = resp.Headers["x-cursor"];
-            _count = Convert.ToInt32(resp.Headers["x-total-count"]);
+            _cursor = resp.Headers["X-Cursor"];
+            _count = Convert.ToInt32(resp.Headers["X-Total-Count"]);
         }
+
 
         /// <summary>
         /// Example: Loan Cursor pagination
@@ -238,7 +239,7 @@ namespace Ellie.Api.Examples.Loans
                 for (var i = 0; i < 10; i++)
                 {
                     //We do not need headers anymore, hence, calling regular method, And will be paginating 10 loans at a time
-                    var resp = loanPipelineApiClient.PipelineRequest("10", null, _cursor, start.ToString(), paginationRequest);
+                    var resp = loanPipelineApiClient.PipelineRequest("10", null, _cursor, start.ToString(), paginationRequest, "true");
                     Console.WriteLine("Page {0} Loan IDs: ", page);
                     foreach (var loanInfo in resp)
                     {

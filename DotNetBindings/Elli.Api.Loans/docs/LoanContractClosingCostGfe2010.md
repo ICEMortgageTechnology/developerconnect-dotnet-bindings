@@ -149,6 +149,7 @@ Name | Type | Description | Notes
 **MaximumLoanBalance** | **double?** |  | [optional] 
 **MaximumOwedMonthlyPayment** | **double?** |  | [optional] 
 **MaxLifeInterestCapPercent** | **double?** |  | [optional] 
+**MaxLifeInterestCapPercentUI** | **string** |  | [optional] 
 **MonthlyPaymentFirstIncreaseDate** | **int?** |  | [optional] 
 **MonthlyPaymentRiseIndicator** | **bool?** |  | [optional] 
 **MortgageInsurancePremium** | **double?** |  | [optional] 
