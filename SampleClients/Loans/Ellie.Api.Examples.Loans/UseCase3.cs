@@ -177,7 +177,7 @@ namespace Ellie.Api.Examples.Loans
                 LoanGuid = loanId,
                 IsExternalOrganization = true
             };
-            loanFoldersApiClient.MoveLoanFolder(folderName, loanFolderContract);
+            loanFoldersApiClient.MoveLoanFolder(folderName, "add", loanFolderContract);
         }
 
 

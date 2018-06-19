@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="moveloanfolder"></a>
 # **MoveLoanFolder**
-> void MoveLoanFolder (string folderName, LoanFolderContract loanFolder = null)
+> void MoveLoanFolder (string folderName, string action, LoanFolderContract loanFolder = null)
 
 Move loan folder
 
@@ -34,12 +34,13 @@ namespace Example
 
             var apiInstance = new LoanFoldersApi();
             var folderName = folderName_example;  // string | Target foldername where loan file need to move
+            var action = action_example;  // string | Action
             var loanFolder = new LoanFolderContract(); // LoanFolderContract |  (optional) 
 
             try
             {
                 // Move loan folder
-                apiInstance.MoveLoanFolder(folderName, loanFolder);
+                apiInstance.MoveLoanFolder(folderName, action, loanFolder);
             }
             catch (Exception e)
             {
@@ -55,6 +56,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **folderName** | **string**| Target foldername where loan file need to move | 
+ **action** | **string**| Action | 
  **loanFolder** | [**LoanFolderContract**](LoanFolderContract.md)|  | [optional] 
 
 ### Return type
