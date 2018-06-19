@@ -33,32 +33,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Elli.Api.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Base.1.2.0\lib\Elli.Api.Base.dll</HintPath>
+    <Reference Include="Elli.Api.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Base.1.2.1\lib\Elli.Api.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Contacts, Version=1.2.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Contacts.1.2.0\lib\Elli.Api.Contacts.dll</HintPath>
+    <Reference Include="Elli.Api.Contacts, Version=1.2.1.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Contacts.1.2.1\lib\Elli.Api.Contacts.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.CustomDataObjects, Version=1.2.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.CustomDataObjects.1.2.0\lib\Elli.Api.CustomDataObjects.dll</HintPath>
+    <Reference Include="Elli.Api.CustomDataObjects, Version=1.2.1.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.CustomDataObjects.1.2.1\lib\Elli.Api.CustomDataObjects.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Loans, Version=1.2.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Loans.1.2.0\lib\Elli.Api.Loans.dll</HintPath>
+    <Reference Include="Elli.Api.Loans, Version=1.2.1.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Loans.1.2.1\lib\Elli.Api.Loans.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Loans.EFolder, Version=1.2.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Loans.EFolder.1.2.0\lib\Elli.Api.Loans.EFolder.dll</HintPath>
+    <Reference Include="Elli.Api.Loans.EFolder, Version=1.2.1.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Loans.EFolder.1.2.1\lib\Elli.Api.Loans.EFolder.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Loans.Pipeline, Version=1.2.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Loans.Pipeline.1.2.0\lib\Elli.Api.Loans.Pipeline.dll</HintPath>
+    <Reference Include="Elli.Api.Loans.Pipeline, Version=1.2.1.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Loans.Pipeline.1.2.1\lib\Elli.Api.Loans.Pipeline.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.OAuth, Version=1.2.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Base.1.2.0\lib\Elli.Api.OAuth.dll</HintPath>
+    <Reference Include="Elli.Api.OAuth, Version=1.2.1.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Base.1.2.1\lib\Elli.Api.OAuth.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Services, Version=1.2.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Services.1.2.0\lib\Elli.Api.Services.dll</HintPath>
+    <Reference Include="Elli.Api.Services, Version=1.2.1.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Services.1.2.1\lib\Elli.Api.Services.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Settings, Version=1.2.0.0, Culture=neutral, PublicKeyToken=598bbd43f5850e1e, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Settings.1.2.0\lib\Elli.Api.Settings.dll</HintPath>
+    <Reference Include="Elli.Api.Settings, Version=1.2.1.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Settings.1.2.1\lib\Elli.Api.Settings.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>

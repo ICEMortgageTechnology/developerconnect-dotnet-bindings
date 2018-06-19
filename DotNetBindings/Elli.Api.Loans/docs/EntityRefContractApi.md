@@ -4,7 +4,7 @@ All URIs are relative to *https://api.elliemae.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetLoanTemplatesSetFolders**](EntityRefContractApi.md#getloantemplatessetfolders) | **GET** /v1/settings/templates/loanTemplateSet/folders/{folderPath} | Returns all folders.
+[**GetLoanTemplatesSetFolders**](EntityRefContractApi.md#getloantemplatessetfolders) | **GET** /encompass/v1/settings/templates/loanTemplateSet/folders/{folderPath} | Returns all folders.
 
 
 <a name="getloantemplatessetfolders"></a>

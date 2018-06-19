@@ -4,7 +4,7 @@ All URIs are relative to *https://api.elliemae.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetLoanTemplatesSetItems**](LoanTemplateSetContractsApi.md#getloantemplatessetitems) | **GET** /v1/settings/templates/loanTemplateSet/items | Returns all templates.
+[**GetLoanTemplatesSetItems**](LoanTemplateSetContractsApi.md#getloantemplatessetitems) | **GET** /encompass/v1/settings/templates/loanTemplateSet/items | Returns all templates.
 
 
 <a name="getloantemplatessetitems"></a>
