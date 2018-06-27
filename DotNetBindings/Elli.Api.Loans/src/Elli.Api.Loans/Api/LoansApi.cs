@@ -130,6 +130,27 @@ namespace Elli.Api.Loans.Api
         /// <returns>ApiResponse of LoanContract</returns>
         ApiResponse<LoanContract> GetLoanWithHttpInfo (string loanId, string entities = null, string format = null);
         /// <summary>
+        /// Get Loan Metadata.
+        /// </summary>
+        /// <remarks>
+        /// Retrieves the metadata for a specified loan.
+        /// </remarks>
+        /// <exception cref="Elli.Api.Loans.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="loanId">The unique identifier assigned to the loan.</param>
+        /// <returns>LoanMetadataContract</returns>
+        LoanMetadataContract GetLoanMetaData (string loanId);
+
+        /// <summary>
+        /// Get Loan Metadata.
+        /// </summary>
+        /// <remarks>
+        /// Retrieves the metadata for a specified loan.
+        /// </remarks>
+        /// <exception cref="Elli.Api.Loans.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="loanId">The unique identifier assigned to the loan.</param>
+        /// <returns>ApiResponse of LoanMetadataContract</returns>
+        ApiResponse<LoanMetadataContract> GetLoanMetaDataWithHttpInfo (string loanId);
+        /// <summary>
         /// Updates an existing loan.
         /// </summary>
         /// <remarks>
@@ -235,6 +256,27 @@ namespace Elli.Api.Loans.Api
         /// <param name="format"> (optional)</param>
         /// <returns>Task of ApiResponse (LoanContract)</returns>
         System.Threading.Tasks.Task<ApiResponse<LoanContract>> GetLoanAsyncWithHttpInfo (string loanId, string entities = null, string format = null);
+        /// <summary>
+        /// Get Loan Metadata.
+        /// </summary>
+        /// <remarks>
+        /// Retrieves the metadata for a specified loan.
+        /// </remarks>
+        /// <exception cref="Elli.Api.Loans.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="loanId">The unique identifier assigned to the loan.</param>
+        /// <returns>Task of LoanMetadataContract</returns>
+        System.Threading.Tasks.Task<LoanMetadataContract> GetLoanMetaDataAsync (string loanId);
+
+        /// <summary>
+        /// Get Loan Metadata.
+        /// </summary>
+        /// <remarks>
+        /// Retrieves the metadata for a specified loan.
+        /// </remarks>
+        /// <exception cref="Elli.Api.Loans.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="loanId">The unique identifier assigned to the loan.</param>
+        /// <returns>Task of ApiResponse (LoanMetadataContract)</returns>
+        System.Threading.Tasks.Task<ApiResponse<LoanMetadataContract>> GetLoanMetaDataAsyncWithHttpInfo (string loanId);
         /// <summary>
         /// Updates an existing loan.
         /// </summary>
@@ -857,6 +899,153 @@ namespace Elli.Api.Loans.Api
             return new ApiResponse<LoanContract>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 (LoanContract) Configuration.ApiClient.Deserialize(localVarResponse, typeof(LoanContract)));
+        }
+
+        /// <summary>
+        /// Get Loan Metadata. Retrieves the metadata for a specified loan.
+        /// </summary>
+        /// <exception cref="Elli.Api.Loans.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="loanId">The unique identifier assigned to the loan.</param>
+        /// <returns>LoanMetadataContract</returns>
+        public LoanMetadataContract GetLoanMetaData (string loanId)
+        {
+             ApiResponse<LoanMetadataContract> localVarResponse = GetLoanMetaDataWithHttpInfo(loanId);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get Loan Metadata. Retrieves the metadata for a specified loan.
+        /// </summary>
+        /// <exception cref="Elli.Api.Loans.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="loanId">The unique identifier assigned to the loan.</param>
+        /// <returns>ApiResponse of LoanMetadataContract</returns>
+        public ApiResponse< LoanMetadataContract > GetLoanMetaDataWithHttpInfo (string loanId)
+        {
+            // verify the required parameter 'loanId' is set
+            if (loanId == null)
+                throw new ApiException(400, "Missing required parameter 'loanId' when calling LoansApi->GetLoanMetaData");
+
+            var localVarPath = "/encompass/v1/loans/{loanId}/metadata";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (loanId != null) localVarPathParams.Add("loanId", Configuration.ApiClient.ParameterToString(loanId)); // path parameter
+
+            // authentication (bearerAuth) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetLoanMetaData", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<LoanMetadataContract>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (LoanMetadataContract) Configuration.ApiClient.Deserialize(localVarResponse, typeof(LoanMetadataContract)));
+        }
+
+        /// <summary>
+        /// Get Loan Metadata. Retrieves the metadata for a specified loan.
+        /// </summary>
+        /// <exception cref="Elli.Api.Loans.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="loanId">The unique identifier assigned to the loan.</param>
+        /// <returns>Task of LoanMetadataContract</returns>
+        public async System.Threading.Tasks.Task<LoanMetadataContract> GetLoanMetaDataAsync (string loanId)
+        {
+             ApiResponse<LoanMetadataContract> localVarResponse = await GetLoanMetaDataAsyncWithHttpInfo(loanId);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get Loan Metadata. Retrieves the metadata for a specified loan.
+        /// </summary>
+        /// <exception cref="Elli.Api.Loans.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="loanId">The unique identifier assigned to the loan.</param>
+        /// <returns>Task of ApiResponse (LoanMetadataContract)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<LoanMetadataContract>> GetLoanMetaDataAsyncWithHttpInfo (string loanId)
+        {
+            // verify the required parameter 'loanId' is set
+            if (loanId == null)
+                throw new ApiException(400, "Missing required parameter 'loanId' when calling LoansApi->GetLoanMetaData");
+
+            var localVarPath = "/encompass/v1/loans/{loanId}/metadata";
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                "application/json"
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            if (loanId != null) localVarPathParams.Add("loanId", Configuration.ApiClient.ParameterToString(loanId)); // path parameter
+
+            // authentication (bearerAuth) required
+            // oauth required
+            if (!String.IsNullOrEmpty(Configuration.AccessToken))
+            {
+                localVarHeaderParams["Authorization"] = "Bearer " + Configuration.AccessToken;
+            }
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath,
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+
+            if (ExceptionFactory != null)
+            {
+                Exception exception = ExceptionFactory("GetLoanMetaData", localVarResponse);
+                if (exception != null) throw exception;
+            }
+
+            return new ApiResponse<LoanMetadataContract>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (LoanMetadataContract) Configuration.ApiClient.Deserialize(localVarResponse, typeof(LoanMetadataContract)));
         }
 
         /// <summary>

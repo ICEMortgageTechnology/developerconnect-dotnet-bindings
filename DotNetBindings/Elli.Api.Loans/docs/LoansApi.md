@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**CreateLoan**](LoansApi.md#createloan) | **POST** /encompass/v1/loans | Creates a new loan.
 [**DeleteLoan**](LoansApi.md#deleteloan) | **DELETE** /encompass/v1/loans/{loanId} | 
 [**GetLoan**](LoansApi.md#getloan) | **GET** /encompass/v1/loans/{loanId} | 
+[**GetLoanMetaData**](LoansApi.md#getloanmetadata) | **GET** /encompass/v1/loans/{loanId}/metadata | Get Loan Metadata.
 [**UpdateLoan**](LoansApi.md#updateloan) | **PATCH** /encompass/v1/loans/{loanId} | Updates an existing loan.
 
 
@@ -195,6 +196,70 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**LoanContract**](LoanContract.md)
+
+### Authorization
+
+[bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getloanmetadata"></a>
+# **GetLoanMetaData**
+> LoanMetadataContract GetLoanMetaData (string loanId)
+
+Get Loan Metadata.
+
+Retrieves the metadata for a specified loan.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Elli.Api.Loans.Api;
+using Elli.Api.Loans.Client;
+using Elli.Api.Loans.Model;
+
+namespace Example
+{
+    public class GetLoanMetaDataExample
+    {
+        public void main()
+        {
+            // Configure OAuth2 access token for authorization: bearerAuth
+            Configuration.Default.AccessToken = "YOUR_ACCESS_TOKEN";
+
+            var apiInstance = new LoansApi();
+            var loanId = loanId_example;  // string | The unique identifier assigned to the loan.
+
+            try
+            {
+                // Get Loan Metadata.
+                LoanMetadataContract result = apiInstance.GetLoanMetaData(loanId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LoansApi.GetLoanMetaData: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **loanId** | **string**| The unique identifier assigned to the loan. | 
+
+### Return type
+
+[**LoanMetadataContract**](LoanMetadataContract.md)
 
 ### Authorization
 

@@ -115,6 +115,7 @@ Class | Method | HTTP request | Description
 *LoansApi* | [**CreateLoan**](docs/LoansApi.md#createloan) | **POST** /encompass/v1/loans | Creates a new loan.
 *LoansApi* | [**DeleteLoan**](docs/LoansApi.md#deleteloan) | **DELETE** /encompass/v1/loans/{loanId} | 
 *LoansApi* | [**GetLoan**](docs/LoansApi.md#getloan) | **GET** /encompass/v1/loans/{loanId} | 
+*LoansApi* | [**GetLoanMetaData**](docs/LoansApi.md#getloanmetadata) | **GET** /encompass/v1/loans/{loanId}/metadata | Get Loan Metadata.
 *LoansApi* | [**UpdateLoan**](docs/LoansApi.md#updateloan) | **PATCH** /encompass/v1/loans/{loanId} | Updates an existing loan.
 *MilestoneFreeRolesApi* | [**GetMilestoneFreeRole**](docs/MilestoneFreeRolesApi.md#getmilestonefreerole) | **GET** /encompass/v1/loans/{id}/milestoneFreeRoles/{logId} | Retrieve specific milestonefreerole log
 *MilestoneFreeRolesApi* | [**GetMilestoneFreeRoles**](docs/MilestoneFreeRolesApi.md#getmilestonefreeroles) | **GET** /encompass/v1/loans/{id}/milestoneFreeRoles | Retrieve milestonefreelogs
@@ -333,6 +334,7 @@ Class | Method | HTTP request | Description
  - [Model.LoanErrorObject](docs/LoanErrorObject.md)
  - [Model.LoanFolderContract](docs/LoanFolderContract.md)
  - [Model.LoanFolderContractActivityRules](docs/LoanFolderContractActivityRules.md)
+ - [Model.LoanMetadataContract](docs/LoanMetadataContract.md)
  - [Model.LoanTeamMemberContract](docs/LoanTeamMemberContract.md)
  - [Model.MilestoneContract](docs/MilestoneContract.md)
  - [Model.MilestoneContractLoanAssociate](docs/MilestoneContractLoanAssociate.md)
