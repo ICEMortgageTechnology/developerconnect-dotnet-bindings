@@ -45,10 +45,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Elli.Api.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+    <Reference Include="Elli.Api.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6aaa18227aa217d3, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Elli.Api.Base.1.2.1\lib\Elli.Api.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.OAuth, Version=1.2.1.0, Culture=neutral, PublicKeyToken=e093252a347bf057, processorArchitecture=MSIL">
+    <Reference Include="Elli.Api.OAuth, Version=1.2.1.0, Culture=neutral, PublicKeyToken=6aaa18227aa217d3, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Elli.Api.Base.1.2.1\lib\Elli.Api.OAuth.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
