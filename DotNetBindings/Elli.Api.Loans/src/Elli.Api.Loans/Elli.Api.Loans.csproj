@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Loan
 
@@ -9,9 +9,10 @@ OpenAPI spec version: 1.2.1
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
+    
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{95316B49-308E-4100-9707-C1CC9D1B90FE}</ProjectGuid>
+    <ProjectGuid>{85EF1D85-121D-46FD-85BD-8C4AC666A1E9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Elli.Api.Loans</RootNamespace>
@@ -53,245 +54,19 @@ OpenAPI spec version: 1.2.1
       <HintPath Condition="Exists('..\..\vendor')">..\..\vendor\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp">
-      <HintPath Condition="Exists('$(SolutionDir)\packages')">$(SolutionDir)\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
-      <HintPath Condition="Exists('..\packages')">..\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
-      <HintPath Condition="Exists('..\..\packages')">..\..\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
+        <HintPath Condition="Exists('$(SolutionDir)\packages')">$(SolutionDir)\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
+        <HintPath Condition="Exists('..\packages')">..\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
+        <HintPath Condition="Exists('..\..\packages')">..\..\packages\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
       <HintPath Condition="Exists('..\..\vendor')">..\..\vendor\RestSharpSigned.105.1.0\lib\net45\RestSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\BorrowerPairApi.cs" />
-    <Compile Include="Api\EntityRefContractApi.cs" />
-    <Compile Include="Api\LoanAssociatesApi.cs" />
-    <Compile Include="Api\LoanBatchApi.cs" />
-    <Compile Include="Api\LoanFoldersApi.cs" />
-    <Compile Include="Api\LoansApi.cs" />
-    <Compile Include="Api\LoanTemplateSetContractsApi.cs" />
-    <Compile Include="Api\MilestoneFreeRolesApi.cs" />
-    <Compile Include="Api\MilestonesApi.cs" />
-    <Compile Include="Api\ResourceLocksApi.cs" />
-    <Compile Include="Client\ApiClient.cs" />
-    <Compile Include="Client\ApiException.cs" />
-    <Compile Include="Client\ApiResponse.cs" />
-    <Compile Include="Client\Configuration.cs" />
-    <Compile Include="Client\ExceptionFactory.cs" />
-    <Compile Include="Client\IApiAccessor.cs" />
-    <Compile Include="Client\SwaggerDateConverter.cs" />
-    <Compile Include="Model\ApplicationContract.cs" />
-    <Compile Include="Model\ApplicationContractAssets.cs" />
-    <Compile Include="Model\ApplicationContractBorrower.cs" />
-    <Compile Include="Model\ApplicationContractCoborrower.cs" />
-    <Compile Include="Model\ApplicationContractContact.cs" />
-    <Compile Include="Model\ApplicationContractEmployment.cs" />
-    <Compile Include="Model\ApplicationContractLiabilities.cs" />
-    <Compile Include="Model\ApplicationContractResidences.cs" />
-    <Compile Include="Model\EntityRefContract.cs" />
-    <Compile Include="Model\Error.cs" />
-    <Compile Include="Model\ErrorObject.cs" />
-    <Compile Include="Model\LoanBatchUpdateRequestContract.cs" />
-    <Compile Include="Model\LoanBatchUpdateRequestContractFilter.cs" />
-    <Compile Include="Model\LoanBatchUpdateRequestContractLoanFields.cs" />
-    <Compile Include="Model\LoanBatchUpdateStatusContract.cs" />
-    <Compile Include="Model\LoanContract.cs" />
-    <Compile Include="Model\LoanContractAdditionalRequests.cs" />
-    <Compile Include="Model\LoanContractAffiliatedBusinessArrangements.cs" />
-    <Compile Include="Model\LoanContractAlerts.cs" />
-    <Compile Include="Model\LoanContractAllowedRoles.cs" />
-    <Compile Include="Model\LoanContractApplications.cs" />
-    <Compile Include="Model\LoanContractAssets.cs" />
-    <Compile Include="Model\LoanContractATRQMBorrower.cs" />
-    <Compile Include="Model\LoanContractATRQMCommon.cs" />
-    <Compile Include="Model\LoanContractAUSTrackingLogs.cs" />
-    <Compile Include="Model\LoanContractBorrower.cs" />
-    <Compile Include="Model\LoanContractClosingCost.cs" />
-    <Compile Include="Model\LoanContractClosingCostClosingDisclosure1.cs" />
-    <Compile Include="Model\LoanContractClosingCostClosingDisclosure2.cs" />
-    <Compile Include="Model\LoanContractClosingCostClosingDisclosure3.cs" />
-    <Compile Include="Model\LoanContractClosingCostClosingDisclosure3UCDDetails.cs" />
-    <Compile Include="Model\LoanContractClosingCostClosingDisclosure4.cs" />
-    <Compile Include="Model\LoanContractClosingCostClosingDisclosure5.cs" />
-    <Compile Include="Model\LoanContractClosingCostFeeVarianceOther.cs" />
-    <Compile Include="Model\LoanContractClosingCostFeeVariances.cs" />
-    <Compile Include="Model\LoanContractClosingCostGfe2010.cs" />
-    <Compile Include="Model\LoanContractClosingCostGfe2010Gfe2010Fees.cs" />
-    <Compile Include="Model\LoanContractClosingCostGfe2010Gfe2010WholePocs.cs" />
-    <Compile Include="Model\LoanContractClosingCostGfe2010Page.cs" />
-    <Compile Include="Model\LoanContractClosingCostGfe2010PageGfe2010FwbcFwscs.cs" />
-    <Compile Include="Model\LoanContractClosingCostGfe2010PageGfe2010GfeCharges.cs" />
-    <Compile Include="Model\LoanContractClosingCostGfe2010Section.cs" />
-    <Compile Include="Model\LoanContractClosingCostLoanEstimate1.cs" />
-    <Compile Include="Model\LoanContractClosingCostLoanEstimate2.cs" />
-    <Compile Include="Model\LoanContractClosingCostLoanEstimate3.cs" />
-    <Compile Include="Model\LoanContractClosingDocument.cs" />
-    <Compile Include="Model\LoanContractClosingDocumentAdditionalStateDisclosures.cs" />
-    <Compile Include="Model\LoanContractClosingDocumentAntiSteeringLoanOptions.cs" />
-    <Compile Include="Model\LoanContractClosingDocumentClosingEntities.cs" />
-    <Compile Include="Model\LoanContractClosingDocumentRespaHudDetails.cs" />
-    <Compile Include="Model\LoanContractClosingDocumentStateLicenses.cs" />
-    <Compile Include="Model\LoanContractCommitmentTerms.cs" />
-    <Compile Include="Model\LoanContractComplianceTestLogs.cs" />
-    <Compile Include="Model\LoanContractConstructionManagement.cs" />
-    <Compile Include="Model\LoanContractContacts.cs" />
-    <Compile Include="Model\LoanContractContacts1.cs" />
-    <Compile Include="Model\LoanContractConversationLogs.cs" />
-    <Compile Include="Model\LoanContractCorrespondent.cs" />
-    <Compile Include="Model\LoanContractCrmLogs.cs" />
-    <Compile Include="Model\LoanContractCustomFields.cs" />
-    <Compile Include="Model\LoanContractCustomModelFields.cs" />
-    <Compile Include="Model\LoanContractDataTracLogs.cs" />
-    <Compile Include="Model\LoanContractDisclosureNotices.cs" />
-    <Compile Include="Model\LoanContractDisclosureTracking2015Logs.cs" />
-    <Compile Include="Model\LoanContractDisclosureTrackingLogs.cs" />
-    <Compile Include="Model\LoanContractDocList.cs" />
-    <Compile Include="Model\LoanContractDocumentAudit.cs" />
-    <Compile Include="Model\LoanContractDocumentAuditAlerts.cs" />
-    <Compile Include="Model\LoanContractDocumentLogs.cs" />
-    <Compile Include="Model\LoanContractDocumentOrderLogs.cs" />
-    <Compile Include="Model\LoanContractDocuments.cs" />
-    <Compile Include="Model\LoanContractDownloadLogs.cs" />
-    <Compile Include="Model\LoanContractDownPayment.cs" />
-    <Compile Include="Model\LoanContractEdmLogs.cs" />
-    <Compile Include="Model\LoanContractElliUCDFields.cs" />
-    <Compile Include="Model\LoanContractEmailTriggerLogs.cs" />
-    <Compile Include="Model\LoanContractEmDocument.cs" />
-    <Compile Include="Model\LoanContractEmDocumentInvestor.cs" />
-    <Compile Include="Model\LoanContractEmDocumentLender.cs" />
-    <Compile Include="Model\LoanContractEmployment.cs" />
-    <Compile Include="Model\LoanContractEvents.cs" />
-    <Compile Include="Model\LoanContractFannieMae.cs" />
-    <Compile Include="Model\LoanContractFees.cs" />
-    <Compile Include="Model\LoanContractFhaVaLoan.cs" />
-    <Compile Include="Model\LoanContractFhaVaLoanEem.cs" />
-    <Compile Include="Model\LoanContractFhaVaLoanEnergyEfficientMortgageItems.cs" />
-    <Compile Include="Model\LoanContractFieldLockData.cs" />
-    <Compile Include="Model\LoanContractFileAttachmentReferences.cs" />
-    <Compile Include="Model\LoanContractForms.cs" />
-    <Compile Include="Model\LoanContractForms1.cs" />
-    <Compile Include="Model\LoanContractFreddieMac.cs" />
-    <Compile Include="Model\LoanContractFunding.cs" />
-    <Compile Include="Model\LoanContractFundingFees.cs" />
-    <Compile Include="Model\LoanContractGfe.cs" />
-    <Compile Include="Model\LoanContractGfeGfeFees.cs" />
-    <Compile Include="Model\LoanContractGfeGfeLiens.cs" />
-    <Compile Include="Model\LoanContractGfeGfePayments.cs" />
-    <Compile Include="Model\LoanContractGfeGfePayoffs.cs" />
-    <Compile Include="Model\LoanContractHmda.cs" />
-    <Compile Include="Model\LoanContractHomeCounselingProviders.cs" />
-    <Compile Include="Model\LoanContractHtmlEmailLogs.cs" />
-    <Compile Include="Model\LoanContractHud1Es.cs" />
-    <Compile Include="Model\LoanContractHud1EsHud1EsDates.cs" />
-    <Compile Include="Model\LoanContractHud1EsHud1EsDueDates.cs" />
-    <Compile Include="Model\LoanContractHud1EsHud1EsItemizes.cs" />
-    <Compile Include="Model\LoanContractHud1EsHud1EsPayTos.cs" />
-    <Compile Include="Model\LoanContractHud1EsHud1EsSetups.cs" />
-    <Compile Include="Model\LoanContractHudLoanData.cs" />
-    <Compile Include="Model\LoanContractHudLoanDataSecondaryFinancingProviders.cs" />
-    <Compile Include="Model\LoanContractIncome.cs" />
-    <Compile Include="Model\LoanContractInterimServicing.cs" />
-    <Compile Include="Model\LoanContractInterimServicingEscrowDisbursementTransactions.cs" />
-    <Compile Include="Model\LoanContractInterimServicingEscrowInterestTransactions.cs" />
-    <Compile Include="Model\LoanContractInterimServicingOtherTransactions.cs" />
-    <Compile Include="Model\LoanContractInterimServicingPaymentReversalTransactions.cs" />
-    <Compile Include="Model\LoanContractInterimServicingPaymentTransactions.cs" />
-    <Compile Include="Model\LoanContractInterimServicingSchedulePaymentTransactions.cs" />
-    <Compile Include="Model\LoanContractLiabilities.cs" />
-    <Compile Include="Model\LoanContractLoanActionLogs.cs" />
-    <Compile Include="Model\LoanContractLoanAssociate.cs" />
-    <Compile Include="Model\LoanContractLoanProductData.cs" />
-    <Compile Include="Model\LoanContractLoanProductDataBuydowns.cs" />
-    <Compile Include="Model\LoanContractLoanProductDataHelocRepaymentDrawPeriods.cs" />
-    <Compile Include="Model\LoanContractLoanProductDataPrepaymentPenalties.cs" />
-    <Compile Include="Model\LoanContractLoanPrograms.cs" />
-    <Compile Include="Model\LoanContractLoanSubmission.cs" />
-    <Compile Include="Model\LoanContractLoanSubmissionLoanSubmissionFees.cs" />
-    <Compile Include="Model\LoanContractLockConfirmLogs.cs" />
-    <Compile Include="Model\LoanContractLockDenialLogs.cs" />
-    <Compile Include="Model\LoanContractLockRequestLogs.cs" />
-    <Compile Include="Model\LoanContractLOCompensation.cs" />
-    <Compile Include="Model\LoanContractLogEntryLogs.cs" />
-    <Compile Include="Model\LoanContractLogRecord.cs" />
-    <Compile Include="Model\LoanContractLogRecordCommentList.cs" />
-    <Compile Include="Model\LoanContractMcaw.cs" />
-    <Compile Include="Model\LoanContractMilestoneFreeRoleLogs.cs" />
-    <Compile Include="Model\LoanContractMilestoneLogs.cs" />
-    <Compile Include="Model\LoanContractMilestoneTaskLogs.cs" />
-    <Compile Include="Model\LoanContractMilestoneTemplateLogs.cs" />
-    <Compile Include="Model\LoanContractMiscellaneous.cs" />
-    <Compile Include="Model\LoanContractNetTangibleBenefit.cs" />
-    <Compile Include="Model\LoanContractNonVols.cs" />
-    <Compile Include="Model\LoanContractOrderedDocuments.cs" />
-    <Compile Include="Model\LoanContractOverflows.cs" />
-    <Compile Include="Model\LoanContractPostClosingConditionLogs.cs" />
-    <Compile Include="Model\LoanContractPreliminaryConditionLogs.cs" />
-    <Compile Include="Model\LoanContractPrequalification.cs" />
-    <Compile Include="Model\LoanContractPrequalificationPrequalificationScenarios.cs" />
-    <Compile Include="Model\LoanContractPrintForms.cs" />
-    <Compile Include="Model\LoanContractPrintLogs.cs" />
-    <Compile Include="Model\LoanContractPrivacyPolicy.cs" />
-    <Compile Include="Model\LoanContractProfitManagement.cs" />
-    <Compile Include="Model\LoanContractProfitManagementProfitManagementItems.cs" />
-    <Compile Include="Model\LoanContractProperty.cs" />
-    <Compile Include="Model\LoanContractPurchaseCredits.cs" />
-    <Compile Include="Model\LoanContractRateLock.cs" />
-    <Compile Include="Model\LoanContractRateLockBuySideAdjustments.cs" />
-    <Compile Include="Model\LoanContractRateLockExtraPayments.cs" />
-    <Compile Include="Model\LoanContractRateLockLockRequestBorrowers.cs" />
-    <Compile Include="Model\LoanContractRateLockPurchaseAdvicePayouts.cs" />
-    <Compile Include="Model\LoanContractRegistrationLogs.cs" />
-    <Compile Include="Model\LoanContractRegulationZ.cs" />
-    <Compile Include="Model\LoanContractRegulationZRegulationZInterestRatePeriods.cs" />
-    <Compile Include="Model\LoanContractRegulationZRegulationZPayments.cs" />
-    <Compile Include="Model\LoanContractReoProperties.cs" />
-    <Compile Include="Model\LoanContractResidences.cs" />
-    <Compile Include="Model\LoanContractSection32.cs" />
-    <Compile Include="Model\LoanContractSelectedHomeCounselingProvider.cs" />
-    <Compile Include="Model\LoanContractSelfEmployedIncomes.cs" />
-    <Compile Include="Model\LoanContractServiceProviderContacts.cs" />
-    <Compile Include="Model\LoanContractServicingDisclosure.cs" />
-    <Compile Include="Model\LoanContractSettlementServiceCharges.cs" />
-    <Compile Include="Model\LoanContractShipping.cs" />
-    <Compile Include="Model\LoanContractShippingShippingContacts.cs" />
-    <Compile Include="Model\LoanContractSnapshotFields.cs" />
-    <Compile Include="Model\LoanContractStateDisclosure.cs" />
-    <Compile Include="Model\LoanContractStateDisclosureNewYorkFees.cs" />
-    <Compile Include="Model\LoanContractStateDisclosureNewYorkPrimaryLenders.cs" />
-    <Compile Include="Model\LoanContractStatementCreditDenial.cs" />
-    <Compile Include="Model\LoanContractStatusOnlineLogs.cs" />
-    <Compile Include="Model\LoanContractTax4506s.cs" />
-    <Compile Include="Model\LoanContractTPO.cs" />
-    <Compile Include="Model\LoanContractTQL.cs" />
-    <Compile Include="Model\LoanContractTQLReports.cs" />
-    <Compile Include="Model\LoanContractTQLTQLComplianceAlerts.cs" />
-    <Compile Include="Model\LoanContractTQLTQLDocuments.cs" />
-    <Compile Include="Model\LoanContractTQLTQLFraudAlerts.cs" />
-    <Compile Include="Model\LoanContractTrustAccount.cs" />
-    <Compile Include="Model\LoanContractTrustAccountTrustAccountItems.cs" />
-    <Compile Include="Model\LoanContractTsum.cs" />
-    <Compile Include="Model\LoanContractUldd.cs" />
-    <Compile Include="Model\LoanContractUnderwriterSummary.cs" />
-    <Compile Include="Model\LoanContractUnderwritingConditionLogs.cs" />
-    <Compile Include="Model\LoanContractUsda.cs" />
-    <Compile Include="Model\LoanContractUsdaUsdaHouseholdIncomes.cs" />
-    <Compile Include="Model\LoanContractVaLoanData.cs" />
-    <Compile Include="Model\LoanContractVaLoanDataMilitaryServices.cs" />
-    <Compile Include="Model\LoanContractVaLoanDataPreviousVaLoans.cs" />
-    <Compile Include="Model\LoanContractVerificationLogs.cs" />
-    <Compile Include="Model\LoanErrorObject.cs" />
-    <Compile Include="Model\LoanFolderContract.cs" />
-    <Compile Include="Model\LoanFolderContractActivityRules.cs" />
-    <Compile Include="Model\LoanTeamMemberContract.cs" />
-    <Compile Include="Model\MilestoneContract.cs" />
-    <Compile Include="Model\MilestoneContractLoanAssociate.cs" />
-    <Compile Include="Model\MilestoneFreeRoleContract.cs" />
-    <Compile Include="Model\MilestoneFreeRoleContractLoanAssociate.cs" />
-    <Compile Include="Model\MoveLoanErrorObject.cs" />
-    <Compile Include="Model\ResourceLockContract.cs" />
-    <Compile Include="Model\ResourceLockContractResource.cs" />
-    <Compile Include="Model\ResourceRef.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="**\*.cs"
+             Exclude="obj\**" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+      <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
+
