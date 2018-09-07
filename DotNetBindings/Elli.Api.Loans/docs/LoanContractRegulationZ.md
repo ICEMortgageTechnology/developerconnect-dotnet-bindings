@@ -64,6 +64,7 @@ Name | Type | Description | Notes
 **FloodInsuranceIndicator** | **bool?** |  | [optional] 
 **GfeApplicationDate** | **DateTime?** |  | [optional] 
 **GfeChangedCircumstanceIndicator** | **bool?** |  | [optional] 
+**FeeLevelDisclosuresIndicator** | **bool?** |  | [optional] 
 **GfeChangedCircumstanceItem** | **string** |  | [optional] 
 **GFEChangedCirsumstanceItemCode** | **string** |  | [optional] 
 **GfeDate** | **DateTime?** |  | [optional] 

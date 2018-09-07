@@ -29,6 +29,7 @@ Name | Type | Description | Notes
 **LastPaymentStatementDate** | **DateTime?** |  | [optional] 
 **LastPaymentTotalAmountReceived** | **double?** |  | [optional] 
 **LastStatementPrintedDate** | **DateTime?** |  | [optional] 
+**LoanPurchaseTransactions** | [**List&lt;LoanContractInterimServicingLoanPurchaseTransactions&gt;**](LoanContractInterimServicingLoanPurchaseTransactions.md) |  | [optional] 
 **LoanSnapshotXml** | **string** |  | [optional] 
 **MailingCity** | **string** |  | [optional] 
 **MailingPostalCode** | **string** |  | [optional] 

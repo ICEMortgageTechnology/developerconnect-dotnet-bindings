@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.Loans.EFolder", "src\Elli.Api.Loans.EFolder\Elli.Api.Loans.EFolder.csproj", "{BE09B68A-42E5-4795-A983-D93CAB4F59CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.Loans.EFolder", "src\Elli.Api.Loans.EFolder\Elli.Api.Loans.EFolder.csproj", "{8025FEBF-25B1-4DA8-87F3-09C9EF5AD8DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.Loans.EFolder.Test", "src\Elli.Api.Loans.EFolder.Test\Elli.Api.Loans.EFolder.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Debug|Any CPU = Debug|Any CPU
 Release|Any CPU = Release|Any CPU
 EndGlobalSection
 GlobalSection(ProjectConfigurationPlatforms) = postSolution
-{BE09B68A-42E5-4795-A983-D93CAB4F59CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{BE09B68A-42E5-4795-A983-D93CAB4F59CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{BE09B68A-42E5-4795-A983-D93CAB4F59CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{BE09B68A-42E5-4795-A983-D93CAB4F59CC}.Release|Any CPU.Build.0 = Release|Any CPU
+{8025FEBF-25B1-4DA8-87F3-09C9EF5AD8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+{8025FEBF-25B1-4DA8-87F3-09C9EF5AD8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+{8025FEBF-25B1-4DA8-87F3-09C9EF5AD8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+{8025FEBF-25B1-4DA8-87F3-09C9EF5AD8DF}.Release|Any CPU.Build.0 = Release|Any CPU
 {19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 {19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 {19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU

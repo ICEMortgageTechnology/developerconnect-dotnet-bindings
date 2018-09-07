@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="appendglobalcustomdataobject"></a>
 # **AppendGlobalCustomDataObject**
-> GlobalCustomDataObjectContract AppendGlobalCustomDataObject (string objectName, GlobalCustomDataObjectContract globalCustomDataObjectContract = null)
+> Object AppendGlobalCustomDataObject (string objectName, GlobalCustomDataObjectContract globalCustomDataObjectContract = null, string view = null)
 
 Append to global custom data object
 
@@ -39,11 +39,12 @@ namespace Example
             var apiInstance = new GlobalCustomDataObjectsApi();
             var objectName = objectName_example;  // string | The unique identifier assigned to a CDO under specific resource
             var globalCustomDataObjectContract = new GlobalCustomDataObjectContract(); // GlobalCustomDataObjectContract |  (optional) 
+            var view = view_example;  // string | Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. (optional) 
 
             try
             {
                 // Append to global custom data object
-                GlobalCustomDataObjectContract result = apiInstance.AppendGlobalCustomDataObject(objectName, globalCustomDataObjectContract);
+                Object result = apiInstance.AppendGlobalCustomDataObject(objectName, globalCustomDataObjectContract, view);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -61,10 +62,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **objectName** | **string**| The unique identifier assigned to a CDO under specific resource | 
  **globalCustomDataObjectContract** | [**GlobalCustomDataObjectContract**](GlobalCustomDataObjectContract.md)|  | [optional] 
+ **view** | **string**| Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. | [optional] 
 
 ### Return type
 
-[**GlobalCustomDataObjectContract**](GlobalCustomDataObjectContract.md)
+**Object**
 
 ### Authorization
 
@@ -79,7 +81,7 @@ Name | Type | Description  | Notes
 
 <a name="createglobalcustomdataobject"></a>
 # **CreateGlobalCustomDataObject**
-> GlobalCustomDataObjectContract CreateGlobalCustomDataObject (string objectName, GlobalCustomDataObjectContract globalCustomDataObjectContract = null)
+> Object CreateGlobalCustomDataObject (string objectName, GlobalCustomDataObjectContract globalCustomDataObjectContract = null, string view = null)
 
 Create a global custom data object
 
@@ -105,11 +107,12 @@ namespace Example
             var apiInstance = new GlobalCustomDataObjectsApi();
             var objectName = objectName_example;  // string | The unique identifier assigned to a CDO under specific resource
             var globalCustomDataObjectContract = new GlobalCustomDataObjectContract(); // GlobalCustomDataObjectContract |  (optional) 
+            var view = view_example;  // string | Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. (optional) 
 
             try
             {
                 // Create a global custom data object
-                GlobalCustomDataObjectContract result = apiInstance.CreateGlobalCustomDataObject(objectName, globalCustomDataObjectContract);
+                Object result = apiInstance.CreateGlobalCustomDataObject(objectName, globalCustomDataObjectContract, view);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -127,10 +130,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **objectName** | **string**| The unique identifier assigned to a CDO under specific resource | 
  **globalCustomDataObjectContract** | [**GlobalCustomDataObjectContract**](GlobalCustomDataObjectContract.md)|  | [optional] 
+ **view** | **string**| Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. | [optional] 
 
 ### Return type
 
-[**GlobalCustomDataObjectContract**](GlobalCustomDataObjectContract.md)
+**Object**
 
 ### Authorization
 

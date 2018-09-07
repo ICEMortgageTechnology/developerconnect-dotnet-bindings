@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="createdocument"></a>
 # **CreateDocument**
-> void CreateDocument (string loanId, string view = null, EFolderDocumentContract input = null)
+> Object CreateDocument (string loanId, string view = null, EFolderDocumentContract input = null)
 
 
 
@@ -44,7 +44,8 @@ namespace Example
 
             try
             {
-                apiInstance.CreateDocument(loanId, view, input);
+                Object result = apiInstance.CreateDocument(loanId, view, input);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -65,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 
@@ -341,7 +342,7 @@ void (empty response body)
 
 <a name="updatedocument"></a>
 # **UpdateDocument**
-> void UpdateDocument (string documentId, string loanId, string view = null, EFolderDocumentContract input = null)
+> Object UpdateDocument (string documentId, string loanId, string view = null, EFolderDocumentContract input = null)
 
 
 
@@ -372,7 +373,8 @@ namespace Example
 
             try
             {
-                apiInstance.UpdateDocument(documentId, loanId, view, input);
+                Object result = apiInstance.UpdateDocument(documentId, loanId, view, input);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -394,7 +396,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 

@@ -238,6 +238,8 @@ Name | Type | Description | Notes
 **AutomaticFullfillmentServiceName** | **string** |  | [optional] 
 **PresumedFulfillmentDate** | **DateTime?** |  | [optional] 
 **ActualFulfillmentDate** | **DateTime?** |  | [optional] 
+**CureAppliedToLenderCredit** | **string** |  | [optional] 
+**CureAppliedToPrincipalReduction** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

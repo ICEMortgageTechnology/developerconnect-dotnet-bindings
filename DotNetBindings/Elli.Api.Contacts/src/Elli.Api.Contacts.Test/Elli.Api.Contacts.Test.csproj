@@ -4,7 +4,7 @@ Contacts
 
 Represents borrower and business contacts
 
-OpenAPI spec version: 1.2.1
+OpenAPI spec version: 1.3.0
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -66,36 +66,7 @@ OpenAPI spec version: 1.2.1
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\BorrowerContactsApiTests.cs" />
-    <Compile Include="Api\BorrowerContactSelectorApiTests.cs" />
-    <Compile Include="Api\BorrowerFieldDefinitionsApiTests.cs" />
-    <Compile Include="Api\BusinessContactsApiTests.cs" />
-    <Compile Include="Api\BusinessContactSelectorApiTests.cs" />
-    <Compile Include="Api\BusinessFieldDefinitionsApiTests.cs" />
-    <Compile Include="Api\ContactGroupApiTests.cs" />
-    <Compile Include="Model\BorrowerContactContractBizAddressTests.cs" />
-    <Compile Include="Model\BorrowerContactContractCurrentMailingAddressTests.cs" />
-    <Compile Include="Model\BorrowerContactContractTests.cs" />
-    <Compile Include="Model\BorrowerContactQueryContractFilterTests.cs" />
-    <Compile Include="Model\BorrowerContactQueryContractSortOrderTests.cs" />
-    <Compile Include="Model\BorrowerContactQueryContractTests.cs" />
-    <Compile Include="Model\BorrowerContactSelectorContractTests.cs" />
-    <Compile Include="Model\BorrowerFieldDefinitionContractTests.cs" />
-    <Compile Include="Model\BusinessContactContractBusinessContactLicenseTests.cs" />
-    <Compile Include="Model\BusinessContactContractCategoryFieldsTests.cs" />
-    <Compile Include="Model\BusinessContactContractPersonalContactLicenseTests.cs" />
-    <Compile Include="Model\BusinessContactContractTests.cs" />
-    <Compile Include="Model\BusinessContactQueryContractFilterTests.cs" />
-    <Compile Include="Model\BusinessContactQueryContractSortOrderTests.cs" />
-    <Compile Include="Model\BusinessContactQueryContractTests.cs" />
-    <Compile Include="Model\BusinessContactSelectorContractTests.cs" />
-    <Compile Include="Model\BusinessFieldDefinitionContractTests.cs" />
-    <Compile Include="Model\ContactGroupContractTests.cs" />
-    <Compile Include="Model\ContactNoteContractTests.cs" />
-    <Compile Include="Model\EntityRefContractTests.cs" />
-    <Compile Include="Model\ErrorObjectTests.cs" />
-    <Compile Include="Model\ErrorTests.cs" />
-    <Compile Include="Model\FilterTermsTests.cs" />
+    <Compile Include="**\*.cs" Exclude="obj\**" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -103,7 +74,7 @@ OpenAPI spec version: 1.2.1
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.Contacts\Elli.Api.Contacts.csproj">
-      <Project>{C1D03891-C4C3-46B9-9BDB-F0ACD9AE8B19}</Project>
+      <Project>{19A10021-CB4C-4D38-9A2F-3C97C4D027B4}</Project>
       <Name>Elli.Api.Contacts</Name>
     </ProjectReference>
   </ItemGroup>

@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 <a name="createcontactgroup"></a>
 # **CreateContactGroup**
-> ContactGroupContract CreateContactGroup (ContactGroupContract contactGroupContract = null)
+> Object CreateContactGroup (ContactGroupContract contactGroupContract = null, string view = null)
 
 Create New Contact Group
 
@@ -40,11 +40,12 @@ namespace Example
 
             var apiInstance = new ContactGroupApi();
             var contactGroupContract = new ContactGroupContract(); // ContactGroupContract |  (optional) 
+            var view = view_example;  // string | Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. (optional) 
 
             try
             {
                 // Create New Contact Group
-                ContactGroupContract result = apiInstance.CreateContactGroup(contactGroupContract);
+                Object result = apiInstance.CreateContactGroup(contactGroupContract, view);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -61,10 +62,11 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **contactGroupContract** | [**ContactGroupContract**](ContactGroupContract.md)|  | [optional] 
+ **view** | **string**| Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. | [optional] 
 
 ### Return type
 
-[**ContactGroupContract**](ContactGroupContract.md)
+**Object**
 
 ### Authorization
 
@@ -340,7 +342,7 @@ Name | Type | Description  | Notes
 
 <a name="updatecontactgroup"></a>
 # **UpdateContactGroup**
-> void UpdateContactGroup (string groupId, ContactGroupContract contactGroupContract = null)
+> Object UpdateContactGroup (string groupId, ContactGroupContract contactGroupContract = null, string view = null)
 
 Update Contact Group
 
@@ -366,11 +368,13 @@ namespace Example
             var apiInstance = new ContactGroupApi();
             var groupId = groupId_example;  // string | Unique Identifier of a Group
             var contactGroupContract = new ContactGroupContract(); // ContactGroupContract |  (optional) 
+            var view = view_example;  // string | Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. (optional) 
 
             try
             {
                 // Update Contact Group
-                apiInstance.UpdateContactGroup(groupId, contactGroupContract);
+                Object result = apiInstance.UpdateContactGroup(groupId, contactGroupContract, view);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -387,10 +391,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **groupId** | **string**| Unique Identifier of a Group | 
  **contactGroupContract** | [**ContactGroupContract**](ContactGroupContract.md)|  | [optional] 
+ **view** | **string**| Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. | [optional] 
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 

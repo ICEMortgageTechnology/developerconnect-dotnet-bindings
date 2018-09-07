@@ -143,6 +143,7 @@ Name | Type | Description | Notes
 **AdjustedIncomeCalculationDescription1** | **string** |  | [optional] 
 **AdjustedIncomeCalculationDescription2** | **string** |  | [optional] 
 **AdjustedIncomeCalculationDescription3** | **string** |  | [optional] 
+**RefinanceType** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

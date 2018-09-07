@@ -243,6 +243,7 @@ Name | Type | Description | Notes
 **ReconciledDiff** | **double?** |  | [optional] 
 **RemainingBuydownFunds** | **double?** |  | [optional] 
 **RequestComments** | **string** |  | [optional] 
+**RequestProgramNotes** | **string** |  | [optional] 
 **RequestCurrentRateSetDate** | **DateTime?** |  | [optional] 
 **RequestDaystoExtend** | **int?** |  | [optional] 
 **RequestExtendedLockExpires** | **DateTime?** |  | [optional] 
@@ -510,6 +511,8 @@ Name | Type | Description | Notes
 **CancellationRequestPending** | **string** |  | [optional] 
 **ReLockRequestPending** | **string** |  | [optional] 
 **SellSideGuarantyBaseFee** | **double?** |  | [optional] 
+**LenderFeeWaiverOption** | **bool?** |  | [optional] 
+**BorrLenderPaid** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="createloan"></a>
 # **CreateLoan**
-> ErrorObject CreateLoan (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null)
+> Object CreateLoan (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null)
 
 Creates a new loan.
 
@@ -46,7 +46,7 @@ namespace Example
             try
             {
                 // Creates a new loan.
-                ErrorObject result = apiInstance.CreateLoan(loanFolder, templatePath, persistent, view, loanContract);
+                Object result = apiInstance.CreateLoan(loanFolder, templatePath, persistent, view, loanContract);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ErrorObject**](ErrorObject.md)
+**Object**
 
 ### Authorization
 
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 
 <a name="updateloan"></a>
 # **UpdateLoan**
-> ErrorObject UpdateLoan (string loanId, string templatePath = null, string persistent = null, string appendData = null, LoanContract loanContract = null)
+> Object UpdateLoan (string loanId, string templatePath = null, string persistent = null, string appendData = null, LoanContract loanContract = null, string view = null)
 
 Updates an existing loan.
 
@@ -303,11 +303,12 @@ namespace Example
             var persistent = persistent_example;  // string | Provides an option to create loan in Transient or Permanent mode (optional) 
             var appendData = appendData_example;  // string | If true, only non-blank field values in the template are written to the loan. If false, all field values in the template (including blanks) are written to the loan. (optional) 
             var loanContract = new LoanContract(); // LoanContract |  (optional) 
+            var view = view_example;  // string | Possible values are: entity - Returns all properties for the loan. id - Returns the ID assigned to the loan. (optional) 
 
             try
             {
                 // Updates an existing loan.
-                ErrorObject result = apiInstance.UpdateLoan(loanId, templatePath, persistent, appendData, loanContract);
+                Object result = apiInstance.UpdateLoan(loanId, templatePath, persistent, appendData, loanContract, view);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -328,10 +329,11 @@ Name | Type | Description  | Notes
  **persistent** | **string**| Provides an option to create loan in Transient or Permanent mode | [optional] 
  **appendData** | **string**| If true, only non-blank field values in the template are written to the loan. If false, all field values in the template (including blanks) are written to the loan. | [optional] 
  **loanContract** | [**LoanContract**](LoanContract.md)|  | [optional] 
+ **view** | **string**| Possible values are: entity - Returns all properties for the loan. id - Returns the ID assigned to the loan. | [optional] 
 
 ### Return type
 
-[**ErrorObject**](ErrorObject.md)
+**Object**
 
 ### Authorization
 

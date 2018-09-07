@@ -1,0 +1,47 @@
+# Elli.Api.Schema.Model.LoanContractLOCompensation
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**AdjustedPlanAdditonalAmountForBroker** | **double?** |  | [optional] 
+**AdjustedPlanAdditonalAmountForOfficer** | **double?** |  | [optional] 
+**AdjustedPlanAmountForBroker** | **double?** |  | [optional] 
+**AdjustedPlanAmountForOfficer** | **double?** |  | [optional] 
+**AdjustedPlanRateForBroker** | **double?** |  | [optional] 
+**AdjustedPlanRateForOfficer** | **double?** |  | [optional] 
+**AdjustmentDescription** | **string** |  | [optional] 
+**AdjustmentDescriptionForOfficer** | **string** |  | [optional] 
+**BasePlanAdditonalAmountForBroker** | **double?** |  | [optional] 
+**BasePlanAdditonalAmountForOfficer** | **double?** |  | [optional] 
+**BasePlanAmountForBroker** | **double?** |  | [optional] 
+**BasePlanAmountForOfficer** | **double?** |  | [optional] 
+**BasePlanMaximumAmountForBroker** | **double?** |  | [optional] 
+**BasePlanMaximumAmountForOfficer** | **double?** |  | [optional] 
+**BasePlanMinimumAmountForBroker** | **double?** |  | [optional] 
+**BasePlanMinimumAmountForOfficer** | **double?** |  | [optional] 
+**BasePlanRateForBroker** | **double?** |  | [optional] 
+**BasePlanRateForOfficer** | **double?** |  | [optional] 
+**BonusCompAdditonalAmount** | **double?** |  | [optional] 
+**BonusCompAmount** | **double?** |  | [optional] 
+**BonusCompRate** | **double?** |  | [optional] 
+**LastAppliedDate** | **DateTime?** |  | [optional] 
+**LastAppliedDateTime** | **string** |  | [optional] 
+**LoanAmountType** | **string** |  | [optional] 
+**LoanAmountTypeForOfficer** | **string** |  | [optional] 
+**LoanOriginatorID** | **string** |  | [optional] 
+**LoanOriginatorIDForOfficer** | **string** |  | [optional] 
+**LoanOriginatorName** | **string** |  | [optional] 
+**LoanOriginatorNameForOfficer** | **string** |  | [optional] 
+**NetAdjustedAmountForBroker** | **double?** |  | [optional] 
+**NetAdjustedAmountForOfficer** | **double?** |  | [optional] 
+**PlanDate** | **DateTime?** |  | [optional] 
+**PlanName** | **string** |  | [optional] 
+**PlanNameForOfficer** | **string** |  | [optional] 
+**RoundingMethod** | **string** |  | [optional] 
+**RoundingMethodForOfficer** | **string** |  | [optional] 
+**TriggerField** | **string** |  | [optional] 
+**WhoPaidCompensation** | **string** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

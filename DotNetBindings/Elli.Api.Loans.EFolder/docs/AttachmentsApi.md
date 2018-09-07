@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 
 <a name="getattachment"></a>
 # **GetAttachment**
-> EFolderAttachmentContract GetAttachment (string attachmentId, string loanId, bool? includeImageUrls = null)
+> EFolderAttachmentContract GetAttachment (string attachmentId, string loanId, bool? includeImageUrls = null, string generateUrl = null)
 
 
 
@@ -241,10 +241,11 @@ namespace Example
             var attachmentId = attachmentId_example;  // string | Attachment ID
             var loanId = loanId_example;  // string | Loan GUID
             var includeImageUrls = true;  // bool? | Include image URLs in response in case attachment type is Image. (optional) 
+            var generateUrl = generateUrl_example;  // string | Boolean to specify if media url needs to be generated. (optional) 
 
             try
             {
-                EFolderAttachmentContract result = apiInstance.GetAttachment(attachmentId, loanId, includeImageUrls);
+                EFolderAttachmentContract result = apiInstance.GetAttachment(attachmentId, loanId, includeImageUrls, generateUrl);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -263,6 +264,7 @@ Name | Type | Description  | Notes
  **attachmentId** | **string**| Attachment ID | 
  **loanId** | **string**| Loan GUID | 
  **includeImageUrls** | **bool?**| Include image URLs in response in case attachment type is Image. | [optional] 
+ **generateUrl** | **string**| Boolean to specify if media url needs to be generated. | [optional] 
 
 ### Return type
 
@@ -344,7 +346,7 @@ Name | Type | Description  | Notes
 
 <a name="updateattachment"></a>
 # **UpdateAttachment**
-> void UpdateAttachment (string attachmentId, string loanId, string view = null, EFolderAttachmentContract input = null)
+> Object UpdateAttachment (string attachmentId, string loanId, string view = null, EFolderAttachmentContract input = null)
 
 
 
@@ -375,7 +377,8 @@ namespace Example
 
             try
             {
-                apiInstance.UpdateAttachment(attachmentId, loanId, view, input);
+                Object result = apiInstance.UpdateAttachment(attachmentId, loanId, view, input);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
@@ -397,7 +400,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Object**
 
 ### Authorization
 

@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="appendusercustomdataobject"></a>
 # **AppendUserCustomDataObject**
-> UserCustomDataObjectContract AppendUserCustomDataObject (string userId, string objectName, UserCustomDataObjectContract customDataObjectContract = null)
+> Object AppendUserCustomDataObject (string userId, string objectName, UserCustomDataObjectContract customDataObjectContract = null, string view = null)
 
 Append custom data object for a user
 
@@ -40,11 +40,12 @@ namespace Example
             var userId = userId_example;  // string | The unique identifier assigned to a user
             var objectName = objectName_example;  // string | The unique identifier assigned to a CDO under specific resource
             var customDataObjectContract = new UserCustomDataObjectContract(); // UserCustomDataObjectContract |  (optional) 
+            var view = view_example;  // string | Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. (optional) 
 
             try
             {
                 // Append custom data object for a user
-                UserCustomDataObjectContract result = apiInstance.AppendUserCustomDataObject(userId, objectName, customDataObjectContract);
+                Object result = apiInstance.AppendUserCustomDataObject(userId, objectName, customDataObjectContract, view);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -63,10 +64,11 @@ Name | Type | Description  | Notes
  **userId** | **string**| The unique identifier assigned to a user | 
  **objectName** | **string**| The unique identifier assigned to a CDO under specific resource | 
  **customDataObjectContract** | [**UserCustomDataObjectContract**](UserCustomDataObjectContract.md)|  | [optional] 
+ **view** | **string**| Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. | [optional] 
 
 ### Return type
 
-[**UserCustomDataObjectContract**](UserCustomDataObjectContract.md)
+**Object**
 
 ### Authorization
 
@@ -81,7 +83,7 @@ Name | Type | Description  | Notes
 
 <a name="createusercustomdataobject"></a>
 # **CreateUserCustomDataObject**
-> UserCustomDataObjectContract CreateUserCustomDataObject (string userId, string objectName, UserCustomDataObjectContract customDataObjectContract = null)
+> Object CreateUserCustomDataObject (string userId, string objectName, UserCustomDataObjectContract customDataObjectContract = null, string view = null)
 
 Create a user custom data object
 
@@ -108,11 +110,12 @@ namespace Example
             var userId = userId_example;  // string | The unique identifier assigned to a user
             var objectName = objectName_example;  // string | The unique identifier assigned to a CDO under specific resource
             var customDataObjectContract = new UserCustomDataObjectContract(); // UserCustomDataObjectContract |  (optional) 
+            var view = view_example;  // string | Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. (optional) 
 
             try
             {
                 // Create a user custom data object
-                UserCustomDataObjectContract result = apiInstance.CreateUserCustomDataObject(userId, objectName, customDataObjectContract);
+                Object result = apiInstance.CreateUserCustomDataObject(userId, objectName, customDataObjectContract, view);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -131,10 +134,11 @@ Name | Type | Description  | Notes
  **userId** | **string**| The unique identifier assigned to a user | 
  **objectName** | **string**| The unique identifier assigned to a CDO under specific resource | 
  **customDataObjectContract** | [**UserCustomDataObjectContract**](UserCustomDataObjectContract.md)|  | [optional] 
+ **view** | **string**| Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. | [optional] 
 
 ### Return type
 
-[**UserCustomDataObjectContract**](UserCustomDataObjectContract.md)
+**Object**
 
 ### Authorization
 

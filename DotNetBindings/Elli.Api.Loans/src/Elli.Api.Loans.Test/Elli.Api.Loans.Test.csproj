@@ -4,7 +4,7 @@ Loan
 
 Returns the entire loan or specific entities of a loan.
 
-OpenAPI spec version: 1.2.1
+OpenAPI spec version: 1.3.0
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,7 +74,7 @@ OpenAPI spec version: 1.2.1
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.Loans\Elli.Api.Loans.csproj">
-      <Project>{85EF1D85-121D-46FD-85BD-8C4AC666A1E9}</Project>
+      <Project>{931EF0EC-6468-4ABB-9682-D5BFB7DF10A5}</Project>
       <Name>Elli.Api.Loans</Name>
     </ProjectReference>
   </ItemGroup>

@@ -46,6 +46,7 @@ All available packages that will be installed are:
         Elli.Api.Services
         Elli.Api.Contacts
         Elli.Api.Settings
+        Elli.Api.Schema
 	
         
     

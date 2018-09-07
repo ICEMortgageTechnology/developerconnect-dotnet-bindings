@@ -1,0 +1,46 @@
+# Elli.Api.Schema.Model.LoanContractPrequalificationPrequalificationScenarios
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**AppraisedValue** | **int?** |  | [optional] 
+**Apr** | **double?** |  | [optional] 
+**CashToClose** | **double?** |  | [optional] 
+**ClosingCost** | **double?** |  | [optional] 
+**Cltv** | **double?** |  | [optional] 
+**Comments** | **string** |  | [optional] 
+**CreditScore** | **string** |  | [optional] 
+**CurrentStatus** | **string** |  | [optional] 
+**DownPaymentAmount** | **double?** |  | [optional] 
+**DownPaymentPercent** | **double?** |  | [optional] 
+**FhaUpfrontMIPremiumPercent** | **double?** |  | [optional] 
+**GrossNegativeCashFlow** | **double?** |  | [optional] 
+**LoanAmount** | **double?** |  | [optional] 
+**Ltv** | **double?** |  | [optional] 
+**MaximumDebt** | **double?** |  | [optional] 
+**MaximumLoanAmount** | **double?** |  | [optional] 
+**MiAndFundingFeeFinancedAmount** | **double?** |  | [optional] 
+**MinimumIncome** | **double?** |  | [optional] 
+**MonthlyPayment** | **double?** |  | [optional] 
+**PrepaidItemsEstimatedAmount** | **double?** |  | [optional] 
+**PrequalificationScenarioIndex** | **int?** |  | [optional] 
+**QualBottomRatioPercent** | **double?** |  | [optional] 
+**QualTopRatioPercent** | **double?** |  | [optional] 
+**SalesPrice** | **double?** |  | [optional] 
+**SubordinateFin** | **double?** |  | [optional] 
+**TotalBaseCost** | **double?** |  | [optional] 
+**TotalCashAvailable** | **double?** |  | [optional] 
+**TotalCashLeft** | **double?** |  | [optional] 
+**TotalCosts** | **double?** |  | [optional] 
+**TotalFinancing** | **double?** |  | [optional] 
+**TotalHe** | **double?** |  | [optional] 
+**TotalIncome** | **double?** |  | [optional] 
+**TotalLoanAmount** | **double?** |  | [optional] 
+**TotalOtherExpense** | **double?** |  | [optional] 
+**TotalPaidOffMortgage** | **double?** |  | [optional] 
+**TotalPaidOffOthers** | **double?** |  | [optional] 
+**TotalPayments** | **double?** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

@@ -39,6 +39,8 @@ Name | Type | Description | Notes
 **VestingGuid** | **string** |  | [optional] 
 **VestingTrusteeOfType** | **string** |  | [optional] 
 **VestingType** | **string** |  | [optional] 
+**NBORecordID** | **string** |  | [optional] 
+**TrusteeIndex** | **byte[]** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -68,6 +68,8 @@ using Elli.Api.Services.Model;
 using Newtonsoft.Json.Linq;
 using RestSharp;
 using System.Security;
+using Newtonsoft.Json;
+using Elli.Api.Schema.Api;
 
 namespace Ellie.Api.Examples.Loans
 {
@@ -310,6 +312,7 @@ namespace Ellie.Api.Examples.Loans
             if (_accessToken == null)
                 Authenticate();
             ResourceLocksApi lockApiClient = ApiClientProvider.GetApiClient<ResourceLocksApi>(_accessToken);
+
             Console.Write("Enter the LoanId: ");
             var loanId = Console.ReadLine();
             //This contract will get us lock on a loan and this will be a forced lock.
@@ -325,8 +328,6 @@ namespace Ellie.Api.Examples.Loans
             var createResponse = lockApiClient.CreateResourceLockWithHttpInfo("false", "id", request);
             //Example of pasrsing the URL
             _lockId = createResponse.Headers["Location"].Split('/')[3];
-            //Example of reading id from response payload
-            _lockId = createResponse.Data.ID;
             var getResponse = lockApiClient.GetResourceLockByLockId(_lockId, "loan", loanId);
             Console.WriteLine("Lock ID: {0}", getResponse.Id);
         }
@@ -356,7 +357,13 @@ namespace Ellie.Api.Examples.Loans
                 BorrowerRequestedLoanAmount = loanAmt
             };
 
-            loanApiClient.UpdateLoan(LoanId, null, null, null, loan);
+            var response = loanApiClient.UpdateLoan(LoanId, null, null, null, loan, "entity");
+
+            JsonSerializerSettings serializerSettings = new JsonSerializerSettings
+            {
+                ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor
+            };
+            LoanContract updatedLoan = JsonConvert.DeserializeObject<LoanContract>(response.ToString(), serializerSettings);
         }
 
         /// <summary>

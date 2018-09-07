@@ -4,7 +4,7 @@ Loan Pipeline
 
 Retrieve loan GUIDs and attributes of loans that match a criteria
 
-OpenAPI spec version: 1.2.1
+OpenAPI spec version: 1.3.0
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,7 +74,7 @@ OpenAPI spec version: 1.2.1
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.Loans.Pipeline\Elli.Api.Loans.Pipeline.csproj">
-      <Project>{3632B5CC-0E63-45DB-8E0F-3BA50DF85C12}</Project>
+      <Project>{A507DBC2-8C75-4B19-9BEC-15C8DE773C38}</Project>
       <Name>Elli.Api.Loans.Pipeline</Name>
     </ProjectReference>
   </ItemGroup>

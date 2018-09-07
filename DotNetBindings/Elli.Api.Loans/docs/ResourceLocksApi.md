@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="createresourcelock"></a>
 # **CreateResourceLock**
-> ResourceRef CreateResourceLock (string force = null, string view = null, ResourceLockContract resourceLock = null)
+> Object CreateResourceLock (string force = null, string view = null, ResourceLockContract resourceLock = null)
 
 Create a lock
 
@@ -37,13 +37,13 @@ namespace Example
 
             var apiInstance = new ResourceLocksApi();
             var force = force_example;  // string | Flag to forcefully lock a loan (optional) 
-            var view = view_example;  // string | Flag to forcefully lock a loan (optional) 
+            var view = view_example;  // string | Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. (optional) 
             var resourceLock = new ResourceLockContract(); // ResourceLockContract |  (optional) 
 
             try
             {
                 // Create a lock
-                ResourceRef result = apiInstance.CreateResourceLock(force, view, resourceLock);
+                Object result = apiInstance.CreateResourceLock(force, view, resourceLock);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -60,12 +60,12 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **force** | **string**| Flag to forcefully lock a loan | [optional] 
- **view** | **string**| Flag to forcefully lock a loan | [optional] 
+ **view** | **string**| Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. | [optional] 
  **resourceLock** | [**ResourceLockContract**](ResourceLockContract.md)|  | [optional] 
 
 ### Return type
 
-[**ResourceRef**](ResourceRef.md)
+**Object**
 
 ### Authorization
 

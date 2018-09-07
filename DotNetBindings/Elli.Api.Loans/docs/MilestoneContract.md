@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** | Milestone Guid,Unique indentifier for milestone. | [optional] 
 **StartDate** | **string** | Milestone start date. | [optional] 
+**Comments** | **string** | Milestone comments. | [optional] 
 **LoanAssociate** | [**MilestoneContractLoanAssociate**](MilestoneContractLoanAssociate.md) |  | [optional] 
 **ExpectedDays** | **int?** | Days under which milestone need to be completed | [optional] 
 **DoneIndicator** | **bool?** | Indicates if milestone is completed. | [optional] 

@@ -1,0 +1,10 @@
+# Elli.Api.Schema.Model.LoanContractTQLTQLDocuments
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**TQLDocumentDeliveredDate** | **DateTime?** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **AccountName** | **string** |  | [optional] 
 **AddressCity** | **string** |  | [optional] 
 **AddressPostalCode** | **string** |  | [optional] 
+**AddressCounty** | **string** |  | [optional] 
 **AddressState** | **string** |  | [optional] 
 **AddressStreetLine1** | **string** |  | [optional] 
 **AltId** | **string** |  | [optional] 

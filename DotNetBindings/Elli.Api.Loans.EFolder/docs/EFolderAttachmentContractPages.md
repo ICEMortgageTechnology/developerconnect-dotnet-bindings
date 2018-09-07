@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **VerticalResolution** | **float?** |  | [optional] 
 **Rotation** | **int?** |  | [optional] 
 **FileSize** | **long?** |  | [optional] 
+**MediaUrl** | **string** |  | [optional] 
 **Thumbnail** | [**EFolderAttachmentContractThumbnail**](EFolderAttachmentContractThumbnail.md) |  | [optional] 
 **Annotations** | [**List&lt;EFolderAttachmentContractAnnotations&gt;**](EFolderAttachmentContractAnnotations.md) |  | [optional] 
 

@@ -28,6 +28,7 @@ Name | Type | Description | Notes
 **ClosingCostPaidByOthers** | **double?** |  | [optional] 
 **ClosingCostLenderCredits** | **double?** |  | [optional] 
 **LastDisclosedLenderCredits** | **double?** |  | [optional] 
+**DiscloseLenderCredits** | **double?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

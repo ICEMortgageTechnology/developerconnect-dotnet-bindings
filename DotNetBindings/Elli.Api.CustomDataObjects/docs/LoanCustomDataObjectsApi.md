@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="appendloancustomdataobject"></a>
 # **AppendLoanCustomDataObject**
-> LoanCustomDataObjectContract AppendLoanCustomDataObject (string loanId, string objectName, LoanCustomDataObjectContract customDataObjectContract = null)
+> Object AppendLoanCustomDataObject (string loanId, string objectName, LoanCustomDataObjectContract customDataObjectContract = null, string view = null)
 
 Append custom data object for a loan
 
@@ -40,11 +40,12 @@ namespace Example
             var loanId = loanId_example;  // string | The unique identifier assigned to a loan
             var objectName = objectName_example;  // string | The unique identifier assigned to a CDO under specific resource
             var customDataObjectContract = new LoanCustomDataObjectContract(); // LoanCustomDataObjectContract |  (optional) 
+            var view = view_example;  // string | Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. (optional) 
 
             try
             {
                 // Append custom data object for a loan
-                LoanCustomDataObjectContract result = apiInstance.AppendLoanCustomDataObject(loanId, objectName, customDataObjectContract);
+                Object result = apiInstance.AppendLoanCustomDataObject(loanId, objectName, customDataObjectContract, view);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -63,10 +64,11 @@ Name | Type | Description  | Notes
  **loanId** | **string**| The unique identifier assigned to a loan | 
  **objectName** | **string**| The unique identifier assigned to a CDO under specific resource | 
  **customDataObjectContract** | [**LoanCustomDataObjectContract**](LoanCustomDataObjectContract.md)|  | [optional] 
+ **view** | **string**| Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. | [optional] 
 
 ### Return type
 
-[**LoanCustomDataObjectContract**](LoanCustomDataObjectContract.md)
+**Object**
 
 ### Authorization
 
@@ -81,7 +83,7 @@ Name | Type | Description  | Notes
 
 <a name="createloancustomdataobject"></a>
 # **CreateLoanCustomDataObject**
-> LoanCustomDataObjectContract CreateLoanCustomDataObject (string loanId, string objectName, LoanCustomDataObjectContract customDataObjectContract = null)
+> Object CreateLoanCustomDataObject (string loanId, string objectName, LoanCustomDataObjectContract customDataObjectContract = null, string view = null)
 
 Create a loan custom data object
 
@@ -108,11 +110,12 @@ namespace Example
             var loanId = loanId_example;  // string | The unique identifier assigned to a loan
             var objectName = objectName_example;  // string | The unique identifier assigned to a CDO under specific resource
             var customDataObjectContract = new LoanCustomDataObjectContract(); // LoanCustomDataObjectContract |  (optional) 
+            var view = view_example;  // string | Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. (optional) 
 
             try
             {
                 // Create a loan custom data object
-                LoanCustomDataObjectContract result = apiInstance.CreateLoanCustomDataObject(loanId, objectName, customDataObjectContract);
+                Object result = apiInstance.CreateLoanCustomDataObject(loanId, objectName, customDataObjectContract, view);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -131,10 +134,11 @@ Name | Type | Description  | Notes
  **loanId** | **string**| The unique identifier assigned to a loan | 
  **objectName** | **string**| The unique identifier assigned to a CDO under specific resource | 
  **customDataObjectContract** | [**LoanCustomDataObjectContract**](LoanCustomDataObjectContract.md)|  | [optional] 
+ **view** | **string**| Possible values are: entity - Returns all properties of the resource. id - Returns the ID assigned to the resource. | [optional] 
 
 ### Return type
 
-[**LoanCustomDataObjectContract**](LoanCustomDataObjectContract.md)
+**Object**
 
 ### Authorization
 

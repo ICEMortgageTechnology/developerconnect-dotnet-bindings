@@ -273,8 +273,6 @@ namespace Ellie.Api.Examples.Loans
                 DataObject = File.ReadAllBytes(filePath)
             };
             var response = cdoApiClient.CreateLoanCustomDataObject(loanId, cdoName, request);
-            //Code for handling the response
-            Console.WriteLine(response?.Name);
         }
 
         /// <summary>
@@ -296,7 +294,7 @@ namespace Ellie.Api.Examples.Loans
             };
             var response = cdoApiClient.AppendLoanCustomDataObject(loanId, cdoName, request);
             //Code for handling the response
-            Console.WriteLine(response.Name);
+            Console.WriteLine(response);
         }
 
         /// <summary>
@@ -317,7 +315,7 @@ namespace Ellie.Api.Examples.Loans
             };
             var response = cdoApiClient.AppendLoanCustomDataObject(loanId, cdoName, request);
             //Code for handling the response
-            Console.WriteLine(response?.ToJson());
+            Console.WriteLine(response);
             Console.WriteLine("CDO Appended.");
         }
 
