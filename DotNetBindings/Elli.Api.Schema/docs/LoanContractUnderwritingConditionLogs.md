@@ -38,6 +38,7 @@ Name | Type | Description | Notes
 **SystemId** | **string** |  | [optional] 
 **Title** | **string** |  | [optional] 
 **WaivedBy** | **string** |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
 **DateExpiredUtc** | **DateTime?** |  | [optional] 
 **Cleared** | **bool?** |  | [optional] 
 **Reviewed** | **bool?** |  | [optional] 

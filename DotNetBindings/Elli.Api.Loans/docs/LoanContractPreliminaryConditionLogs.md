@@ -25,6 +25,7 @@ Name | Type | Description | Notes
 **SystemId** | **string** |  | [optional] 
 **Title** | **string** |  | [optional] 
 **UnderwriterAccessIndicator** | **bool?** |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
 **Fulfilled** | **bool?** |  | [optional] 
 **Status** | **Object** |  | [optional] 
 **StatusDescription** | **string** |  | [optional] 

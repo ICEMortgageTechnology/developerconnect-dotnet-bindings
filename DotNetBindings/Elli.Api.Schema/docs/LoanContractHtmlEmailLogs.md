@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **ReadReceipt** | **bool?** |  | [optional] 
 **SystemId** | **string** |  | [optional] 
 **DocList** | [**List&lt;LoanContractDocList&gt;**](LoanContractDocList.md) |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

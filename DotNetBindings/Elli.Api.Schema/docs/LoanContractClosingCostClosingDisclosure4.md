@@ -39,6 +39,7 @@ Name | Type | Description | Notes
 **StepRateFirstChange** | **double?** |  | [optional] 
 **MaximumARMPaymentAmount** | **int?** |  | [optional] 
 **MaximumARMPaymentMonthReached** | **int?** |  | [optional] 
+**EscrowedPropertyCostsBasis** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -38,6 +38,7 @@ Name | Type | Description | Notes
 **SellSideNumDayExtended** | **int?** |  | [optional] 
 **SystemId** | **string** |  | [optional] 
 **TimeRequested** | **string** |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
 **InvestorCommitment** | **string** |  | [optional] 
 **SnapshotXml** | **string** |  | [optional] 
 **AlertsXml** | **string** |  | [optional] 

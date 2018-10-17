@@ -11,6 +11,10 @@ Name | Type | Description | Notes
 **AdjustmentType** | **string** |  | [optional] 
 **AdjustmentAmount** | **double?** |  | [optional] 
 **IncludedIndicator** | **bool?** |  | [optional] 
+**POCIndicator** | **bool?** |  | [optional] 
+**PaidBy** | **string** |  | [optional] 
+**PrincipalCureAddendum** | **string** |  | [optional] 
+**PaidTo** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

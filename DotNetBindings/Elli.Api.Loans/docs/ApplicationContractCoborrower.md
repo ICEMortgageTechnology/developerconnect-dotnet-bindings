@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | [optional] 
-**AgeAtApplicationYearsCount** | **byte[]** |  | [optional] 
+**AgeAtApplicationYearsCount** | **int?** |  | [optional] 
 **AliasName** | **string** |  | [optional] 
 **AlimonyChildSupportObligationIndicator** | **bool?** | True indicates that the coborrower has alimony or child support obligations. | [optional] 
 **AltId** | **string** |  | [optional] 
@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 **DateOfForeclosure** | **DateTime?** |  | [optional] 
 **DeclarationsJIndicator** | **bool?** |  | [optional] 
 **DeclarationsKIndicator** | **bool?** |  | [optional] 
-**DependentCount** | **byte[]** |  | [optional] 
+**DependentCount** | **int?** |  | [optional] 
 **DependentsAgesDescription** | **string** | The age of the borrower&#39;s dependants. Type each age separated by a comma. | [optional] 
 **DisabledIndicator** | **bool?** |  | [optional] 
 **EmailAddressText** | **string** | The borrowers email address. | [optional] 
@@ -193,7 +193,7 @@ Name | Type | Description | Notes
 **PropertyForeclosedPastSevenYearsIndicator** | **bool?** | True indicates the borrower has had a foreclosure within the last seven years. | [optional] 
 **RelationshipDescription** | **string** |  | [optional] 
 **RelationshipWithRDEmployeeIndicator** | **bool?** |  | [optional] 
-**SchoolingTermYears** | **byte[]** | The number of years of school completed by the borrower. | [optional] 
+**SchoolingTermYears** | **int?** | The number of years of school completed by the borrower. | [optional] 
 **SubtotalLiquidAssetsMinusGiftAmount** | **double?** | The borrower&#39;s liquid assets excluding the gift amount. | [optional] 
 **SuffixToName** | **string** | The borrower&#39;s suffix, for example: Jr, Sr, 3rd. | [optional] 
 **Tax4506LastInvestor** | **string** |  | [optional] 

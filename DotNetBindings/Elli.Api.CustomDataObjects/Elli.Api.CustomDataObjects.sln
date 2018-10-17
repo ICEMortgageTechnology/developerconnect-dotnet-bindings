@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.CustomDataObjects", "src\Elli.Api.CustomDataObjects\Elli.Api.CustomDataObjects.csproj", "{68A32531-54B1-4E22-9DAE-1F60EEF841DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.CustomDataObjects", "src\Elli.Api.CustomDataObjects\Elli.Api.CustomDataObjects.csproj", "{97272BB3-CC29-4FAE-B3F2-CF58E6DE1B80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elli.Api.CustomDataObjects.Test", "src\Elli.Api.CustomDataObjects.Test\Elli.Api.CustomDataObjects.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Debug|Any CPU = Debug|Any CPU
 Release|Any CPU = Release|Any CPU
 EndGlobalSection
 GlobalSection(ProjectConfigurationPlatforms) = postSolution
-{68A32531-54B1-4E22-9DAE-1F60EEF841DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-{68A32531-54B1-4E22-9DAE-1F60EEF841DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-{68A32531-54B1-4E22-9DAE-1F60EEF841DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-{68A32531-54B1-4E22-9DAE-1F60EEF841DB}.Release|Any CPU.Build.0 = Release|Any CPU
+{97272BB3-CC29-4FAE-B3F2-CF58E6DE1B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+{97272BB3-CC29-4FAE-B3F2-CF58E6DE1B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+{97272BB3-CC29-4FAE-B3F2-CF58E6DE1B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+{97272BB3-CC29-4FAE-B3F2-CF58E6DE1B80}.Release|Any CPU.Build.0 = Release|Any CPU
 {19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 {19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 {19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU

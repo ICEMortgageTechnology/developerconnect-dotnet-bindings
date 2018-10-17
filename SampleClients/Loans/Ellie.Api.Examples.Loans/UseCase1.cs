@@ -70,6 +70,7 @@ using RestSharp;
 using System.Security;
 using Newtonsoft.Json;
 using Elli.Api.Schema.Api;
+using Elli.Api.Settings.Api;
 
 namespace Ellie.Api.Examples.Loans
 {
@@ -104,6 +105,7 @@ namespace Ellie.Api.Examples.Loans
                 Console.WriteLine("17: Complete A Milestone");
                 Console.WriteLine("18: Get All Underwriting Conditions");
                 Console.WriteLine("19: Get Specific Underwriting Condition");
+                Console.WriteLine("20: Get Users");
                 Console.WriteLine("98: Choose another Loan ID");
                 Console.WriteLine("99: Exit");
                 Console.Write("Enter your choice: ");
@@ -171,6 +173,9 @@ namespace Ellie.Api.Examples.Loans
                                 break;
                             case 19:
                                 GetUnderwritingCondition();
+                                break;
+                            case 20:
+                                GetUsers();
                                 break;
                             case 98:
                                 _loanId = null;
@@ -796,6 +801,49 @@ namespace Ellie.Api.Examples.Loans
                 Console.WriteLine();
                 count++;
             }
+        }
+
+        private static void GetUsers()
+        {
+            if (_accessToken == null)
+                Authenticate();
+
+            Console.Write("Enter Role(Enter if don't wish to filter on role): ");
+            string role = Console.ReadLine();
+            if (string.IsNullOrEmpty(role))
+            {
+                role = null;
+            }
+
+            Console.Write("Enter start: ");
+            var start = Console.ReadLine();
+            if (string.IsNullOrEmpty(start))
+            {
+                start = null;
+            }
+
+            Console.Write("Enter limit: ");
+            var limit = Console.ReadLine();
+            if (string.IsNullOrEmpty(limit))
+            {
+                limit = null;
+            }
+
+            var usersApiClient = ApiClientProvider.GetApiClient<UsersApi>(_accessToken);
+
+            var response = usersApiClient.GetUserProfilesWithHttpInfo(null, null, role, null, null, null, null, start, limit);
+
+            var totalUsersCount = Convert.ToInt32(response.Headers["X-Total-Count"]);
+            var responseCount = response.Data.Count;
+            var counter = responseCount < 10 ? responseCount : 10;
+            for (int i = 0; i < counter; i++)
+            {
+                Console.WriteLine(i + 1 + ") ");
+                Console.WriteLine("\t UserId: " + response.Data[i].Id);
+                Console.WriteLine("\t UserName: " + response.Data[i].FullName);
+            }
+            Console.WriteLine("Total number of users in response: " + responseCount);
+            Console.WriteLine("Total number of users: " + totalUsersCount);
         }
     }
 }

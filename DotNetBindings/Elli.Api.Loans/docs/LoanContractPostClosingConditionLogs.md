@@ -33,6 +33,7 @@ Name | Type | Description | Notes
 **Source** | **string** |  | [optional] 
 **SystemId** | **string** |  | [optional] 
 **Title** | **string** |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
 **Cleared** | **bool?** |  | [optional] 
 **Sent** | **bool?** |  | [optional] 
 **Status** | **Object** |  | [optional] 

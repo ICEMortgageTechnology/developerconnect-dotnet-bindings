@@ -4,19 +4,14 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **string** |  | [optional] 
-**AdditionalIncomeFromPrimaryEmployment** | **double?** |  | [optional] 
 **AdditionalMemberBaseIncome** | **double?** |  | [optional] 
-**AdjustedAnnualIncome** | **double?** |  | [optional] 
 **AdvanceAmountToDate** | **double?** |  | [optional] 
 **AmountLoanlineCredit** | **double?** |  | [optional] 
 **AnnualChildCareExpenses** | **double?** |  | [optional] 
-**AnnualIncome** | **double?** |  | [optional] 
 **AnnualReviewDate** | **DateTime?** |  | [optional] 
 **ApplicationNumber** | **string** |  | [optional] 
 **ApprovedLenderTaxId** | **string** |  | [optional] 
-**AssetIncome** | **double?** |  | [optional] 
 **BalanceOwedOnLoan** | **double?** |  | [optional] 
-**BorrowerBaseIncome** | **double?** |  | [optional] 
 **BorrowerTypeCode** | **string** |  | [optional] 
 **BuydownInterestAssistanceRate** | **double?** |  | [optional] 
 **CaseNumberBorrowerId** | **string** |  | [optional] 
@@ -33,7 +28,6 @@ Name | Type | Description | Notes
 **ChildCareProviderZip** | **string** |  | [optional] 
 **ChildCostPerMonth** | **double?** |  | [optional] 
 **ChildCostPerWeek** | **double?** |  | [optional] 
-**CoborrowerBaseIncome** | **double?** |  | [optional] 
 **DateConfirmedObligationProcessed** | **DateTime?** |  | [optional] 
 **DateLoanNoteGuaranteeIssued** | **DateTime?** |  | [optional] 
 **DateLoanNoteGuaranteeRequestReceived** | **DateTime?** |  | [optional] 
@@ -143,6 +137,7 @@ Name | Type | Description | Notes
 **AdjustedIncomeCalculationDescription1** | **string** |  | [optional] 
 **AdjustedIncomeCalculationDescription2** | **string** |  | [optional] 
 **AdjustedIncomeCalculationDescription3** | **string** |  | [optional] 
+**RefinanceType** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

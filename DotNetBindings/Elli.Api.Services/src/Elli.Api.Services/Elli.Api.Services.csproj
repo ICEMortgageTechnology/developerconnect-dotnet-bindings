@@ -4,7 +4,7 @@ Credit
 
 Credit APIs
 
-OpenAPI spec version: 1.3.0
+OpenAPI spec version: 1.4.0
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12,7 +12,7 @@ OpenAPI spec version: 1.3.0
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00E7F2E0-905C-4BF8-A5A4-A796A727EFCF}</ProjectGuid>
+    <ProjectGuid>{671A01D6-3A3C-4AC1-AAFD-067CE3024782}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Elli.Api.Services</RootNamespace>

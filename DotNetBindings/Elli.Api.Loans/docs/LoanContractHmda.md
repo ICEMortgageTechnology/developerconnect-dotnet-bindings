@@ -106,6 +106,8 @@ Name | Type | Description | Notes
 **HmdaPropertyValueNotReliedUponIndicator** | **bool?** |  | [optional] 
 **HmdaInterestOnlyIndicator** | **bool?** |  | [optional] 
 **IncomeExcludedFromHmda** | **double?** |  | [optional] 
+**HMDACensusTrack** | **string** |  | [optional] 
+**HMDACountyCode** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -219,6 +219,11 @@ Name | Type | Description | Notes
 **Section1400TotalOtherPaidAmount** | **double?** |  | [optional] 
 **Section1400TotalPaidAmount** | **double?** |  | [optional] 
 **IsCDValidForEarliestClosingDate** | **bool?** |  | [optional] 
+**SectionPCTotalBorrowerPaidAmount** | **double?** |  | [optional] 
+**SectionPCTotalSellerPaidAmount** | **double?** |  | [optional] 
+**SectionPCTotalOtherPaidAmount** | **double?** |  | [optional] 
+**SectionPCTotalPaidAmount** | **double?** |  | [optional] 
+**SubsequentlyPaidFinanceCharge** | **double?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

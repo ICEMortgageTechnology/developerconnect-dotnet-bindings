@@ -27,6 +27,7 @@ Name | Type | Description | Notes
 **TaskDescription** | **string** |  | [optional] 
 **TaskGuid** | **string** |  | [optional] 
 **TaskName** | **string** |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
 **Completed** | **bool?** |  | [optional] 
 **ContactCount** | **int?** |  | [optional] 
 **ExpectedDate** | **DateTime?** |  | [optional] 

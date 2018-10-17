@@ -62,6 +62,12 @@ Name | Type | Description | Notes
 **LinkedLienPriorityType** | **string** |  | [optional] 
 **PriorLoanRecordationOriginalLoanNumber** | **string** |  | [optional] 
 **PriorLoanRecordationDated** | **DateTime?** |  | [optional] 
+**LinkedInitialAdvanceAmount** | **double?** |  | [optional] 
+**LinkedClosedEndPrimaryMortgageLoanAmount** | **double?** |  | [optional] 
+**LinkedClosedEndSubordinateMortgageLoanAmount** | **double?** |  | [optional] 
+**LinkedHelocNewFinancingNotLinkedDrawAmount** | **double?** |  | [optional] 
+**LinkedHelocNewFinancingNotLinkedCreditLimit** | **double?** |  | [optional] 
+**LinkedAmountApplyToDownPayment** | **double?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

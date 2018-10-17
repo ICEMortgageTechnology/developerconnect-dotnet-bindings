@@ -242,6 +242,8 @@ Name | Type | Description | Notes
 **HighCostDisclosure** | **DateTime?** |  | [optional] 
 **TotalOfPrincipalAndInterest** | **double?** |  | [optional] 
 **OccupancyCertDate** | **DateTime?** |  | [optional] 
+**HelocTeaserRatePeriod** | **int?** |  | [optional] 
+**ExternaleConsent** | **string** |  | [optional] 
 **LateFee** | **double?** |  | [optional] 
 **TotalLatePayment** | **double?** |  | [optional] 
 **InitialSubsequentAppraisalProvidedDate** | **DateTime?** |  | [optional] 

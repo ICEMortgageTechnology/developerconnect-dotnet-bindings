@@ -15,8 +15,9 @@ Name | Type | Description | Notes
 **LogRecordIndex** | **int?** |  | [optional] 
 **PrintedBy** | **string** |  | [optional] 
 **PrintedByFullName** | **string** |  | [optional] 
-**PrintForms** | [**List&lt;LoanContractPrintForms&gt;**](LoanContractPrintForms.md) |  | [optional] 
+**PrintForms** | [**List&lt;LoanContractServiceTypes&gt;**](LoanContractServiceTypes.md) |  | [optional] 
 **SystemId** | **string** |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

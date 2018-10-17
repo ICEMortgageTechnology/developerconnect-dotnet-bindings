@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **Result** | **string** |  | [optional] 
 **Details** | **string** |  | [optional] 
 **ShowAlert** | **bool?** |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

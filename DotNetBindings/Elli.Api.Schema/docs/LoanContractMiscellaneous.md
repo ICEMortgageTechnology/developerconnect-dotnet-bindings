@@ -103,7 +103,13 @@ Name | Type | Description | Notes
 **SubTaxYearMIPremiums** | **double?** |  | [optional] 
 **LoanFileSequenceNumber** | **int?** |  | [optional] 
 **ComplianceVersionCD3X1505** | **string** |  | [optional] 
+**SavedLogVersion** | **string** |  | [optional] 
 **TPOConnectStatusUpdated** | **bool?** |  | [optional] 
+**AllRoles** | **string** |  | [optional] 
+**AllUserInfo** | **string** |  | [optional] 
+**LenderFeeQuoteID** | **string** |  | [optional] 
+**PartnerFeeQuoteID** | **string** |  | [optional] 
+**LastFeeImportDate** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

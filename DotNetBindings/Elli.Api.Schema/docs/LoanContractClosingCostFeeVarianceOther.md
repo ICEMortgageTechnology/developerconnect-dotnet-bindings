@@ -44,6 +44,8 @@ Name | Type | Description | Notes
 **LERevisedReceivedDateGuid** | **string** |  | [optional] 
 **CDInitialReceivedDateGuid** | **string** |  | [optional] 
 **CDRevisedReceivedDateGuid** | **string** |  | [optional] 
+**CureAppliedToLenderCredit** | **double?** |  | [optional] 
+**CureAppliedToPrincipalReduction** | **double?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

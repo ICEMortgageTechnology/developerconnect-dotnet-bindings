@@ -135,6 +135,10 @@ Name | Type | Description | Notes
 **Line1010** | **string** |  | [optional] 
 **Line1011** | **string** |  | [optional] 
 **UseActualPaymentChange** | **bool?** |  | [optional] 
+**LinePC1** | **string** |  | [optional] 
+**LinePC2** | **string** |  | [optional] 
+**LinePC3** | **string** |  | [optional] 
+**LinePC4** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

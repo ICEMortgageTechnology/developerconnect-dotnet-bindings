@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **DocumentsReadyDate** | **DateTime?** |  | [optional] 
 **FeeReviewStatusDate** | **DateTime?** |  | [optional] 
 **FeeReviewComments** | **string** |  | [optional] 
+**LEIssuedBy** | **string** |  | [optional] 
 **CompanyName** | **string** |  | [optional] 
 **CompanyID** | **string** |  | [optional] 
 **CompanyOrganizationID** | **string** |  | [optional] 

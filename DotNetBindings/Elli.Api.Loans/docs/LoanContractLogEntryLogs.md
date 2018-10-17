@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **LogRecordIndex** | **int?** |  | [optional] 
 **SystemId** | **string** |  | [optional] 
 **UserId** | **string** |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

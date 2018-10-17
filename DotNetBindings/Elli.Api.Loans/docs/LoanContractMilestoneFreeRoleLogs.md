@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **LoanAssociate** | [**LoanContractLoanAssociate**](LoanContractLoanAssociate.md) |  | [optional] 
 **LogRecordIndex** | **int?** |  | [optional] 
 **SystemId** | **string** |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

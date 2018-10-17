@@ -4,7 +4,7 @@ Schema
 
 Represents schema operations on Loan.
 
-OpenAPI spec version: 1.3.0
+OpenAPI spec version: 1.4.0
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12,7 +12,7 @@ OpenAPI spec version: 1.3.0
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9CA34F54-D898-4A9B-81EB-210735E9AEFD}</ProjectGuid>
+    <ProjectGuid>{946E6A9C-B73C-40EB-9394-D086371867D3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Elli.Api.Schema</RootNamespace>
