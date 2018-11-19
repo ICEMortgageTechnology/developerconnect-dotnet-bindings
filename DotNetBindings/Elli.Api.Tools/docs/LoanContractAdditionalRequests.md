@@ -1,0 +1,46 @@
+# Elli.Api.Tools.Model.LoanContractAdditionalRequests
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**AppraisalContactCellPhone** | **string** |  | [optional] 
+**AppraisalContactEmail** | **string** |  | [optional] 
+**AppraisalContactForEntry** | **string** |  | [optional] 
+**AppraisalContactHomePhone** | **string** |  | [optional] 
+**AppraisalContactName** | **string** |  | [optional] 
+**AppraisalContactWorkPhone** | **string** |  | [optional] 
+**AppraisalDateOrdered** | **DateTime?** |  | [optional] 
+**AppraisalDescription1** | **string** |  | [optional] 
+**AppraisalDescription2** | **string** |  | [optional] 
+**AppraisalDescription3** | **string** |  | [optional] 
+**AppraisalKeyPickUp** | **bool?** |  | [optional] 
+**AppraisalLockBox** | **bool?** |  | [optional] 
+**AppraisalVacant** | **bool?** |  | [optional] 
+**FloodDescription1** | **string** |  | [optional] 
+**FloodDescription2** | **string** |  | [optional] 
+**FloodDescription3** | **string** |  | [optional] 
+**FloodInsuranceEscrowed** | **bool?** |  | [optional] 
+**FloodReplacementValue** | **string** |  | [optional] 
+**HazardDescription1** | **string** |  | [optional] 
+**HazardDescription2** | **string** |  | [optional] 
+**HazardDescription3** | **string** |  | [optional] 
+**HazardInsuranceEscrowed** | **bool?** |  | [optional] 
+**HazardReplacementValue** | **string** |  | [optional] 
+**TitleContract** | **bool?** |  | [optional] 
+**TitleDescription1** | **string** |  | [optional] 
+**TitleDescription2** | **string** |  | [optional] 
+**TitleDescription3** | **string** |  | [optional] 
+**TitleInsRequirements** | **bool?** |  | [optional] 
+**TitleMailAway** | **bool?** |  | [optional] 
+**TitlePriorTitlePolicy** | **bool?** |  | [optional] 
+**TitleSurvey** | **bool?** |  | [optional] 
+**TitleTypeOfProperty** | **string** |  | [optional] 
+**TitleWarrantyDeed** | **bool?** |  | [optional] 
+**MaximumDeductibleHazardPercentage** | **double?** |  | [optional] 
+**MaximumDeductibleHazardAmount** | **double?** |  | [optional] 
+**MaximumDeductibleFloodPercentage** | **double?** |  | [optional] 
+**MaximumDeductibleFloodAmount** | **double?** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

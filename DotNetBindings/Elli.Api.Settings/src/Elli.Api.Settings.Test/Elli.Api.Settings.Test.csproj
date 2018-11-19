@@ -4,7 +4,7 @@ Settings
 
 Represents settings operations on Company, Loan, Contact etc.
 
-OpenAPI spec version: 1.4.0
+OpenAPI spec version: 1.4.1
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,7 +74,7 @@ OpenAPI spec version: 1.4.0
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.Settings\Elli.Api.Settings.csproj">
-      <Project>{C1EC3E36-2176-4140-9E68-6BCCD167D067}</Project>
+      <Project>{541F1C4A-FEEB-4A46-8090-4EC9A8D78AA8}</Project>
       <Name>Elli.Api.Settings</Name>
     </ProjectReference>
   </ItemGroup>

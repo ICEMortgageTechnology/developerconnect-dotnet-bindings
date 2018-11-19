@@ -4,7 +4,7 @@ Elli.Services
 
 Elli.CDO.Services
 
-OpenAPI spec version: 1.4.0
+OpenAPI spec version: 1.4.1
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,7 +74,7 @@ OpenAPI spec version: 1.4.0
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.CustomDataObjects\Elli.Api.CustomDataObjects.csproj">
-      <Project>{97272BB3-CC29-4FAE-B3F2-CF58E6DE1B80}</Project>
+      <Project>{CB8A02A8-FA87-47EC-A233-E29CF69F3CBB}</Project>
       <Name>Elli.Api.CustomDataObjects</Name>
     </ProjectReference>
   </ItemGroup>

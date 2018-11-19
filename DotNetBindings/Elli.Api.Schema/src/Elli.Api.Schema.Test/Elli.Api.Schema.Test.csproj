@@ -4,7 +4,7 @@ Schema
 
 Represents schema operations on Loan.
 
-OpenAPI spec version: 1.4.0
+OpenAPI spec version: 1.4.1
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,7 +74,7 @@ OpenAPI spec version: 1.4.0
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.Schema\Elli.Api.Schema.csproj">
-      <Project>{946E6A9C-B73C-40EB-9394-D086371867D3}</Project>
+      <Project>{7DAD9F86-B2C9-4527-99AD-2DE9B01570A8}</Project>
       <Name>Elli.Api.Schema</Name>
     </ProjectReference>
   </ItemGroup>

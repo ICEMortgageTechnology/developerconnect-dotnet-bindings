@@ -4,7 +4,7 @@ Contacts
 
 Represents borrower and business contacts
 
-OpenAPI spec version: 1.4.0
+OpenAPI spec version: 1.4.1
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -74,7 +74,7 @@ OpenAPI spec version: 1.4.0
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Elli.Api.Contacts\Elli.Api.Contacts.csproj">
-      <Project>{D9CE0A4E-7AA7-4325-AC1C-A25A66E9EC23}</Project>
+      <Project>{11EFD996-B0A5-4F04-B6D4-37D3D50D7368}</Project>
       <Name>Elli.Api.Contacts</Name>
     </ProjectReference>
   </ItemGroup>

@@ -4,7 +4,7 @@ Settings
 
 Represents settings operations on Company, Loan, Contact etc.
 
-OpenAPI spec version: 1.4.0
+OpenAPI spec version: 1.4.1
 
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12,7 +12,7 @@ OpenAPI spec version: 1.4.0
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C1EC3E36-2176-4140-9E68-6BCCD167D067}</ProjectGuid>
+    <ProjectGuid>{541F1C4A-FEEB-4A46-8090-4EC9A8D78AA8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Elli.Api.Settings</RootNamespace>

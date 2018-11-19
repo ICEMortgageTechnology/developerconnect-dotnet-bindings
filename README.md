@@ -47,7 +47,7 @@ All available packages that will be installed are:
         Elli.Api.Contacts
         Elli.Api.Settings
         Elli.Api.Schema
-	
+		Elli.Api.Tools
         
     
 Note: Each of the above packages references all dependencies including Oauth Client and Base DLL. If you wish to install just the OAuth reference, execute the following command:

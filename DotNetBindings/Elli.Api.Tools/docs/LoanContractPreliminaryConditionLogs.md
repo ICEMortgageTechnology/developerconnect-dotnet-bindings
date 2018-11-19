@@ -1,0 +1,48 @@
+# Elli.Api.Tools.Model.LoanContractPreliminaryConditionLogs
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**AddedBy** | **string** |  | [optional] 
+**Alerts** | [**List&lt;LoanContractAlerts&gt;**](LoanContractAlerts.md) |  | [optional] 
+**Category** | **string** |  | [optional] 
+**CommentList** | [**List&lt;LoanContractLogRecordCommentList&gt;**](LoanContractLogRecordCommentList.md) |  | [optional] 
+**Comments** | **string** |  | [optional] 
+**DateAddedUtc** | **DateTime?** |  | [optional] 
+**DateFulfilled** | **DateTime?** |  | [optional] 
+**DateUtc** | **DateTime?** |  | [optional] 
+**Description** | **string** |  | [optional] 
+**Details** | **string** |  | [optional] 
+**FileAttachmentsMigrated** | **bool?** |  | [optional] 
+**FulfilledBy** | **string** |  | [optional] 
+**Guid** | **string** |  | [optional] 
+**IsSystemSpecificIndicator** | **bool?** |  | [optional] 
+**LogRecordIndex** | **int?** |  | [optional] 
+**PairId** | **string** |  | [optional] 
+**PriorTo** | **string** |  | [optional] 
+**Source** | **string** |  | [optional] 
+**SystemId** | **string** |  | [optional] 
+**Title** | **string** |  | [optional] 
+**UnderwriterAccessIndicator** | **bool?** |  | [optional] 
+**UpdatedDateUtc** | **DateTime?** |  | [optional] 
+**Fulfilled** | **bool?** |  | [optional] 
+**Status** | **Object** |  | [optional] 
+**StatusDescription** | **string** |  | [optional] 
+**Expected** | **bool?** |  | [optional] 
+**DateExpected** | **DateTime?** |  | [optional] 
+**DateRequestedUtc** | **DateTime?** |  | [optional] 
+**RequestedBy** | **string** |  | [optional] 
+**DateRerequestedUtc** | **DateTime?** |  | [optional] 
+**RerequestedBy** | **string** |  | [optional] 
+**DateReceived** | **DateTime?** |  | [optional] 
+**ReceivedBy** | **string** |  | [optional] 
+**Received** | **bool?** |  | [optional] 
+**Requested** | **bool?** |  | [optional] 
+**Rerequested** | **bool?** |  | [optional] 
+**IsPastDue** | **bool?** |  | [optional] 
+**AlertsXml** | **string** |  | [optional] 
+**CommentListXml** | **string** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

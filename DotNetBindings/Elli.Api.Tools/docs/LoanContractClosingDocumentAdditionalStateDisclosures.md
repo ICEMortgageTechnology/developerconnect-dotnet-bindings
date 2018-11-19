@@ -1,0 +1,12 @@
+# Elli.Api.Tools.Model.LoanContractClosingDocumentAdditionalStateDisclosures
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Id** | **string** |  | [optional] 
+**DisclosureName** | **string** |  | [optional] 
+**DisclosureValue** | **string** |  | [optional] 
+**StateCode** | **string** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

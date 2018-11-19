@@ -33,38 +33,41 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Elli.Api.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Base.1.4.0\lib\Elli.Api.Base.dll</HintPath>
+    <Reference Include="Elli.Api.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Base.1.4.1\lib\Elli.Api.Base.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Contacts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Contacts.1.4.0\lib\Elli.Api.Contacts.dll</HintPath>
+    <Reference Include="Elli.Api.Contacts, Version=1.4.1.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Contacts.1.4.1\lib\Elli.Api.Contacts.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.CustomDataObjects, Version=1.4.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.CustomDataObjects.1.4.0\lib\Elli.Api.CustomDataObjects.dll</HintPath>
+    <Reference Include="Elli.Api.CustomDataObjects, Version=1.4.1.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.CustomDataObjects.1.4.1\lib\Elli.Api.CustomDataObjects.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Extensions.1.4.0\lib\Elli.Api.Extensions.dll</HintPath>
+    <Reference Include="Elli.Api.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Extensions.1.4.1\lib\Elli.Api.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Loans, Version=1.4.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Loans.1.4.0\lib\Elli.Api.Loans.dll</HintPath>
+    <Reference Include="Elli.Api.Loans, Version=1.4.1.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Loans.1.4.1\lib\Elli.Api.Loans.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Loans.EFolder, Version=1.4.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Loans.EFolder.1.4.0\lib\Elli.Api.Loans.EFolder.dll</HintPath>
+    <Reference Include="Elli.Api.Loans.EFolder, Version=1.4.1.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Loans.EFolder.1.4.1\lib\Elli.Api.Loans.EFolder.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Loans.Pipeline, Version=1.4.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Loans.Pipeline.1.4.0\lib\Elli.Api.Loans.Pipeline.dll</HintPath>
+    <Reference Include="Elli.Api.Loans.Pipeline, Version=1.4.1.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Loans.Pipeline.1.4.1\lib\Elli.Api.Loans.Pipeline.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.OAuth, Version=1.4.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Base.1.4.0\lib\Elli.Api.OAuth.dll</HintPath>
+    <Reference Include="Elli.Api.OAuth, Version=1.4.1.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Base.1.4.1\lib\Elli.Api.OAuth.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Schema, Version=1.4.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Schema.1.4.0\lib\Elli.Api.Schema.dll</HintPath>
+    <Reference Include="Elli.Api.Schema, Version=1.4.1.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Schema.1.4.1\lib\Elli.Api.Schema.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Services, Version=1.4.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Services.1.4.0\lib\Elli.Api.Services.dll</HintPath>
+    <Reference Include="Elli.Api.Services, Version=1.4.1.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Services.1.4.1\lib\Elli.Api.Services.dll</HintPath>
     </Reference>
-    <Reference Include="Elli.Api.Settings, Version=1.4.0.0, Culture=neutral, PublicKeyToken=c86e3de1a16a8e8f, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Elli.Api.Settings.1.4.0\lib\Elli.Api.Settings.dll</HintPath>
+    <Reference Include="Elli.Api.Settings, Version=1.4.1.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Settings.1.4.1\lib\Elli.Api.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Elli.Api.Tools, Version=1.4.1.0, Culture=neutral, PublicKeyToken=86643d5400a17684, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Elli.Api.Tools.1.4.1\lib\Elli.Api.Tools.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -96,7 +99,9 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
