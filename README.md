@@ -4,9 +4,11 @@ The purpose of this repository is to
 
 1. Demonstrate how to generate a common library for a specific language for API Bindings
 2. How to call Encompass Developer Connect APIs using these bindings
+This is an update to the bindings to make templates work 
 
 ## .NET Bindings
 This repository contains the .NET bindings, also referred to as .NET Client Libraries.
+This also contains updates to make templates work 
 
 ## Getting Started
 
