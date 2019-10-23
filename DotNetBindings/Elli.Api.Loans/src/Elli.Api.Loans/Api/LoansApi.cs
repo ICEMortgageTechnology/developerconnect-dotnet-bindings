@@ -67,7 +67,7 @@ namespace Elli.Api.Loans.Api
         /// <param name="view">Possible values are: entity - Returns all properties for the loan. id - Returns the ID assigned to the loan. (optional)</param>
         /// <param name="loanContract"> (optional)</param>
         /// <returns>Object</returns>
-        Object CreateLoan (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null);
+        Object CreateLoan (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null, string loId = null);
 
         /// <summary>
         /// Creates a new loan.
@@ -82,7 +82,7 @@ namespace Elli.Api.Loans.Api
         /// <param name="view">Possible values are: entity - Returns all properties for the loan. id - Returns the ID assigned to the loan. (optional)</param>
         /// <param name="loanContract"> (optional)</param>
         /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> CreateLoanWithHttpInfo (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null);
+        ApiResponse<Object> CreateLoanWithHttpInfo (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null, string loId = null);
         /// <summary>
         /// 
         /// </summary>
@@ -196,7 +196,7 @@ namespace Elli.Api.Loans.Api
         /// <param name="view">Possible values are: entity - Returns all properties for the loan. id - Returns the ID assigned to the loan. (optional)</param>
         /// <param name="loanContract"> (optional)</param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> CreateLoanAsync (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null);
+        System.Threading.Tasks.Task<Object> CreateLoanAsync (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null, string loId = null);
 
         /// <summary>
         /// Creates a new loan.
@@ -211,7 +211,7 @@ namespace Elli.Api.Loans.Api
         /// <param name="view">Possible values are: entity - Returns all properties for the loan. id - Returns the ID assigned to the loan. (optional)</param>
         /// <param name="loanContract"> (optional)</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> CreateLoanAsyncWithHttpInfo (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null);
+        System.Threading.Tasks.Task<ApiResponse<Object>> CreateLoanAsyncWithHttpInfo (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null, string loId = null);
         /// <summary>
         /// 
         /// </summary>
@@ -432,9 +432,9 @@ namespace Elli.Api.Loans.Api
         /// <param name="view">Possible values are: entity - Returns all properties for the loan. id - Returns the ID assigned to the loan. (optional)</param>
         /// <param name="loanContract"> (optional)</param>
         /// <returns>Object</returns>
-        public Object CreateLoan (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null)
+        public Object CreateLoan (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null, string loId = null)
         {
-             ApiResponse<Object> localVarResponse = CreateLoanWithHttpInfo(loanFolder, templatePath, persistent, view, loanContract);
+             ApiResponse<Object> localVarResponse = CreateLoanWithHttpInfo(loanFolder, templatePath, persistent, view, loanContract, loId);
              return localVarResponse.Data;
         }
 
@@ -448,7 +448,7 @@ namespace Elli.Api.Loans.Api
         /// <param name="view">Possible values are: entity - Returns all properties for the loan. id - Returns the ID assigned to the loan. (optional)</param>
         /// <param name="loanContract"> (optional)</param>
         /// <returns>ApiResponse of Object</returns>
-        public ApiResponse< Object > CreateLoanWithHttpInfo (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null)
+        public ApiResponse< Object > CreateLoanWithHttpInfo (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null, string loId = null)
         {
 
             var localVarPath = "/encompass/v1/loans";
@@ -485,6 +485,7 @@ namespace Elli.Api.Loans.Api
             {
                 localVarPostBody = loanContract; // byte array
             }
+            if (loId != null) localVarQueryParams.Add("loId", Configuration.ApiClient.ParameterToString(loId)); // query parameter
 
             // authentication (bearerAuth) required
             // oauth required
@@ -521,9 +522,9 @@ namespace Elli.Api.Loans.Api
         /// <param name="view">Possible values are: entity - Returns all properties for the loan. id - Returns the ID assigned to the loan. (optional)</param>
         /// <param name="loanContract"> (optional)</param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> CreateLoanAsync (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null)
+        public async System.Threading.Tasks.Task<Object> CreateLoanAsync (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null, string loId = null)
         {
-             ApiResponse<Object> localVarResponse = await CreateLoanAsyncWithHttpInfo(loanFolder, templatePath, persistent, view, loanContract);
+             ApiResponse<Object> localVarResponse = await CreateLoanAsyncWithHttpInfo(loanFolder, templatePath, persistent, view, loanContract, loId);
              return localVarResponse.Data;
 
         }
@@ -538,7 +539,7 @@ namespace Elli.Api.Loans.Api
         /// <param name="view">Possible values are: entity - Returns all properties for the loan. id - Returns the ID assigned to the loan. (optional)</param>
         /// <param name="loanContract"> (optional)</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> CreateLoanAsyncWithHttpInfo (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> CreateLoanAsyncWithHttpInfo (string loanFolder = null, string templatePath = null, string persistent = null, string view = null, LoanContract loanContract = null, string loId = null)
         {
 
             var localVarPath = "/encompass/v1/loans";
@@ -575,6 +576,7 @@ namespace Elli.Api.Loans.Api
             {
                 localVarPostBody = loanContract; // byte array
             }
+            if (loId != null) localVarQueryParams.Add("loId", Configuration.ApiClient.ParameterToString(loId)); // query parameter
 
             // authentication (bearerAuth) required
             // oauth required

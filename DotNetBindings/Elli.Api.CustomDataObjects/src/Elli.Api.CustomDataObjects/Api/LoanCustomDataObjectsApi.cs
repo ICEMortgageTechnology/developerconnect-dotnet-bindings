@@ -628,7 +628,7 @@ namespace Elli.Api.CustomDataObjects.Api
             if (objectName == null)
                 throw new ApiException(400, "Missing required parameter 'objectName' when calling LoanCustomDataObjectsApi->CreateLoanCustomDataObject");
 
-            var localVarPath = "/encompass/v1/loans/{loanId}/customObjects/{objectName}";
+            var localVarPath = $"/encompass/v1/loans/{loanId}/customObjects/{objectName}";
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
             var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
