@@ -72,8 +72,8 @@ namespace Elli.Api.Loans.Pipeline.Model
         /// <summary>
         /// Gets or Sets Fields
         /// </summary>
-        [DataMember(Name="fields", EmitDefaultValue=false)]
-        public Object Fields { get; set; }
+        [DataMember(Name = "fields", EmitDefaultValue = false)]
+        public Dictionary<string, string> Fields { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
