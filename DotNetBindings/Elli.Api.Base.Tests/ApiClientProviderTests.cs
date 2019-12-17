@@ -10,7 +10,7 @@ namespace Elli.Api.Base.Tests
         [TestMethod]
         public void GetApiClient()
         {
-            var client = ApiClientProvider.GetApiClient<TokenApi>();
+            var client = ApiClientProvider.GetApiClient<TokenApi>(new ApiConfiguration());
             Assert.IsInstanceOfType(client, typeof(TokenApi));
             Assert.IsNotNull(client);
         }
