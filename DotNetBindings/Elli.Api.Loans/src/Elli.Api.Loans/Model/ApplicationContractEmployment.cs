@@ -193,7 +193,7 @@ namespace Elli.Api.Loans.Model
         /// Gets or Sets MonthlyIncomeAmount
         /// </summary>
         [DataMember(Name="monthlyIncomeAmount", EmitDefaultValue=false)]
-        public int? MonthlyIncomeAmount { get; set; }
+        public double? MonthlyIncomeAmount { get; set; }
 
         /// <summary>
         /// Gets or Sets NoLinkToDocTrackIndicator
