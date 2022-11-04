@@ -1,3 +1,6 @@
+# Please note: The .NET Language Bindings were retired in the 21.4 release of Encompass. ICE Mortgage Technology no longer supports .NET Language Bindings.
+
+
 # API to Language Bindings
 
 The purpose of this repository is to 
