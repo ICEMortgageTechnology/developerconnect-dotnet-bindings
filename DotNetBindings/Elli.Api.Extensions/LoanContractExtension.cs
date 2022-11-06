@@ -20,12 +20,12 @@ namespace Elli.Api.Extensions
         /// Initialize field mapping json paths.
         /// </summary>
         /// <param name="accessToken">Access token.</param>
-        public static void InitializeFieldMapping(AccessToken accessToken)
+        public static void InitializeFieldMapping(AccessToken accessToken, ApiConfiguration config)
         {
             if (_missingJsonPathsDict == null || _missingJsonPathsDict.Count == 0)
             {
                 _missingJsonPathsDict = new Dictionary<string, string>();
-                var clientProvider = ApiClientProvider.GetApiClient<PathGeneratorApi>(accessToken);
+                var clientProvider = ApiClientProvider.GetApiClient<PathGeneratorApi>(accessToken, config);
                 var contract = new PathGeneratorContract();
                 _missingJsonPathsDict = clientProvider.GetWebhookNotificationPath(contract);
             }

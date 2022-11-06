@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2AE06F4F-8885-4E9F-AD78-C9A85F3A89E5}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Elli.Api.Extensions</RootNamespace>
-    <AssemblyName>Elli.Api.Extensions</AssemblyName>
+    <ProjectGuid>{A9485D69-F210-4A48-92B6-16D31F3D3BBA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Elli.Api.Program</RootNamespace>
+    <AssemblyName>Elli.Api.Program</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -38,6 +40,7 @@
       <HintPath>..\packages\RestSharp.106.10.1\lib\net452\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -48,21 +51,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LoanContractExtension.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Elli.Api.Contacts\src\Elli.Api.Contacts\Elli.Api.Contacts.csproj">
+      <Project>{11efd996-b0a5-4f04-b6d4-37d3d50d7368}</Project>
+      <Name>Elli.Api.Contacts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Elli.Api.CustomDataObjects\src\Elli.Api.CustomDataObjects\Elli.Api.CustomDataObjects.csproj">
+      <Project>{cb8a02a8-fa87-47ec-a233-e29cf69f3cbb}</Project>
+      <Name>Elli.Api.CustomDataObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Elli.Api.Extensions\Elli.Api.Extensions.csproj">
+      <Project>{2ae06f4f-8885-4e9f-ad78-c9a85f3a89e5}</Project>
+      <Name>Elli.Api.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Elli.Api.Loans.EFolder\src\Elli.Api.Loans.EFolder\Elli.Api.Loans.EFolder.csproj">
+      <Project>{b1306726-0f9b-4400-b1b9-68931874bd03}</Project>
+      <Name>Elli.Api.Loans.EFolder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Elli.Api.Loans.Pipeline\src\Elli.Api.Loans.Pipeline\Elli.Api.Loans.Pipeline.csproj">
+      <Project>{db43ddfa-d1ca-4d5d-a0db-bbf8779f748b}</Project>
+      <Name>Elli.Api.Loans.Pipeline</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Elli.Api.Loans\src\Elli.Api.Loans\Elli.Api.Loans.csproj">
       <Project>{7df64f35-45a6-4fa8-9ebb-9471c3985c58}</Project>
       <Name>Elli.Api.Loans</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Elli.Api.OAuth\src\Elli.Api.OAuth\Elli.Api.OAuth.csproj">
+      <Project>{d4c81fa4-e491-40a5-9af7-a495241386a5}</Project>
+      <Name>Elli.Api.OAuth</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Elli.Api.Schema\src\Elli.Api.Schema\Elli.Api.Schema.csproj">
       <Project>{7dad9f86-b2c9-4527-99ad-2de9b01570a8}</Project>
       <Name>Elli.Api.Schema</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Elli.Api.Services\src\Elli.Api.Services\Elli.Api.Services.csproj">
+      <Project>{0ee1f154-1c62-42db-9718-af1e7b734dcb}</Project>
+      <Name>Elli.Api.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Elli.Api.Settings\src\Elli.Api.Settings\Elli.Api.Settings.csproj">
+      <Project>{541f1c4a-feeb-4a46-8090-4ec9a8d78aa8}</Project>
+      <Name>Elli.Api.Settings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Elli.Api.Tools\src\Elli.Api.Tools\Elli.Api.Tools.csproj">
+      <Project>{e8e8a5ef-6c65-4f4c-9542-6e67ecd74f76}</Project>
+      <Name>Elli.Api.Tools</Name>
     </ProjectReference>
     <ProjectReference Include="..\Elli.Api\Elli.Api.Base.csproj">
       <Project>{c5fa2e02-3097-4c6c-a6e2-8394ceb0c406}</Project>

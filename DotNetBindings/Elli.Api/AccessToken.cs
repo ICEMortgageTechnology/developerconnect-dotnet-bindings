@@ -11,7 +11,7 @@ namespace Elli.Api.Base
 {
     public class AccessToken
     {
-        private static readonly ApiConfiguration Config;
+        private static ApiConfiguration Config;
         private const string PasswordGrantType = "password";
         private const string AuthCodeGrantType = "authorization_code";
         private const string Scope = "lp";
@@ -28,7 +28,6 @@ namespace Elli.Api.Base
 
         static AccessToken()
         {
-            Config = (ApiConfiguration)ConfigurationManager.GetSection("ElliApiConfig");           
         }
 
         private AccessToken()
@@ -36,8 +35,10 @@ namespace Elli.Api.Base
             //Private constructor for preventing initialization of AccessToken object without appropriate credentials.
         }
 
-        public static AccessToken GetAccessToken(UserCredential credentials, string apiClientId = null, string clientSecret = null)
+        public static AccessToken GetAccessToken(UserCredential credentials, string apiClientId = null, string clientSecret = null, ApiConfiguration config = null)
         {
+            Config = config;
+
             var accessToken = new AccessToken();
             if (credentials == null)
                 throw new ArgumentNullException();
@@ -48,7 +49,7 @@ namespace Elli.Api.Base
 
             accessToken.ApiClientId = apiClientId ?? Config.ApiClientId;
             accessToken.ClientSecret = clientSecret ?? Config.ClientSecret;
-            var tokenClient = ApiClientProvider.GetApiClient<TokenApi>();
+            var tokenClient = ApiClientProvider.GetApiClient<TokenApi>(Config);
             tokenClient.Configuration.Username = accessToken.ApiClientId;
             tokenClient.Configuration.Password = accessToken.ClientSecret;
             var resp = tokenClient.GenerateToken(PasswordGrantType, credentials.UserNameRealm, credentials.Password, Scope);
@@ -56,13 +57,15 @@ namespace Elli.Api.Base
             return accessToken;
         }
 
-        public static AccessToken GetAccessToken(string authCode, string redirectUrl = null, string apiClientId = null, string clientSecret = null)
+        public static AccessToken GetAccessToken(string authCode, string redirectUrl = null, string apiClientId = null, string clientSecret = null, ApiConfiguration config = null)
         {
+            Config = config;
+
             var accessToken = new AccessToken();
             accessToken.ApiClientId = apiClientId ?? Config.ApiClientId;
             accessToken.ClientSecret = clientSecret ?? Config.ClientSecret;
             accessToken.RedirectUrl = redirectUrl ?? Config.RedirectUrl;
-            var tokenClient = ApiClientProvider.GetApiClient<TokenApi>();
+            var tokenClient = ApiClientProvider.GetApiClient<TokenApi>(Config);
             tokenClient.Configuration.Username = accessToken.ApiClientId;
             tokenClient.Configuration.Password = accessToken.ClientSecret;
             var resp = tokenClient.GenerateToken(AuthCodeGrantType, null, null, null, accessToken.RedirectUrl, authCode);
@@ -72,7 +75,7 @@ namespace Elli.Api.Base
 
         public void Revoke()
         {
-            var revocationApiClient = ApiClientProvider.GetApiClient<RevocationApi>();
+            var revocationApiClient = ApiClientProvider.GetApiClient<RevocationApi>(Config);
             revocationApiClient.Configuration.Username = Config.ApiClientId;
             revocationApiClient.Configuration.Password = Config.ClientSecret;
             revocationApiClient.RevokeToken(Token);
